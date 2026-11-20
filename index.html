@@ -1799,7 +1799,7 @@ function audienceReact(stars){
   if(stars>=4){for(let i=0;i<(stars===5?10:6);i++)setTimeout(()=>audBubble(pick(['ブラヴォー！','ビス！','アンコール！','ブラーヴァ！','すばらしい！']),5+Math.random()*85,15+Math.random()*65,'good'),i*180);throwFlowers(stars===5?14:6);}
   const fems=who.filter(w=>w.classList.contains('fem'));
   const swoon=(PR&&PR.L.some(id=>id&&id!=='you'&&hasQ(id,'star')))||['paganini','liszt'].includes(G.pid);
-  if(stars>=4&&swoon){fems.slice(0,stars===5?5:2).forEach((w,i)=>setTimeout(()=>{w.classList.add('faint');const r=w.getBoundingClientRect(),b=$('#audwrap').getBoundingClientRect();audBubble('♡失神',((r.left-b.left)/b.width*100),((r.top-b.top)/b.height*100)-8,'faintb');},400+i*300));}
+  if(stars>=4&&swoon){fems.slice(0,stars===5?5:2).forEach((w,i)=>setTimeout(()=>{w.classList.add('faint');if(!$('#audwrap')||!w.isConnected)return;const r=w.getBoundingClientRect(),b=$('#audwrap').getBoundingClientRect();audBubble('♡失神',((r.left-b.left)/b.width*100),((r.top-b.top)/b.height*100)-8,'faintb');},400+i*300));}
 }
 function perform(){
   const p=PR.p,L=PR.L.slice(),ev=evalLineup(p,L),k=P().city,c=ci(k),h=PR.hall,fi=fillInfo(L);
@@ -4887,11 +4887,11 @@ function fxPlay(host,kind){if(!host)return;rain(host,FXSET[kind]||FXSET.sparkle,
 const _uSimS=uSim;
 uSim=function(B,encore){
   try{B.sigUsed=B.sigUsed||[];
-    if((!B.practice||B.challenge)&&Math.random()<(encore?.5:.6)){
+    if((!B.practice||B.challenge)&&Math.random()<(encore?.35:.45)){
       const cand=B.us.filter(u=>u.hp>0&&sigOf(u.id)&&!B.sigUsed.includes(u.i)&&uhs(u.id,u.hp,u.max)<3);
       if(cand.length){cand.sort((a,b)=>(UHIST[sigKey(b.id)]||urar(b.id))-(UHIST[sigKey(a.id)]||urar(a.id)));const u=Math.random()<.7?cand[0]:pick(cand);const s=sigOf(u.id);B.sigUsed.push(u.i);
         B.ev.push({k:'phase',txt:`見せ場《${s.n}》`,sig:u.i});B.ev.push({k:'skip',txt:`${nameOf(u.id)}「${s.l}」`});
-        for(const e of B.en.filter(e=>e.hp>0)){const d=Math.max(2,Math.round(uAtk(B,u)*.7+rnd(0,6)-e.def));e.hp=Math.max(0,e.hp-d);u.dealt+=d;
+        for(const e of B.en.filter(e=>e.hp>0)){const d=Math.max(2,Math.round(uAtk(B,u)*.42+rnd(0,4)-e.def));e.hp=Math.max(0,e.hp-d);u.dealt+=d;
           B.ev.push({k:'hit',u:u.i,e:B.en.indexOf(e),d,crit:true,txt:`見せ場《${s.n}》`,kill:e.hp<=0});}}}}catch(e){}
   return _uSimS(B,encore);
 };
@@ -5194,7 +5194,7 @@ const _guestSrcX=guestSrc;
 guestSrc=function(era,id){if(id==='haru'&&!(G&&G.flags&&G.flags.haru))return null;return _guestSrcX(era,id);};
 function haruCheck(){
   if(!G||G.flags.haru||isMember('haru'))return;
-  const ok=Object.keys(G.door||{}).length>=1||G.month>=24;if(!ok||Math.random()>.3)return;
+  const ok=Object.keys(G.door||{}).length>=1||G.month>=36;if(!ok||Math.random()>.15)return;
   G.flags.haru=1;const c=charById('haru');if(c)c.city=P().city;
   modal('時の扉から来た人',`${portraitRow('haru')}稽古場の奥の扉が、ひとりでに開いた。ヴァイオリンケースを抱えた若者が立っている。<br><br><b>ハル</b>「${c.join}」<br><br><span class="pmeta">${c.trivia}</span>`,[
     {t:'楽団に迎える<small>月給は控えめ。伸びしろは大きい</small>',cls:'gold',f(){ens5();G.members.push('haru');G.sal.haru=40;setMood('haru',95);addLog('時の扉から来た若いヴァイオリニスト、ハルが楽団に加わった。');hpush('ハル、時の扉から入団');cutin('haru','未来から来た弦',`ハル、入団`);render();}},
@@ -5275,6 +5275,33 @@ bindSortie=function(){_bindSortieX();
   document.querySelectorAll('[data-chf]').forEach(b=>b.onclick=()=>chFight(+b.dataset.chf));
   document.querySelectorAll('[data-chd]').forEach(b=>b.onclick=()=>{const a=chList();a.splice(+b.dataset.chd,1);chSave(a);render();});
 };
+
+/* =====================================================================
+   調整：Lvが戦いにきちんと効くように／見せ場は控えめに／抜け道をふさぐ
+   ===================================================================== */
+/* Lv1上がるごとに攻め+2%、気力+1、8Lvごとに守り+1（従来の「10Lvごとに全能力+1」はそのまま） */
+const _uAtkB=uAtk;uAtk=function(B,u){return _uAtkB(B,u)*(1+(Math.min(99,ulv(u.id))-1)*.02);};
+const _umaxB=umax;umax=function(id){return _umaxB(id)+(id==='you'?0:Math.floor(ux(id).lv/2));};
+const _udefB=udef;udef=function(id){return _udefB(id)+(id==='you'?Math.floor(plv()/3):Math.floor(ux(id).lv/8));};
+/* 免許皆伝は一人一度まで */
+const _deshiPickB=deshiPick;
+deshiPick=function(id){G.deshiDone=G.deshiDone||{};if(G.deshiDone[realId(id)])return modal('修業ずみ',`${nameOf(id)}はすでに免許皆伝を受けています。これ以上の弟子入りはできません。`,null);return _deshiPickB(id);};
+const _deshiMonthlyB=deshiMonthly;
+deshiMonthly=function(){const before=Object.keys(G.deshi||{});_deshiMonthlyB();G.deshiDone=G.deshiDone||{};for(const s of before)if(!(G.deshi||{})[s]&&(G.boost[s]||0)>0&&G.members.includes(s))G.deshiDone[realId(s)]=1;};
+/* 挑戦状の対戦で経験がもらえるのは月に一度まで */
+const _uResultB=uResult;
+uResult=function(B){
+  if(B.challenge&&G.chMon===G.month){const g=gainExp,a=addXP;gainExp=()=>null;addXP=()=>{};try{const r=_uResultB(B);return r;}finally{gainExp=g;addXP=a;}}
+  if(B.challenge)G.chMon=G.month;return _uResultB(B);
+};
+/* 大編成で押し切りすぎないよう、楽団が5人以上なら大御所の舞台に聴衆（批評家）が増える */
+const _nodeEnemiesB=nodeEnemies;
+nodeEnemies=function(k,nk,step){const out=_nodeEnemiesB(k,nk,step);const n=Math.ceil(((G.fleet&&G.fleet[0]?G.fleet[0].length:0)-4)/2);
+  if(n>0){const mult=cityMult(k)*(1+step*.12)*(nk==='Z'?1.1:.9);for(let i=0;i<n;i++)out.push(enemyGen(pick(['critic','critic','heckler']),mult));}
+  return out;};
+/* 一騎打ち：連打だけで勝てないよう、相手の自信と平常心を2倍に（持ち時間はそのまま） */
+const _rtStartB=rtStart;
+rtStart=function(){_rtStartB();const R=RTS;if(!R)return;R.hpMax*=2;R.hp=R.hpMax;R.mpMax*=2;R.mp=R.mpMax;rtUpd();};
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});
 $('#hFame').onclick=fameHelp;$('#hStC').onclick=staminaHelp;
