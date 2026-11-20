@@ -282,9 +282,39 @@ main{flex:1;padding:10px 12px 40px}
 .bpop{position:absolute;left:50%;top:10px;transform:translateX(-50%);color:#ffe27a;font-weight:bold;font-size:17px;text-shadow:0 0 4px #000;animation:bp 1s ease-out forwards;pointer-events:none}.bpop.crit{color:#ff7aff;font-size:22px}.bpop.bad{color:#ff6a6a}@keyframes bp{to{top:-24px;opacity:0}}
 .rank{font-size:64px;text-align:center;font-weight:bold;line-height:1}.rank.rS{color:#ffd85a;text-shadow:0 0 18px #fa0}.rank.rA{color:#f5a0a0}.rank.rB{color:#a0c0f5}.rank.rC,.rank.rD{color:#999}
 .refit .ftab td{padding:2px 6px;font-size:12.5px}
+.rt{user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.rt-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+#rtTime{font-size:28px;color:var(--gold2);font-weight:bold;min-width:44px}
+#rtPh{font-size:13px;color:#f0d58a;letter-spacing:.08em}
+.rt-g{display:flex;align-items:center;gap:6px;margin:3px 0}.rt-g label{width:44px;font-size:11.5px;color:#d8c9a8}
+.rtbar{flex:1;height:11px;background:#000a;border:1px solid #6b5530;border-radius:6px;overflow:hidden}.rtbar i{display:block;height:100%;transition:width .12s}
+.rtbar i.hp{background:linear-gradient(90deg,#c33,#f77)}.rtbar i.mp{background:linear-gradient(90deg,#7a3ad0,#c98bff)}.rtbar i.foc{background:linear-gradient(90deg,#2a7ad0,#7cc4ff)}
+.rt-stage{display:flex;align-items:center;justify-content:space-between;margin:6px 0;min-height:170px;position:relative}
+.rt-you{position:relative;opacity:.9}.rt-vs{color:#a08a5c;font-size:18px;letter-spacing:.2em}
+.rt-opp{position:relative;text-align:center;transition:transform .1s}.rt-name{font-size:13px;margin-top:2px}
+.rt-opp.angry .pt{filter:drop-shadow(0 0 8px #f33)}.rt-opp.wobble{animation:wob .5s infinite}
+@keyframes wob{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.rt-face{position:absolute;top:8px;right:4px;font-size:24px;pointer-events:none;animation:fl 1.2s infinite}
+@keyframes fl{50%{transform:translateY(-6px)}}
+.rt-opp.rtko{animation:ko 1.4s ease-in forwards}@keyframes ko{0%{transform:none}20%{transform:translateY(-20px) rotate(-20deg)}100%{transform:translate(260px,-260px) rotate(900deg);opacity:0}}
+.rt-say{min-height:38px;font-size:13px;background:#0007;border-radius:6px;padding:6px 8px;margin:4px 0;line-height:1.45}
+.rt-say.tell{color:#ffcf5a;font-weight:bold;animation:blink .25s 3}.rt-say.bad{color:#ff8a8a}.rt-say.good{color:#9fe39f;font-weight:bold}.rt-say.phase{color:#f0d58a}.rt-say.warn{color:#ffb070}
+@keyframes blink{50%{opacity:.3}}
+.rt-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0}
+.rtb{border:1px solid #8a7040;border-radius:10px;background:linear-gradient(#3a2c1c,#21180f);color:#f0e2c0;padding:10px 2px 8px;font-family:inherit;font-size:13px;line-height:1.25;touch-action:manipulation}
+.rtb .ic{display:block;font-size:22px}.rtb small{display:block;font-size:9.5px;opacity:.7;margin-top:2px}
+.rtb.hit{animation:press .12s}@keyframes press{50%{transform:scale(.92);background:#5a4426}}
+.rtb.parry{border-color:#ffcf5a;box-shadow:0 0 12px #ffcf5a;background:linear-gradient(#6a4a1a,#3a2a10)}
+.rt-fin{width:100%;opacity:.5}.rt-fin.ready{opacity:1;background:linear-gradient(90deg,#c33,#e9a0f0,#e6c56f,#9fd0c7);color:#140e08;font-weight:bold;animation:rb 1s infinite}
+@keyframes rb{50%{filter:brightness(1.3)}}
+.rt-c{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;margin-top:4px}#rtCombo{font-size:18px;color:var(--gold2)}
+.rtpop{position:absolute;top:30px;font-weight:bold;font-size:15px;color:#ffe27a;text-shadow:0 0 4px #000,0 0 2px #000;animation:rp .9s ease-out forwards;pointer-events:none;white-space:nowrap;z-index:3}
+.rtpop.crit{color:#ff7aff;font-size:19px}.rtpop.bad{color:#ff6a6a}.rtpop.heal{color:#7cf}
+@keyframes rp{to{top:-20px;opacity:0}}
+.rt.shake{animation:sh .2s}.rt.shake2{animation:sh .35s}@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 
 #tabs button{font-size:13px;padding:9px 0}
-.rank{font-size:40px!important;margin:6px 0}.rank.rS{color:#c07a00!important;text-shadow:0 0 10px #ffd27a!important}.rank.rA{color:#b0404a!important}.rank.rB{color:#3f63a8!important}.rank.rC,.rank.rD{color:#777!important}
+.rkrow{display:flex;align-items:center;gap:8px;width:100%;margin:5px 0;padding:6px 8px}.rkrow.mine{border:2px solid #e6c56f}.rkno{width:34px;text-align:center;font-size:15px;flex:none}.rank{font-size:40px!important;margin:6px 0}.rank.rS{color:#c07a00!important;text-shadow:0 0 10px #ffd27a!important}.rank.rA{color:#b0404a!important}.rank.rB{color:#3f63a8!important}.rank.rC,.rank.rD{color:#777!important}
 
 </style>
 </head>
@@ -2751,6 +2781,101 @@ function start(){$('#hud').classList.remove('hidden');$('#tabs').classList.remov
   if(G.month===0&&G.sc==='s1781'&&!G.flags.intro){G.flags.intro=1;modal('1781年、ウィーン','6月、ザルツブルク大司教の侍従長アルコ伯に、文字どおり尻を蹴られて追い出された。<br><br>宮廷音楽家の地位を捨て、ウィーンでフリーの音楽家として生きる。<div class="trivia">史実：この「足蹴り事件」で、モーツァルトはザルツブルク宮廷と決別した。</div>');}
 }
 /* =====================================================================
+   東欧・ロシアの音楽家と、ワルシャワ・モスクワ
+   ===================================================================== */
+Object.assign(BASE,{
+ warsaw:{name:'ワルシャワ',lat:'Warszawa',lon:21.0,la:52.23,inst:'ワルシャワ国民劇場',head:'劇場監督',lv:4,faction:'ロマン',size:3,likes:{fee:1.0,scandal:.5,theory:1.0,fame:1.1,passion:1.4},judge:'ワルシャワのサロンの貴婦人たち'},
+ moscow:{name:'モスクワ',lat:'Moskva',lon:37.6,la:55.75,inst:'ボリショイ劇場',head:'帝室劇場監督',lv:5,faction:'名人芸',size:4,likes:{fee:1.3,scandal:.6,theory:.8,fame:1.3,passion:1.3},judge:'モスクワの豪商たち'}
+});
+Object.assign(POS,{warsaw:[304,130],moscow:[338,88]});
+ROUTES.push(['warsaw','berlin'],['warsaw','dresden'],['warsaw','vienna'],['warsaw','peter'],['warsaw','moscow'],['moscow','peter'],['warsaw','prague']);
+Object.assign(MOTIFS,{
+ volga:[[57,.45],[60,.3],[57,.45],[0,.12],[62,.3],[60,.3],[57,.7]],
+ moldau:[[64,.3],[66,.3],[67,.3],[69,.3],[71,.6],[71,.6],[72,.6],[72,.6],[71,1]],
+ bumblebee:[[76,.08],[75,.08],[74,.08],[73,.08],[74,.08],[73,.08],[72,.08],[71,.08],[72,.08],[71,.08],[70,.08],[69,.08],[70,.08],[69,.08],[68,.08],[67,.3]],
+ promenade:[[67,.35],[65,.35],[70,.35],[72,.2],[77,.2],[74,.35],[72,.2],[77,.2],[74,.35],[70,.35],[72,.5]],
+ polonaise:[[69,.3],[69,.15],[69,.15],[69,.3],[71,.15],[73,.15],[74,.6],[0,.1],[[62,66,69],.5]]
+});
+const EAST={
+ s1723:[
+  C('cernohorsky','チェルノホルスキー','B. M. Černohorský','prague','作曲','古典',4,[6,6,8,10],false,'impro',[.8,.2,1.4,.8,1.0],'toccata','piano','トッカータ ハ長調','聖ヤコブ教会のオルガンが、わたしの居場所です。','ボヘミアの対位法を、あなたの楽団に。','「ボヘミアのバッハ」と呼ばれたプラハのオルガン奏者で修道士。タルティーニやグルックの師だったとも伝わる。')
+ ],
+ s1781:[
+  C('bortniansky','ボルトニャンスキー','D. Bortniansky','peter','指揮','古典',5,[6,9,7,9],false,'expr',[1.0,.2,1.2,1.0,1.1],'largo','flute','合唱協奏曲','イタリアで学んだ歌を、ロシアの聖歌に。','宮廷聖歌隊ともども、お力になりましょう。','ウクライナ出身。イタリアで学んだのち1779年にペテルブルクへ戻り、宮廷聖歌隊を率いた。'),
+  C('khandoshkin','ハンドシキン','I. Khandoshkin','peter','コンサートマスター','名人芸',4,[9,7,8,5],true,'tech',[1.1,.6,.6,1.0,1.2],'volga','violin','ロシア民謡による変奏曲','民謡を弾かせたら、だれにも負けません。','宮廷の外で、思いきり弾いてみたい。','ロシア最初期の名ヴァイオリニスト。ロシア民謡にもとづく変奏曲で知られる。'),
+  C('vanhal','ヴァンハル','J. B. Vanhal','vienna','作曲','古典',4,[6,7,7,8],false,'expr',[.9,.3,1.1,.9,1.0],'surprise','violin','交響曲 ト短調','ボヘミアの農家の生まれです。','わたしの交響曲を、あなたの楽団で。','チェコ出身。ウィーンで交響曲を数多く書き、ハイドンやモーツァルトと弦楽四重奏を弾いたと伝わる。'),
+  C('kozeluch','コジェルフ','L. Koželuch','vienna','ピアノ独奏','古典',5,[8,8,7,8],true,'tech',[1.2,.4,1.0,1.1,.9],'mozart','piano','ピアノ協奏曲 ヘ長調','ウィーンの令嬢たちに教えるのが、いちばんの稼ぎでして。','あなたの楽団に、流行の響きを。','チェコ出身のピアニスト・作曲家。1778年にウィーンへ移り、皇室のピアノ教師も務めた。'),
+  C('fdusek','F.X.ドゥシェク','F. X. Dušek','prague','ピアノ独奏','古典',4,[7,7,7,7],false,'expr',[.9,.3,1.0,.9,1.1],'mozart','piano','ピアノ協奏曲 ニ長調','プラハは、音楽好きの街ですよ。','妻のヨゼファともども、よろしく。','プラハのピアニスト。のちに郊外のベルトラムカ荘にモーツァルトを迎え、『ドン・ジョヴァンニ』の仕上げを見守った。')
+ ],
+ s1832:[
+  C('elsner','エルスネル','J. Elsner','warsaw','作曲','古典',4,[5,7,7,10],false,'expr',[.8,.2,1.4,.8,1.0],'polonaise','piano','ポーランド語のオペラ','あの子は、教えたことを全部ひっくり返していきました。','ポーランドの心を、あなたの楽団に。','ワルシャワ音楽院の院長でショパンの師。ショパンの成績表に「音楽の天才」と書いた。'),
+  C('kurpinski','クルピンスキ','K. Kurpiński','warsaw','指揮','ロマン',4,[6,7,6,8],false,'expr',[.9,.3,1.1,.9,1.2],'polonaise','violin','オペラ『クラクフ人と山の民』','国民劇場の灯を、絶やすわけにはいきません。','劇場仕込みの棒さばきを、あなたの楽団に。','ワルシャワ国民劇場の指揮者。若きショパンのワルシャワでの演奏会を指揮台から支えた。'),
+  C('lipinski','リピンスキ','K. Lipiński','warsaw','コンサートマスター','名人芸',5,[10,8,7,7],true,'tech',[1.2,.6,.7,1.2,1.2],'caprice24','violin','ヴァイオリン協奏曲「軍隊風」','パガニーニと同じ舞台に立ったこともあります。','あなたの楽団で、ポーランドの弓を。','ポーランドの名ヴァイオリニスト。パガニーニと二重協奏曲を共演し、本人から「二番目にうまい」と評されたという。'),
+  C('field','ジョン・フィールド','John Field','moscow','ピアノ独奏','ロマン',5,[8,10,8,7],false,'expr',[1.1,.6,.9,1.0,1.0],'nocturne','piano','ノクターン 第5番','モスクワの冬にも、もう慣れました。','夜想曲を、あなたの楽団に。','アイルランド生まれでモスクワに暮らしたピアニスト。「ノクターン」という曲の形を生み、ショパンに影響を与えた。'),
+  C('verstovsky','ヴェルストフスキー','A. Verstovsky','moscow','指揮','ロマン',3,[5,7,6,7],false,'expr',[1.0,.4,.9,1.0,1.2],'volga','violin','オペラ『アスコルドの墓』（1835）','モスクワの劇場は、わたしが回しています。','ロシア語のオペラを、あなたの楽団と。','モスクワの劇場を取り仕切った作曲家。オペラ『アスコルドの墓』は大当たりをとった。'),
+  C('lvov','リヴォフ','A. Lvov','peter','コンサートマスター','古典',4,[8,6,6,7],false,'tech',[1.1,.2,1.0,1.1,.9],'fanfare','violin','ロシア帝国国歌「神よツァーリを護り給え」（1833）','宮廷の仕事が忙しくて。','ロシア宮廷の音色を、あなたの楽団に。','ヴァイオリンの名手で軍人。1833年にロシア帝国の国歌を作曲した。'),
+  C('tomasek','トマーシェク','V. J. Tomášek','prague','ピアノ独奏','古典',4,[7,7,6,9],false,'expr',[.9,.2,1.3,.9,1.0],'nocturne','piano','エクローグ集','プラハで教えて、もう何十年にもなります。','ボヘミアの抒情を、あなたの楽団に。','プラハの名教師。ピアノ小品「エクローグ」は、シューベルトの即興曲の先駆けともいわれる。'),
+  C('ernst','エルンスト','H. W. Ernst','paris','コンサートマスター','名人芸',5,[10,9,8,6],true,'tech',[1.1,.6,.7,1.1,1.2],'caprice24','violin','『魔王』による大奇想曲','パガニーニの後を追って、ここまで来ました。','あなたの楽団で、超絶技巧を。','モラヴィアのブルノ出身。パガニーニを追いかけて技を盗み、その後継者と呼ばれた。')
+ ],
+ s1876:[
+  C('nrubinstein','N.ルビンシテイン','N. Rubinstein','moscow','指揮','名人芸',6,[11,9,8,8],true,'tech',[1.2,.7,.9,1.2,1.3],'campanella','piano','チャイコフスキー ピアノ協奏曲第1番','モスクワ音楽院へようこそ。','わたしのピアノと棒を、あなたの楽団に。','モスクワ音楽院の創設者。チャイコフスキーのピアノ協奏曲第1番を最初はこき下ろしたが、のちに自ら弾いた。'),
+  C('taneyev76','タネーエフ','S. Taneyev','moscow','ピアノ独奏','古典',4,[8,6,6,10],false,'tech',[.8,.1,1.5,.8,1.0],'bach','piano','チャイコフスキー ピアノ協奏曲第1番','対位法の宿題が、まだ終わっていません。','先生の協奏曲を、あなたの楽団で。','1875年、師チャイコフスキーのピアノ協奏曲第1番をモスクワで弾いた若きピアニスト。'),
+  C('arubinstein','A.ルビンシテイン','A. Rubinstein','peter','ピアノ独奏','名人芸',7,[12,11,10,8],true,'tech',[1.4,.6,.8,1.4,1.3],'campanella','piano','メロディ ヘ長調','ピアノは、歌わせるものだよ。','ロシアの獅子が、あなたの楽団に加わろう。','ペテルブルク音楽院の創設者。風貌も演奏もベートーヴェンに似ていると言われた大ピアニスト。'),
+  C('rimsky','リムスキー＝コルサコフ','Rimsky-Korsakov','peter','作曲','ロマン',5,[6,9,8,10],false,'expr',[.9,.2,1.3,.9,1.2],'bumblebee','violin','交響組曲『シェエラザード』','海軍にいたころは、楽譜より海図を読んでいました。','管弦楽の色彩を、あなたの楽団に。','元海軍士官。1871年からペテルブルク音楽院で教え、教えながら和声を学び直したという。'),
+  C('mussorgsky','ムソルグスキー','Mussorgsky','peter','作曲','ロマン',5,[4,11,9,5],false,'expr',[.7,.9,.7,.8,1.6],'promenade','piano','組曲『展覧会の絵』（1874）','……役所の仕事は、もう辞めたいのです。','ロシアの真実を、あなたの楽団に。','「力強い仲間（五人組）」のひとり。役人をしながら『ボリス・ゴドゥノフ』や『展覧会の絵』を書いた。'),
+  C('borodin','ボロディン','Borodin','peter','作曲','ロマン',4,[5,9,7,8],false,'expr',[.8,.3,1.2,.8,1.3],'nocturne','cello','交響詩『中央アジアの草原にて』','実験の合間に、少しずつ書いています。','化学と音楽、両方の頭をあなたの楽団に。','本業は化学者で医学校の教授。作曲は、本人いわく「日曜作曲家」として続けた。'),
+  C('auer','アウアー','L. Auer','peter','コンサートマスター','古典',5,[10,8,6,8],true,'tech',[1.1,.3,1.1,1.1,1.0],'caprice24','violin','チャイコフスキー「憂鬱なセレナード」','弟子には厳しいですよ。','宮廷仕込みの弓を、あなたの楽団に。','ハンガリー出身。ロシア宮廷のソリストとしてペテルブルクで教え、のちにハイフェッツらを育てた。'),
+  C('essipova','エシポワ','A. Essipova','peter','ピアノ独奏','名人芸',4,[9,8,6,6],true,'tech',[1.1,.5,.8,1.1,1.1],'campanella','piano','ショパン 練習曲','レシェティツキ先生は厳しいのです。','あなたの楽団で、ロシアの鍵盤を。','ペテルブルクの名ピアニスト。のちに音楽院でプロコフィエフを教えた。'),
+  C('smetana','スメタナ','Smetana','prague','作曲','ロマン',5,[6,10,8,8],false,'expr',[.8,.3,1.1,.9,1.5],'moldau','violin','連作交響詩『わが祖国』より「モルダウ」','……すまない、もう耳が聞こえないのだ。','ボヘミアの川の流れを、あなたの楽団に。','1874年に聴力を失いながら、『わが祖国』を書き上げた。チェコ国民音楽の父。'),
+  C('erkel','エルケル','F. Erkel','pest','指揮','ロマン',5,[6,8,7,9],false,'expr',[.9,.3,1.1,1.0,1.4],'fanfare','violin','オペラ『バーンク・バーン』','ハンガリー語のオペラを、ハンガリーの劇場で。','あなたの楽団に、マジャールの響きを。','ハンガリー国歌の作曲者。国民劇場の指揮者として、ハンガリー語オペラの礎を築いた。')
+ ],
+ s1905:[
+  C('chaliapin','シャリアピン','F. Chaliapin','moscow','プリマドンナ','名人芸',7,[9,12,10,6],true,'expr',[1.5,.9,.6,1.4,1.5],'volga','cello','ムソルグスキー『ボリス・ゴドゥノフ』','わたしのボリスを、聴いたことは？','あなたの楽団の舞台に、ロシアの声を。','ボリショイ劇場の大バス歌手。ボリス・ゴドゥノフ役は伝説となり、のちにスカラ座やメトロポリタン歌劇場でも喝采を浴びた。'),
+  C('taneyev','タネーエフ','S. Taneyev','moscow','作曲','古典',5,[8,7,8,12],false,'impro',[.8,.1,1.5,.8,1.0],'bach','piano','歌劇『オレステイア』','対位法を学ばずに、作曲はできませんよ。','あなたの楽団に、確かな骨組みを。','対位法の大家で、ラフマニノフやスクリャービンの師。1905年、音楽院の運営に抗議して職を辞した。'),
+  C('medtner','メトネル','N. Medtner','moscow','ピアノ独奏','ロマン',4,[9,8,7,9],false,'expr',[.8,.2,1.3,.8,1.1],'nocturne','piano','おとぎ話（スカースカ）','流行は追いません。','わたしのおとぎ話を、あなたの楽団で。','モスクワ音楽院を首席で出たピアニスト。ラフマニノフとは生涯の友で、互いに協奏曲を献呈しあった。'),
+  C('rimsky05','リムスキー＝コルサコフ','Rimsky-Korsakov','peter','作曲','ロマン',6,[7,10,9,12],false,'expr',[.9,.4,1.4,1.0,1.2],'bumblebee','violin','歌劇『金鶏』','学生たちの味方をしたら、首にされましたよ。','管弦楽法の奥義を、あなたの楽団に。','1905年、学生運動を支持して音楽院を解雇された。管弦楽法の大家で、ストラヴィンスキーの師。'),
+  C('glazunov','グラズノフ','A. Glazunov','peter','指揮','古典',5,[8,8,7,11],false,'expr',[1.0,.3,1.3,1.0,1.0],'fanfare','violin','バレエ『四季』','ボロディン先生の遺した序曲は、わたしが覚えていました。','あなたの楽団に、ロシアの正統を。','1905年末にペテルブルク音楽院の院長となった。ボロディンの遺作を、記憶をたよりに補筆完成させた。'),
+  C('auer05','アウアー','L. Auer','peter','コンサートマスター','古典',6,[11,9,7,9],true,'tech',[1.1,.3,1.1,1.2,1.0],'caprice24','violin','チャイコフスキー「憂鬱なセレナード」','弟子には厳しいですよ。','名教授の弓を、あなたの楽団に。','ペテルブルク音楽院の名教授。のちにハイフェッツやミルシテインを育てた。'),
+  C('karlowicz','カルウォヴィチ','M. Karłowicz','warsaw','作曲','ロマン',3,[6,9,7,8],false,'expr',[.8,.4,1.1,.8,1.4],'polonaise','violin','ヴァイオリン協奏曲 イ長調','タトラの山が、わたしの作曲室です。','ポーランドの若い響きを、あなたの楽団に。','ポーランドの若き作曲家。山とスキーを愛し、のちにタトラ山脈で雪崩に遭って32歳で世を去った。'),
+  C('szymanowski','シマノフスキ','K. Szymanowski','warsaw','作曲','ロマン',3,[7,9,8,8],false,'expr',[.8,.5,1.1,.8,1.4],'polonaise','piano','演奏会用序曲','新しいポーランドの音楽を、仲間とつくっています。','若きポーランドを、あなたの楽団に。','1905年、仲間と「若きポーランド」を結成し、ポーランドの新しい音楽をめざした。'),
+  C('hofmann','ヨーゼフ・ホフマン','J. Hofmann','newyork','ピアノ独奏','名人芸',6,[12,9,9,8],true,'tech',[1.4,.5,.8,1.3,1.1],'campanella','piano','ショパン ピアノ協奏曲第1番','発明も好きでしてね。','あなたの楽団で、ポーランドの鍵盤を。','クラクフ生まれの神童。11歳でメトロポリタン歌劇場の舞台に立ち、A.ルビンシテイン唯一の個人弟子となった。'),
+  C('kubelik','クーベリック','J. Kubelík','prague','コンサートマスター','名人芸',6,[11,9,8,6],true,'tech',[1.3,.6,.7,1.3,1.2],'caprice24','violin','パガニーニ 協奏曲第1番','パガニーニの再来、などと言われております。','あなたの楽団で、ボヘミアの弓を。','チェコの超絶技巧ヴァイオリニスト。「パガニーニの再来」と騒がれた。指揮者ラファエル・クーベリックの父。'),
+  C('suk','スーク','J. Suk','prague','コンサートマスター','ロマン',4,[8,9,7,8],false,'expr',[.9,.3,1.1,.9,1.4],'largo','violin','交響曲『アスラエル』','……師と妻を、続けて失いました。','悲しみを越えた音を、あなたの楽団に。','ドヴォルザークの愛弟子で娘婿。1904年に師を、1905年に妻を失い、その悲しみから交響曲『アスラエル』を書いた。'),
+  C('janacek','ヤナーチェク','L. Janáček','prague','作曲','ロマン',3,[5,9,9,8],false,'impro',[.7,.6,1.1,.7,1.5],'moldau','violin','歌劇『イェヌーファ』（1904）','話し言葉の抑揚を、そのまま旋律にするのです。','モラヴィアの響きを、あなたの楽団に。','ブルノのオルガン学校の校長。歌劇『イェヌーファ』がプラハで認められるのは、まだ12年も先のことだった。'),
+  C('hubay','フバイ','J. Hubay','pest','コンサートマスター','古典',5,[10,8,7,9],true,'tech',[1.1,.3,1.2,1.1,1.1],'caprice24','violin','『チャールダーシュの情景』','ブダペストの若者たちを、鍛えています。','マジャールの弓を、あなたの楽団に。','ブダペストの名教授。ヨアヒムに学び、のちのハンガリー・ヴァイオリン楽派を育てた。'),
+  C('dohnanyi','ドホナーニ','E. Dohnányi','pest','ピアノ独奏','古典',5,[11,8,8,9],true,'tech',[1.1,.3,1.2,1.1,1.1],'campanella','piano','ピアノ五重奏曲 第1番','ブラームス先生に、ほめていただいたことがあります。','ハンガリーの鍵盤を、あなたの楽団に。','ハンガリーの名ピアニスト・作曲家。若くしてブラームスに作品を認められ、バルトークより先に名をあげた。'),
+  C('kodaly','コダーイ','Z. Kodály','pest','作曲','古典',3,[5,8,7,9],false,'expr',[.7,.2,1.3,.7,1.3],'scale','piano','民謡の編曲','蓄音機を担いで、村をまわっています。','民の歌を、あなたの楽団に。','1905年からバルトークと農村をまわり、蓄音機で民謡を集め始めた。'),
+  C('enescu','エネスク','G. Enescu','paris','コンサートマスター','ロマン',5,[10,9,9,9],true,'impro',[1.1,.4,1.1,1.1,1.3],'caprice24','violin','ルーマニア狂詩曲 第1番','ヴァイオリンもピアノも、どちらも本業です。','ルーマニアの魂を、あなたの楽団に。','ルーマニア出身。ヴァイオリン・ピアノ・作曲のすべてに秀でた天才で、のちにメニューインを教えた。')
+ ]
+};
+for(const sc in EAST){const S=SCEN[sc];for(const c of EAST[sc])if(!S.chars.some(x=>x.id===c.id))S.chars.push(c);}
+['s1832','s1905'].forEach(sc=>{['warsaw','moscow'].forEach(k=>{if(!SCEN[sc].cities.includes(k))SCEN[sc].cities.push(k);});});
+if(!SCEN.s1876.cities.includes('moscow'))SCEN.s1876.cities.push('moscow');
+/* 史実の居場所に合わせる：1876年のチャイコフスキーはモスクワ音楽院の教授、1905年のラフマニノフはボリショイ劇場の指揮者 */
+(SCEN.s1876.chars.find(c=>c.id==='tchaikovsky')||{}).city='moscow';
+(SCEN.s1905.chars.find(c=>c.id==='rachmaninoff')||{}).city='moscow';
+Object.assign(TR,{
+ cernohorsky:{h:'short',hc:'#3a2a1a',c:'clerical',coat:'#1e1a18'},bortniansky:{h:'wig'},khandoshkin:{h:'wig'},vanhal:{h:'wig'},kozeluch:{h:'wig',smile:1},fdusek:{h:'wig',round:1},
+ elsner:{h:'receding',hc:'#cfc6b8',age:2},kurpinski:{h:'short',hc:'#5a4a3a',b:'side'},lipinski:{h:'wavy',hc:'#3a2a1a',b:'side'},field:{h:'curly',hc:'#7a5a3a',round:1},verstovsky:{h:'short',hc:'#3a2a1a',b:'side'},lvov:{h:'short',hc:'#3a2a1a',b:'mus',coat:'#2a3a5a'},tomasek:{h:'receding',hc:'#9a8a7a',age:2},ernst:{h:'long',hc:'#1a1410',b:'side'},
+ nrubinstein:{h:'short',hc:'#2a2018',b:'full'},taneyev76:{h:'short',hc:'#3a2a1a',b:'mus'},arubinstein:{h:'wild',hc:'#3a2a1a'},rimsky:{h:'short',hc:'#3a2a1a',b:'full'},mussorgsky:{h:'wavy',hc:'#5a3a22',b:'full',bc:'#6a4a2a',skin:'#e4a98a'},borodin:{h:'short',hc:'#2a2018',b:'full'},auer:{h:'short',hc:'#3a2a1a',b:'sidemus'},essipova:{fem:1,h:'updo',hc:'#3a2a1a',coat:'#2a2a3a'},smetana:{h:'wavy',hc:'#7a6a5a',b:'side',bc:'#8a7a6a'},erkel:{h:'receding',hc:'#cfc6b8',b:'full',bc:'#cfc6b8',age:2},
+ chaliapin:{h:'short',hc:'#d8c08a',b:'none',coat:'#3a1a1a'},taneyev:{h:'bald',b:'full',bc:'#bab0a0',round:1},medtner:{h:'receding',hc:'#3a2a1a',b:'none'},rimsky05:{h:'receding',hc:'#cfc6b8',b:'full',bc:'#cfc6b8',age:2},glazunov:{h:'short',hc:'#5a4a3a',b:'none',round:1},auer05:{h:'bald',b:'sidemus',bc:'#cfc6b8',age:2},
+ karlowicz:{h:'short',hc:'#3a2a1a',b:'mus'},szymanowski:{h:'short',hc:'#3a2a1a',b:'none'},hofmann:{h:'short',hc:'#2a2018',b:'none'},kubelik:{h:'wavy',hc:'#1a1410',b:'none'},suk:{h:'short',hc:'#3a2a1a',b:'mus'},janacek:{h:'wild',hc:'#cfc6b8',b:'mus',bc:'#cfc6b8',age:2},hubay:{h:'short',hc:'#3a2a1a',b:'bigmus'},dohnanyi:{h:'short',hc:'#6a4a2a',b:'none'},kodaly:{h:'wavy',hc:'#3a2a1a',b:'full'},enescu:{h:'wavy',hc:'#1a1410',b:'mus'}
+});
+Object.assign(DEATH,{
+ cernohorsky:{y:1742,m:7,t:'チェルノホルスキーがグラーツで世を去った。「ボヘミアのバッハ」の死だった。'},
+ fdusek:{y:1799,m:2,t:'F.X.ドゥシェクがプラハで世を去った。'},
+ field:{y:1837,m:1,t:'ジョン・フィールドがモスクワで世を去った。夜想曲の父の死だった。'},
+ mussorgsky:{y:1881,m:3,t:'ムソルグスキーがペテルブルクで世を去った。42歳だった。'},
+ nrubinstein:{y:1881,m:3,t:'N.ルビンシテインがパリで世を去った。チャイコフスキーは彼の死を悼んでピアノ三重奏曲を書いた。'},
+ smetana:{y:1884,m:5,t:'スメタナがプラハで世を去った。'},
+ borodin:{y:1887,m:2,t:'ボロディンが舞踏会の最中に倒れ、世を去った。歌劇『イーゴリ公』は未完のまま残された。'},
+ rimsky05:{y:1908,m:6,t:'リムスキー＝コルサコフが世を去った。歌劇『金鶏』の初演を見ることはなかった。'},
+ karlowicz:{y:1909,m:2,t:'カルウォヴィチがタトラ山脈で雪崩に遭い、世を去った。32歳だった。'}
+});
+Object.assign(GROW,{field:'early',lipinski:'early',essipova:'early',kubelik:'early',hofmann:'early',taneyev76:'late',rimsky:'late',janacek:'late',kodaly:'late',szymanowski:'late',karlowicz:'late',medtner:'late',suk:'late'});
+Object.assign(XTYPES,{nrubinstein:['cond','pf'],arubinstein:['pf','comp'],taneyev:['comp','pf'],taneyev76:['pf','comp'],rimsky:['comp','cond'],rimsky05:['comp','cond'],glazunov:['cond','comp'],erkel:['cond','comp'],kurpinski:['cond','comp'],bortniansky:['cond','comp'],kozeluch:['pf','comp'],dohnanyi:['pf','comp'],enescu:['vn','comp'],suk:['vn','comp'],hubay:['vn','comp'],cernohorsky:['comp','pf'],field:['pf','comp']});
+
+/* =====================================================================
    統合版：旅・説得・対決・演奏会 ＋ 楽団の育成・巡演・派遣公演・愛用品
    ===================================================================== */
 const U_LEG=['bach','mozart','beethoven','paganini','liszt','liszt76','chopin','wagner','brahms','handel','mahler','haydn','farinelli','vivaldi','verdi','debussy','rstrauss','tchaikovsky','caruso','stravinsky','rachmaninoff'];
@@ -2790,6 +2915,12 @@ const USETS=[
  {n:'マーラーの楽団',ids:['mahler','walter','schoenberg'],need:2,v:.12},
  {n:'ヴェルサイユの栄光',ids:['couperin','marais','lalande','campra','rameau','blavet','leclair'],need:3,v:.12},
  {n:'パリ音楽院の重鎮',ids:['franck','widor','dindy','saintsaens','faure76','massenet'],need:3,v:.1},
+ {n:'力強い仲間（ロシア五人組）',ids:['mussorgsky','rimsky','borodin'],need:2,v:.12},
+ {n:'モスクワ音楽院の師弟',ids:['nrubinstein','tchaikovsky','taneyev76','taneyev','rachmaninoff','scriabin','medtner'],need:2,v:.12},
+ {n:'ペテルブルク音楽院',ids:['arubinstein','auer','auer05','essipova','rimsky05','glazunov','stravinsky'],need:2,v:.1},
+ {n:'ボヘミアの響き',ids:['smetana','dvorak','suk','kubelik','janacek','cernohorsky','vanhal','kozeluch','fdusek','duschek','tomasek','zelenka'],need:2,v:.12},
+ {n:'マジャールの魂',ids:['erkel','liszt76','hubay','dohnanyi','bartok','kodaly','joachim','auer'],need:2,v:.12},
+ {n:'ワルシャワの青春',ids:['chopin','elsner','kurpinski','lipinski'],need:2,v:.12},
  {n:'時を越えた共演',ids:[],need:2,v:.1,guest:1}
 ];
 
@@ -2828,6 +2959,12 @@ const USET_T={
  'マーラーの楽団':'ワルターはマーラーの弟子で右腕。シェーンベルクの才能を真っ先に認めたのもマーラーだった。',
  'ヴェルサイユの栄光':'ルイ14世以来の宮廷音楽。クープランとマレの響きは、王の権威そのものだった。',
  'パリ音楽院の重鎮':'フランクのオルガン教室からダンディやデュカスが巣立ち、フランス音楽の背骨をつくった。',
+ '力強い仲間（ロシア五人組）':'独学の作曲家たちが集まり、西欧の作法にとらわれないロシアの音楽をつくろうとした。',
+ 'モスクワ音楽院の師弟':'ルビンシテインが創り、チャイコフスキーが教え、タネーエフからラフマニノフとスクリャービンへ。',
+ 'ペテルブルク音楽院':'A.ルビンシテインが1862年に創った、ロシア最初の音楽院。',
+ 'ボヘミアの響き':'「ヨーロッパの音楽学校」と呼ばれたボヘミアは、各地の宮廷に名手を送り出した。',
+ 'マジャールの魂':'リストからエルケル、フバイ、そしてバルトークとコダーイへ。ハンガリーの響きは受け継がれた。',
+ 'ワルシャワの青春':'エルスネルに学び、クルピンスキの棒で弾いた若きショパンは、20歳でワルシャワを去った。',
  '時を越えた共演':'本来なら出会うはずのない音楽家どうしが、同じ舞台で音を重ねる。'
 };
 USETS.forEach(x=>x.t=USET_T[x.n]);
@@ -2868,9 +3005,11 @@ const UVEN={
  milan:[['スカラ座','オペラ',1778,1999]],venice:[['フェニーチェ劇場','オペラ',1792,1999],['ピエタ慈善院','協奏',1600,1800]],
  naples:[['サン・カルロ劇場','オペラ',1737,1999]],dresden:[['ゼンパー・オーパー','オペラ',1841,1999],['ドレスデン宮廷礼拝堂','交響',1700,1999]],
  bayreuth:[['祝祭劇場','オペラ',1876,1999]],newyork:[['カーネギー・ホール','交響',1891,1999],['メトロポリタン歌劇場','オペラ',1883,1999]],
- peter:[['マリインスキー劇場','オペラ',1860,1999],['貴族会館','交響',1840,1999]],berlin:[['ジングアカデミー','交響',1827,1999],['宮廷歌劇場','オペラ',1742,1999]],
- prague:[['エステート劇場','オペラ',1783,1999]],hamburg:[['ゲンゼマルクト歌劇場','オペラ',1678,1738]],rome:[['アルジェンティーナ劇場','オペラ',1732,1999]],
- munich:[['宮廷歌劇場','オペラ',1818,1999]],weimar:[['ヴァイマル宮廷劇場','オペラ',1791,1999]],pest:[['ペスト・ヴィガドー','交響',1865,1999]],madrid:[['ブエン・レティーロ宮','オペラ',1640,1800]]
+ peter:[['マリインスキー劇場','オペラ',1860,1999],['貴族会館','交響',1840,1999],['ペテルブルク音楽院','協奏',1862,1999],['宮廷礼拝堂','オペラ',1700,1860]],berlin:[['ジングアカデミー','交響',1827,1999],['宮廷歌劇場','オペラ',1742,1999]],
+ prague:[['エステート劇場','オペラ',1783,1999],['ルドルフィヌム','交響',1885,1999],['聖ヤコブ教会','即興',1600,1999]],
+ warsaw:[['ワルシャワ国民劇場','オペラ',1779,1832],['ワルシャワ大劇場','オペラ',1833,1999],['ワルシャワ・フィルハーモニー','交響',1901,1999]],
+ moscow:[['ボリショイ劇場','オペラ',1825,1999],['貴族会館の円柱の間','協奏',1784,1999],['モスクワ音楽院大ホール','交響',1901,1999]],hamburg:[['ゲンゼマルクト歌劇場','オペラ',1678,1738]],rome:[['アルジェンティーナ劇場','オペラ',1732,1999]],
+ munich:[['宮廷歌劇場','オペラ',1818,1999]],weimar:[['ヴァイマル宮廷劇場','オペラ',1791,1999]],pest:[['ペスト・ヴィガドー','交響',1865,1999],['ハンガリー王立歌劇場','オペラ',1884,1999],['国民劇場','オペラ',1837,1999]],madrid:[['ブエン・レティーロ宮','オペラ',1640,1800]]
 };
 const UGEN={サロン:['夫人のサロン','銀行家の邸宅','公爵家の夜会'],協奏:['市民音楽ホール','音楽協会の大広間','舞踏会場'],オペラ:['市立劇場','宮廷劇場'],交響:['演奏協会の定期演奏会','大学の講堂'],即興:['芸術家カフェ','大聖堂のオルガン'],対決:['音楽家たちの酒場','広場の特設舞台']};
 function venueOf(k,t,h){const y=U_YEAR[G.sc]+Math.floor(G.month/12);const real=(UVEN[k]||[]).filter(v=>v[1]===t&&v[2]<=y&&y<=v[3]);
@@ -2924,18 +3063,35 @@ function ensU(){
   G.fleet=G.fleet.map(f=>f.filter(id=>id==='you'||G.members.includes(id)));
   if(!G.fleet[0].length&&!G.flags.fleetInit){G.flags.fleetInit=1;G.fleet[0]=['you'].concat(G.members.slice(0,5));}
 }
+/* 別の時代の人物（主人公として遊べる人も含む）を、客演用の人物データにする */
+function guestSrc(era,id){
+  const S=SCEN[era];const c=S.chars.concat(S.rivals).find(x=>x.id===id);if(c)return c;
+  const p=S.players[id];if(!p)return null;const ty=(PTYPE[id]||['pf'])[0];const seat=Object.keys(SEATTYPE).find(k=>SEATTYPE[k]===ty)||'作曲';
+  const st=['tech','expr','impro'].sort((a,b)=>p[b]-p[a])[0];const pc=(p.pieces&&p.pieces[0])?p.pieces[0].t:'';
+  return C(id,p.name,p.lat,S.cities[0],seat,p.faction,8,[p.tech,p.expr,p.impro,p.theory],true,st,[1.3,.5,1.0,1.4,1.3],p.motif,p.tim,pc,'時を越えて、やって来たよ。','あなたの楽団で、思いきり弾かせてもらおう。',p.desc||p.intro||'');
+}
 function syncGuests(){
   if(!SC)return;SC.chars=SC.chars.filter(c=>!c.guest||(G&&G.guests&&G.guests.some(g=>g.id===c.id)&&G.sc===c.gsc));
   if(!G||!G.guests)return;
-  for(const g of G.guests){if(SC.chars.some(c=>c.id===g.id))continue;const src=(SCEN[g.era].chars.concat(SCEN[g.era].rivals)).find(c=>c.id===g.id);if(!src)continue;
-    SC.chars.push(Object.assign({},src,{guest:1,gsc:G.sc,era:g.era,city:g.city||SC.cities[0]}));}
+  for(const g of G.guests){if(SC.chars.some(c=>c.id===g.id))continue;const src=guestSrc(g.era,g.id);if(!src)continue;
+    const base=src.lv>=7?5:src.lv>=6?4:src.lv===5?3:src.lv===4?2:1;const gr=Math.max(base,UHIST[src.id]||base);const d=gr-base;
+    const pk=k=>Math.min(14,(src[k]||5)+d);
+    SC.chars.push(Object.assign({},src,{guest:1,gsc:G.sc,era:g.era,city:g.city||SC.cities[0],grar:gr,peak:d>0?1:0,tech:pk('tech'),expr:pk('expr'),impro:pk('impro'),theory:pk('theory'),lv:Math.max(src.lv,gr+2)}));}
 }
 const guestEra=id=>{if(!G||!G.guests)return null;const g=G.guests.find(x=>x.id===id);return g?g.era:null;};
 const _portraitU=portrait;
 portrait=function(id,size,ring){const e=guestEra(id);if(e){const o=RSC;RSC=e;try{return _portraitU(id,size,ring);}finally{RSC=o;}}return _portraitU(id,size,ring);};
 
 function ux(id){ensU();if(!G.ux[id])G.ux[id]={lv:1,exp:0,hp:null,kai:0,eq:[null,null]};return G.ux[id];}
-function urar(id){if(id==='you')return 5;const c=charById(id);if(!c)return 1;const rid=c.id;return U_LEG.includes(rid)?5:c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1;}
+/* 史実の格：その人が全盛期に達した格（★）。客演では、この格と全盛期の力で現れる */
+const UHIST={bach:5,handel:5,vivaldi:5,telemann:4,rameau:5,couperin:4,marais:4,dscarlatti:5,ascarlatti:4,farinelli:5,tartini:4,pisendel:3,zelenka:4,quantz:4,porpora:4,faustina:4,cuzzoni:4,senesino:4,leclair:4,
+ haydn:5,mozart:5,beethoven:5,gluck:5,salieri:4,clementi:4,viotti:4,stgeorges:4,paisiello:4,cimarosa:4,boccherini:4,bortniansky:4,kozeluch:3,vanhal:3,
+ chopin:5,liszt:5,paganini:5,berlioz:5,rossini:5,meyerbeer:4,bellini:5,donizetti:5,malibran:5,pasta:4,schumann:5,clara:5,mendelssohn:5,wagner:5,glinka:4,thalberg:4,alkan:4,field:4,lipinski:4,ernst:4,moscheles:4,habeneck:4,dragonetti:4,franchomme:3,hummel:4,czerny:4,strauss:4,
+ brahms:5,verdi:5,tchaikovsky:5,liszt76:5,clara76:5,bruckner:5,dvorak:5,smetana:5,mussorgsky:5,rimsky:5,borodin:4,arubinstein:5,nrubinstein:4,saintsaens:5,franck:5,faure76:5,gounod:5,bizet:5,offenbach:4,strauss2:5,joachim:5,sarasate:5,patti:5,richter:4,bulow:4,auer:5,erkel:4,grieg:5,massenet:4,delibes:4,lalo:4,widor:4,
+ mahler:5,rstrauss:5,debussy:5,ravel:5,faure:5,stravinsky:5,rachmaninoff:5,scriabin:5,sibelius:5,elgar:5,puccini:5,caruso:5,chaliapin:5,toscanini:5,nikisch:4,busoni:4,ysaye:5,kreisler:5,casals:5,cortot:4,thibaud:4,landowska:4,paderewski:5,bartok:5,kodaly:4,janacek:5,schoenberg:5,walter:4,satie:4,nboulanger:4,lboulanger:4,dukas:4,dindy:4,enescu:5,kubelik:4,hofmann:5,szymanowski:5,karlowicz:3,medtner:4,taneyev:4,glazunov:4,rimsky05:5,auer05:5,hubay:4,dohnanyi:4,suk:4,koussevitzky:4,monteux:4,backhaus:4,melba:4,garden:4,long:4,
+ elsner:3,kurpinski:3,lvov:3,tomasek:3,verstovsky:3,khandoshkin:3,cernohorsky:3,fdusek:3,essipova:4,taneyev76:4};
+function uhist(id){const c=charById(id);const rid=c?c.id:id;return Math.max(UHIST[rid]||0,c&&c.gsc?0:0);}
+function urar(id){if(G&&G.guests){const c=charById(id);if(c&&c.guest&&c.grar)return c.grar;}if(id==='you')return 5;const c=charById(id);if(!c)return 1;const rid=c.id;return U_LEG.includes(rid)?5:c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1;}
 function ulv(id){return id==='you'?Math.min(99,plv()*3):ux(id).lv;}
 function umax(id){if(id==='you')return 46+plv()*2+(ux('you').kai?12:0);return 28+urar(id)*6+Math.floor(ux(id).lv/2)+(ux(id).kai?12:0);}
 function uhp(id){const u=ux(id);if(u.hp==null||u.hp>umax(id))u.hp=umax(id);return u.hp;}
@@ -3253,7 +3409,7 @@ function uPick(fi,slot){
 function uDetail(id){
   const u=ux(id),c=id==='you'?null:charById(id),r=urar(id);
   const st=k=>`<b>${mstat(id,k)}</b>`;const sk=id==='you'?null:skillOf(id);
-  const body=`<div style="display:flex;gap:10px;align-items:center">${portrait(realId(id),80,U_RCOL[r-1])}<div><b>${nameOf(id)}${u.kai?'（開眼）':''}</b><br><span class="pmeta">${'★'.repeat(r)}・Lv${ulv(id)}${id==='you'?'（名声Lv×3）':`（次まで${Math.ceil(u.lv*18-u.exp)}）`}${guestEra(id)?`・${U_ERA[guestEra(id)]}からの客演`:''}</span><br>
+  const body=`<div style="display:flex;gap:10px;align-items:center">${portrait(realId(id),80,U_RCOL[r-1])}<div><b>${nameOf(id)}${u.kai?'（開眼）':''}</b><br><span class="pmeta">${'★'.repeat(r)}・Lv${ulv(id)}${id==='you'?'（名声Lv×3）':`（次まで${Math.ceil(u.lv*18-u.exp)}）`}${guestEra(id)?`・${U_ERA[guestEra(id)]}からの客演${(charById(id)||{}).peak?'（全盛期の姿）':''}`:''}${id!=='you'&&!guestEra(id)&&(UHIST[(charById(id)||{}).id]||0)>r?`<br>史実の格 <span style="color:${U_RCOL[UHIST[charById(id).id]-1]}">${'★'.repeat(UHIST[charById(id).id])}</span>（この時代はまだ若手）`:''}</span><br>
    <span class="pmeta">技巧${st('tech')} 表現${st('expr')} 即興${st('impro')} 楽理${st('theory')}・守り${udef(id)}</span><br><span class="pmeta">気力 ${Math.round(uhp(id))}/${umax(id)}</span></div></div>
    ${sk?`<div class="pmeta" style="margin-top:4px"><span class="sk">★${sk.n}</span>${sk.d}</div>`:''}
    <div class="pmeta" style="margin-top:6px">Lvは演奏会と演奏旅行で上がり、10Lvごとに全能力+1。Lv20で「開眼」できる（全能力+2・気力+12・特技の効果1.5倍）。</div>`;
@@ -3279,9 +3435,9 @@ function uEquip(id,i){
     ok.map(e=>({t:`${UEQ[e.id].n}<small>${ueqTxt(e.id)}${UEQ[e.id].h?`<br>${UEQ[e.id].h}`:''}</small>`,f(){u.eq[i]=e.uid;save();render();uDetail(id);}})).concat([{t:'外す',f(){u.eq[i]=null;save();render();uDetail(id);}},{t:'戻る',f(){uDetail(id);}}]));
 }
 function uInvite(){
-  const cand=[];for(const s of Object.keys(SCEN)){if(s===G.sc)continue;for(const c of SCEN[s].chars.concat(SCEN[s].rivals)){if(c.lv<5||cand.some(x=>x.c.id===c.id)||SC.chars.some(x=>x.id===c.id)||c.id===G.pid)continue;if(Object.values(SCEN).some(S=>Object.keys(S.players||{}).includes(c.id))&&false)continue;cand.push({c,s});}}
-  const h=hashS(String(G.month)+G.pid);const list=cand.sort((a,b)=>((hashS(a.c.id)+h)%97)-((hashS(b.c.id)+h)%97)).slice(0,8).sort((a,b)=>b.c.lv-a.c.lv);
-  modal('時を越える招待状',`招待状を送る相手を選ぶ（今月の候補8人）。<br>客演の音楽家は契約金なしで加わるが、月給はかかる。`,list.map(({c,s})=>{const RS=RSC;RSC=s;const p=portrait(c.id,30);RSC=RS;return{t:`<span style="display:inline-block;vertical-align:middle">${p}</span> ${c.name}<small>${U_ERA[s]}・${SEATTYPE[c.seat]?U_TN[SEATTYPE[c.seat]]:c.seat}・技巧${c.tech}/表現${c.expr}/即興${c.impro}</small>`,f(){
+  const cand=[];for(const s of Object.keys(SCEN)){if(s===G.sc)continue;for(const c of SCEN[s].chars.concat(SCEN[s].rivals).concat(Object.keys(SCEN[s].players).map(id=>guestSrc(s,id)))){if(Math.max(UHIST[c.id]||0,c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1)<3||cand.some(x=>x.c.id===c.id)||SC.chars.some(x=>x.id===c.id)||c.id===G.pid)continue;if(Object.values(SCEN).some(S=>Object.keys(S.players||{}).includes(c.id))&&false)continue;cand.push({c,s});}}
+  const h=hashS(String(G.month)+G.pid);const hr=c=>Math.max(UHIST[c.id]||0,c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1);const list=cand.sort((a,b)=>((hashS(a.c.id)+h)%97)-((hashS(b.c.id)+h)%97)).slice(0,8).sort((a,b)=>hr(b.c)-hr(a.c));
+  modal('時を越える招待状',`招待状を送る相手を選ぶ（今月の候補8人）。<br>客演の音楽家は<b>史実の格（全盛期の★と力）</b>で現れる。契約金なしで加わるが、月給はかかる。`,list.map(({c,s})=>{const RS=RSC;RSC=s;const p=portrait(c.id,30);RSC=RS;return{t:`<span style="display:inline-block;vertical-align:middle">${p}</span> ${c.name}<small><span style="color:${U_RCOL[hr(c)-1]}">${'★'.repeat(hr(c))}</span> ${U_ERA[s]}・${SEATTYPE[c.seat]?U_TN[SEATTYPE[c.seat]]:c.seat}${hr(c)>(c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1)?'・全盛期の姿で現れる':''}</small>`,f(){
     G.uinv--;G.guests.push({id:c.id,era:s,city:P().city});syncGuests();ens5();G.members.push(c.id);G.sal[c.id]=demandOf(c.id);setMood(c.id,80);
     addLog(`時を越える招待状に応え、${U_ERA[s]}から${c.name}が客演に現れた！`);hpush(`${U_ERA[s]}から${c.name}が時を越えて客演`);playMotif(c.motif,c.tim);cutin(c.id,'時を越えて参上！',c.name);save();render();}};}).concat([{t:'やめる'}]));
 }
@@ -3526,6 +3682,256 @@ render=function(){
   if(G&&TAB==='log'){const b=document.createElement('button');b.className='btn gold';b.style.cssText='width:100%;margin:8px 0';b.innerHTML='いまの楽団を見せる<small>途中経過を、リンクと画像で共有</small>';
     b.onclick=()=>{const R=buildReport();const d=ymd(G.month);R.result=`${d.y}年${d.mo}月 現在`;const st=R.mem&&R.mem[0];R.epi=`${d.y}年${d.mo}月現在、${R.orch}は旅の途中にある。団員${G.members.length}人${R.cities.length?`、${R.cities.join('・')}を拠点に`:''}${st?`、看板は${st.name}（Lv${st.lv}）`:''}。${R.sets&&R.sets.length?`《${R.sets[0]}》の縁が楽団を支えている。`:''}`;R.played=new Date().toISOString().slice(0,10);shShare(R);};
     const m=$('#main');m.insertBefore(b,m.firstChild);}
+};
+
+/* =====================================================================
+   みんなの楽団：ほかのプレイヤーの楽団史を見る・自分の楽団史を載せる
+   受付係はGoogleスプレッドシート＋Apps Script（RANK_URL）
+   ===================================================================== */
+const RANK_URL_DEFAULT='';
+const RANK_URL=(()=>{try{return localStorage.getItem('concertoStormRankURL')||RANK_URL_DEFAULT;}catch(e){return RANK_URL_DEFAULT;}})();
+const SCN={s1723:'1723 バロック',s1781:'1781 古典派',s1832:'1832 ロマン派',s1876:'1876 後期ロマン派',s1905:'1905 新世紀'};
+function devId(){try{let d=localStorage.getItem('concertoStormDev');if(!d){d='d'+Date.now().toString(36)+Math.random().toString(36).slice(2,10);localStorage.setItem('concertoStormDev',d);}return d;}catch(e){return'd0';}}
+function runId(){if(!G)return'r'+Date.now();if(!G.runId){G.runId='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,7);save();}return G.runId;}
+async function rkGet(params){const q=new URLSearchParams(Object.assign({action:'list',dev:devId()},params)).toString();const r=await fetch(`${RANK_URL}?${q}`);return r.json();}
+async function rkPost(R,done){
+  const D=shPack(R);const code=await shEncode(D);
+  const body={dev:devId(),run:R.runId||runId(),n:D.n,o:D.o,sc:D.sc,st:D.st,pn:D.pn,df:D.df,total:D.t,ti:D.ti,rs:D.rs,w:D.w,lv:D.lv,ci:D.ci.length,done:done?1:0,code};
+  const r=await fetch(RANK_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)});return r.json();
+}
+
+/* ---- 共有画面に「みんなの楽団に載せる」 ---- */
+const _shShareR=shShare;
+shShare=async function(R){
+  await _shShareR(R);
+  if(!RANK_URL)return;
+  const back=$('#shBack');if(!back)return;
+  const done=!/現在$/.test(R.result||'');
+  const b=document.createElement('button');b.className='btn gold';b.style.cssText='width:100%;margin-top:8px';
+  b.innerHTML=`みんなの楽団に載せる<small>${done?'この楽団史をランキングに登録':'途中経過として登録（クリア後に上書きされます）'}</small>`;
+  b.onclick=async()=>{
+    R.byName=$('#shName').value.trim();if(!R.byName)return toast('名乗りを入れてください');
+    if(!R.runId)R.runId=G?runId():'h'+R.id;
+    b.disabled=true;b.innerHTML='送っています…';
+    try{const r=await rkPost(R,done);
+      if(r.ok){b.innerHTML=`登録しました！ 総合 ${r.rank}位 / ${r.n}楽団<small>${r.updated?'同じ楽団の記録を更新しました':'みんなの楽団に載りました'}</small>`;b.onclick=()=>rkBoard('top');b.disabled=false;}
+      else{b.disabled=false;b.innerHTML=r.err==='wait'?'少し待ってからもう一度':'登録できませんでした（もう一度）';}}
+    catch(e){b.disabled=false;b.innerHTML='通信できませんでした（もう一度）';}
+  };
+  back.before(b);
+};
+/* 殿堂入りの楽団史にも、プレイの識別子を持たせる */
+const _buildReportR=buildReport;
+buildReport=function(){const R=_buildReportR();R.runId=runId();return R;};
+const _newGameR=newGame;
+newGame=function(sc,pid,diff){_newGameR(sc,pid,diff);G.runId='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,7);};
+
+/* ---- みんなの楽団（一覧） ---- */
+let RK={mode:'top',sc:''};
+async function rkBoard(mode){
+  if(mode)RK.mode=mode;
+  const tab=(k,n)=>`<button data-rk="${k}" class="${RK.mode===k?'on':''}">${n}</button>`;
+  $('#scene').innerHTML=`<div class="sc"><h3>みんなの楽団</h3><div class="subt">ほかの楽団長たちの楽団史</div>
+   <div class="ftabs">${tab('top','総合ランキング')}${tab('new','新着')}${tab('mine','自分の記録')}</div>
+   <div class="ftabs"><button data-rs="" class="${!RK.sc?'on':''}">全時代</button>${Object.keys(SCN).map(k=>`<button data-rs="${k}" class="${RK.sc===k?'on':''}">${SCN[k].slice(0,4)}</button>`).join('')}</div>
+   <div id="rkList"><div class="card pmeta" style="text-align:center">読み込んでいます…</div></div>
+   <div class="card pmeta">楽団史の画面や年代記タブの「見せる」から、自分の楽団を載せられます。名乗りに不適切な言葉は使えません。</div>
+   <button class="btn" id="rkBack" style="width:100%;margin-top:6px">戻る</button></div>`;
+  $('#scene').classList.remove('hidden');$('#scene').scrollTop=0;
+  document.querySelectorAll('[data-rk]').forEach(b=>b.onclick=()=>rkBoard(b.dataset.rk));
+  document.querySelectorAll('[data-rs]').forEach(b=>b.onclick=()=>{RK.sc=b.dataset.rs;rkBoard();});
+  $('#rkBack').onclick=()=>{closeScene();if(G)render();else title();};
+  let r;try{r=await rkGet({mode:RK.mode,sc:RK.sc,limit:50});}catch(e){r=null;}
+  const box=$('#rkList');if(!box)return;
+  if(!r||!r.ok){box.innerHTML='<div class="card pmeta">いまは読み込めませんでした。時間をおいてもう一度開いてください。</div>';return;}
+  if(!r.list.length){box.innerHTML=`<div class="card pmeta">${RK.mode==='mine'?'まだ自分の記録はありません。':'まだ記録がありません。最初の楽団になりましょう。'}</div>`;return;}
+  const medal=i=>RK.mode!=='top'?'':i===0?'🥇':i===1?'🥈':i===2?'🥉':`${i+1}位`;
+  box.innerHTML=`<div class="pmeta" style="margin:4px 0">${r.n}楽団${RK.mode==='top'?'（総合点の高い順）':'（新しい順）'}</div>`+r.list.map((x,i)=>{const RS=RSC;RSC=x.sc;const p=portrait(PIDOF(x),44);RSC=RS;
+    return`<button class="btn rkrow ${x.mine?'mine':''}" data-ri="${i}"><span class="rkno">${medal(i)}</span>${p}<div style="flex:1;text-align:left"><b>${x.o}</b>${x.done?'':'<span class="kai" style="background:#557">途中</span>'}<br><span class="pmeta">${x.n}・${SCN[x.sc]||x.st}・${x.df}</span><br><span class="pmeta">${x.rs}・「${x.ti}」</span></div><div style="text-align:right"><b style="font-size:17px">${x.total}</b><br><span class="pmeta">${String(x.t).slice(5,10).replace('-','/')}</span></div></button>`;}).join('');
+  document.querySelectorAll('[data-ri]').forEach(b=>b.onclick=async()=>{const x=r.list[+b.dataset.ri];try{const D=await shDecode(x.code);shView(D);const pb=$('#shPlay');if(pb){pb.textContent='みんなの楽団に戻る';pb.onclick=()=>rkBoard();}}catch(e){toast('この記録は読み込めませんでした');}});
+}
+const PIDOF=x=>{for(const s in SCEN){if(s!==x.sc)continue;const p=Object.values(SCEN[s].players).find(p=>p.name===x.pn);if(p)return p.id;}return'critic';};
+
+/* ---- 入口：タイトル画面と年代記タブ ---- */
+const _titleR=title;
+title=function(){
+  _titleR();if(!RANK_URL)return;
+  const t=$('#main .title');if(!t)return;
+  const b=document.createElement('button');b.className='btn gold';b.style.cssText='width:100%;margin:10px 0';b.innerHTML='みんなの楽団<small>ほかの楽団長の楽団史とランキング</small>';b.onclick=()=>rkBoard('top');
+  const first=t.querySelector('.btn');if(first)first.before(b);else t.appendChild(b);
+};
+const _renderR=render;
+render=function(){
+  _renderR();
+  if(RANK_URL&&G&&TAB==='log'){const b=document.createElement('button');b.className='btn';b.style.cssText='width:100%;margin:0 0 8px';b.innerHTML='みんなの楽団を見る<small>ランキングと、ほかの楽団長の楽団史</small>';b.onclick=()=>rkBoard('top');
+    const m=$('#main');const g=m.querySelector('button.btn.gold');if(g)g.after(b);else m.insertBefore(b,m.firstChild);}
+};
+
+/* =====================================================================
+   一騎打ち：連打で押し切る演奏決闘（リアルタイム）
+   相手の「自信」か「平常心」を0にすればKO。持ち時間が尽きたら審判の判定。
+   ===================================================================== */
+const RT_MOVES=[
+ {k:'tech',n:'超絶技巧',ic:'⚡',d:'自信を削る',st:'tech',hp:1,mp:.3},
+ {k:'expr',n:'歌いこむ',ic:'❦',d:'平常心を削る',st:'expr',hp:.3,mp:1},
+ {k:'impro',n:'即興で切り返す',ic:'✦',d:'両方・反撃を返す',st:'impro',hp:.6,mp:.6},
+ {k:'wit',n:'主題をもじる',ic:'✒',d:'平常心に大打撃・間をおく',st:'theory',hp:.1,mp:1.6,cd:1.1},
+ {k:'crowd',n:'聴衆に微笑む',ic:'☺',d:'喝采がたまる',st:'expr',hp:.15,mp:.2,chaos:9},
+ {k:'pose',n:'大見得を切る',ic:'♛',d:'カデンツァで効く',st:'expr',hp:.35,mp:.7}
+];
+const RT_PHASES=[
+ {n:'序奏 Maestoso',m:{}},
+ {n:'Adagio　歌の楽章',m:{expr:1.5,tech:.7,pose:1.2},h:'「歌いこむ」が冴える'},
+ {n:'Scherzo　諧謔の楽章',m:{impro:1.5,wit:1.4,tech:.9},h:'「即興」と「もじる」が冴える'},
+ {n:'Presto　疾走の楽章',m:{tech:1.5,expr:.7,crowd:1.2},h:'「超絶技巧」が冴える'},
+ {n:'Cadenza　独奏',m:{pose:1.6,impro:1.2,tech:1.2,expr:1.2},h:'「大見得」が冴える'}
+];
+const RT_COUNTERS=[
+ {k:'clash',w:3,tell:'弓（指）を構えた！ 超絶技巧で応酬してくる',run(R){const d=Math.round((R.t.tech*2.2+R.t.lv*3)*R.cm);R.foc-=d;rtPop('you',`-${d}`,'bad');return`${R.t.name}の応酬！ 集中 -${d}`;}},
+ {k:'sneer',w:2,tell:'冷ややかに笑った…',run(R){const d=Math.round((R.t.expr*1.2+R.t.lv*2)*R.cm);R.foc-=d;R.combo=0;rtPop('you',`-${d}`,'bad');return`冷笑！ コンボが途切れた（集中 -${d}）`;}},
+ {k:'steal',w:2,tell:'客席に向かって手を広げた！',run(R){const h=Math.round(R.mpMax*.06);R.mp=Math.min(R.mpMax,R.mp+h);R.chaos=Math.max(0,R.chaos-20);rtPop('opp',`+${h}`,'heal');return`聴衆を奪われた！ 相手の平常心 +${h}・喝采 -20`;}},
+ {k:'lecture',w:2,tell:'眉をひそめて口を開いた…',run(R){R.debuff=6;const d=Math.round(R.t.theory*1.5*R.cm);R.foc-=d;return`「その解釈は違う」 しばらく効きが半分（集中 -${d}）`;}}
+];
+let RTS=null;
+function rtStart(){
+  const t=D.t,base=t.tech+t.expr+t.impro+(t.theory||6),df=(DF().n==='入門'?.75:DF().n==='難しい'?1.2:DF().n==='超難しい'?1.4:DF().n==='地獄'?1.6:1);
+  const hpMax=Math.round((1400+t.tech*120+base*25+t.lv*110)*df*3.2),mpMax=Math.round((1400+(t.theory||6)*80+t.expr*60+base*25+t.lv*110)*df*3.2);
+  const focMax=Math.round(90+P().stamina*.6+plv()*4);
+  RTS={t,hp:hpMax,hpMax,mp:mpMax,mpMax,foc:focMax,focMax,time:45,combo:0,maxC:0,chaos:0,last:'',run:0,lastHit:0,ph:0,phT:9,cT:3.5,tell:null,tellT:0,angry:false,debuff:0,cd:{},
+    cm:1*df,hits:{},dmg:0,parry:0,weak:0,miss:0,over:false,note:0,log:[],t0:performance.now()};
+  rtRender();rtLoop();
+}
+function rtStat(mv){
+  let v=mv.st==='theory'?(P().theory||6):P()[mv.st];
+  if(mv.k==='crowd')v=Math.max(v,4+plv()/2);
+  if(['tech','expr','impro'].includes(mv.k)){v+=((PL().duelB||{})[mv.k]||0);if(D.piece&&D.piece.b===mv.k)v+=2;}
+  if(D.second){const c=charById(D.second);if(c&&c.style===mv.st)v+=Math.ceil(mlv(D.second)/2);}
+  return v;
+}
+function rtEff(mv){
+  const R=RTS,t=R.t;let e=1,tags=[];
+  if(['tech','expr','impro'].includes(mv.k)){if(BEATS[mv.k]===t.style){e*=1.4;tags.push('弱点');}else if(mv.k===t.style){e*=.8;tags.push('相手の土俵');}}
+  const pm=RT_PHASES[R.ph].m[mv.k];if(pm){e*=pm;if(pm>1)tags.push('楽章');}
+  if(R.run>3){e*=Math.max(.35,1-(R.run-3)*.08);if(R.run===6)rtSay('同じ芸ばかり…聴衆が飽きてきた','warn');}
+  if(R.debuff>0){e*=.5;R.debuff--;}
+  return{e,tags};
+}
+function rtTap(k){
+  const R=RTS;if(!R||R.over)return;const mv=RT_MOVES.find(m=>m.k===k);const now=performance.now()/1000;
+  if(mv.cd&&R.cd[k]&&now<R.cd[k])return;if(mv.cd)R.cd[k]=now+mv.cd;
+  if(k==='impro'&&R.tell){R.tell=null;R.parry++;R.combo+=3;rtSay('切り返した！ 相手の攻勢を逆手にとる','good');rtHit(mv,3,['切り返し']);rtShake();return;}
+  R.run=R.last===k?R.run+1:1;R.last=k;
+  rtHit(mv,1,[]);
+}
+function rtHit(mv,mult,extra){
+  const R=RTS;const now=performance.now()/1000;
+  R.combo=now-R.lastHit<.85?R.combo+1:1;R.lastHit=now;R.maxC=Math.max(R.maxC,R.combo);
+  const {e,tags}=rtEff(mv);const cm=1+Math.min(R.combo,40)*.025;const crit=Math.random()<.08;
+  const base=(8+rtStat(mv)*2.4)*e*cm*mult*(crit?1.8:1)*(.88+Math.random()*.24);
+  const dh=Math.round(base*mv.hp),dm=Math.round(base*mv.mp);
+  R.hp=Math.max(0,R.hp-dh);R.mp=Math.max(0,R.mp-dm);R.dmg+=dh+dm;R.hits[mv.k]=(R.hits[mv.k]||0)+1;if(tags.includes('弱点'))R.weak++;
+  R.chaos=Math.min(100,R.chaos+(mv.chaos||3)*(tags.includes('弱点')?1.5:1));
+  const all=tags.concat(extra);rtPop('opp',`${crit?'会心！':''}${all.length?all.join('・')+' ':''}-${dh+dm}`,crit||all.includes('弱点')?'crit':'');
+  if(crit||mult>1)rtShake();
+  rtNote(mv.k==='tech'?2:0);rtUpd();rtCheck();
+}
+function rtFinisher(){
+  const R=RTS;if(!R||R.over||R.chaos<100)return;R.chaos=0;R.combo+=5;
+  const p=PL();cutin(G.pid,'必殺のカデンツァ！',(p.pieces&&D.piece)?D.piece.t:p.name);
+  let i=0;const best=['tech','expr','impro'].sort((a,b)=>rtStat(RT_MOVES.find(m=>m.k===b))-rtStat(RT_MOVES.find(m=>m.k===a)))[0];
+  const iv=setInterval(()=>{if(!RTS||RTS.over||i++>=14){clearInterval(iv);return;}const mv=RT_MOVES.find(m=>m.k===(i%3===0?'expr':best));R.run=0;rtHit(Object.assign({},mv,{hp:.8,mp:.8}),1.5,['カデンツァ']);},110);
+}
+function rtNote(up){
+  try{const c=ac();if(!c)return;const mo=MOTIFS[(D.piece&&D.piece.m)||PL().motif]||MOTIFS.scale;const R=RTS;const n=mo[R.note%mo.length];R.note++;
+    const tt=c.currentTime+.01;if(Array.isArray(n[0]))n[0].forEach(x=>tone(tt,x+up*12,.16,PL().tim));else if(n[0])tone(tt,n[0]+up*12,.16,PL().tim);}catch(e){}
+}
+function rtOppNote(){
+  try{const c=ac();if(!c)return;const R=RTS;const mo=MOTIFS[R.t.motif]||MOTIFS.scale;const broken=1-(R.hp/R.hpMax+R.mp/R.mpMax)/2;let tt=c.currentTime+.02;
+    for(const [n,d] of mo.slice(0,4)){const m=Array.isArray(n)?n[0]:n;if(m)tone(tt,m+(Math.random()<broken?pick([-1,1,-2,6]):0),Math.min(.3,d*.6),R.t.tim||'piano');tt+=Math.min(.3,d*.6);}}catch(e){}
+}
+function rtLoop(){
+  let prev=performance.now();
+  const f=now=>{const R=RTS;if(!R||R.over||!$('#rtWrap'))return;const dt=Math.min(.1,(now-prev)/1000);prev=now;
+    R.time-=dt;R.phT-=dt;if(R.phT<=0){R.ph=(R.ph+1)%RT_PHASES.length;R.phT=9;const P_=RT_PHASES[R.ph];rtSay(`${P_.n}${P_.h?'――'+P_.h:''}`,'phase');}
+    const ang=(R.hp/R.hpMax<.5||R.mp/R.mpMax<.5);if(ang&&!R.angry){R.angry=true;rtSay(`${R.t.name}が本気になった！ 攻勢が速くなる`,'warn');}
+    const rg=(R.angry?.012:.008)*dt;R.hp=Math.min(R.hpMax,R.hp+R.hpMax*rg*.5);R.mp=Math.min(R.mpMax,R.mp+R.mpMax*rg*.5);
+    if(R.tell){R.tellT-=dt;if(R.tellT<=0){const c=R.tell;R.tell=null;rtSay(c.run(R),'bad');rtOppNote();rtShake(true);}}
+    else{R.cT-=dt;if(R.cT<=0){const pool=RT_COUNTERS;let x=Math.random()*pool.reduce((a,c)=>a+c.w,0),c=pool[0];for(const q of pool){x-=q.w;if(x<=0){c=q;break;}}
+      R.tell=c;R.tellT=R.angry?.75:.95;R.cT=Math.max(1.5,(3.6-R.t.lv*.12)*(R.angry?.7:1))*(.8+Math.random()*.4);rtSay(`⚠ ${R.t.name}が${c.tell}`,'tell');}}
+    rtUpd();rtCheck();if(!R.over)requestAnimationFrame(f);};
+  requestAnimationFrame(f);
+}
+function rtCheck(){
+  const R=RTS;if(!R||R.over)return;
+  if(R.hp<=0||R.mp<=0)return rtEnd(true,R.mp<=0?'mp':'hp');
+  if(R.foc<=0)return rtEnd(false,'foc');
+  if(R.time<=0){const op=(R.hp/R.hpMax+R.mp/R.mpMax)/2,yp=R.foc/R.focMax;return rtEnd(1-op>(1-yp)*1.1,'judge',op,yp);}
+}
+function rtEnd(win,how,op,yp){
+  const R=RTS;R.over=true;R.win=win;R.how=how;R.op=op;R.yp=yp;
+  const box=$('#rtOpp');const tp=(PL().tim==='violin'||D.t.tim==='violin');
+  const ko={mp:`${R.t.name}は泡を吹いて倒れた！`,hp:`${R.t.name}は${D.t.seat==='ピアノ独奏'?'鍵盤から手を下ろし':'弓を置き'}、降参した！`,foc:'集中が切れた……指が止まってしまった',judge:win?`判定勝ち！ ${ci(R.t.city).judge}はあなたに軍配を上げた`:`判定負け……${ci(R.t.city).judge}は相手に軍配を上げた`}[how];
+  if(win&&how!=='judge'&&box){box.classList.add('rtko');}
+  rtSay(ko,win?'good':'bad');
+  D.you=win?2:0;D.them=win?0:2;D.rt={how,maxC:R.maxC,dmg:R.dmg,parry:R.parry,weak:R.weak,hits:R.hits,op:op,yp:yp,left:Math.max(0,Math.round(R.time)),hpP:R.hp/R.hpMax,mpP:R.mp/R.mpMax,foc:R.foc/R.focMax};
+  D.log=[`<b>一騎打ち</b>　${ko}<br><span class="pmeta">最大コンボ ${R.maxC}・与えたダメージ ${R.dmg}・切り返し ${R.parry}回・弱点を突いた ${R.weak}回</span>`];
+  setTimeout(()=>{duelEnd();},win&&how!=='judge'?1600:1100);
+}
+const _duelAnalysisRT=duelAnalysis;
+duelAnalysis=function(won){
+  if(!D.rt)return _duelAnalysisRT(won);
+  const r=D.rt,t=D.t,top=Object.entries(r.hits).sort((a,b)=>b[1]-a[1])[0];const tips=[];
+  if(!won){
+    if(r.how==='foc')tips.push('相手の攻勢を受けすぎて集中が切れた。「⚠」が出たら「即興で切り返す」を押すと、攻勢を跳ね返せる。');
+    if(r.weak<5)tips.push(`${t.name}の得意は「${CARD[t.style].t}」。「${CARD[beatBy(t.style)].t}」で突くと1.4倍効く。`);
+    if(top&&top[1]>40)tips.push(`「${RT_MOVES.find(m=>m.k===top[0]).n}」に頼りすぎ。同じ芸を続けると聴衆が飽きて効きが落ちる。`);
+    tips.push('楽章ごとに冴える芸が変わる。画面上の楽章名を見て芸を切り替えよう。喝采が満ちたら「必殺のカデンツァ」。');
+    if(r.how==='judge')tips.push(`判定では、相手の残り（自信${Math.round(r.hpP*100)}%・平常心${Math.round(r.mpP*100)}%）とあなたの集中の残り（${Math.round(r.foc*100)}%）を比べる。`);
+  }
+  return`<div class="anl"><b>${won?'勝因':'敗因'}</b><br>最大コンボ ${r.maxC}／弱点を突いた回数 ${r.weak}／切り返し ${r.parry}回${top?`／いちばん使った芸「${RT_MOVES.find(m=>m.k===top[0]).n}」${top[1]}回`:''}${tips.length?'<br><b>次への助言</b><br>'+tips.map(x=>'・'+x).join('<br>'):''}</div>`;
+};
+/* ---- 画面 ---- */
+function rtRender(){
+  const R=RTS,t=R.t;
+  $('#scene').innerHTML=`<div class="sc rt" id="rtWrap">
+   <div class="rt-top"><span id="rtTime">45</span><span id="rtPh">${RT_PHASES[0].n}</span></div>
+   <div class="rt-g"><label>自信</label><div class="rtbar"><i id="rtHp" class="hp"></i></div></div>
+   <div class="rt-g"><label>平常心</label><div class="rtbar"><i id="rtMp" class="mp"></i></div></div>
+   <div class="rt-stage"><div class="rt-you" id="rtYou">${portrait(G.pid,64,'var(--gold)')}</div><div class="rt-vs">VS</div>
+    <div class="rt-opp" id="rtOpp">${portrait(t.id,118,FCSS[t.faction])}<div class="rt-face" id="rtFace"></div><div class="rt-name">${t.name}<br><span class="pmeta">得意：${CARD[t.style].t}／弱点：${CARD[beatBy(t.style)].t}</span></div></div></div>
+   <div class="rt-say" id="rtSay">${ci(t.city).judge}が見守るなか、決闘が始まった！</div>
+   <div class="rt-btns">${RT_MOVES.map(m=>`<button class="rtb rt-${m.k}" data-rt="${m.k}"><span class="ic">${m.ic}</span>${m.n}<small>${m.d}</small></button>`).join('')}</div>
+   <button class="btn rt-fin" id="rtFin" disabled>必殺のカデンツァ<small id="rtCh">喝采 0%</small></button>
+   <div class="rt-g"><label>集中</label><div class="rtbar"><i id="rtFoc" class="foc"></i></div></div>
+   <div class="rt-c"><span>コンボ <b id="rtCombo">0</b></span><span class="pmeta">「⚠」の間に「即興で切り返す」で反撃を返せる</span></div></div>`;
+  $('#scene').classList.remove('hidden');$('#scene').scrollTop=0;
+  document.querySelectorAll('[data-rt]').forEach(b=>{const go=e=>{e.preventDefault();rtTap(b.dataset.rt);b.classList.remove('hit');void b.offsetWidth;b.classList.add('hit');};b.addEventListener('pointerdown',go);});
+  $('#rtFin').onclick=rtFinisher;
+}
+function rtUpd(){
+  const R=RTS;if(!R||!$('#rtHp'))return;
+  $('#rtHp').style.width=R.hp/R.hpMax*100+'%';$('#rtMp').style.width=R.mp/R.mpMax*100+'%';$('#rtFoc').style.width=Math.max(0,R.foc/R.focMax*100)+'%';
+  $('#rtTime').textContent=Math.max(0,Math.ceil(R.time));$('#rtCombo').textContent=R.combo;
+  const ph=$('#rtPh');if(ph.textContent!==RT_PHASES[R.ph].n)ph.textContent=RT_PHASES[R.ph].n;
+  const fin=$('#rtFin');fin.disabled=R.chaos<100;fin.classList.toggle('ready',R.chaos>=100);$('#rtCh').textContent=R.chaos>=100?'喝采が満ちた！ 今だ！':`喝采 ${Math.round(R.chaos)}%`;
+  const imp=document.querySelector('[data-rt="impro"]');if(imp)imp.classList.toggle('parry',!!R.tell);
+  const m=Math.min(R.hp/R.hpMax,R.mp/R.mpMax),face=$('#rtFace');
+  const f=R.over&&R.win?'🫧🫧🫧':m<.15?'🫧💦':m<.35?'💦💦':m<.6?'💦':'';if(face&&face.textContent!==f)face.textContent=f;
+  const o=$('#rtOpp');if(o){o.classList.toggle('angry',R.angry);o.classList.toggle('wobble',m<.35);}
+}
+function rtSay(s,cls){const e=$('#rtSay');if(!e)return;e.textContent=s;e.className='rt-say '+(cls||'');}
+function rtPop(who,s,cls){const el=who==='opp'?$('#rtOpp'):$('#rtYou');if(!el)return;const d=document.createElement('div');d.className='rtpop '+(cls||'');d.textContent=s;d.style.left=(20+Math.random()*50)+'%';el.appendChild(d);setTimeout(()=>d.remove(),900);}
+function rtShake(big){const w=$('#rtWrap');if(!w)return;w.classList.remove('shake','shake2');void w.offsetWidth;w.classList.add(big?'shake2':'shake');}
+
+/* ---- 対決の入り口に「一騎打ち」を加える ---- */
+const _openDuelRT=openDuel;
+openDuel=function(t,opts){
+  _openDuelRT(t,opts);
+  document.querySelectorAll('[data-pc]').forEach(b=>b.onclick=()=>{D.piece=PL().pieces[+b.dataset.pc];
+    modal('対決の形式',`課題曲「${D.piece.t}」。どちらの形式で挑む？`,[
+      {t:'一騎打ち<small>45秒の連打勝負。相手の自信か平常心を0にすればKO</small>',cls:'crim',f(){ac();rtStart();}},
+      {t:'三楽章の勝負<small>技巧・表現・即興の読み合い（これまでの形式）</small>',f(){playMotif(D.piece.m,PL().tim);duelRound();}}]);});
+  const n=$('#scene .sc > div[style*="font-size:12px"]');if(n)n.insertAdjacentHTML('afterend','<div class="pmeta" style="margin-top:4px">課題曲を選ぶと、<b>一騎打ち</b>（連打で押し切る）か<b>三楽章の勝負</b>（読み合い）かを選べます。</div>');
 };
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});
