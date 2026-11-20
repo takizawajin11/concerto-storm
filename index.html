@@ -2898,7 +2898,7 @@ const UEQ={
  rosin:{n:'上質の松脂',t:['vn','vc','cb'],tech:1,r:1,y:1600},honey:{n:'蜂蜜の喉飴',t:['voice'],expr:1,def:2,r:1,y:1600},costume:{n:'豪華な舞台衣装',t:['voice'],expr:3,r:3,y:1600},
  tails:{n:'仕立ての良い燕尾服',t:['*'],def:2,r:1,y:1780},wig:{n:'上等の鬘',t:['*'],def:2,r:1,y:1600,yz:1800},gramophone:{n:'グラモフォン（蓄音機）',t:['*'],expr:1,impro:1,r:3,y:1895}
 };
-const ueqPool=()=>Object.keys(UEQ).filter(k=>{const e=UEQ[k],y=U_YEAR[G.sc];return e.y<=y&&(!e.yz||y<=e.yz);});
+const ueqPool=()=>Object.keys(UEQ).filter(k=>{const e=UEQ[k],y=U_YEAR[G.sc];return !e.fam&&e.y<=y&&(!e.yz||y<=e.yz);});
 
 /* ---- 史実の縁（史実の仲間でそろえると発動） ---- */
 const USETS=[
@@ -3082,7 +3082,7 @@ const guestEra=id=>{if(!G||!G.guests)return null;const g=G.guests.find(x=>x.id==
 const _portraitU=portrait;
 portrait=function(id,size,ring){const e=guestEra(id);if(e){const o=RSC;RSC=e;try{return _portraitU(id,size,ring);}finally{RSC=o;}}return _portraitU(id,size,ring);};
 
-function ux(id){ensU();if(!G.ux[id])G.ux[id]={lv:1,exp:0,hp:null,kai:0,eq:[null,null]};return G.ux[id];}
+function ux(id){ensU();if(!G.ux[id])G.ux[id]={lv:1,exp:0,hp:null,kai:0,eq:[null,null,null]};while(G.ux[id].eq.length<3)G.ux[id].eq.push(null);return G.ux[id];}
 /* 史実の格：その人が全盛期に達した格（★）。客演では、この格と全盛期の力で現れる */
 const UHIST={bach:5,handel:5,vivaldi:5,telemann:4,rameau:5,couperin:4,marais:4,dscarlatti:5,ascarlatti:4,farinelli:5,tartini:4,pisendel:3,zelenka:4,quantz:4,porpora:4,faustina:4,cuzzoni:4,senesino:4,leclair:4,
  haydn:5,mozart:5,beethoven:5,gluck:5,salieri:4,clementi:4,viotti:4,stgeorges:4,paisiello:4,cimarosa:4,boccherini:4,bortniansky:4,kozeluch:3,vanhal:3,
@@ -3106,8 +3106,9 @@ function uOnExp(id){ensU();const fi=uIn(id);return fi>0&&G.uexp[fi]&&G.uexp[fi].
 /* 能力：素の値＋成長＋Lv＋愛用品＋改 */
 const _mstatU=mstat;
 mstat=function(id,k){let v=_mstatU(id,k);if(!G||!G.ux)return v;if(id!=='you')v+=Math.floor((ux(id).lv-1)/10);
-  if(G.ux[id]){if(G.ux[id].kai)v+=2;for(const e of ueqOf(id))v+=UEQ[e.id][k]||0;}return v;};
-function udef(id){let d=Math.round(mstat(id,'theory')/2);for(const e of ueqOf(id))d+=UEQ[e.id].def||0;return d;}
+  if(G.ux[id]){if(G.ux[id].kai)v+=2;for(const e of ueqOf(id))v+=eqStat(e,k,id);}return v;};
+function eqStat(e,k,id){return UEQ[e.id][k]||0;}
+function udef(id){let d=Math.round(mstat(id,'theory')/2);for(const e of ueqOf(id))d+=eqStat(e,'def',id);return d;}
 /* 経験値はLv（1〜99）に。10Lvごとに全能力+1 */
 gainExp=function(id,base){
   ensU();const c=charById(id);if(!c)return null;const u=ux(id);
@@ -3272,7 +3273,7 @@ function uAfter(B){
 }
 function uLose(id,why){
   G.members=G.members.filter(x=>x!==id);G.fleet=G.fleet.map(f=>f.filter(x=>x!==id));
-  if(G.ux[id])G.ux[id].eq=[null,null];G.guests=G.guests.filter(g=>g.id!==id);
+  if(G.ux[id])G.ux[id].eq=[null,null,null];G.guests=G.guests.filter(g=>g.id!==id);
   (G.alumni=G.alumni||[]).push(id);G.ust.lost++;addLog(`${nameOf(id)}は${why}、楽団を去った。`);hpush(`${nameOf(id)}、過酷な演奏旅行の末に楽団を去る`);
 }
 function uResult(B){
@@ -3413,7 +3414,7 @@ function uDetail(id){
    <span class="pmeta">技巧${st('tech')} 表現${st('expr')} 即興${st('impro')} 楽理${st('theory')}・守り${udef(id)}</span><br><span class="pmeta">気力 ${Math.round(uhp(id))}/${umax(id)}</span></div></div>
    ${sk?`<div class="pmeta" style="margin-top:4px"><span class="sk">★${sk.n}</span>${sk.d}</div>`:''}
    <div class="pmeta" style="margin-top:6px">Lvは演奏会と演奏旅行で上がり、10Lvごとに全能力+1。Lv20で「開眼」できる（全能力+2・気力+12・特技の効果1.5倍）。</div>`;
-  const btns=[0,1].map(i=>{const e=u.eq[i]&&G.ueq.find(x=>x.uid===u.eq[i]);return{t:`愛用品${i+1}：${e?UEQ[e.id].n:'なし'}${e?`<small>${ueqTxt(e.id)}</small>`:''}`,f(){uEquip(id,i);}};});
+  const btns=[0,1,2].map(i=>{const e=u.eq[i]&&G.ueq.find(x=>x.uid===u.eq[i]);return{t:`${slotLabel(id,i)}：${e?eqName(e):'なし'}${e?`<small>${ueqTxt(e.id)}${e.fake&&e.known?'（偽物）':''}</small>`:''}`,f(){uEquip(id,i);}};});
   if(!u.kai)btns.push({t:`開眼させる<small>${ulv(id)>=20?'1,500fr':'Lv20で解放'}</small>`,cls:ulv(id)>=20?'gold':'',dis:ulv(id)<20||P().money<1500,f(){P().money-=1500;u.kai=1;u.hp=umax(id);addLog(`${nameOf(id)}が芸の境地に開眼した。`);hpush(`${nameOf(id)}、開眼`);cutin(realId(id),'開眼！',`${nameOf(id)}、新たな境地へ`);save();render();}});
   if(id!=='you')btns.push({t:'語らう<small>話を聞く・満足+2（月1回）</small>',f(){uTalk(id);}});
   btns.push({t:'閉じる'});modal(nameOf(id),body,btns);
@@ -3428,11 +3429,14 @@ function uTalk(id){
   if(first){G.talk[id]=G.month;setMood(id,m+2);}
   const real=realId(id);modal(`${c.name}との語らい`,`${portraitRow(real)}「${pick(lines)}」`,[{t:'♪ 一節を聴く',f(){playMotif(c.motif,c.tim);uTalk(id);}},{t:'戻る',f(){uDetail(id);}}]);
 }
+function bowed(id){return typesOf(id).some(t=>['vn','vc','cb'].includes(t));}
+function slotLabel(id,i){const t=typesOf(id)[0];if(i===0)return t==='cond'?'指揮棒':t==='comp'?'筆と譜面':t==='voice'?'舞台衣装':'楽器';if(i===1)return bowed(id)?'弓':'小物';return'小物';}
+function slotOK(id,i,e){const c=UEQ[e.id].cat||'acc';if(i===0)return c==='inst';if(i===1)return bowed(id)?c==='bow':c==='acc';return c==='acc';}
 function uEquip(id,i){
   const types=typesOf(id);const used=new Set(Object.keys(G.ux).filter(x=>x!==id&&(x==='you'||G.members.includes(x))).flatMap(x=>G.ux[x].eq).filter(Boolean));
-  const u=ux(id);const ok=G.ueq.filter(e=>(!used.has(e.uid)&&u.eq[1-i]!==e.uid)&&(UEQ[e.id].t.includes('*')||UEQ[e.id].t.some(t=>types.includes(t))));
-  modal('愛用品を選ぶ',ok.length?'楽器の種類が合うものだけ表示しています。':'愛用品できるものがありません。楽器工房に注文するか、演奏旅行で手に入れましょう。',
-    ok.map(e=>({t:`${UEQ[e.id].n}<small>${ueqTxt(e.id)}${UEQ[e.id].h?`<br>${UEQ[e.id].h}`:''}</small>`,f(){u.eq[i]=e.uid;save();render();uDetail(id);}})).concat([{t:'外す',f(){u.eq[i]=null;save();render();uDetail(id);}},{t:'戻る',f(){uDetail(id);}}]));
+  const u=ux(id);const ok=G.ueq.filter(e=>(!used.has(e.uid)&&!u.eq.some((q,j)=>j!==i&&q===e.uid))&&slotOK(id,i,e)&&(UEQ[e.id].t.includes('*')||UEQ[e.id].t.some(t=>types.includes(t))));
+  modal(`${slotLabel(id,i)}を選ぶ`,ok.length?'この枠に合うものだけ表示しています。':'合うものがありません。楽器商や楽器工房で手に入れましょう。',
+    ok.map(e=>({t:`${eqName(e)}<small>${ueqTxt(e.id)}${UEQ[e.id].h?`<br>${UEQ[e.id].h}`:''}</small>`,f(){u.eq[i]=e.uid;save();render();uDetail(id);}})).concat([{t:'外す',f(){u.eq[i]=null;save();render();uDetail(id);}},{t:'戻る',f(){uDetail(id);}}]));
 }
 function uInvite(){
   const cand=[];for(const s of Object.keys(SCEN)){if(s===G.sc)continue;for(const c of SCEN[s].chars.concat(SCEN[s].rivals).concat(Object.keys(SCEN[s].players).map(id=>guestSrc(s,id)))){if(Math.max(UHIST[c.id]||0,c.lv>=7?5:c.lv>=6?4:c.lv===5?3:c.lv===4?2:1)<3||cand.some(x=>x.c.id===c.id)||SC.chars.some(x=>x.id===c.id)||c.id===G.pid)continue;if(Object.values(SCEN).some(S=>Object.keys(S.players||{}).includes(c.id))&&false)continue;cand.push({c,s});}}
@@ -3514,6 +3518,292 @@ start=function(){_startU();ensU();if(!G.flags.uIntro){G.flags.uIntro=1;save();mo
  <div class="sec-p">巡演</div>いま居る都市の会場を一夜ずつ回る。毎晩、聴衆の顔ぶれを見て演奏スタイルを選び、序曲→第1楽章→第2楽章→アンコールと演奏が進む。街から街への道中では、旅のできごとが起こる。大御所の舞台で喝采を得るたびに<b>牙城</b>が崩れ、0になると<b>その都市を手に入れる</b>。旅先で音楽家が仲間入りを申し出ることも。<b>限界の団員を無理に舞台に立たせると、楽団を去ってしまう。</b>
  <div class="sec-p">派遣公演</div>派遣楽団を数か月の仕事に出して資金を稼ぐ。
  <div class="sec-p">時の扉</div>3都市を手に入れると開く。踏破すると「時を越える招待状」が手に入り、別の時代の音楽家（バッハやマーラーなど）を客演に招ける。`);}};
+
+/* =====================================================================
+   ヴァイオリニストの追加と、協奏曲のソリスト
+   ===================================================================== */
+const VLN={
+ s1723:[
+  C('locatelli','ロカテッリ','P. A. Locatelli','rome','コンサートマスター','名人芸',5,[11,7,8,7],true,'tech',[1.2,.6,.8,1.1,1.2],'caprice24','violin','『ヴァイオリンの技法』24のカプリース','左手は、まだ誰も行ったことのない高さまで届きますよ。','あなたの楽団で、ローマ仕込みの技を。','ローマで修業した名手。協奏曲に付けた24のカプリースは、のちのパガニーニの先駆けとなった。'),
+  C('veracini','ヴェラチーニ','F. M. Veracini','prague','コンサートマスター','名人芸',5,[10,8,9,7],true,'impro',[1.3,.9,.7,1.2,1.3],'caprice24','violin','ヴァイオリン・ソナタ集','窓から飛び降りたのは、ちょっとした行き違いでしてね。','わたしほどの名手は、ヨーロッパに二人といませんよ。','傲慢で知られた天才。1722年、ドレスデンで同僚と揉めたあと窓から飛び降り、足を痛めた。その後プラハに身を寄せた。'),
+  C('annamaria','ピエタのアンナ・マリーア','Anna Maria della Pietà','venice','コンサートマスター','名人芸',4,[9,9,7,6],true,'expr',[.8,.2,1.0,1.1,1.2],'spring','violin','ヴィヴァルディ ヴァイオリン協奏曲','ピエタの格子の向こうで、ずっと弾いてきました。','一度でいいから、格子の外で弾いてみたい。','ヴェネツィアのピエタ慈善院で育った孤児の名手。ヴィヴァルディは彼女のために多くの協奏曲を書いた。'),
+  C('jggraun','J.G.グラウン','J. G. Graun','dresden','コンサートマスター','古典',3,[8,7,6,7],false,'tech',[.9,.2,1.1,.8,1.0],'scale','violin','ヴァイオリン協奏曲','ピゼンデル先生に習っています。','いつか、あなたの楽団のコンマスに。','ドレスデンでピゼンデルに学んだ若者。のちにプロイセンのフリードリヒ皇太子の楽団でコンサートマスターとなる。')
+ ],
+ s1781:[
+  C('gavinies','ガヴィニエ','P. Gaviniès','paris','コンサートマスター','名人芸',5,[10,8,7,8],true,'tech',[1.1,.4,1.0,1.1,1.1],'caprice24','violin','『24のマティネ』','コンセール・スピリチュエルは、わたしの庭のようなものです。','フランスのヴァイオリンを、あなたの楽団に。','ヴィオッティが「フランスのタルティーニ」と呼んだ名手。のちにパリ音楽院の最初のヴァイオリン教授となった。'),
+  C('rkreutzer','R.クロイツェル','R. Kreutzer','paris','コンサートマスター','古典',4,[9,7,7,7],true,'tech',[1.0,.3,1.0,1.0,1.1],'scale','violin','42の練習曲','練習曲なら、いくらでも書けますよ。','パリの若手の弓を、あなたの楽団に。','パリの若きヴァイオリニスト。のちにベートーヴェンからソナタを献呈されたが、一度も弾かなかったと伝わる。'),
+  C('lolli','ロッリ','A. Lolli','peter','コンサートマスター','名人芸',5,[11,6,8,4],true,'tech',[1.4,1.0,.4,1.1,1.0],'caprice24','violin','ヴァイオリン協奏曲','アダージョ？ わたしの国では、ゆっくり弾く者はいませんよ。','女帝陛下にも負けない給金を、お約束いただけるなら。','エカチェリーナ2世の宮廷に仕えた奇抜な名手。速いパッセージは無類だが、ゆっくりした曲は苦手だったという。'),
+  C('strinasacchi','ストリナサッキ','R. Strinasacchi','vienna','コンサートマスター','古典',4,[8,10,7,7],false,'expr',[1.0,.3,1.0,1.0,1.3],'mozart','violin','モーツァルト ヴァイオリン・ソナタ K.454','モーツァルトさんの楽譜は、いつも直前に届くのです。','あなたの楽団で、歌うように弾きましょう。','女性の名ヴァイオリニスト。1784年、モーツァルトが彼女のためにソナタK.454を書き、自分のパートは白紙のまま本番を弾いた。'),
+  C('wcramer','W.クラーマー','W. Cramer','london','コンサートマスター','古典',4,[8,7,6,8],false,'tech',[1.1,.2,1.1,1.0,1.0],'scale','violin','ヴァイオリン協奏曲','ロンドンの楽団は、わたしが率いております。','ロンドン仕込みのリーダーシップを、あなたの楽団に。','マンハイム出身でロンドンの楽団を率いた名リーダー。改良した「クラーマー型」の弓は時代を先取りした。'),
+  C('franzl','フレンツル','I. Fränzl','munich','コンサートマスター','古典',3,[8,7,6,7],false,'tech',[.9,.2,1.1,.9,1.0],'mannheim','violin','ヴァイオリン協奏曲','マンハイムの弓さばきは、揃うことが命です。','あなたの楽団の弦を、揃えてみせましょう。','マンハイム楽派のヴァイオリニスト。宮廷とともにミュンヘンへ移った。')
+ ],
+ s1832:[
+  C('spohr','シュポーア','L. Spohr','leipzig','コンサートマスター','古典',6,[10,9,7,10],true,'expr',[1.0,.1,1.4,1.1,1.0],'scale','violin','ヴァイオリン協奏曲 第8番「劇唱の形式で」','パガニーニの曲芸には、品がありません。','ドイツの正統なヴァイオリンを、あなたの楽団に。','カッセルの宮廷楽長で、ドイツ随一のヴァイオリニスト。顎当てを考案し、指揮棒を最初期に使った一人とされる。'),
+  C('david','フェルディナント・ダーフィト','F. David','leipzig','コンサートマスター','古典',4,[9,8,7,9],false,'expr',[1.0,.2,1.2,1.0,1.1],'scale','violin','メンデルスゾーン ヴァイオリン協奏曲','メンデルスゾーン君とは、子どものころからの友人です。','あなたの楽団のコンマスとして。','のちにゲヴァントハウスのコンサートマスターとなり、メンデルスゾーンの協奏曲を助言して初演した。'),
+  C('olebull','オーレ・ブル','Ole Bull','paris','コンサートマスター','名人芸',4,[10,9,9,5],true,'impro',[1.3,.8,.5,1.2,1.5],'caprice24','violin','『ノルウェーの山の思い出』','ノルウェーの滝の音を、そのままヴァイオリンに。','北の国の弓を、あなたの楽団に。','ノルウェーの独学の名手。1832年のパリでパガニーニを聴いて奮起し、のちに「北のパガニーニ」と呼ばれた。'),
+  C('mayseder','マイゼーダー','J. Mayseder','vienna','コンサートマスター','古典',4,[9,8,6,7],false,'tech',[1.0,.2,1.0,1.0,1.0],'waltz','violin','ヴァイオリン協奏曲 第1番','ウィーンを出たことは、ほとんどありません。','ウィーンの甘い音色を、あなたの楽団に。','ウィーン宮廷の名ヴァイオリニスト。華麗な作風で、ウィーンでは絶大な人気があった。'),
+  C('sivori','シヴォリ','C. Sivori','milan','コンサートマスター','名人芸',4,[10,8,8,5],true,'tech',[1.1,.5,.7,1.1,1.2],'caprice24','violin','パガニーニ ヴァイオリン協奏曲 第2番','パガニーニ先生の、ただ一人の弟子です。','先生ゆずりの技を、あなたの楽団に。','パガニーニが生涯でただ一人とった弟子。のちに師の愛器「イル・カノーネ」を弾くことを許された。'),
+  C('vieuxtemps','若きヴュータン','H. Vieuxtemps','london','コンサートマスター','名人芸',2,[8,7,7,6],false,'tech',[.9,.3,.8,.9,1.2],'scale','violin','ド・ベリオ ヴァイオリン協奏曲','ド・ベリオ先生に、よくほめられます。','ぼく、もっと大きな舞台で弾きたいんです。','ベルギーの神童。ド・ベリオに学び、まだ十代で各地を巡演していた。のちにフランコ＝ベルギー派の巨匠となる。')
+ ],
+ s1876:[
+  C('wieniawski','ヴィエニャフスキ','H. Wieniawski','london','コンサートマスター','名人芸',6,[12,10,8,6],true,'tech',[1.3,.7,.6,1.2,1.4],'polonaise','violin','ヴァイオリン協奏曲 第2番','ロンドンの次は、ブリュッセルの生徒たちが待っています。','ポーランドの弓を、あなたの楽団に。','ポーランドの大ヴァイオリニスト。ロシア宮廷のソリストを経てブリュッセル音楽院の教授となった。'),
+  C('neruda','ヴィルマ・ネルーダ','W. Neruda','london','コンサートマスター','古典',5,[10,10,7,8],false,'expr',[1.0,.3,1.1,1.1,1.2],'scale','violin','ヴィエニャフスキ 協奏曲','女がヴァイオリンを弾くなんて、と言われたものです。','あなたの楽団の舞台に立ちましょう。','モラヴィア出身の女性ヴァイオリニスト。ロンドンで絶大な人気を誇り、のちにハレ夫人となった。'),
+  C('wilhelmj','ヴィルヘルミ','A. Wilhelmj','bayreuth','コンサートマスター','名人芸',5,[11,9,7,8],true,'tech',[1.2,.4,1.0,1.1,1.1],'tristan','violin','バッハ『G線上のアリア』（編曲）','バイロイトの楽団は、わたしが率いています。','祝祭劇場のコンマスを、あなたの楽団に。','1876年の第1回バイロイト音楽祭でコンサートマスターを務めた。バッハのアリアを編曲し『G線上のアリア』として広めた。'),
+  C('brodsky','ブロツキー','A. Brodsky','moscow','コンサートマスター','古典',4,[9,9,7,8],false,'expr',[.9,.3,1.1,.9,1.3],'scale','violin','チャイコフスキー ヴァイオリン協奏曲','チャイコフスキーさんの協奏曲、誰も弾かないならわたしが。','あなたの楽団で、新しい協奏曲を。','モスクワ音楽院の教授。のちに「演奏不可能」と言われたチャイコフスキーの協奏曲を初演した。'),
+  C('hubay76','若きフバイ','J. Hubay','berlin','コンサートマスター','古典',2,[8,7,6,7],false,'tech',[.9,.2,1.1,.8,1.1],'scale','violin','ヨアヒムに学ぶ課題曲','ヨアヒム先生のもとで修業中です。','ハンガリーの若い弓を、あなたの楽団に。','ベルリンでヨアヒムに学ぶハンガリーの若者。のちにブダペストの名教授となる。')
+ ],
+ s1905:[
+  C('elman','ミッシャ・エルマン','M. Elman','london','コンサートマスター','名人芸',4,[11,10,7,5],true,'expr',[1.2,.5,.6,1.1,1.4],'scale','violin','チャイコフスキー ヴァイオリン協奏曲','アウアー先生に、ずいぶん叱られました。','ぼくの音色を、あなたの楽団で。','アウアー門下の天才少年。1905年、14歳でロンドン・デビューを果たした。「エルマン・トーン」と呼ばれる甘い音色で知られる。'),
+  C('zimbalist','ジンバリスト','E. Zimbalist','peter','コンサートマスター','古典',3,[10,8,7,7],false,'tech',[1.0,.2,1.0,1.0,1.1],'scale','violin','グラズノフ 協奏曲','アウアー先生の教室は、天才ばかりで大変です。','あなたの楽団で、腕を試させてください。','ペテルブルク音楽院でアウアーに学ぶ若者。のちにアメリカで名教師となった。'),
+  C('huberman','フーベルマン','B. Huberman','warsaw','コンサートマスター','名人芸',6,[11,11,8,8],true,'expr',[1.1,.4,1.1,1.2,1.4],'scale','violin','ブラームス ヴァイオリン協奏曲','14歳のとき、ブラームスさんの前で協奏曲を弾きました。','ポーランドの魂の音を、あなたの楽団に。','ポーランド出身の天才。1896年、13歳でブラームスの前で協奏曲を弾き、作曲者を感涙させたと伝わる。'),
+  C('vecsey','ヴェチェイ','F. von Vecsey','pest','コンサートマスター','名人芸',4,[11,8,7,6],true,'tech',[1.1,.5,.7,1.1,1.3],'scale','violin','シベリウス ヴァイオリン協奏曲','まだ12歳ですけど、子ども扱いしないでください。','ぼくの弓を、あなたの楽団に。','フバイ門下の神童。1905年、12歳でロンドンとベルリンに衝撃のデビューを果たした。シベリウスは協奏曲を彼に献呈した。'),
+  C('powell','モード・パウエル','M. Powell','newyork','コンサートマスター','古典',4,[10,9,7,8],false,'expr',[1.0,.3,1.1,1.0,1.2],'scale','violin','チャイコフスキー ヴァイオリン協奏曲（米国初演）','アメリカにも、ヴァイオリニストはいるのです。','新大陸の弓を、あなたの楽団に。','アメリカの名ヴァイオリニスト。ヨアヒムに学び、チャイコフスキーやシベリウスの協奏曲を米国で初演した。'),
+  C('halir','ハリール','K. Halíř','berlin','コンサートマスター','古典',4,[9,9,7,9],false,'expr',[.9,.2,1.2,.9,1.1],'scale','violin','シベリウス ヴァイオリン協奏曲（改訂版初演）','ヨアヒム四重奏団の第2ヴァイオリンです。','ベルリンの確かな弓を、あなたの楽団に。','ボヘミア出身でヨアヒムの右腕。1905年、R.シュトラウスの指揮でシベリウスの協奏曲改訂版を初演した。'),
+  C('burmester','ブルメスター','W. Burmester','berlin','コンサートマスター','名人芸',4,[11,7,7,6],true,'tech',[1.2,.6,.7,1.1,1.1],'caprice24','violin','パガニーニ カプリース','パガニーニの全曲を、一晩で弾きましたよ。','超絶技巧なら、あなたの楽団に。','ドイツの技巧派。シベリウスの協奏曲を初演するはずだったが、日程の都合で機会を逃した。'),
+  C('hall','マリー・ホール','M. Hall','london','コンサートマスター','古典',3,[9,9,7,7],false,'expr',[.9,.3,1.0,1.0,1.3],'scale','violin','ヴァイオリン協奏曲','街角で弾いていたこともあるんです。','あなたの楽団で、もう一度夢を。','イギリスの女性ヴァイオリニスト。貧しい家に生まれ路上でも弾いたが、才能を見出されて一流となった。'),
+  C('rose','アルノルト・ロゼー','A. Rosé','vienna','コンサートマスター','古典',5,[10,9,7,10],false,'expr',[1.0,.2,1.3,1.0,1.1],'scale','violin','ベートーヴェン 弦楽四重奏曲','ウィーン・フィルのコンマスを、もう二十数年やっています。','ウィーンの音を、あなたの楽団に。','ウィーン・フィルの名コンサートマスターで、マーラーの妹の夫。ロゼー四重奏団を率いた。')
+ ]
+};
+for(const sc in VLN){const S=SCEN[sc];for(const c of VLN[sc])if(!S.chars.some(x=>x.id===c.id))S.chars.push(c);}
+Object.assign(TR,{locatelli:{h:'wig'},veracini:{h:'wig',brow:'up'},annamaria:{fem:1,h:'updo',hc:'#3a2a1a',coat:'#2a2a3a'},jggraun:{h:'wig'},gavinies:{h:'wig'},rkreutzer:{h:'wig'},lolli:{h:'wig',smile:1},strinasacchi:{fem:1,h:'ringlets',hc:'#5a3a22'},wcramer:{h:'wig'},franzl:{h:'wig'},
+ spohr:{h:'wavy',hc:'#8a6a4a',b:'side'},david:{h:'short',hc:'#3a2a1a',b:'side'},olebull:{h:'long',hc:'#c8a870'},mayseder:{h:'short',hc:'#5a4a3a'},sivori:{h:'wavy',hc:'#1a1410'},vieuxtemps:{h:'curly',hc:'#5a3a22'},
+ wieniawski:{h:'wavy',hc:'#1a1410',b:'mus'},neruda:{fem:1,h:'updo',hc:'#3a2a1a',coat:'#3a2a40'},wilhelmj:{h:'wavy',hc:'#8a6a4a',b:'full'},brodsky:{h:'short',hc:'#3a2a1a',b:'full'},hubay76:{h:'short',hc:'#3a2a1a',b:'mus'},
+ elman:{h:'curly',hc:'#1a1410'},zimbalist:{h:'wavy',hc:'#1a1410'},huberman:{h:'wild',hc:'#2a2018'},vecsey:{h:'short',hc:'#3a2a1a'},powell:{fem:1,h:'updo',hc:'#5a3a22'},halir:{h:'short',hc:'#5a4a3a',b:'full'},burmester:{h:'wavy',hc:'#8a6a4a',b:'mus'},hall:{fem:1,h:'updo',hc:'#7a4a2a'},rose:{h:'receding',hc:'#3a2a1a',b:'full'}});
+Object.assign(GROW,{vieuxtemps:'late',elman:'early',vecsey:'early',zimbalist:'late',hubay76:'late',jggraun:'late',olebull:'early',lolli:'early'});
+Object.assign(QUIRK,{veracini:['temper','diva'],lolli:['greedy'],olebull:['star'],locatelli:['star']});
+if(typeof UHIST!=='undefined')Object.assign(UHIST,{locatelli:5,veracini:4,annamaria:4,jggraun:3,gavinies:4,rkreutzer:4,lolli:4,strinasacchi:4,wcramer:3,franzl:3,spohr:5,david:4,olebull:4,mayseder:3,sivori:4,vieuxtemps:5,wieniawski:5,neruda:4,wilhelmj:4,brodsky:4,hubay76:4,elman:5,zimbalist:4,huberman:5,vecsey:4,powell:4,halir:3,burmester:3,hall:3,rose:4});
+
+/* ---- 協奏曲の追加 ---- */
+const VLS=[Sl(['vn'],'独奏ヴァイオリン'),Sl('cond','指揮'),Sl('vn','コンサートマスター'),Sl('vc','チェロ')];
+const VLS3=[Sl(['vn'],'独奏ヴァイオリン'),Sl('cond','指揮'),Sl('vn','コンサートマスター')];
+SCEN.s1723.rep.push(
+ Pc('bach1041','バッハ ヴァイオリン協奏曲 イ短調 BWV1041','協奏曲',VLS3,[.5,.3,.2],'古典','bach','scale','violin'),
+ Pc('bach1043','バッハ 2つのヴァイオリンのための協奏曲','協奏曲',[Sl(['vn'],'独奏ヴァイオリン1'),Sl(['vn'],'独奏ヴァイオリン2'),Sl('cond','通奏低音')],[.4,.4,.2],'古典','bach','scale','violin'),
+ Pc('locatelli3','ロカテッリ『ヴァイオリンの技法』','協奏曲',VLS3,[.7,.1,.2],'名人芸','locatelli','caprice24','violin'));
+SCEN.s1781.rep.push(
+ Pc('k219','モーツァルト ヴァイオリン協奏曲 第5番 K.219','協奏曲',VLS,[.4,.4,.2],'古典','mozart','scale','violin'),
+ Pc('viotti22','ヴィオッティ ヴァイオリン協奏曲','協奏曲',VLS,[.5,.4,.1],'古典','viotti','scale','violin'));
+SCEN.s1832.rep.push(
+ Pc('bvc','ベートーヴェン ヴァイオリン協奏曲','協奏曲',VLS,[.3,.6,.1],'古典','','bvc','violin'),
+ Pc('beriot1','ド・ベリオ ヴァイオリン協奏曲 第1番','協奏曲',VLS3,[.5,.4,.1],'ロマン','beriot','scale','violin'),
+ Pc('spohr8','シュポーア ヴァイオリン協奏曲 第8番「劇唱の形式で」','協奏曲',VLS,[.3,.5,.2],'古典','spohr','scale','violin'));
+SCEN.s1876.rep.push(
+ Pc('mendvc','メンデルスゾーン ヴァイオリン協奏曲','協奏曲',VLS,[.4,.5,.1],'古典','','mendvc','violin'),
+ Pc('bruch1','ブルッフ ヴァイオリン協奏曲 第1番','協奏曲',VLS,[.3,.6,.1],'ロマン','','scale','violin'),
+ Pc('bvc','ベートーヴェン ヴァイオリン協奏曲','協奏曲',VLS,[.3,.6,.1],'古典','','bvc','violin'),
+ Pc('tchvc','チャイコフスキー ヴァイオリン協奏曲','協奏曲',VLS,[.5,.4,.1],'名人芸','tchaikovsky','scale','violin'),
+ Pc('wien2','ヴィエニャフスキ ヴァイオリン協奏曲 第2番','協奏曲',VLS3,[.5,.4,.1],'名人芸','wieniawski','polonaise','violin'));
+SCEN.s1905.rep.push(
+ Pc('glazvc','グラズノフ ヴァイオリン協奏曲（1905）','協奏曲',VLS,[.4,.5,.1],'ロマン','glazunov','scale','violin'),
+ Pc('tchvc','チャイコフスキー ヴァイオリン協奏曲','協奏曲',VLS,[.5,.4,.1],'名人芸','','scale','violin'),
+ Pc('brvc','ブラームス ヴァイオリン協奏曲','協奏曲',VLS,[.5,.4,.1],'古典','','fae','violin'),
+ Pc('mendvc','メンデルスゾーン ヴァイオリン協奏曲','協奏曲',VLS,[.4,.5,.1],'古典','','mendvc','violin'));
+Object.assign(MOTIFS,{
+ bvc:[[50,.3],[50,.3],[50,.3],[50,.3],[[62,66,69],.9]],
+ mendvc:[[83,.51],[83,.17],[83,.68],[79,.34],[88,.34],[88,.68],[83,.34],[91,.34],[90,.34],[88,.34],[84,.34],[88,.34],[83,1]]
+});
+
+/* ---- ソリストと「当たり役」 ---- */
+const CONC={
+ seasons:{sol:['vivaldi','annamaria'],t:'作曲者自身か、ピエタの名手アンナ・マリーアが弾いた'},
+ bach1041:{sol:['pisendel','bach'],t:'バッハと親しかったドレスデンの名手ピゼンデル'},
+ bach1043:{sol:['pisendel','jggraun'],t:'ドレスデンの師弟が並ぶ'},
+ locatelli3:{sol:['locatelli'],t:'作曲者自身の超絶技巧'},
+ k219:{sol:['mozart'],t:'モーツァルト自身がヴァイオリンも弾いた'},
+ viotti22:{sol:['viotti'],t:'作曲者自身の当たり役'},
+ symconc:{sol:['stgeorges'],t:'作曲者自身の当たり役'},
+ pag1:{sol:['paganini','sivori','ernst'],t:'作曲者か、その唯一の弟子シヴォリ'},
+ bvc:{sol:['joachim','baillot','david'],t:'忘れられていたこの曲を、12歳のヨアヒムが蘇らせた'},
+ beriot1:{sol:['beriot','vieuxtemps'],t:'作曲者か、その愛弟子ヴュータン'},
+ spohr8:{sol:['spohr'],t:'作曲者自身の当たり役'},
+ mendvc:{sol:['david','joachim'],t:'初演はダーフィト。作曲者と相談しながら仕上げた'},
+ bruch1:{sol:['joachim'],t:'ヨアヒムの助言で改訂され、ヨアヒムが弾いた'},
+ brvc:{sol:['joachim','huberman'],t:'ヨアヒムのために書かれ、ヨアヒムが初演した'},
+ tchvc:{sol:['brodsky','auer','auer05','elman','powell'],t:'献呈されたアウアーは弾かず、ブロツキーが初演した'},
+ espagnole:{sol:['sarasate'],t:'サラサーテのために書かれ、サラサーテが初演した'},
+ rondo:{sol:['sarasate'],t:'サラサーテのために書かれた'},
+ wien2:{sol:['wieniawski'],t:'作曲者自身の当たり役'},
+ sibvc:{sol:['halir','vecsey','burmester'],t:'改訂版はハリールが初演し、ヴェチェイに献呈された'},
+ glazvc:{sol:['auer05','zimbalist'],t:'アウアーに献呈され、アウアーが初演した'},
+ k466:{sol:['mozart'],t:'モーツァルト自身が初演した'},chopin2:{sol:['chopin'],t:'作曲者自身の当たり役'},
+ tch1:{sol:['bulow','nrubinstein','taneyev76'],t:'初演はビューロー。モスクワではタネーエフが弾いた'},
+ schpc:{sol:['clara','clara76'],t:'クララが初演し、生涯弾き続けた'},rach2:{sol:['rachmaninoff'],t:'作曲者自身の当たり役'},
+ brand5:{sol:['bach'],t:'チェンバロの長大な独奏は、バッハ自身が弾いたとされる'},hcello:{sol:[],t:''}
+};
+const _evalLineupV=evalLineup;
+evalLineup=function(p,L,opt){
+  const r=_evalLineupV(p,L,opt);opt=opt||{};
+  if(p.form!=='協奏曲'||!p.slots[0]||!/独奏/.test(p.slots[0].l))return r;
+  const sid=opt.standIn===0?null:L[0];
+  if(!sid){r.q-=8;r.notes.unshift('協奏曲なのにソリストがいない（-8）');}
+  else{
+    const c=r.contrib.find(x=>x&&x.i===0);const others=r.contrib.filter(x=>x&&x.i!==0);const avg=others.length?others.reduce((a,x)=>a+x.v,0)/others.length:c.v;
+    const add=(c.v-avg)*.8;r.q+=add/Math.max(1,p.slots.length/2);r.notes.unshift(`協奏曲の主役はソリスト：${nameOf(sid)}（${add>=0?'+':''}${(add/Math.max(1,p.slots.length/2)).toFixed(1)}）`);
+    const real=realId(sid),cf=CONC[p.id];
+    if(cf&&cf.sol.includes(real)){r.q+=4;r.notes.unshift(`★当たり役！ ${nameOf(sid)}の${p.t.replace(/（.*）/,'')}——${cf.t}（+4）`);c.v+=4;c.sk.push('当たり役');}
+    const best=['tech','expr','impro'].sort((a,b)=>mstat(sid,b)-mstat(sid,a))[0];const need=['tech','expr','impro'][p.w.indexOf(Math.max(...p.w))];
+    if(best===need){r.q+=1.5;r.notes.push(`ソリストの芸風が曲に合う（+1.5）`);}
+    const inst=(typeof ueqOf==='function'&&G.ux&&G.ux[sid])?ueqOf(sid).filter(e=>UEQ[e.id].cat==='inst'||UEQ[e.id].cat==='bow'):[];
+    const iv=inst.reduce((a,e)=>a+(eqStat(e,'tech',sid)+eqStat(e,'expr',sid)),0);
+    if(iv){r.q+=iv*.5;r.notes.push(`ソリストの楽器が鳴る：${inst.map(e=>eqName(e)).join('＋')}（+${(iv*.5).toFixed(1)}）`);}
+  }
+  r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;
+  let mvp=-1,bv=-99;r.contrib.forEach(c=>{if(c&&c.v>bv){bv=c.v;mvp=c.i;}});r.mvp=mvp;
+  return r;
+};
+function eqName(e){return UEQ[e.id].n;}
+
+/* =====================================================================
+   名器・弓・楽器商（偽物あり）
+   ===================================================================== */
+const curY=()=>U_YEAR[G.sc]+Math.floor(G.month/12);
+/* 既存の愛用品に区分（楽器・弓・小物）をつける */
+const CAT={amati:'inst',messiah:'inst',cannone:'inst',goffriller:'inst',davidov:'inst',dragobass:'inst',harpsi:'inst',silbermann:'inst',stein:'inst',erard:'inst',pleyel:'inst',steinway:'inst',traverso:'inst',boehm:'inst',chalumeau:'inst',oehler:'inst',basset:'inst',
+ baton:'inst',ivory:'inst',rollen:'inst',quill:'inst',costume:'inst'};
+for(const k in UEQ)UEQ[k].cat=CAT[k]||'acc';
+Object.assign(UEQ.amati,{n:'ニコロ・アマティ 1649年製',fam:1,v:3});
+Object.assign(UEQ.messiah,{n:'ストラディヴァリウス 1716年製「メシア」',fam:1,v:5,tech:2,expr:4});
+Object.assign(UEQ.cannone,{n:'グァルネリ・デル・ジェズ 1743年製「イル・カノーネ」',fam:1,v:5,tech:4,expr:2,own:['paganini','sivori']});
+Object.assign(UEQ.davidov,{n:'ストラディヴァリウス 1712年製チェロ「ダヴィドフ」',fam:1,v:5,own:['davydov']});
+Object.assign(UEQ.goffriller,{fam:1,v:3});Object.assign(UEQ.dragobass,{fam:1,v:4,own:['dragonetti']});
+Object.assign(UEQ,{
+ /* ヴァイオリン */
+ stainer:{n:'ヤーコプ・シュタイナー 1668年製',t:['vn'],cat:'inst',fam:1,tech:1,expr:3,r:4,y:1668,v:4,stainer:1,h:'チロルの名工。18世紀にはストラディヴァリより高値で取引され、バッハもシュタイナーを持っていたと伝わる。'},
+ str_new:{n:'ストラディヴァリの新作ヴァイオリン',t:['vn'],cat:'inst',tech:2,expr:2,r:4,y:1690,yz:1737,v:3,h:'クレモナの工房で、老ストラディヴァリがいまも新作を仕上げている。当時はまだ「現役の名工の楽器」だった。'},
+ str_lipinski:{n:'ストラディヴァリウス 1715年製「リピンスキ」',t:['vn'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1715,v:5,own:['tartini','lipinski'],h:'タルティーニが弾き、その弟子筋を経てリピンスキの手に渡ったと伝わる名器。'},
+ str_viotti:{n:'ストラディヴァリウス 1709年製「ヴィオッティ」',t:['vn'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1709,v:5,own:['viotti'],h:'近代ヴァイオリン奏法の父ヴィオッティが愛した一挺。'},
+ str_dolphin:{n:'ストラディヴァリウス 1714年製「ドルフィン」',t:['vn'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1714,v:5,h:'イルカのように輝くニスから名づけられた。のちにハイフェッツが愛用した。'},
+ str_joachim:{n:'ストラディヴァリウス 1714年製「ヨアヒム」',t:['vn'],cat:'inst',fam:1,tech:2,expr:4,r:5,y:1714,v:5,own:['joachim'],h:'ヨアヒムが弾いた一挺。'},
+ str_sarasate:{n:'ストラディヴァリウス 1724年製「サラサーテ」',t:['vn'],cat:'inst',fam:1,tech:4,expr:2,r:5,y:1724,v:5,own:['sarasate'],h:'サラサーテが遺言でパリ音楽院に遺した。いまもパリの楽器博物館にある。'},
+ str_gibson:{n:'ストラディヴァリウス 1713年製「ギブソン」',t:['vn'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1713,v:5,own:['huberman'],h:'フーベルマンの愛器。のちに二度盗まれ、半世紀ものあいだ行方不明になった。'},
+ str_kreutzer:{n:'ストラディヴァリウス 1731年製「クロイツェル」',t:['vn'],cat:'inst',fam:1,tech:3,expr:2,r:5,y:1731,v:5,own:['rkreutzer'],h:'R.クロイツェルが弾いたと伝わる晩年のストラディヴァリ。'},
+ str_lady:{n:'ストラディヴァリウス 1721年製「レディ・ブラント」',t:['vn'],cat:'inst',fam:1,tech:2,expr:4,r:5,y:1721,v:5,h:'ほとんど弾かれず、作られたときの姿をとどめる一挺。'},
+ gdg_vieuxtemps:{n:'グァルネリ・デル・ジェズ 1741年製「ヴュータン」',t:['vn'],cat:'inst',fam:1,tech:3,expr:4,r:5,y:1741,v:5,own:['vieuxtemps'],h:'ヴュータンが愛した、デル・ジェズ最高傑作のひとつ。'},
+ gdg_ysaye:{n:'グァルネリ・デル・ジェズ 1740年製「イザイ」',t:['vn'],cat:'inst',fam:1,tech:3,expr:4,r:5,y:1740,v:5,own:['ysaye'],h:'イザイの愛器。のちにアイザック・スターンが弾いた。'},
+ gdg_beriot:{n:'グァルネリ・デル・ジェズ 1744年製「ド・ベリオ」',t:['vn'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1744,v:5,own:['beriot'],h:'デル・ジェズ最晩年の一挺。'},
+ gdg_kreisler:{n:'グァルネリ・デル・ジェズ 1733年製「クライスラー」',t:['vn'],cat:'inst',fam:1,tech:2,expr:4,r:5,y:1733,v:5,own:['kreisler'],h:'クライスラーが弾き、のちにアメリカ議会図書館に寄贈した。'},
+ bergonzi:{n:'カルロ・ベルゴンツィ 1730年代',t:['vn'],cat:'inst',fam:1,tech:2,expr:3,r:4,y:1730,v:4,h:'ストラディヴァリの工房に近いところで腕を磨いたクレモナの名工。'},
+ guadagnini:{n:'G.B.グァダニーニ 1750年代',t:['vn'],cat:'inst',fam:1,tech:2,expr:2,r:4,y:1750,v:4,h:'各地を渡り歩いた名工。力強い音で人気が高い。'},
+ gasparo:{n:'ガスパロ・ダ・サロのヴァイオリン 1570年代',t:['vn'],cat:'inst',fam:1,tech:1,expr:3,r:3,y:1570,v:3,own:['olebull'],h:'ブレシア派の祖の作。オーレ・ブルが彫刻入りの一挺を愛用した。'},
+ vuillaume:{n:'J.B.ヴィヨーム（名器の写し）',t:['vn'],cat:'inst',tech:2,expr:2,r:3,y:1830,v:3,h:'パリの名工にして大楽器商。ストラディヴァリの見事な写しを作り、本物と見分けがつかないほどだった。'},
+ /* チェロ */
+ str_duport:{n:'ストラディヴァリウス 1711年製チェロ「デュポール」',t:['vc'],cat:'inst',fam:1,tech:3,expr:3,r:5,y:1711,v:5,own:['duport'],h:'ナポレオンが試しに弾こうとして、靴の拍車で傷をつけたと伝わる。'},
+ montagnana:{n:'ドメニコ・モンタニャーナのチェロ',t:['vc'],cat:'inst',fam:1,tech:2,expr:3,r:4,y:1730,v:4,h:'「ヴェネツィアの獅子」と呼ばれた名工。太く豊かな音。'},
+ /* 弓 */
+ bow_baroque:{n:'バロック弓（コレッリ型）',t:['vn','vc','cb'],cat:'bow',tech:1,r:1,y:1600,yz:1800,v:1,h:'外に反った軽い弓。歌うような短い音に向く。'},
+ bow_cramer:{n:'クラーマー型の弓',t:['vn','vc'],cat:'bow',tech:1,expr:1,r:2,y:1770,yz:1830,v:2,own:['wcramer'],h:'ロンドンのクラーマーが好んだ過渡期の弓。近代の弓への橋渡しとなった。'},
+ bow_dodd:{n:'ジョン・ドッドの弓',t:['vn','vc'],cat:'bow',tech:1,expr:1,r:3,y:1780,v:3,h:'「イギリスのトゥルテ」と呼ばれた弓職人の作。'},
+ bow_tourte:{n:'フランソワ・トゥルテの弓',t:['vn','vc'],cat:'bow',fam:1,tech:2,expr:3,r:5,y:1785,v:5,h:'近代の弓の形を完成させた「弓のストラディヴァリ」。フェルナンブーコ材と内側への反りが、長く力強い音を生んだ。'},
+ bow_peccatte:{n:'ドミニク・ペカットの弓',t:['vn','vc'],cat:'bow',fam:1,tech:2,expr:2,r:4,y:1826,v:4,h:'ヴィヨームの工房で腕を磨いた名弓職人。'},
+ bow_kittel:{n:'ニコラウス・キッテルの弓',t:['vn','vc'],cat:'bow',fam:1,tech:3,expr:1,r:4,y:1840,v:4,h:'ペテルブルクの名弓職人。「ロシアのトゥルテ」と呼ばれる。'},
+ bow_voirin:{n:'フランソワ・ニコラ・ヴォワランの弓',t:['vn','vc'],cat:'bow',tech:1,expr:2,r:4,y:1870,v:4,h:'細身でしなやかな、新しい時代の弓。'},
+ bow_sartory:{n:'ウジェーヌ・サルトリーの弓',t:['vn','vc'],cat:'bow',tech:2,expr:1,r:4,y:1890,v:4,h:'力強い弓で、20世紀の大ヴァイオリニストたちに愛された。'},
+ bow_plain:{n:'ふつうの弓',t:['vn','vc','cb'],cat:'bow',tech:1,r:1,y:1600,v:1,h:'工房で買える、ありふれた弓。'},
+ /* 鍵盤 */
+ broadwood:{n:'ブロードウッドのピアノ',t:['pf'],cat:'inst',tech:1,expr:2,r:3,y:1790,v:3,h:'ロンドンの名門。1818年、ベートーヴェンに一台が贈られた。'},
+ graf:{n:'コンラート・グラーフのピアノ',t:['pf'],cat:'inst',tech:1,expr:2,r:3,y:1804,v:3,h:'ウィーンの名工。ベートーヴェン晩年のピアノや、シューマンがクララに贈ったピアノで知られる。'},
+ bosendorfer:{n:'ベーゼンドルファー',t:['pf'],cat:'inst',tech:1,expr:3,r:4,y:1828,v:4,h:'1828年創業のウィーンの名門。リストの猛烈な演奏にも壊れなかったことで名をあげた。'},
+ bechstein:{n:'ベヒシュタイン',t:['pf'],cat:'inst',tech:3,expr:1,r:4,y:1853,v:4,h:'1853年創業のベルリンの名門。ビューローやリストが愛用した。'}
+});
+for(const k of ['stein','erard','pleyel','steinway'])UEQ[k].v=4;
+for(const k in UEQ)if(UEQ_H&&UEQ_H[k]&&!UEQ[k].h)UEQ[k].h=UEQ_H[k];
+Object.assign(UEQ.cannone,{h:UEQ_H.cannone});
+
+/* ---- 能力：偽物は鳴らない／本来の持ち主は+2 ---- */
+eqStat=function(e,k,id){const q=UEQ[e.id];if(e.fake)return k==='def'?0:(k==='tech'?1:0);let v=q[k]||0;
+  if(q.own&&id&&k!=='def'&&q.own.includes(realId(id))&&(k==='tech'||k==='expr'))v+=1;return v;};
+eqName=function(e){return(e.fake&&e.known?'（偽）':'')+UEQ[e.id].n;};
+
+/* ---- 値段：古いイタリアの名器は時代とともに高騰する ---- */
+function eqPrice(id){
+  const q=UEQ[id],y=curY();const base={1:60,2:180,3:550,4:1400,5:3200}[q.r]||300;
+  let f=1;const old=q.cat!=='acc'&&q.y<1760&&q.t.some(t=>['vn','vc','cb'].includes(t));
+  if(q.stainer)f=y<1800?1.4:y<1850?.9:.7;else if(old)f=y<1760?.25:y<1800?.45:y<1850?1:y<1890?1.8:2.6;
+  if(q.cat==='bow'&&q.fam)f*=y<1850?.7:y<1890?1.1:1.5;
+  return Math.round(base*f/10)*10;
+}
+const ownedIds=()=>new Set(G.ueq.filter(e=>!e.fake).map(e=>e.id));
+
+/* ---- 楽器商 ---- */
+const DEALERS={
+ vuillaume:{n:'J.B.ヴィヨーム（パリ）',fake:0,cert:1,mark:1,pitch:'クレモナの名器はすべて、わたしが鑑定書をつけてお渡しします。',ok:()=>P().city==='paris'&&curY()>=1828&&curY()<=1875},
+ hill:{n:'W.E.ヒル＆サンズ（ロンドン）',fake:0,cert:1,mark:1.1,pitch:'ヒル商会の鑑定書があれば、どこへ行っても通用いたします。',ok:()=>P().city==='london'&&curY()>=1880},
+ tarisio:{n:'行商人ルイジ・タリシオ',fake:.1,mark:.7,pitch:'イタリアの屋根裏で見つけてきた掘り出し物でさあ。',ok:()=>['milan','paris','venice','naples'].includes(P().city)&&curY()>=1820&&curY()<=1854},
+ town:{n:'町の楽器商',fake:.2,mark:1,pitch:'うちは堅実な商売が売りです。',ok:()=>true},
+ falsoni:{n:'怪しげな楽器商ファルソーニ',fake:.55,mark:.6,shady:1,pitch:'旦那、こいつは正真正銘のストラディヴァリですぜ。今日だけ、この値段で。',ok:()=>true}
+};
+function dealerOffers(){
+  G.dealer=G.dealer||{};const key=`${G.month}|${P().city}`;if(G.dealer.key===key)return G.dealer;
+  const h=hashS(key);const avail=Object.keys(DEALERS).filter(k=>DEALERS[k].ok());
+  const named=avail.filter(k=>!['town','falsoni'].includes(k));
+  const dk=named.length&&h%3!==0?named[h%named.length]:(h%5<2?'falsoni':'town');const D=DEALERS[dk];
+  const y=curY(),own=ownedIds();
+  const pool=Object.keys(UEQ).filter(k=>{const q=UEQ[k];return q.cat!=='acc'&&q.y<=y&&(!q.yz||y<=q.yz)&&!(q.fam&&own.has(k))&&(q.r>=3||dk==='town');});
+  const items=[];const used=new Set();
+  for(let i=0;i<5&&pool.length;i++){let k=pool[(h*(i+3)+i*17)%pool.length];let n=0;while(used.has(k)&&n++<20)k=pool[(h+i*31+n*7)%pool.length];if(used.has(k))continue;used.add(k);
+    const q=UEQ[k];const fake=q.r>=4&&Math.random()<D.fake;const price=Math.round(eqPrice(k)*D.mark*(D.shady?(.5+Math.random()*.2):1)/10)*10;
+    items.push({id:k,price,fake,sold:0});}
+  G.dealer={key,dk,items};return G.dealer;
+}
+function dealerScreen(){
+  const d=dealerOffers(),D=DEALERS[d.dk];
+  $('#scene').innerHTML=`<div class="sc"><h3>${D.n}</h3><div class="subt">${ci(P().city).name}・${curY()}年ごろ</div>
+   <div class="bubble" style="margin:8px 0">「${D.pitch}」</div>
+   <div class="card pmeta">${D.cert?'この店の品には鑑定書がつく（本物が保証される）。':D.shady?'<b style="color:#e88">相場よりずいぶん安い。うまい話には裏があるかもしれない。</b>':'本物かどうかは、鑑定してみるまでわからない。'}　所持金 ${fmt(P().money)}fr</div>
+   ${d.items.map((it,i)=>{const q=UEQ[it.id];return`<div class="card" style="font-size:12.5px"><b>${q.n}</b>　<span style="color:${U_RCOL[q.r-1]}">${'★'.repeat(q.r)}</span><br><span class="pmeta">${{inst:'楽器',bow:'弓'}[q.cat]||'小物'}・${ueqTxt(it.id)}</span>${q.h?`<br><span class="pmeta">${q.h}</span>`:''}
+     <br><button class="btn ${it.sold?'':'gold'}" data-buy="${i}" style="width:100%;margin-top:4px" ${it.sold||P().money<it.price?'disabled':''}>${it.sold?'売約済み':`買う　${fmt(it.price)}fr`}</button></div>`;}).join('')}
+   <button class="btn" id="dlBack" style="width:100%;margin-top:6px">店を出る</button></div>`;
+  $('#scene').classList.remove('hidden');$('#scene').scrollTop=0;
+  document.querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.buy];if(it.sold||P().money<it.price)return;
+    P().money-=it.price;it.sold=1;const e=newUEq(it.id);e.fake=it.fake;e.known=!!D.cert;e.cert=!!D.cert;e.from=D.n;e.paid=it.price;
+    addLog(`${D.n}から${UEQ[it.id].n}を${fmt(it.price)}frで買った。`);if(UEQ[it.id].r>=5&&!it.fake)hpush(`名器「${UEQ[it.id].n}」を手に入れた`);save();
+    modal('お買い上げ',`<b>${UEQ[it.id].n}</b>を手に入れた。${D.cert?'<br>鑑定書つき。':'<br>本物かどうかは、まだわからない……。'}<br><span class="pmeta">稽古場の楽団員の詳細から、楽器や弓の枠に持たせられます。</span>`,[{t:'店に戻る',f(){dealerScreen();}}]);});
+  $('#dlBack').onclick=()=>{closeScene();render();};
+}
+/* ---- 鑑定と売却（倉庫） ---- */
+function appraiser(){const y=curY(),c=P().city;if(c==='paris'&&y>=1828&&y<=1875)return{n:'ヴィヨーム',fee:150};if(c==='london'&&y>=1880)return{n:'ヒル商会',fee:200};return{n:'老練な弦楽器職人',fee:120};}
+function storeScreen(){
+  const ap=appraiser();const who=e=>{const w=Object.keys(G.ux).find(id=>(id==='you'||G.members.includes(id))&&G.ux[id].eq.includes(e.uid));return w?nameOf(w):'';};
+  $('#scene').innerHTML=`<div class="sc"><h3>楽器の倉庫</h3><div class="subt">${G.ueq.length}点</div>
+   <div class="card pmeta">鑑定：${ap.n}（1点 ${ap.fee}fr）。鑑定書のない名器は、偽物かもしれない。</div>
+   ${G.ueq.map((e,i)=>{const q=UEQ[e.id];const val=e.fake&&e.known?20:Math.round(eqPrice(e.id)*.6/10)*10;
+     return`<div class="card" style="font-size:12.5px"><b>${eqName(e)}</b> <span style="color:${U_RCOL[(q.r||1)-1]}">${'★'.repeat(q.r||1)}</span>${e.cert?' <span class="kai" style="background:#3a6a3a">鑑定書</span>':''}${who(e)?` <span class="pmeta">・${who(e)}が使用中</span>`:''}
+      <br><span class="pmeta">${ueqTxt(e.id)}${e.from?`・${e.from}から購入`:''}</span>
+      <div class="sec2" style="margin-top:4px">${!e.cert&&!e.known&&q.r>=3?`<button class="btn" data-ap="${i}" ${P().money<ap.fee?'disabled':''}>鑑定する</button>`:''}<button class="btn" data-sell="${i}" ${who(e)?'disabled':''}>売る（${fmt(val)}fr）</button></div></div>`;}).join('')||'<div class="card pmeta">まだ何もない</div>'}
+   <button class="btn" id="stBack" style="width:100%;margin-top:6px">戻る</button></div>`;
+  $('#scene').classList.remove('hidden');
+  document.querySelectorAll('[data-ap]').forEach(b=>b.onclick=()=>{const e=G.ueq[+b.dataset.ap];P().money-=ap.fee;
+    if(e.fake){e.known=1;addLog(`${ap.n}の鑑定で、${UEQ[e.id].n}は偽物と判明した。`);hpush(`「${UEQ[e.id].n}」が偽物と判明`);
+      modal('鑑定の結果',`${ap.n}は裏板の内側を覗きこみ、首を横に振った。<br><br>「ラベルだけは本物そっくりですな。ですが、これは${pick(['ミルクールの量産品','ザクセンの工房の安物','ラベルを貼り替えただけの無名の楽器'])}です」<br><br><b>偽物だった……</b>${e.from?`<br><span class="pmeta">${e.from}につかまされた。</span>`:''}`,[{t:'戻る',f(){storeScreen();}}]);}
+    else{e.cert=1;e.known=1;addLog(`${UEQ[e.id].n}は本物と鑑定された。`);modal('鑑定の結果',`${ap.n}「間違いありません。<b>本物</b>です。鑑定書をお付けしましょう」`,[{t:'戻る',f(){storeScreen();}}]);}
+    save();});
+  document.querySelectorAll('[data-sell]').forEach(b=>b.onclick=()=>{const e=G.ueq[+b.dataset.sell];const val=e.fake&&e.known?20:Math.round(eqPrice(e.id)*.6/10)*10;
+    modal('売る',`${eqName(e)}を${fmt(val)}frで手放します。`,[{t:'売る',cls:'crim',f(){P().money+=val;G.ueq=G.ueq.filter(x=>x.uid!==e.uid);addLog(`${eqName(e)}を${fmt(val)}frで売った。`);save();storeScreen();}},{t:'やめる',f(){storeScreen();}}]);});
+  $('#stBack').onclick=()=>{closeScene();render();};
+}
+/* ---- 偽物は、弾いているうちにばれる ---- */
+const _memberMonthlyI=memberMonthly;
+memberMonthly=function(){
+  _memberMonthlyI();if(!G.ueq)return;
+  for(const id of ['you'].concat(G.members)){const u=G.ux&&G.ux[id];if(!u)continue;for(const q of u.eq){const e=q&&G.ueq.find(x=>x.uid===q);if(e&&e.fake&&!e.known&&Math.random()<.25){e.known=1;
+    addLog(`${nameOf(id)}が弾いていた${UEQ[e.id].n}は、偽物だった。`);hpush(`「${UEQ[e.id].n}」が偽物と判明`);
+    modal('どうも鳴らない……',`${portraitRow(realId(id))}${nameOf(id)}が首をかしげている。<br>「この楽器、いくら弾いても音が伸びないんです」<br><br>f字孔から覗くと、ラベルの紙だけが新しい。<b>${UEQ[e.id].n}は偽物だった！</b>${e.from?`<br><span class="pmeta">${e.from}につかまされた。</span>`:''}`,null,'paper');return;}}}
+};
+/* ---- 主人公の愛器（史実） ---- */
+const HERO_INST={paganini:'cannone',liszt:'erard',mozart:'stein',handel:'harpsi',bach:'harpsi'};
+const _newGameI=newGame;
+newGame=function(sc,pid,diff){_newGameI(sc,pid,diff);ensU();const k=HERO_INST[pid];if(k&&UEQ[k]&&UEQ[k].y<=U_YEAR[sc]){const e=newUEq(k);e.cert=1;e.known=1;ux('you').eq[0]=e.uid;}
+  if(['paganini'].includes(pid)){const b=newUEq(U_YEAR[sc]>=1785?'bow_dodd':'bow_baroque');b.cert=1;ux('you').eq[1]=b.uid;}};
+/* ---- 旅の途中の怪しい行商人 ---- */
+UTRIP.push({n:'街道の行商人',d:'宿の前で、行商人が古いヴァイオリンケースを開いた。「ストラディヴァリですよ。この値段なら、今だけです」',c:[
+ {t:'買う<small>相場の3分の1。本物なら大儲け</small>',dis:()=>P().money<400,f(){const pool=Object.keys(UEQ).filter(k=>UEQ[k].fam&&UEQ[k].r>=4&&UEQ[k].cat==='inst'&&UEQ[k].t.includes('vn')&&UEQ[k].y<=curY());const k=pick(pool);const pr=Math.max(400,Math.round(eqPrice(k)/3/10)*10);
+   if(P().money<pr)return'手持ちが足りなかった。';P().money-=pr;const e=newUEq(k);e.fake=Math.random()<.8;e.from='街道の行商人';e.paid=pr;return`${fmt(pr)}frで「${UEQ[k].n}」を手に入れた。……本物だろうか？`;}},
+ {t:'相手にしない',f(){return'行商人は舌打ちして、次の客を探しに行った。';}}]});
+/* ---- 稽古場に「楽器商」 ---- */
+const _fleetHTMLI=fleetHTML;
+fleetHTML=function(){const d=dealerOffers();return _fleetHTMLI().replace('<button class="btn" id="uStore">',`<button class="btn gold" id="uDeal">楽器商を訪ねる<small>${DEALERS[d.dk].n}・名器と弓（毎月入れ替わり）</small></button><button class="btn" id="uStore">`);};
+const _bindFleetI=bindFleet;
+bindFleet=function(){_bindFleetI();const a=$('#uDeal');if(a)a.onclick=dealerScreen;const s=$('#uStore');if(s)s.onclick=storeScreen;};
 
 /* =====================================================================
    楽団史の共有：リンク・画像カード・データの書き出し／読み込み
@@ -3802,7 +4092,7 @@ function rtStart(){
   rtRender();rtLoop();
 }
 function rtStat(mv){
-  let v=mv.st==='theory'?(P().theory||6):P()[mv.st];
+  let v=mstat('you',mv.st);
   if(mv.k==='crowd')v=Math.max(v,4+plv()/2);
   if(['tech','expr','impro'].includes(mv.k)){v+=((PL().duelB||{})[mv.k]||0);if(D.piece&&D.piece.b===mv.k)v+=2;}
   if(D.second){const c=charById(D.second);if(c&&c.style===mv.st)v+=Math.ceil(mlv(D.second)/2);}
