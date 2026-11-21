@@ -1,0 +1,18 @@
+#tutbar.mini{width:auto;left:auto;right:10px;transform:none;padding:4px;background:transparent;box-shadow:none}
+#tutbar.mini button{display:flex;flex-direction:column;align-items:center;background:#f4ead2;border-radius:30px;padding:3px 6px 4px;box-shadow:0 4px 14px #000a;border:1px solid #c9a24a;font-size:10px;color:#5a3a10}
+.battle.bstage{background:radial-gradient(ellipse at 50% 30%,#3a2416,#160d08 70%);border:1px solid #6d5a3e;border-radius:10px;padding:8px 8px 10px;box-shadow:inset 0 0 0 3px #2a1a10,inset 0 0 0 5px #8a6a3a55}
+.bstage h3{margin-top:2px}.bvenue{display:none}
+.bstage .side-e{background:linear-gradient(#5a1a1a33,transparent);border-radius:8px;padding:4px 0}
+.bstage .side-u{background:linear-gradient(transparent,#c9a24a1a);border-radius:8px;padding:4px 0;border-top:2px solid #8a6a3a}
+.bstage .bu .pt{transition:transform .2s}.bstage .bu.act .pt{filter:drop-shadow(0 0 8px #ffe08a)}
+.bstage .bu.down .pt{transform:rotate(-80deg) translateY(10px)}
+#bph.flash{animation:phf .8s ease-out}@keyframes phf{0%{transform:scale(1.4);color:#fff;text-shadow:0 0 14px #ffd86a}100%{transform:none}}
+.baud{position:relative;height:26px;margin:6px 0 4px;background:linear-gradient(#0000,#0007);border-radius:0 0 8px 8px;overflow:hidden}
+.baud i{position:absolute;bottom:2px;width:9px;height:14px;border-radius:5px 5px 2px 2px;background:#4a3a2a}
+.baud i::before{content:'';position:absolute;left:1px;top:-7px;width:7px;height:7px;border-radius:50%;background:#6a5442}
+.baud.clap i{animation:bclap .5s ease-out 2}.baud.boo i{animation:bboo .6s ease-out}
+@keyframes bclap{40%{transform:translateY(-6px);background:#8a6a3a}}@keyframes bboo{40%{transform:translateX(-2px) rotate(-8deg);background:#5a2a2a}}
+.sggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.sgc{background:#211a13;border:1px solid #4a3a26;border-radius:7px;padding:4px 5px;font-size:11px;line-height:1.3}
+.sgc b{display:block;font-size:12px}.sgc span{opacity:.8;font-size:10px}.sgc .gauge{margin:2px 0}
+.sgc.mine{border-color:#c9a24a;background:#2e2414}.sgc.mine span{color:var(--gold2)}.sgc.here{box-shadow:0 0 0 2px #ffd86a,0 0 10px #ffd86a88}

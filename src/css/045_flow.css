@@ -1,0 +1,4 @@
+.goalbar{margin:0 0 8px;padding:7px 10px;border-radius:10px;background:#2a1f12;border:1px solid #6a5430;font-size:12.5px;color:#f4ead2;line-height:1.5}
+.goalbar .done{color:#7fe0b0;font-weight:bold}.goalbar.ok{border-color:#e6c56f;box-shadow:0 0 10px rgba(230,197,111,.4)}
+.legacy p{font-size:13px;line-height:1.7;margin:4px 0}
+.ttls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}.ttls span{background:linear-gradient(90deg,#6a141a,#a8323a);color:#ffe9a0;border:1px solid #e6c56f;border-radius:14px;padding:3px 10px;font-size:12.5px;font-weight:bold}

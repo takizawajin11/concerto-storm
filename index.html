@@ -5820,7 +5820,7 @@ const fateNm=id=>id===G.pid?P().name:(charById(id)||{}).name||id;
 function fateDoc(id){const s=fateSt(id),cost=Math.round(400*(1+(U_YEAR[G.sc]-1723)/200)*(G.flags.chal?1.5:1));
   if(s.doc===G.month)return toast('今月はもう名医を呼びました');if(P().money<cost)return toast(`お金が足りません（${fmt(cost)}fr）`);
   P().money-=cost;s.doc=G.month;s.care=Math.min(100,s.care+(G.flags.chal?12:15));addLog(`${fateNm(id)}のために名医を呼んだ（${fmt(cost)}fr）。`);save();render();fateBook();}
-function fateRest(id){const s=fateSt(id);if(G.flags.chal&&id===G.pid)return toast('モーツァルトは休めない性分だ。ペンを置こうとしない。');if(s.rest===G.month)return toast('今月はもう休ませています');
+function fateRest(id){const s=fateSt(id);if(s.rest===G.month)return toast('今月はもう休ませています');
   s.rest=G.month;s.care=Math.min(100,s.care+10);if(id!=='you'&&id!==G.pid){setMood(id,moodOf(id)+6);G.fleet=G.fleet.map(f=>f.filter(x=>x!==id));}
   else P().stamina=Math.min(100,P().stamina+20);
   addLog(`${fateNm(id)}をこの月は休養させた。巡演には出られない。`);save();render();fateBook();}
@@ -5938,95 +5938,6 @@ const _legacyF=legacy;
 legacy=function(){const o=_legacyF();try{const sv=Object.keys(G.fate||{}).filter(k=>G.fate[k].saved);for(const id of sv)o.L.unshift(`<b>史実を変えた</b>：${fateNm(id)}は運命の夜を越え、「${FATE[id].w}」を残した。`);if(sv.length)o.T.unshift('運命に抗う者');if((G.odaiStreak||0)>=6)o.T.push('お題の鬼');}catch(e){}return o;};
 
 /* =====================================================================
-   挑戦シナリオ「1791年、モーツァルトを救え」
-   1790年6月のウィーンから始まる18か月。名声とお金を取るか、体をいたわるか。
-   ===================================================================== */
-const MZ_BEST='concertoStormMozBest';
-const CHALEV=[
- {y:1790,m:9,id:'frankfurt',t:'フランクフルトの戴冠式',d:'新皇帝レオポルト2世の戴冠式に、宮廷楽団は呼ばれなかった。モーツァルトは銀の食器を質に入れてでも、自費でフランクフルトへ行こうとしている。',
-  opts:[{t:'行かせる<small>-400fr・名声+15・体に負担（運命の見込み↓）</small>',f(){P().money-=400;addXP(15);mzCare(-6);addLog('モーツァルトは自費でフランクフルトへ。演奏会は称賛されたが、ほとんど儲からなかった。');}},
-        {t:'ウィーンにとどまる<small>体を休める（見込み↑）</small>',f(){mzCare(4);addLog('モーツァルトはウィーンにとどまり、作曲に専念した。');}}]},
- {y:1790,m:12,id:'haydnbye',t:'ハイドンとの別れの夕べ',d:'ハイドンがロンドンへ発つ。送別の席でモーツァルトは「もう二度と会えない気がする」とつぶやいた。',
-  opts:[{t:'朝まで語り明かす<small>見込み↑（心の支え）</small>',f(){mzCare(6);addLog('モーツァルトとハイドンは、夜更けまで語り合った。');}},
-        {t:'早めに休ませる<small>見込み↑（少し）</small>',f(){mzCare(3);}}]},
- {y:1791,m:3,id:'zauber',t:'シカネーダーの依頼',d:'旧友の興行師シカネーダーが、郊外の劇場のための大衆向けドイツ語オペラを頼みに来た。題は『魔笛』。夏までに書き上げてほしいという。',
-  opts:[{t:'引き受ける<small>秋に大当たり（+1200fr・名声+30）。ただし過労（見込み↓）</small>',f(){G.flags.mzZauber=1;mzCare(-8);addLog('モーツァルトは『魔笛』を引き受けた。');}},
-        {t:'断る<small>体を休める</small>',f(){mzCare(3);}}]},
- {y:1791,m:7,id:'requiem',t:'灰色の使者',d:'名を明かさない灰色の服の男が、レクイエムの作曲を頼みに来た。報酬の半分を前金で置いていった。<br><span class="pmeta">依頼主は、亡き妻のための作品を自作と偽るつもりの伯爵だったと伝わる。</span>',
-  opts:[{t:'引き受ける<small>+450fr。死の影におびえる（見込み↓）。運命を越えれば『レクイエム』を自分で完成できる</small>',f(){G.flags.mzReq=1;P().money+=450;mzCare(-10);addLog('モーツァルトは匿名の依頼主からレクイエムを引き受けた。「自分のためのレクイエムを書いている気がする」と妻に漏らした。');}},
-        {t:'断る',f(){addLog('灰色の使者は、黙って去っていった。');}}]},
- {y:1791,m:8,id:'tito',t:'プラハからの急ぎの依頼',d:'皇帝の戴冠を祝うオペラ『皇帝ティートの慈悲』を、わずか3週間ほどで書いてほしい。プラハへの長旅つき。',
-  opts:[{t:'引き受ける<small>+900fr・名声+20。旅の途中で体調を崩す（見込み↓↓）</small>',f(){G.flags.mzTito=1;P().money+=900;addXP(20);mzCare(-12);addLog('モーツァルトは馬車の中でも書き続け、『皇帝ティートの慈悲』を仕上げた。');}},
-        {t:'断る<small>体を休める</small>',f(){mzCare(4);}}]},
- {y:1791,m:9,id:'zauberp',t:'『魔笛』初演',d:'ヴィーデン劇場。客席は日に日に増え、パパゲーノの歌は街じゅうで口ずさまれるようになった。',need:'mzZauber',
-  opts:[{t:'客席で見届ける<small>+1200fr・名声+30・喜びで見込み↑</small>',cls:'gold',f(){P().money+=1200;addXP(30);mzCare(6);hpush('『魔笛』初演、大当たり');cutin(G.pid,'『魔笛』大当たり！','ヴィーデン劇場');}}]},
- {y:1791,m:11,id:'sick',t:'病の床',d:'11月20日ごろから、モーツァルトは手足のむくみと高熱で床についた。運命の夜まで、あとわずか。',
-  opts:[{t:'クロセット医師を呼ぶ<small>-600fr・見込み↑↑</small>',cls:'gold',f(){if(P().money<600){toast('お金が足りない……');mzCare(4);return;}P().money-=600;mzCare(18);addLog('名医クロセットが枕元に通った。');}},
-        {t:'家族と静かに過ごす<small>見込み↑</small>',f(){mzCare(8);addLog('コンスタンツェと子どもたちが枕元を離れなかった。');}}]}
-];
-function mzCare(n){const s=fateSt(G.pid);s.care=Math.max(0,Math.min(100,s.care+n));}
-function mzOn(){return G&&G.flags&&G.flags.chal==='mozart91';}
-function startMozChal(){
-  try{ac();}catch(e){}
-  newGame('s1781','mozart','normal');
-  G.flags.chal='mozart91';G.flags.endless=1;G.flags.intro=1;G.tut=null;G.unl={dealer:1,exp:1,deshi:1,chal:1,cons:1};
-  G.month=mIdx(1790,6);P().city='vienna';G.owner.vienna='player';P().money=1500;
-  const pool=SC.chars.filter(c=>['vienna','prague'].includes(c.city)&&!G.charOwner[c.id]&&!isDud(c.id)&&c.id!=='haru'&&!PQIDS.includes(c.id)&&(c.lv||0)<=6);
-  const pick3=['stadler'].concat(pool.map(c=>c.id).filter(i=>i!=='stadler').sort(()=>Math.random()-.5)).filter(i=>SC.chars.some(c=>c.id===i)).slice(0,4);
-  G.sal=G.sal||{};for(const id of pick3){G.members.push(id);G.sal[id]=Math.max(5,Math.round(demandOf(id)*.4));}
-  G.flags.cardsInit=1;G.cards={};for(const id of G.members)G.cards[realId(id)]=1;
-  G.fate={};fateSt(G.pid).care=10;
-  for(const e of (HEV[G.sc]||[]))if(mIdx(e.y,e.m)<G.month)(G.hev=G.hev||{})[e.id]='miss';
-  odaiNew();start();
-  setTimeout(()=>modal('挑戦：1791年、モーツァルトを救え',`${portraitRow(G.pid)}<b>1790年6月、ウィーン。</b><br>モーツァルト34歳。借金はかさみ、宮廷からの仕事は少ない。<br>史実では、<b>1791年12月5日</b>に彼は世を去る。<br><br>
-    これから届く依頼は、お金と名声をくれるが、体をむしばむ。名医を呼び、受ける依頼を選び、運命の夜を越えさせよう。<br><br>
-    <span class="pmeta">・地図の「運命の書」で、運命を越える見込みを確かめられる。体は月ごとに衰えていく<br>・名医は月に一度呼べる（お金がかかる）。モーツァルト本人は休もうとしない<br>・依頼を受けるほど稼げるが、見込みは下がる<br>・救えたうえで、何を書き残せたかで評価が決まる</span>`,[{t:'挑む',cls:'gold'}],'paper'),400);
-}
-const _memberMonthlyCH=memberMonthly;
-memberMonthly=function(){_memberMonthlyCH();
-  if(!mzOn())return;try{
-    if(!G.flags.mzDone&&G.month<mIdx(1791,12))mzCare(-10);
-    if(P().money<0){mzCare(-4);addLog('借金の心労が、モーツァルトの体をむしばむ。');}
-    const d=ymd(G.month);G.flags.mzEv=G.flags.mzEv||{};
-    for(const e of CHALEV){if(G.flags.mzEv[e.id]||e.y!==d.y||e.m!==d.mo)continue;if(e.need&&!G.flags[e.need]){G.flags.mzEv[e.id]=1;continue;}
-      G.flags.mzEv[e.id]=1;modal(e.t,`${portraitRow(G.pid)}${e.d}<br><br><span class="pmeta">運命を越える見込み：いま${fateChance(G.pid)}%</span>`,e.opts.map(o=>({t:o.t,cls:o.cls||'',f(){o.f();save();render();}})),'paper');}
-    if(G.month>mIdx(1792,1)&&!G.flags.mzDone)mzEnd(!(G.dead||[]).includes(G.pid)&&!G.flags.pdeath);
-  }catch(e){}};
-const _fateNightCH=fateNight;
-fateNight=function(id,E){return _fateNightCH(id,E).then(ok=>{if(mzOn()&&id===G.pid)setTimeout(()=>mzEnd(ok),2200);return ok;});};
-function mzScore(saved){
-  const parts=[];let s=0;const add=(t,v)=>{if(v){parts.push([t,v]);s+=v;}};
-  add('運命の夜を越えた',saved?500:0);
-  add('『レクイエム』を自分の手で完成',saved&&G.flags.mzReq?200:0);
-  add('『魔笛』を世に出した',G.flags.mzZauber?120:0);
-  add('『皇帝ティートの慈悲』を書き上げた',G.flags.mzTito?80:0);
-  add('財布の中身',Math.max(0,Math.min(250,Math.round(P().money/12))));
-  add('名声',plv()*12);
-  add('迎えた仲間',Math.min(100,G.members.length*12));
-  return{s,parts,rank:s>=950?'S':s>=720?'A':s>=480?'B':'C'};
-}
-function mzEnd(saved){
-  if(G.flags.mzDone)return;G.flags.mzDone=1;const R=mzScore(saved);
-  let best=null;try{best=JSON.parse(localStorage.getItem(MZ_BEST)||'null');if(!best||R.s>best.s)localStorage.setItem(MZ_BEST,JSON.stringify({s:R.s,rank:R.rank,saved,at:Date.now()}));}catch(e){}
-  hpush(`挑戦「モーツァルトを救え」：ランク${R.rank}（${R.s}点）`);save();
-  const txt=`『協奏の嵐』挑戦「1791年、モーツァルトを救え」で${saved?'運命を越えた！':'救えなかった……'} ランク${R.rank}（${R.s}点）`;
-  modal(saved?'モーツァルトは生きた':'1791年12月5日',`<div class="chrank r${R.rank}">${R.rank}</div><div style="text-align:center;font-size:20px;font-weight:bold">${R.s}点</div>
-    ${saved?'<p>夜が明けた。モーツァルトは起き上がり、まず『レクイエム』の続きを書きはじめた。音楽史は、ここから別の道を歩む。</p>':'<p>手を尽くしたが、史実は変わらなかった。未完の『レクイエム』が、机の上に残された。</p>'}
-    <div class="chparts">${R.parts.map(([t,v])=>`<div><span>${t}</span><b>+${v}</b></div>`).join('')}</div>
-    ${best&&best.s>R.s?`<div class="pmeta">これまでの最高：ランク${best.rank}（${best.s}点）</div>`:'<div class="pmeta">自己ベスト更新！</div>'}`,
-    [{t:'結果を送る',cls:'gold',f(){const u=shBase();const full=`${txt} ${u}`;if(navigator.share)navigator.share({text:full}).catch(()=>{});else navigator.clipboard.writeText(full).then(()=>toast('結果をコピーしました')).catch(()=>{});}},
-     {t:'もう一度挑む',f(){startMozChal();}},{t:saved?'このまま続ける（やり込み）':'タイトルへ',f(){if(!saved){G.over=true;save();title();}}}],'paper');
-}
-/* タイトル画面に挑戦シナリオを */
-const _titleCH=title;
-title=function(){_titleCH();try{const sec=document.querySelector('#main .title .sec-t');if(!sec)return;let best=null;try{best=JSON.parse(localStorage.getItem(MZ_BEST)||'null');}catch(e){}
-  sec.insertAdjacentHTML('beforebegin',`<div class="sec-t" style="text-align:left">— 挑戦シナリオ（約20分） —</div><button class="btn scen chalbtn" id="mzChal"><span class="y">1790</span> <b>1791年、モーツァルトを救え</b><br><span style="font-size:13px;color:var(--gold2)">史実を変えられるか。運命の夜まで18か月。</span><p>借金、過労、灰色の使者。依頼を受ければ稼げるが、体はむしばまれる。名医を呼び、依頼を選び、モーツァルトに12月5日を越えさせよう。</p><p>${best?`自己ベスト：ランク${best.rank}（${best.s}点）${best.saved?'・救出成功':''}`:'まだ挑んでいない'}</p></button>`);
-  $('#mzChal').onclick=startMozChal;}catch(e){}};
-/* 運命の書の表示：挑戦中はモーツァルトをいちばん上に */
-const _mapHTMLCH=mapHTML;
-mapHTML=function(){let h=_mapHTMLCH();try{if(mzOn()&&!G.flags.mzDone){const L=fateLeft(G.pid);h=h.replace('<div class="odai">',`<div class="mzbar"><b>運命の夜まで あと${L}か月</b><div class="fbar"><i style="width:${fateChance(G.pid)}%"></i><span>モーツァルトが運命を越える見込み ${fateChance(G.pid)}%</span></div></div><div class="odai">`);}}catch(e){}return h;};
-
-/* =====================================================================
    挑戦シナリオ（第2弾・第3弾）：ショパンを救え／マーラーに第10番を完成させろ
    ===================================================================== */
 DEATH.chopin=DEATH.chopin||{y:1849,m:10,t:'ショパンがパリで世を去った。39歳。葬儀ではモーツァルトの『レクイエム』が歌われた。'};
@@ -6112,7 +6023,7 @@ const _fateNightCX=fateNight;
 fateNight=function(id,E){return _fateNightCX(id,E).then(ok=>{const c=chCur();if(c&&id===chTid(c))setTimeout(()=>chxEnd(ok),2200);return ok;});};
 /* 救えた人を休ませるのは控えめに（挑戦中） */
 const _fateRestCX=fateRest;
-fateRest=function(id){const c=chCur();if(c&&id===chTid(c)){const s=fateSt(id);if(s.rest===G.month)return toast('今月はもう休ませています');s.rest=G.month;s.care=Math.min(100,s.care+4);G.fleet=G.fleet.map(f=>f.filter(x=>x!==id));addLog(`${fateNm(id)}をこの月は休ませた。`);save();render();fateBook();return;}return _fateRestCX(id);};
+fateRest=function(id){const c=chCur();if(c&&id===chTid(c)&&c.noRest)return toast(c.noRest);if(c&&id===chTid(c)){const s=fateSt(id);if(s.rest===G.month)return toast('今月はもう休ませています');s.rest=G.month;s.care=Math.min(100,s.care+4);G.fleet=G.fleet.map(f=>f.filter(x=>x!==id));addLog(`${fateNm(id)}をこの月は休ませた。`);save();render();fateBook();return;}return _fateRestCX(id);};
 function chxEnd(saved){
   const c=chCur();if(!c||G.flags.mzDone)return;G.flags.mzDone=1;
   const parts=c.score(saved).filter(x=>x[1]);const s=parts.reduce((a,x)=>a+x[1],0);const rank=s>=950?'S':s>=720?'A':s>=480?'B':'C';
@@ -6128,12 +6039,53 @@ function chxEnd(saved){
 const _mapHTMLCX=mapHTML;
 mapHTML=function(){let h=_mapHTMLCX();try{const c=chCur();if(c&&!G.flags.mzDone){const tid=chTid(c),E=DEATH[tid];if(E){const L=mIdx(E.y,E.m)-G.month;
   h=h.replace('<div class="odai">',`<div class="mzbar"><b>運命の夜まで あと${L}か月</b><div class="fbar"><i style="width:${fateChance(tid)}%"></i><span>${fateNm(tid)}が運命を越える見込み ${fateChance(tid)}%</span></div></div><div class="odai">`);}}}catch(e){}return h;};
-/* タイトル画面に追加 */
+/* タイトル画面：挑戦シナリオの欄 */
 const _titleCX=title;
-title=function(){_titleCX();try{const mz=$('#mzChal');if(!mz)return;
-  mz.insertAdjacentHTML('afterend',Object.entries(CHX).map(([k,c])=>{let b=null;try{b=JSON.parse(localStorage.getItem('concertoStormChx_'+k)||'null');}catch(e){}
+title=function(){_titleCX();try{const sec=document.querySelector('#main .title .sec-t');if(!sec)return;
+  sec.insertAdjacentHTML('beforebegin',`<div class="sec-t" style="text-align:left">— 挑戦シナリオ（約20分） —</div>`+Object.entries(CHX).sort((a,b)=>a[1].y0-b[1].y0).map(([k,c])=>{let b=null;try{b=JSON.parse(localStorage.getItem('concertoStormChx_'+k)||'null');}catch(e){}
     return`<button class="btn scen chalbtn" data-chx="${k}"><span class="y">${c.y0}</span> <b>${c.t}</b><br><span style="font-size:13px;color:var(--gold2)">${c.sub}</span><p>${c.desc}</p><p>${b?`自己ベスト：ランク${b.rank}（${b.s}点）${b.saved?'・救出成功':''}`:'まだ挑んでいない'}</p></button>`;}).join(''));
   document.querySelectorAll('[data-chx]').forEach(b=>b.onclick=()=>startChx(b.dataset.chx));}catch(e){}};
+
+/* =====================================================================
+   挑戦シナリオ「1791年、モーツァルトを救え」（挑戦シナリオの仕組みは 135_chal2.js）
+   1790年6月のウィーンから始まる18か月。名声とお金を取るか、体をいたわるか。
+   ===================================================================== */
+CHX.mozart91={t:'1791年、モーツァルトを救え',y0:1790,m0:6,sc:'s1781',pid:'mozart',target:'mozart',city:'vienna',money:1500,care0:10,decay:10,endY:1792,endM:1,
+  noRest:'モーツァルトは休めない性分だ。ペンを置こうとしない。',
+  sub:'史実を変えられるか。運命の夜まで18か月。',desc:'借金、過労、灰色の使者。依頼を受ければ稼げるが、体はむしばまれる。名医を呼び、依頼を選び、モーツァルトに12月5日を越えさせよう。',
+  intro:'<b>1790年6月、ウィーン。</b><br>モーツァルト34歳。借金はかさみ、宮廷からの仕事は少ない。<br>史実では、<b>1791年12月5日</b>に彼は世を去る。<br><br>これから届く依頼は、お金と名声をくれるが、体をむしばむ。名医を呼び、受ける依頼を選び、運命の夜を越えさせよう。<br><span class="pmeta">モーツァルト本人は休もうとしない。</span>',
+  pool:['vienna','prague'],must:['stadler'],
+  ev:[ 
+ {y:1790,m:9,id:'frankfurt',t:'フランクフルトの戴冠式',d:'新皇帝レオポルト2世の戴冠式に、宮廷楽団は呼ばれなかった。モーツァルトは銀の食器を質に入れてでも、自費でフランクフルトへ行こうとしている。', 
+  opts:[{t:'行かせる<small>-400fr・名声+15・体に負担（運命の見込み↓）</small>',f(){P().money-=400;addXP(15);chCare(-6);addLog('モーツァルトは自費でフランクフルトへ。演奏会は称賛されたが、ほとんど儲からなかった。');}}, 
+        {t:'ウィーンにとどまる<small>体を休める（見込み↑）</small>',f(){chCare(4);addLog('モーツァルトはウィーンにとどまり、作曲に専念した。');}}]}, 
+ {y:1790,m:12,id:'haydnbye',t:'ハイドンとの別れの夕べ',d:'ハイドンがロンドンへ発つ。送別の席でモーツァルトは「もう二度と会えない気がする」とつぶやいた。', 
+  opts:[{t:'朝まで語り明かす<small>見込み↑（心の支え）</small>',f(){chCare(6);addLog('モーツァルトとハイドンは、夜更けまで語り合った。');}}, 
+        {t:'早めに休ませる<small>見込み↑（少し）</small>',f(){chCare(3);}}]}, 
+ {y:1791,m:3,id:'zauber',t:'シカネーダーの依頼',d:'旧友の興行師シカネーダーが、郊外の劇場のための大衆向けドイツ語オペラを頼みに来た。題は『魔笛』。夏までに書き上げてほしいという。', 
+  opts:[{t:'引き受ける<small>秋に大当たり（+1200fr・名声+30）。ただし過労（見込み↓）</small>',f(){G.flags.mzZauber=1;chCare(-8);addLog('モーツァルトは『魔笛』を引き受けた。');}}, 
+        {t:'断る<small>体を休める</small>',f(){chCare(3);}}]}, 
+ {y:1791,m:7,id:'requiem',t:'灰色の使者',d:'名を明かさない灰色の服の男が、レクイエムの作曲を頼みに来た。報酬の半分を前金で置いていった。<br><span class="pmeta">依頼主は、亡き妻のための作品を自作と偽るつもりの伯爵だったと伝わる。</span>', 
+  opts:[{t:'引き受ける<small>+450fr。死の影におびえる（見込み↓）。運命を越えれば『レクイエム』を自分で完成できる</small>',f(){G.flags.mzReq=1;P().money+=450;chCare(-10);addLog('モーツァルトは匿名の依頼主からレクイエムを引き受けた。「自分のためのレクイエムを書いている気がする」と妻に漏らした。');}}, 
+        {t:'断る',f(){addLog('灰色の使者は、黙って去っていった。');}}]}, 
+ {y:1791,m:8,id:'tito',t:'プラハからの急ぎの依頼',d:'皇帝の戴冠を祝うオペラ『皇帝ティートの慈悲』を、わずか3週間ほどで書いてほしい。プラハへの長旅つき。', 
+  opts:[{t:'引き受ける<small>+900fr・名声+20。旅の途中で体調を崩す（見込み↓↓）</small>',f(){G.flags.mzTito=1;P().money+=900;addXP(20);chCare(-12);addLog('モーツァルトは馬車の中でも書き続け、『皇帝ティートの慈悲』を仕上げた。');}}, 
+        {t:'断る<small>体を休める</small>',f(){chCare(4);}}]}, 
+ {y:1791,m:9,id:'zauberp',t:'『魔笛』初演',d:'ヴィーデン劇場。客席は日に日に増え、パパゲーノの歌は街じゅうで口ずさまれるようになった。',need:'mzZauber', 
+  opts:[{t:'客席で見届ける<small>+1200fr・名声+30・喜びで見込み↑</small>',cls:'gold',f(){P().money+=1200;addXP(30);chCare(6);hpush('『魔笛』初演、大当たり');cutin(G.pid,'『魔笛』大当たり！','ヴィーデン劇場');}}]}, 
+ {y:1791,m:11,id:'sick',t:'病の床',d:'11月20日ごろから、モーツァルトは手足のむくみと高熱で床についた。運命の夜まで、あとわずか。', 
+  opts:[{t:'クロセット医師を呼ぶ<small>-600fr・見込み↑↑</small>',cls:'gold',f(){if(P().money<600){toast('お金が足りない……');chCare(4);return;}P().money-=600;chCare(18);addLog('名医クロセットが枕元に通った。');}}, 
+        {t:'家族と静かに過ごす<small>見込み↑</small>',f(){chCare(8);addLog('コンスタンツェと子どもたちが枕元を離れなかった。');}}]} 
+],
+  score:saved=>[['運命の夜を越えた',saved?500:0],['『レクイエム』を自分の手で完成',saved&&G.flags.mzReq?200:0],['『魔笛』を世に出した',G.flags.mzZauber?120:0],['『皇帝ティートの慈悲』を書き上げた',G.flags.mzTito?80:0],
+    ['財布の中身',Math.max(0,Math.min(250,Math.round(P().money/12)))],['名声',plv()*12],['迎えた仲間',Math.min(100,G.members.length*12)]],
+  endT:['モーツァルトは生きた','1791年12月5日'],
+  endSaved:'夜が明けた。モーツァルトは起き上がり、まず『レクイエム』の続きを書きはじめた。音楽史は、ここから別の道を歩む。',
+  endLost:'手を尽くしたが、史実は変わらなかった。未完の『レクイエム』が、机の上に残された。'};
+/* 以前の版の記録と、遊びかけのデータを引き継ぐ */
+try{const old=localStorage.getItem('concertoStormMozBest');if(old&&!localStorage.getItem('concertoStormChx_mozart91'))localStorage.setItem('concertoStormChx_mozart91',old);}catch(e){}
+const _startMZ=start;
+start=function(){try{if(G&&G.flags&&G.flags.mzEv){G.flags.cxEv=Object.assign({},G.flags.mzEv,G.flags.cxEv||{});delete G.flags.mzEv;}}catch(e){}return _startMZ();};
 
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});

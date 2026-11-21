@@ -1,0 +1,11 @@
+.fxthunder{animation:fxth .7s ease-out}
+@keyframes fxth{0%{background-color:#fff}15%{background-color:#fffbe0}30%{background-color:#2a2a40}45%{background-color:#fff}100%{}}
+.fxshake{animation:fxsh .6s}
+@keyframes fxsh{0%,100%{transform:none}20%{transform:translateX(-5px) rotate(-1deg)}40%{transform:translateX(5px) rotate(1deg)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+.fxbanner{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);z-index:12;background:rgba(60,10,20,.88);color:#ffe9a0;font-weight:bold;font-size:15px;padding:8px 14px;border-radius:10px;border:2px solid #e6c56f;white-space:nowrap;animation:fxbn 2.1s ease-out forwards;pointer-events:none}
+@keyframes fxbn{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}15%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}25%{transform:translate(-50%,-50%) scale(1)}80%{opacity:1}100%{opacity:0}}
+.sigglow{filter:drop-shadow(0 0 8px #ffd27a) drop-shadow(0 0 14px #ffb347);z-index:6}
+.fxsay.sig{background:#3a1020;color:#ffe9a0;border:1px solid #e6c56f;font-weight:bold;font-size:11.5px;animation-duration:2.4s}
+.fxrain.sig{font-size:22px}.fxrain.sig.storm{font-size:20px;color:#ffe9a0}.fxrain.sig.thunder{font-size:26px}
+.sigline{color:#8a2a3a;font-weight:bold}
+.fxsay.sig{white-space:normal;width:max-content;max-width:140px;text-align:center;line-height:1.3}

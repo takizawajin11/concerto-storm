@@ -1,0 +1,13 @@
+.cutin.rival .band{flex-direction:row-reverse;text-align:right;background:linear-gradient(260deg,#120c2a,#3a1f6a 45%,#8a1f3a);animation-name:cslideR}
+.cutin.rival .ct b{font-size:26px;text-shadow:0 3px 0 #000,0 0 18px #b49aff}
+.cutin.rival .ct span{color:#d8ccff}
+@keyframes cslideR{0%{transform:translateX(110%)}14%{transform:translateX(0)}86%{transform:translateX(0)}100%{transform:translateX(-110%)}}
+.cutin .ct b{word-break:keep-all;overflow-wrap:anywhere}
+.rquote{position:absolute;left:50%;top:100%;transform:translateX(-50%);z-index:9;width:max-content;max-width:180px;white-space:normal;text-align:center;font-size:11px;line-height:1.3;background:#1a1030;color:#e8dcff;border:1px solid #8a6ad8;border-radius:8px;padding:3px 7px;animation:fxs 3.2s ease-out forwards}
+.bu.rboss{position:relative}
+.bu.rsig{animation:rsg .5s ease-in-out 3}
+@keyframes rsg{50%{transform:scale(1.18)}}
+.fxdark{animation:fxdk 1.6s ease-out}
+@keyframes fxdk{0%{box-shadow:inset 0 0 0 999px rgba(30,10,60,.0)}20%{box-shadow:inset 0 0 0 999px rgba(30,10,60,.55)}100%{box-shadow:inset 0 0 0 999px rgba(30,10,60,0)}}
+.rbubble{display:flex;align-items:center;gap:8px;margin:6px 0;padding:6px 10px;background:#1a1030;color:#e8dcff;border:1px solid #8a6ad8;border-radius:12px;font-size:13px}
+.rbubble b{color:#fff}
