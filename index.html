@@ -394,6 +394,14 @@ main{flex:1;padding:10px 12px 40px}
 .goalbar .done{color:#7fe0b0;font-weight:bold}.goalbar.ok{border-color:#e6c56f;box-shadow:0 0 10px rgba(230,197,111,.4)}
 .legacy p{font-size:13px;line-height:1.7;margin:4px 0}
 .ttls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}.ttls span{background:linear-gradient(90deg,#6a141a,#a8323a);color:#ffe9a0;border:1px solid #e6c56f;border-radius:14px;padding:3px 10px;font-size:12.5px;font-weight:bold}
+.cutin.dream .band{background:linear-gradient(90deg,#3a2a08,#8a6420 30%,#c9a24a 50%,#8a6420 70%,#3a2a08);justify-content:center;gap:14px}
+.cutin.dream .ct{text-align:center}.cutin.dream .ct b{font-size:28px;color:#fff6d8;text-shadow:0 2px 0 #3a2a08,0 0 16px #ffe9a0}.cutin.dream .ct span{color:#fff6d8;font-size:15px}
+.dreamdlg .dl{display:flex;gap:8px;align-items:flex-start;margin:6px 0;font-size:13.5px;line-height:1.6}
+.dreamf{margin-top:8px;padding:6px 9px;background:#f4ead2;color:#3a2a10;border-left:3px solid #c9a24a;border-radius:4px;font-size:12.5px;line-height:1.6}
+.dreamr{margin-top:8px;font-size:12.5px;color:#6a4a10;font-weight:bold}
+.dbk{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed #c9b88a;font-size:12.5px;line-height:1.5;opacity:.75}.dbk.on{opacity:1}.dbk span{color:#6a5a3a}
+.dbk .dbp{display:flex;gap:2px;min-width:44px;font-size:22px;color:#a08a5a;justify-content:center}
+.consc,.relc{font-size:13px}.lent{color:#e8b0c0;font-size:12px}
 
 #tabs button{font-size:13px;padding:9px 0}
 .rkrow{display:flex;align-items:center;gap:8px;width:100%;margin:5px 0;padding:6px 8px}.rkrow.mine{border:2px solid #e6c56f}.rkno{width:34px;text-align:center;font-size:15px;flex:none}.rank{font-size:40px!important;margin:6px 0}.rank.rS{color:#c07a00!important;text-shadow:0 0 10px #ffd27a!important}.rank.rA{color:#b0404a!important}.rank.rB{color:#3f63a8!important}.rank.rC,.rank.rD{color:#777!important}
@@ -5395,6 +5403,366 @@ const _endingF=ending;
 ending=function(h,txt){legacyLog();_endingF(h,txt);try{const r=$('#rep');if(r)r.insertAdjacentHTML('beforebegin',legacyHTML(false));save();}catch(e){}};
 /* 難易度の説明を席数に合わせる */
 try{DIFF.hell.d=DIFF.hell.d.replace('全9席','9席');}catch(e){}
+
+/* =====================================================================
+   夢の顔合わせ：史実では出会えなかった（あるいは共演しなかった）二人が、あなたの楽団でそろったら
+   ===================================================================== */
+/* need：そろう必要がある人（主人公・客演も含む）。h：見つける前に見えるヒント。
+   lines：[話し手, せりふ]。r：ごほうび（boost＝全能力の永久上昇、piece＝夢の演目、lucky＝特別な効果） */
+const DREAMS=[
+ {id:'bachhandel',need:['bach','handel'],t:'ハレの邂逅',h:'ライプツィヒのカントルと、ロンドンの大作曲家。二人は同じ年に、同じ地方で生まれた……',
+  f:'史実：1719年と1729年、バッハはヘンデルに会おうと訪ねたが、二度ともすれ違った。音楽史に残る「七不思議」のひとつ。',
+  lines:[['handel','ライプツィヒのカントル殿か。ついに会えたな。'],['bach','二度、あなたを訪ねて、二度ともすれ違いました。三度目の正直です。'],['handel','では今宵は、二台のチェンバロで語り合おうではないか。']],
+  r:{boost:{bach:1,handel:1},xp:80,piece:['dream_bh','バッハとヘンデル 幻の二台チェンバロ協奏曲','協奏曲',[['pf','独奏チェンバロI'],['pf','独奏チェンバロII'],['vn','コンサートマスター'],['cond','指揮']],'bach','piano']}},
+ {id:'handelfari',need:['handel','farinelli'],t:'敵方の歌姫ならぬ歌王',h:'ロンドンに同じ時期にいたのに、一度も同じ舞台に立たなかった作曲家と歌手がいる。',
+  f:'史実：ファリネッリはロンドンでヘンデルの敵方の歌劇場に出演し、ヘンデルのオペラは一度も歌わなかった。',
+  lines:[['farinelli','あなたの敵方の劇場で歌っておりました。お恨みでしょうね。'],['handel','恨むものか。きみのために、いちばん難しいアリアを書いてやろう。'],['farinelli','……望むところです。']],
+  r:{boost:{farinelli:1},xp:60,piece:['dream_hf','ヘンデル 幻のオペラ・アリア（ファリネッリのために）','オペラ',[['voice','カストラート'],['vn','コンサートマスター'],['cond','指揮']],'hallelujah','violin']}},
+ {id:'mozbeet',need:['mozart','beethoven'],t:'1787年、幻の授業',h:'ボンから来た17歳の若者が、ウィーンでいちばん会いたかった人は……',
+  f:'史実：17歳のベートーヴェンはモーツァルトに学ぼうとウィーンを訪れたが、母の危篤で2週間ほどで帰郷した。二人が会えたかどうかは謎のまま。',
+  lines:[['mozart','その若いの、主題をひとつ出すから即興してごらん。'],['beethoven','（激しく弾き始める）'],['mozart','みんな、この子に注目しておきなさい。いつか世界を騒がせるよ。']],
+  r:{boost:{beethoven:2},xp:80}},
+ {id:'bachmozart',need:['bach','mozart'],t:'トーマス教会のモテット',h:'晩年のモーツァルトがライプツィヒで聴いて、夢中になった音楽の作者は……',
+  f:'史実：1789年、モーツァルトはライプツィヒでバッハのモテットを聴き、パート譜を周りに広げて読みふけったと伝わる。',
+  lines:[['mozart','ここには、まだ学ぶべきものがある！'],['bach','若いの、いい耳をしている。フーガを一つ、いっしょに書こうか。'],['mozart','喜んで！ でも、ぼくのほうが速く書きますよ。']],
+  r:{boost:{bach:1,mozart:1},xp:80,piece:['dream_bm','バッハとモーツァルト 幻のフーガ','管弦楽',[['cond','指揮'],['vn','コンサートマスター'],['va','ヴィオラ'],['vc','チェロ']],'bach','violin']}},
+ {id:'beetpag',need:['beethoven','paganini'],t:'聞こえぬ耳と悪魔の弓',h:'交響曲の巨人が亡くなった翌年、ひとりのヴァイオリニストがはじめてイタリアの外へ出た。',
+  f:'史実：パガニーニがイタリアの外で演奏しはじめたのは1828年。ベートーヴェンが亡くなった翌年だった。',
+  lines:[['paganini','先生、わたしの音は聞こえますか。'],['beethoven','耳では聞こえん。だが、床から伝わってくる。……悪魔のような音だ。'],['beethoven','ヴァイオリン協奏曲を、もう一曲書こう。きみが弾け。']],
+  r:{boost:{paganini:1},xp:90,piece:['dream_bp','ベートーヴェン 幻のヴァイオリン協奏曲第2番','協奏曲',[['vn','独奏ヴァイオリン'],['cond','指揮'],['br','ホルン']],'beethoven5','violin'],conc:['paganini']}},
+ {id:'pagliszt',need:['paganini','liszt'],t:'悪魔と魔王の二重奏',h:'若きピアニストは、ある夜の演奏会で「ピアノで同じことをしてみせる」と誓った。',
+  f:'史実：1832年、パガニーニを聴いた20歳のリストは、ピアノの超絶技巧を極めると決意した。二人の共演の記録はない。',
+  lines:[['liszt','あなたの『ラ・カンパネッラ』、ピアノで弾いてみせました。'],['paganini','ほう……では、二人で鳴らしてみようか。'],['liszt','客席の皆さん、どうかお気を確かに。']],
+  r:{boost:{liszt:1,paganini:1},xp:90,piece:['dream_pl','パガニーニとリスト 幻の『ラ・カンパネッラ』二重奏','室内楽',[['vn','ヴァイオリン'],['pf','ピアノ']],'campanella','violin'],conc:['paganini','liszt']}},
+ {id:'pagrach',need:['paganini','rachmaninoff'],t:'自分の主題による狂詩曲',h:'百年後、ある作曲家がカプリース第24番の主題で24の変奏曲を書いた。',
+  f:'史実：ラフマニノフは1934年に『パガニーニの主題による狂詩曲』を書いた。有名な第18変奏は、主題を上下さかさまにした旋律。',
+  lines:[['paganini','わたしの24番を、さかさまにするとは！'],['rachmaninoff','第18変奏は、あなたへの贈り物です。'],['paganini','……悪魔も泣く旋律だ。']],
+  r:{boost:{rachmaninoff:1},xp:90,piece:['dream_pr','ラフマニノフ『パガニーニの主題による狂詩曲』（作曲者と主題の主の共演）','協奏曲',[['pf','独奏ピアノ'],['vn','主題を弾くヴァイオリン'],['cond','指揮']],'caprice24','piano'],conc:['rachmaninoff','paganini']}},
+ {id:'tartpag',need:['tartini','paganini'],t:'悪魔のトリル、二代目',h:'夢で悪魔に会った男と、悪魔に魂を売ったと噂された男。',
+  f:'史実：タルティーニは夢で悪魔が弾いた曲を『悪魔のトリル』として書き、パガニーニは「悪魔に魂を売った」と噂された。',
+  lines:[['tartini','夢に出てきた悪魔は、ちょうどあなたのような顔だった。'],['paganini','光栄ですな。では、本物の悪魔のトリルをお聴かせしよう。']],
+  r:{boost:{tartini:1},xp:70,piece:['dream_tp','タルティーニ『悪魔のトリル』（パガニーニ独奏、作曲者の伴奏）','室内楽',[['vn','独奏ヴァイオリン'],['vn','第2ヴァイオリン'],['vc','通奏低音']],'devil','violin'],conc:['paganini']}},
+ {id:'chopmoz',need:['chopin','mozart'],t:'生涯の憧れ',h:'ワルシャワ生まれのピアニストは、生涯ひとりの作曲家を神のように敬った。',
+  f:'史実：ショパンはモーツァルトを生涯敬愛し、自身の葬儀ではモーツァルトの『レクイエム』が歌われた。',
+  lines:[['chopin','あなたの音楽で、わたしは送られたいのです。'],['mozart','縁起でもない！ それより、いっしょに連弾しよう。きみの夜想曲、いいね。']],
+  r:{boost:{chopin:1},xp:70}},
+ {id:'brahmsbeet',need:['brahms','beethoven'],t:'巨人の足音',h:'交響曲第1番を書くのに20年以上かかった作曲家は、ずっと誰かの足音を背中に聞いていた。',
+  f:'史実：ブラームスは「巨人（ベートーヴェン）の足音」を気にして、交響曲第1番の完成まで20年以上かけた。',
+  lines:[['beethoven','（譜面を見て）……これは、わたしの第10番か？'],['brahms','光栄です。でも、わたしの第1番です。'],['beethoven','それでいい。わたしの足音など、気にするな。']],
+  r:{boost:{brahms:2},xp:90}},
+ {id:'wagbrahms',need:['wagner','brahms'],t:'楽派を越えた握手',h:'音楽界を二つに割った二人は、たった一度だけ顔を合わせている。',
+  f:'史実：1864年に一度だけ会い、ワーグナーはブラームスの変奏曲をほめた。だがその後、両派の論争は何十年も続いた。',
+  lines:[['wagner','きみの変奏曲は、古い形式でもまだこれだけのことができると教えてくれた。'],['brahms','あなたの楽劇は……正直に言えば、長い。でも、好きです。'],['wagner','ははは！ 今夜は休戦だ。']],
+  r:{boost:{wagner:1,brahms:1},xp:100,lucky:'allMood'}},
+ {id:'wagmah',need:['wagner','mahler'],t:'バイロイトの師と弟子',h:'その指揮者は崇拝する作曲家の劇場を訪れたが、作曲家はその年に世を去っていた。',
+  f:'史実：マーラーはワーグナーを崇拝していたが、初めてバイロイトを訪れた1883年は、ワーグナーが亡くなった年だった。',
+  lines:[['mahler','先生の『トリスタン』を振らせてください。'],['wagner','振ってみろ。……ほう、なかなかの棒だ。ウィーンを任せてもいい。']],
+  r:{boost:{mahler:1},xp:80}},
+ {id:'berlbeet',need:['berlioz','beethoven'],t:'幻想の手紙',h:'交響曲を聴いて雷に打たれたフランスの若者は、その作曲家に会うことはなかった。',
+  f:'史実：ベルリオーズは1828年にパリでベートーヴェンの交響曲を聴いて衝撃を受けた。ベートーヴェンはその前年に亡くなっていた。',
+  lines:[['berlioz','あなたの交響曲を聴いて、わたしは雷に打たれました！'],['beethoven','大声で頼む。……楽器を千人に？ 若いの、気に入った。']],
+  r:{boost:{berlioz:1},xp:70}},
+ {id:'stravbach',need:['stravinsky','bach'],t:'バッハに帰れ',h:'客席を大騒ぎさせた作曲家は、その後ずっと昔の端正な音楽へ向かった。',
+  f:'史実：1920年代、ストラヴィンスキーは『春の祭典』の喧騒から一転し、バッハを思わせる端正な「新古典主義」の作品を書いた。',
+  lines:[['stravinsky','わたしの祭典は、客席を怒らせてしまいました。'],['bach','怒らせたなら、次は祈らせればよい。対位法を教えよう。']],
+  r:{boost:{stravinsky:1},xp:80}},
+ {id:'haruPag',need:['haru','paganini'],t:'弟子を取らない悪魔',h:'時の扉から来た若者が、伝説の悪魔に弟子入りを願ったら……',
+  f:'史実：パガニーニは弟子をほとんど取らず、正式な弟子はシヴォリただ一人だったといわれる。',
+  lines:[['haru','弟子にしてください。'],['paganini','わたしは弟子を取らない主義だ。……だが、未来の弓づかいには興味がある。']],
+  r:{boost:{haru:1},xp:60}},
+ {id:'haruBach',need:['haru','bach'],t:'無伴奏の約束',h:'時の扉から来た若者が、いちばん弾きたかった曲の作者に会えたら……',
+  f:'バッハの『無伴奏ヴァイオリンのためのソナタとパルティータ』は、いまもヴァイオリン弾きにとっての聖典である。',
+  lines:[['haru','あなたのシャコンヌ、未来でもみんな弾いています。'],['bach','三百年後も？ ……それは、書いた甲斐があった。']],
+  r:{boost:{haru:1},xp:60}},
+ {id:'bachbarchy',need:['bach','barchy'],t:'カントル、笑う',h:'いつも厳しい顔のカントルを、笑わせることができる者がいるとしたら……',
+  f:'バッハには二十人の子どもがいた。肖像画の顔はいつも厳しいが、家ではよく笑ったのかもしれない。',
+  lines:[['barchy','（渾身の変顔）'],['bach','……ぷっ。'],['bach','二十人の子どもたちにも見せてやりたい。きみ、ライプツィヒに残りなさい。']],
+  r:{xp:50,lucky:'barchyBach'}},
+ {id:'satiebarchy',need:['satie','barchy'],t:'家具の音楽と変顔',h:'「聴かなくてよい音楽」を作った奇人は、ある留学生の顔に新しい芸術を見た。',
+  f:'サティは「家具の音楽」という、聴き流すための音楽を考案した。奇人として知られ、同じ灰色のスーツを何着も持っていた。',
+  lines:[['satie','その顔……すばらしい。まるで家具のようだ。'],['barchy','ほめられてます？'],['satie','最大限に。わたしの新しい曲の題は『変顔のための三つのジムノペディ』にしよう。']],
+  r:{xp:50,lucky:'barchySatie'}},
+ {id:'tsueto',need:['tsugio','eto'],t:'老兵ふたり',h:'外れた音を出す古株が、ふたりそろったら……',
+  f:'不思議なことに、外れた音も二つ重なると和音になることがある。',
+  lines:[['tsugio','エトウ、おまえの音はまた外れとったぞ。'],['eto','ツギオさんこそ。……でも、二人で外すと、なんだか合いますね。'],['tsugio','ワシらの若いころは、みんなこうじゃった。']],
+  r:{xp:40,lucky:'tsueto'}}
+];
+const dreamHave=()=>{const s=new Set([G.pid]);for(const id of G.members)s.add(realId(id));return s;};
+const dreamWho=rid=>rid===G.pid?'you':G.members.find(m=>realId(m)===rid)||rid;
+function dreamAddPiece(d){const p=d.r&&d.r.piece;if(!p)return;if(SC.rep.some(x=>x.id===p[0]))return;
+  SC.rep.push(Pc(p[0],p[1],p[2],p[3].map(([r,l])=>Sl([r],l)),[.4,.5,.1],'名人芸',null,p[4],p[5]));
+  if(typeof CONC!=='undefined'&&d.r.conc)CONC[p[0]]={sol:d.r.conc,t:'夢の顔合わせでだけ実現した共演'};}
+function dreamCut(a,b,t){
+  const d=document.createElement('div');d.className='cutin dream';
+  d.innerHTML=`<div class="band"><div class="cp">${portrait(a,84,'#ffe9a0')}</div><div class="ct"><b>夢の顔合わせ</b><span>${t}</span></div><div class="cp">${portrait(b,84,'#ffe9a0')}</div></div>`;
+  document.body.appendChild(d);setTimeout(()=>d.remove(),2400);if(typeof sfx==='function')sfx('fanfare');
+}
+function dreamCheck(){
+  if(!G||G.over)return;G.dream=G.dream||{};const have=dreamHave();
+  for(const d of DREAMS){if(G.dream[d.id]||!d.need.every(x=>have.has(x)))continue;
+    G.dream[d.id]=G.month+1;const [a,b]=d.need;dreamCut(a,b,d.t);
+    try{sigMusic(a);}catch(e){}
+    const r=d.r||{};const got=[];
+    for(const [rid,n] of Object.entries(r.boost||{})){const id=dreamWho(rid);if(id==='you')continue;G.boost[id]=(G.boost[id]||0)+n;got.push(`${nameOf(id)}の全能力+${n}`);}
+    if(r.xp){addXP(r.xp);got.push(`名声+${r.xp}`);}
+    if(r.piece){dreamAddPiece(d);got.push(`夢の演目「${r.piece[1]}」が演奏会で選べるようになった`);}
+    if(r.lucky==='allMood'){for(const id of G.members)setMood(id,moodOf(id)+8);got.push('楽団全員の気分が上がった');}
+    if(r.lucky==='tsueto')got.push('ツギオとエトウを同じ演目に出すと、外れた音どうしが和音になる');
+    if(r.lucky==='barchyBach'||r.lucky==='barchySatie'){const id=dreamWho('barchy');setMood(id,99);got.push('バーチーの変顔が「芸術」として認められた（演奏会での変顔がプラスに）');}
+    const sp=nm=>{const id=dreamWho(nm);return id==='you'?P().name:nameOf(id);};
+    const body=`<div class="dreamdlg">${d.lines.map(([w,s])=>`<div class="dl">${portrait(w,34,'#c9a24a')}<div><b>${sp(w)}</b>「${s}」</div></div>`).join('')}</div>
+      <div class="dreamf">${d.f}</div><div class="dreamr">${got.map(x=>`・${x}`).join('<br>')}</div>`;
+    setTimeout(()=>modal(`夢の顔合わせ：${d.t}`,body,null,'paper'),900);
+    addLog(`夢の顔合わせ「${d.t}」が実現した。`);hpush(`夢の顔合わせ「${d.t}」`);save();return true;}
+  return false;
+}
+/* 珍コンビの特典 */
+const _evalLineup_Dx=evalLineup;
+evalLineup=function(p,L,opt){const r=_evalLineup_Dx(p,L,opt);const D=G&&G.dream||{};const ids=L.filter(Boolean).map(realId);
+  if(D.tsueto&&ids.includes('tsugio')&&ids.includes('eto')){r.q+=2;r.notes.push('ツギオとエトウ、外れた音どうしがなぜか和音になった（+2）');}
+  if((D.barchyBach||D.satiebarchy)&&ids.includes('barchy')){r.q+=1;r.notes.push('バーチーの変顔は、いまや「芸術」と呼ばれている（+1）');}
+  r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;return r;};
+/* 確認のタイミング：月替わり、団員が増えたとき */
+const _memberMonthly_Dx=memberMonthly;
+memberMonthly=function(){_memberMonthly_Dx();try{dreamCheck();}catch(e){}};
+let _dreamN=-1;
+const _render_Dx=render;
+render=function(){_render_Dx();try{if(G&&G.members.length!==_dreamN){_dreamN=G.members.length;if($('#modal').classList.contains('hidden')&&$('#scene').classList.contains('hidden'))dreamCheck();}}catch(e){}};
+/* 続きから遊ぶときに夢の演目を戻す */
+const _start_Dx=start;
+start=function(){try{for(const d of DREAMS)if(G&&G.dream&&G.dream[d.id])dreamAddPiece(d);}catch(e){}return _start_Dx();};
+/* 夢の顔合わせ帳（年代記の画面から） */
+function dreamBook(){
+  G.dream=G.dream||{};const n=DREAMS.filter(d=>G.dream[d.id]).length;
+  modal(`夢の顔合わせ帳（${n}/${DREAMS.length}）`,`<div class="pmeta" style="margin-bottom:6px">史実では出会えなかった二人を、時代を越えて楽団にそろえると起きる。時の扉の「客演」も使おう。</div>`+
+    DREAMS.map(d=>G.dream[d.id]?`<div class="dbk on"><div class="dbp">${d.need.map(x=>portrait(x,30,'#c9a24a')).join('')}</div><div><b>${d.t}</b><br><span>${d.f}</span></div></div>`
+      :`<div class="dbk"><div class="dbp">？</div><div><b>？？？</b><br><span>${d.h}</span></div></div>`).join(''),null,'paper');
+}
+const _render_D2x=render;
+render=function(){_render_D2x();try{if(G&&TAB==='log'&&!$('#dreamBk')){const b=document.createElement('button');b.id='dreamBk';b.className='btn';b.style.cssText='width:100%;margin:0 0 8px';
+  b.innerHTML=`夢の顔合わせ帳<small>${DREAMS.filter(d=>(G.dream||{})[d.id]).length}/${DREAMS.length}　史実では出会えなかった二人</small>`;b.onclick=dreamBook;$('#main').prepend(b);}}catch(e){}};
+/* 結末の称号 */
+const _legacy_Dx=legacy;
+legacy=function(){const o=_legacy_Dx();try{const ds=DREAMS.filter(d=>(G.dream||{})[d.id]);for(const d of ds)o.L.push(`夢の顔合わせ「${d.t}」が実現した。`);if(ds.length>=3)o.T.push('夢の共演者');}catch(e){}return o;};
+
+/* =====================================================================
+   音楽院：支配下の街の音楽院に学長を置き、若手を養成する
+   ===================================================================== */
+const CONS={
+ naples:{n:'ナポリの音楽院（コンセルヴァトーリオ）',y:1537,h:['porpora'],d:'もとは孤児院。少年たちに音楽を教え、カストラートや作曲家を数多く世に出した。「コンセルヴァトワール（音楽院）」という言葉はここから生まれた。'},
+ venice:{n:'ピエタ慈善院',y:1700,h:['annamaria'],d:'捨て子の少女たちを育てる慈善院。格子の向こうで演奏する少女たちの合奏は、ヨーロッパ中の旅行者を驚かせた。ヴィヴァルディもここで教えた。'},
+ paris:{n:'パリ音楽院',y:1795,h:['nboulanger','faure','widor','franck','hasselmans','gillet05','vogt'],d:'フランス革命のさなかに生まれた国立の音楽院。一等賞をめざす厳しい試験で知られる。'},
+ milan:{n:'ミラノ音楽院',y:1808,h:[],d:'ナポレオン時代に創立。若きヴェルディは入学試験に落ちたことで知られる。'},
+ prague:{n:'プラハ音楽院',y:1811,h:['dvorak'],d:'中欧でもっとも古い音楽院のひとつ。のちにドヴォルザークが院長を務めた。'},
+ vienna:{n:'ウィーン楽友協会音楽院',y:1817,h:[],d:'楽友協会が開いた音楽院。のちのウィーン国立音楽大学。'},
+ warsaw:{n:'ワルシャワ音楽院',y:1821,h:[],d:'若きショパンが学んだ音楽学校の流れをくむ。'},
+ london:{n:'王立音楽院',y:1822,h:[],d:'イギリスで最初の本格的な音楽院。'},
+ leipzig:{n:'ライプツィヒ音楽院',y:1843,h:['moscheles','david','schumann'],d:'メンデルスゾーンが創立。モシェレス、ダヴィッド、シューマンが教壇に立った。'},
+ munich:{n:'ミュンヘン音楽院',y:1846,h:[],d:'のちにワーグナーの後押しで改組された。'},
+ dresden:{n:'ドレスデン音楽院',y:1856,h:[],d:'宮廷楽団の楽員たちが教えた。'},
+ peter:{n:'ペテルブルク音楽院',y:1862,h:['arubinstein','rimsky05','auer05','glazunov'],d:'アントン・ルビンシテインが創立したロシア初の音楽院。チャイコフスキーは第一期生。'},
+ moscow:{n:'モスクワ音楽院',y:1866,h:['nrubinstein','tchaikovsky','taneyev'],d:'ニコライ・ルビンシテインが創立。チャイコフスキーが和声を教えた。'},
+ berlin:{n:'ベルリン高等音楽学校',y:1869,h:['joachim'],d:'初代校長はヨアヒム。世界中からヴァイオリンの学生が集まった。'},
+ weimar:{n:'ワイマール管弦楽学校',y:1872,h:['liszt76'],d:'晩年のリストが毎夏レッスンを開いた街の学校。'},
+ pest:{n:'王立音楽アカデミー',y:1875,h:['liszt76','hubay'],d:'リストが初代院長。のちの「リスト音楽院」。'},
+ newyork:{n:'ナショナル音楽院',y:1885,h:['dvorak'],d:'ドヴォルザークが院長として招かれ、『新世界より』を書いた。'}
+};
+const consOf=k=>{const c=CONS[k];return c&&c.y<=U_YEAR[G.sc]+Math.floor(G.month/12)?c:null;};
+const GRADN={fr:[['ジャン','ピエール','マルセル','アンドレ','リュシアン','ジャック','マリー','ジャンヌ','セシル','ルイーズ'],['デュボワ','ルロワ','モロー','ルフェーヴル','ガルニエ','ブラン','メルシエ','ロラン']],
+ de:[['ヨハン','フリードリヒ','カール','ヴィルヘルム','ハインリヒ','アンナ','クララ','ゾフィー','ルイーゼ','マリア'],['シュミット','ヴェーバー','ベッカー','ホフマン','クライン','ヴォルフ','ノイマン','ケラー']],
+ it:[['ジョヴァンニ','ルイージ','アントニオ','ピエトロ','ジュゼッペ','マリア','テレーザ','ジュリア','アンナ','ルチア'],['ロッシ','ビアンキ','コロンボ','リッチ','マリーニ','ガッロ','コンティ','ロマーノ']],
+ en:[['ジョン','ウィリアム','ジョージ','トマス','ヘンリー','メアリー','エリザベス','アン','ジェイン','エミリー'],['スミス','ブラウン','テイラー','ウィルソン','エヴァンズ','グリーン','ホール','ウッド']],
+ ru:[['イワン','セルゲイ','ニコライ','アレクセイ','ミハイル','アンナ','ナターリヤ','オリガ','エレーナ','ソフィヤ'],['イワノフ','ペトロフ','ソコロフ','ポポフ','レベデフ','ヴォルコフ','モロゾフ','パヴロフ']],
+ cz:[['ヤン','ヨゼフ','アントニーン','ヴァーツラフ','カレル','マリエ','アンナ','ルドミラ','ヤナ','ズデンカ'],['ノヴァーク','スヴォボダ','ドヴォルジャーク','チェルニー','プロハースカ','クチェラ']],
+ hu:[['ラースロー','イシュトヴァーン','ヤーノシュ','ジュラ','エルジェーベト','マーリア','イロナ','カタリン'],['ナジ','コヴァーチ','トート','サボー','ホルヴァート','ヴァルガ']],
+ pl:[['ヤン','ユゼフ','スタニスワフ','アンジェイ','マリア','アンナ','ゾフィア','ヤドヴィガ'],['コヴァルスキ','ノヴァク','ヴィシニェフスキ','カミンスキ','レヴァンドフスキ']]};
+const CNAT={paris:'fr',vienna:'de',leipzig:'de',berlin:'de',munich:'de',dresden:'de',weimar:'de',milan:'it',naples:'it',venice:'it',london:'en',newyork:'en',peter:'ru',moscow:'ru',prague:'cz',pest:'hu',warsaw:'pl'};
+function gradMake(g){
+  if(SC.chars.some(c=>c.id===g.id))return;
+  const c=C(g.id,g.name,g.en||'',g.city,g.seat,'名人芸',g.lv,g.st,false,'expr',[.9,.4,1.0,1.0,1.2],'scale',g.tim||'violin',g.piece||'卒業演奏会の協奏曲',g.line||'先生に教わったことを、舞台で全部出します。','音楽院の誇りを、あなたの楽団に。',`${g.cons}を卒業した若手。学長${g.teacher}の門下生。`);
+  SC.chars.push(c);TR[g.id]=g.tr;GROW[g.id]='late';XTYPES[g.id]=[SEATTYPE[g.seat]];if(typeof UHIST!=='undefined')UHIST[g.id]=2;
+}
+function consGrad(k){
+  const C0=consOf(k),st=G.cons[k],dir=st.dir;const nat=GRADN[CNAT[k]||'de'];const fem=Math.random()<.5;
+  const first=pick(fem?nat[0].slice(Math.ceil(nat[0].length/2)):nat[0].slice(0,Math.ceil(nat[0].length/2))),last=pick(nat[1]);
+  const typ=pick(typesOf(dir).filter(t=>Object.values(SEATTYPE).includes(t))||['vn'])||'vn';const seat=Object.keys(SEATTYPE).find(s=>SEATTYPE[s]===typ)||'コンサートマスター';
+  const hist=C0.h.includes(realId(dir)),b=(hist?1:0);const ms=k2=>Math.max(4,Math.min(12,Math.round(mstat(dir,k2)*.55+rnd(1,3)+b)));
+  const g={id:'grad'+(G.gradN=(G.gradN||0)+1),name:`${first}・${last}`,city:k,seat,lv:2+b,st:[ms('tech'),ms('expr'),ms('impro'),ms('theory')],cons:C0.n,teacher:nameOf(dir),
+    tr:{h:pick(['short','wavy','long','curly']),hc:pick(['#2a1a10','#5a3a1a','#8a6a3a','#1a1a1a','#b08850']),b:fem?'none':pick(['none','none','mus']),fem:fem?1:0},tim:typ==='pf'?'piano':typ==='vc'?'cello':typ==='fl'||typ==='ob'?'flute':'violin'};
+  G.grads=G.grads||[];G.grads.push(g);gradMake(g);
+  modal(`${C0.n}の卒業生`,`${portraitRow(g.id)}学長<b>${nameOf(dir)}</b>の門下から、<b>${g.name}</b>（${SL(seat)}）が卒業した。${hist?'<br><span class="pmeta">史実の名教師の教えを受けた、期待の若手だ。</span>':''}`,[
+    {t:'楽団に迎える<small>月給は安く、伸びしろは大きい</small>',cls:'gold',f(){ens5();G.members.push(g.id);G.sal[g.id]=20+g.lv*5;setMood(g.id,90);addLog(`${C0.n}の卒業生${g.name}が楽団に加わった。`);hpush(`${C0.n}の卒業生${g.name}、入団`);render();}},
+    {t:'よその楽団へ送り出す<small>名声+12</small>',f(){addXP(12);addLog(`${C0.n}の卒業生${g.name}は、よその楽団で活躍している。`);}}]);
+}
+function consMonthly(){
+  G.cons=G.cons||{};
+  for(const k of Object.keys(CONS)){const C0=consOf(k);if(!C0)continue;const st=G.cons[k]=G.cons[k]||{dir:null,m:0,n:0};
+    if(G.owner[k]!=='player'){st.dir=null;continue;}
+    P().money+=30+cityLv(k)*10;
+    if(!st.dir||!G.members.includes(st.dir)||uOnExp(st.dir)){st.dir=st.dir&&G.members.includes(st.dir)?st.dir:null;continue;}
+    st.m++;gainExp(st.dir,6);const per=C0.h.includes(realId(st.dir))?4:6;
+    if(st.m>=per){st.m=0;st.n++;try{consGrad(k);}catch(e){}}}
+}
+function consScreen(k){
+  const C0=consOf(k);if(!C0)return;G.cons=G.cons||{};const st=G.cons[k]=G.cons[k]||{dir:null,m:0,n:0};const mine=G.owner[k]==='player';
+  const per=st.dir&&C0.h.includes(realId(st.dir))?4:6;
+  const hs=C0.h.filter(id=>SC.chars.some(c=>c.id===id)).map(id=>charById(id).name);
+  const btns=mine?G.members.filter(id=>id!==st.dir&&(ulv(id)>=3||C0.h.includes(realId(id)))&&!isDud(id)).sort((a,b)=>(C0.h.includes(realId(b))?1:0)-(C0.h.includes(realId(a))?1:0)||ulv(b)-ulv(a)).slice(0,6)
+    .map(id=>({t:`${nameOf(id)}を学長に<small>Lv${ulv(id)}${C0.h.includes(realId(id))?'・<b>史実の名教師</b>（4か月ごとに卒業生）':''}</small>`,cls:C0.h.includes(realId(id))?'gold':'',f(){st.dir=id;st.m=0;addLog(`${nameOf(id)}が${C0.n}の学長に就いた。`);save();render();}})):[];
+  if(mine&&st.dir)btns.push({t:'学長を解任する',f(){st.dir=null;save();render();}});
+  btns.push({t:'閉じる'});
+  modal(C0.n,`<div class="pmeta">${C0.y<1700?'古くから':C0.y+'年創立'}・${ci(k).name}</div>${C0.d}<br><br>`+
+    (mine?`学長：<b>${st.dir?nameOf(st.dir):'未任命'}</b>${st.dir?`（次の卒業生まで ${per-st.m}か月）`:''}<br>これまでの卒業生：${st.n}人<br><span class="pmeta">支配下の音楽院からは、毎月授業料が入る（${30+cityLv(k)*10}fr）。学長は団員の中から選ぶ。学長に選んだ団員は巡演にも出られるが、派遣公演中は教えられない。</span>${hs.length?`<br><span class="pmeta">この時代の史実の名教師：${hs.join('、')}</span>`:''}`
+    :`<span class="pmeta">いまは${G.owner[k]&&G.owner[k]!=='player'?'ほかの勢力':'どの勢力も持っていない'}の街の音楽院。この街を支配すれば、学長を置いて若手を育てられる。</span>`),btns,'paper');
+}
+const _cityHTML_Cx=cityHTML;
+cityHTML=function(){let h=_cityHTML_Cx();try{const k=P().city,C0=consOf(k);if(C0&&unl('cons'))h+=`<div class="card consc"><b>🎓 ${C0.n}</b>　<span class="pmeta">${G.owner[k]==='player'?(G.cons&&G.cons[k]&&G.cons[k].dir?`学長：${nameOf(G.cons[k].dir)}`:'学長は未任命'):'他勢力の街'}</span><button class="btn" id="consBtn" style="width:100%;margin-top:6px">音楽院を訪ねる</button></div>`;}catch(e){}return h;};
+const _render_Cx=render;
+render=function(){_render_Cx();const b=$('#consBtn');if(b)b.onclick=()=>consScreen(P().city);};
+const _memberMonthly_Cx=memberMonthly;
+memberMonthly=function(){_memberMonthly_Cx();try{consMonthly();}catch(e){}};
+const _start_Cx=start;
+start=function(){try{for(const g of (G&&G.grads)||[])gradMake(g);}catch(e){}return _start_Cx();};
+UNL.push({id:'cons',c:()=>myCities().some(k=>consOf(k)),t:'音楽院',d:'支配下の街にある<b>音楽院</b>に、団員を学長として送りこめるようになった。数か月ごとに卒業生が出て、楽団に迎えられる。史実の名教師を学長にすれば、もっと早く、もっと良い若手が育つ。'});
+
+/* =====================================================================
+   宗教と音楽：街ごとの宗派、四旬節、教会との縁と委嘱
+   ===================================================================== */
+const CONF={london:'英国国教会',paris:'カトリック',venice:'カトリック',naples:'カトリック',rome:'カトリック（教皇領）',madrid:'カトリック',vienna:'カトリック',prague:'カトリック',milan:'カトリック',
+  munich:'カトリック',pest:'カトリック',warsaw:'カトリック',dresden:'ルター派（宮廷はカトリック）',leipzig:'ルター派',hamburg:'ルター派',berlin:'ルター派',weimar:'ルター派',bayreuth:'ルター派',
+  peter:'正教会',moscow:'正教会',newyork:'多くの宗派'};
+const confKey=k=>{const c=CONF[k]||'';return /カトリック/.test(c)&&!/ルター/.test(c)?'cat':/ルター/.test(c)?'lut':/国教会/.test(c)?'ang':/正教/.test(c)?'orth':'other';};
+const CONFN={cat:'カトリック教会',lut:'ルター派教会',ang:'英国国教会',orth:'正教会',other:'街の教会'};
+const isLent=()=>{const mo=ymd(G.month).mo;return mo===2||mo===3;};
+const lentHere=k=>isLent()&&['cat','orth'].includes(confKey(k));
+const SACRED=['宗教曲','カンタータ'],THEATER=['オペラ','楽劇','バレエ','舞踏会'];
+/* 時代ごとの宗教曲 */
+const SACADD={
+ s1723:[['gloria','ヴィヴァルディ『グローリア』','宗教曲',[['voice','ソプラノ'],['vn','コンサートマスター'],['cond','指揮']],'spring','violin'],
+        ['stabat','ペルゴレージ『スターバト・マーテル』（1736）','宗教曲',[['voice','ソプラノ'],['voice','アルト'],['vn','弦楽']],'largo','violin'],
+        ['messiah','ヘンデル『メサイア』（1742）','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['br','トランペット'],['tim','ティンパニ']],'hallelujah','violin'],
+        ['hmass','バッハ『ロ短調ミサ』','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['fl','フルート'],['br','トランペット']],'bach','violin']],
+ s1781:[['krmass','モーツァルト『戴冠ミサ』（1779）','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['ob','オーボエ']],'mozart','violin'],
+        ['mzreq','モーツァルト『レクイエム』（1791）','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['cl','バセットホルン'],['tim','ティンパニ']],'mozart','violin'],
+        ['creation','ハイドン『天地創造』（1798）','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['fl','フルート'],['br','金管']],'surprise','violin']],
+ s1832:[['bzreq','ベルリオーズ『レクイエム』（1837）','宗教曲',[['voice','テノール'],['cond','指揮'],['br','四群の金管'],['tim','ティンパニ（16台）']],'diesirae','violin'],
+        ['rstabat','ロッシーニ『スターバト・マーテル』（1842）','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['vc','チェロ']],'belcanto','violin'],
+        ['elijah','メンデルスゾーン『エリヤ』（1846）','宗教曲',[['voice','バリトン'],['cond','指揮'],['vn','コンサートマスター']],'mendvc','violin']],
+ s1876:[['dreq','ブラームス『ドイツ・レクイエム』','宗教曲',[['voice','ソプラノ'],['cond','指揮'],['hp','ハープ'],['tim','ティンパニ']],'lullaby','violin'],
+        ['frreq','フォーレ『レクイエム』（1888）','宗教曲',[['voice','ソプラノ'],['hp','ハープ'],['va','ヴィオラ'],['cond','指揮']],'faune','violin'],
+        ['tedeum','ブルックナー『テ・デウム』（1884）','宗教曲',[['voice','テノール'],['cond','指揮'],['br','金管']],'bruckner','violin']],
+ s1905:[['gerontius','エルガー『ゲロンティアスの夢』（1900）','宗教曲',[['voice','テノール'],['cond','指揮'],['hp','ハープ']],'scale','violin'],
+        ['vespers','ラフマニノフ『晩祷』（1915）','宗教曲',[['voice','合唱'],['cond','指揮']],'volga','violin']]
+};
+for(const sc in SACADD)for(const [id,t,f,sl,mo,tim] of SACADD[sc])if(!SCEN[sc].rep.some(p=>p.id===id))SCEN[sc].rep.push(Pc(id,t,f,sl.map(([r,l])=>Sl([r],l)),[.3,.6,.1],'ロマン',null,MOTIFS[mo]?mo:'scale',tim));
+/* 宗教にまつわる歴史の夜 */
+Object.entries({
+ s1723:[{id:'kantor',y:1723,m:6,c:'leipzig',t:'バッハ、トーマス教会のカントルに就任',d:'市参事会は「最良の人を得られないので、中くらいの人で我慢する」と言ったとか。毎週日曜のカンタータが始まる。',key:['bach'],types:['voice','vn','ob'],mo:'bach',fr:300,xp:20}],
+ s1781:[{id:'creationp',y:1798,m:4,c:'vienna',t:'ハイドン『天地創造』初演',d:'「光あれ」の一瞬、ハ長調の大和音が鳴り響き、客席は総立ちになった。',key:['haydn'],types:['voice','cond','fl'],mo:'surprise',fr:520,xp:30}],
+ s1832:[{id:'bzreqp',y:1837,m:12,c:'paris',t:'ベルリオーズ『レクイエム』初演',d:'アンヴァリッド（廃兵院）の礼拝堂。四方に置いた金管と16台のティンパニが「怒りの日」を告げる。',key:['berlioz'],types:['voice','br','tim','cond'],mo:'diesirae',fr:480,xp:30}],
+ s1876:[{id:'frreqp',y:1888,m:1,c:'paris',t:'フォーレ『レクイエム』初演',d:'マドレーヌ寺院。「怒りの日」をほとんど省いた、やすらかなレクイエム。',key:['faure'],types:['voice','hp','va'],mo:'faune',fr:380,xp:26}],
+ s1905:[{id:'vespersp',y:1915,m:3,c:'moscow',t:'ラフマニノフ『晩祷』初演',d:'戦時下のモスクワ。無伴奏の合唱だけで歌う、正教会の徹夜祷。',key:['rachmaninoff'],types:['voice','cond'],mo:'volga',fr:420,xp:28}]
+}).forEach(([sc,a])=>{HEV[sc]=(HEV[sc]||[]).concat(a).sort((x,y)=>x.y*12+x.m-(y.y*12+y.m));});
+/* 演奏会：四旬節と宗派 */
+const _evalLineup_Rx=evalLineup;
+evalLineup=function(p,L,opt){const r=_evalLineup_Rx(p,L,opt);try{const k=P().city,ck=confKey(k);
+  if(lentHere(k)&&THEATER.includes(p.form)){r.q-=3;r.notes.push('四旬節：劇場は自粛の季節。歌劇やバレエは客足が鈍い（-3）');}
+  if(lentHere(k)&&SACRED.includes(p.form)){r.q+=2;r.notes.push('四旬節：宗教曲やオラトリオが求められる季節（+2）');}
+  if(SACRED.includes(p.form)){const f=(G.church||{})[ck]||0;if(f>=3){const b=Math.min(2,f/5);r.q+=b;r.notes.push(`${CONFN[ck]}との縁（+${b.toFixed(1)}）`);}}
+  if(p.form==='カンタータ'&&ck==='lut'){r.q+=1;r.notes.push('ルター派の街では、日曜のカンタータが暮らしの一部（+1）');}
+  r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;}catch(e){}return r;};
+const _concertResult_Rx=concertResult;
+concertResult=function(p,L,ev,fi){const ret=_concertResult_Rx(p,L,ev,fi);
+  try{if(SACRED.includes(p.form)){const ck=confKey(P().city);G.church=G.church||{};G.church[ck]=(G.church[ck]||0)+1;const f=G.church[ck];
+    if(f===3||f===8||f===15){const fr=200+f*40;P().money+=fr;addXP(10+f*2);addLog(`${CONFN[ck]}から、新しい宗教曲の委嘱が届いた（+${fr}fr）。`);
+      modal('教会からの委嘱',`${CONFN[ck]}の信頼が厚くなった。<br>礼拝のための新しい曲を書いてほしい、と正式な依頼が届いた。<br><br><span class="pmeta">+${fmt(fr)}fr・名声+${10+f*2}。この宗派の街で宗教曲を演奏すると、評判に上乗せがつく。</span>`,null,'paper');}}}catch(e){}
+  return ret;};
+/* 街の画面に宗派と季節を表示 */
+const _cityHTML_Rx=cityHTML;
+cityHTML=function(){let h=_cityHTML_Rx();try{const k=P().city,ck=confKey(k),f=(G.church||{})[ck]||0;
+  h+=`<div class="card relc">⛪ <b>${CONF[k]||'—'}</b>　<span class="pmeta">${CONFN[ck]}との縁 ${'★'.repeat(Math.min(5,Math.floor(f/3)))||'まだなし'}</span>${lentHere(k)?'<br><span class="lent">いまは四旬節。劇場は自粛し、宗教曲やオラトリオの季節。</span>':''}</div>`;}catch(e){}return h;};
+/* 月の便り：四旬節の始まり */
+const _memberMonthly_Rx=memberMonthly;
+memberMonthly=function(){_memberMonthly_Rx();try{if(ymd(G.month).mo===2&&!(G.flags.lentY===ymd(G.month).y)){G.flags.lentY=ymd(G.month).y;addLog('四旬節が始まった。カトリックと正教会の街では劇場が自粛し、宗教曲の季節となる。');}}catch(e){}};
+
+/* =====================================================================
+   パスキエ家：ハルの師匠が、時の扉を越えて迎えに来る
+   ===================================================================== */
+const PASQ=[
+ ['regis','レジス・パスキエ','Régis Pasquier','コンサートマスター',7,[12,12,11,10],'violin','パガニーニ『24のカプリース』','ハル、ここにいたのか。さあ、レッスンの続きをしよう。','パリの弦の伝統を、あなたの楽団に。',
+  'フランスのヴァイオリニスト（1945年生まれ）。音楽一家パスキエ家に生まれ、12歳でパリ音楽院のヴァイオリン科と室内楽科を一等賞で卒業、2年後にニューヨークでデビューした。フランス国立管弦楽団のコンサートマスター、パリ国立高等音楽院の教授を歴任。兄ブリュノ、チェロのピドゥーと「新パスキエ・トリオ」を組んだ。'],
+ ['bruno','ブリュノ・パスキエ','Bruno Pasquier','ヴィオラ首席',6,[11,12,9,10],'cello','弦楽三重奏のヴィオラ','弟のヴァイオリンには、ぼくのヴィオラがいないとね。','パスキエ家のヴィオラを、あなたの楽団に。',
+  'フランスのヴィオラ奏者（1943年生まれ）。父ピエールもヴィオラ奏者。パリ・オペラ座管弦楽団の首席を長く務め、弟レジスと「新パスキエ・トリオ」を組んだ。愛器は17世紀初めのマジーニのヴィオラ。'],
+ ['pidoux','ロラン・ピドゥー','Roland Pidoux','チェロ首席',6,[11,12,9,10],'cello','弦楽三重奏のチェロ','三人そろえば、パスキエ・トリオだ。','フランスのチェロを、あなたの楽団に。',
+  'フランスのチェロ奏者。フランス国立管弦楽団の首席チェロ、パリ国立高等音楽院の教授を務め、パスキエ兄弟と「新パスキエ・トリオ」を組んだ。'],
+ ['pierrep','ピエール・パスキエ','Pierre Pasquier','ヴィオラ首席',6,[10,11,9,10],'cello','弦楽三重奏のヴィオラ','息子たちが立派になったと聞いて、つい扉をくぐってしまった。','1927年の響きを、あなたの楽団に。',
+  'ヴィオラ奏者（1902〜1986）。兄弟のジャン、エティエンヌと1927年に「パスキエ・トリオ」を結成し、弦楽三重奏という編成を世界に広めた。レジスとブリュノの父。'],
+ ['jeanp','ジャン・パスキエ','Jean Pasquier','コンサートマスター',6,[11,10,9,10],'violin','弦楽三重奏のヴァイオリン','兄弟三人、どこへでも旅したものだ。','パスキエ・トリオのヴァイオリンを、あなたの楽団に。',
+  'ヴァイオリン奏者（1903年生まれ）。兄弟のピエール、エティエンヌとパスキエ・トリオを結成した。'],
+ ['etiennep','エティエンヌ・パスキエ','Étienne Pasquier','チェロ首席',6,[10,11,10,10],'cello','メシアン『世の終わりのための四重奏曲』','あの冬の収容所で弾いた音を、わたしは一生忘れない。','パスキエ・トリオのチェロを、あなたの楽団に。',
+  'チェロ奏者（1905〜1997）。パスキエ・トリオの一員。1941年、捕虜収容所で行われたメシアン『世の終わりのための四重奏曲』の初演に加わったことで知られる。']
+];
+const PQIDS=PASQ.map(x=>x[0]);
+for(const sc in SCEN){const S=SCEN[sc];for(const [id,nm,en,seat,lv,st,tim,piece,line,join,tri] of PASQ){if(S.chars.some(c=>c.id===id))continue;
+  S.chars.push(C(id,nm,en,'paris',seat,'名人芸',lv,st,false,'expr',[.9,.4,1.1,1.1,1.2],'scale',tim,piece,line,join,tri));}}
+Object.assign(XTYPES,{regis:['vn'],bruno:['va','cond'],pidoux:['vc','cond'],pierrep:['va'],jeanp:['vn'],etiennep:['vc']});
+Object.assign(TR,{regis:{h:'receding',hc:'#c8c8c8',b:'none',age:2},bruno:{h:'receding',hc:'#bbb',b:'none',age:2},pidoux:{h:'short',hc:'#ccc',b:'none',age:2},
+  pierrep:{h:'short',hc:'#3a2a1a',b:'mus'},jeanp:{h:'short',hc:'#2a1a10',b:'none'},etiennep:{h:'short',hc:'#2a1a10',b:'mus'}});
+if(typeof UHIST!=='undefined')Object.assign(UHIST,{regis:5,bruno:4,pidoux:4,pierrep:4,jeanp:4,etiennep:4});
+Object.assign(SIG,{regis:['パリの弦','弓は歌うためにある。さあ、もう一度。','petals'],etiennep:['世の終わりのための四重奏','どんな冬にも、音楽は鳴る。','stars']});
+Object.assign(SIGM,{regis:'caprice24',etiennep:'bach'});
+DESHI_H.haru='regis';
+const _poolChars_Qx=poolChars;
+poolChars=function(){const a=_poolChars_Qx();return a.filter(c=>!PQIDS.includes(c.id)||(G&&G.flags&&G.flags['pq_'+c.id]));};
+const _guestSrc_Qx=guestSrc;
+guestSrc=function(era,id){if(PQIDS.includes(id))return null;return _guestSrc_Qx(era,id);};
+/* 時の扉からやってくる順番 */
+const PQSTEP=[
+ {id:'regis',c:()=>isMember('haru'),t:'ハルの師匠',d:'稽古場の扉が、またひとりでに開いた。銀髪のヴァイオリニストが、ハルの名を呼んでいる。'},
+ {id:'bruno',c:()=>isMember('regis'),t:'兄のヴィオラ',d:'「レジスがいるなら、ぼくも行かなくちゃね」――扉の向こうから、ヴィオラを抱えた兄が現れた。'},
+ {id:'pidoux',c:()=>isMember('regis')&&isMember('bruno'),t:'三人目のチェロ',d:'「兄弟だけで弾くつもりかい？」――チェロのピドゥーが、笑いながら扉をくぐってきた。'},
+ {id:'pierrep',c:()=>isMember('bruno'),t:'父、来たる',d:'扉の向こうから、若き日の父ピエールが現れた。1927年の背広を着ている。'},
+ {id:'jeanp',c:()=>isMember('pierrep'),t:'伯父のヴァイオリン',d:'「ピエール、ひとりで行くなよ」――兄弟のジャンが追いかけてきた。'},
+ {id:'etiennep',c:()=>isMember('jeanp'),t:'末の弟のチェロ',d:'最後に扉をくぐったのは、チェロを背負った末の弟エティエンヌだった。'}
+];
+function pqCheck(){
+  if(!G||!G.flags)return;
+  for(const s of PQSTEP){if(G.flags['pq_'+s.id]||isMember(s.id)||!s.c())continue;if(Math.random()>.35)return;
+    G.flags['pq_'+s.id]=1;const c=charById(s.id);c.city=P().city;
+    modal(`時の扉から：${s.t}`,`${portraitRow(s.id)}${s.d}<br><br><b>${c.name}</b>「${c.line}」<br><br><span class="pmeta">${c.trivia}</span>`,[
+      {t:'楽団に迎える',cls:'gold',f(){ens5();G.members.push(s.id);G.sal[s.id]=60;setMood(s.id,90);addLog(`時の扉から${c.name}が加わった。`);hpush(`${c.name}、時の扉から入団`);cutin(s.id,c.name,'時の扉から');render();}},
+      {t:'今はまだ',f(){G.flags['pq_'+s.id]=0;addLog(`${c.name}は「また来るよ」と扉の向こうへ帰っていった。`);}}]);return;}
+}
+const _memberMonthly_Qx=memberMonthly;
+memberMonthly=function(){_memberMonthly_Qx();try{pqCheck();}catch(e){}};
+/* パスキエ家の夢の顔合わせ */
+DREAMS.push(
+ {id:'harupasq',need:['haru','regis'],t:'師と弟子、時を越えて',h:'時の扉から来た若者には、扉の向こうに待つ先生がいる。',
+  f:'時の扉は、師と弟子を引き離せなかった。',
+  lines:[['regis','ハル、どの時代にいても、練習はさぼっていないね？'],['haru','はい。バッハにも、パガニーニにも会いました。'],['regis','それはいい。では今日は、その音を全部聴かせておくれ。']],
+  r:{boost:{haru:2},xp:80}},
+ {id:'nouvtrio',need:['regis','bruno','pidoux'],t:'新パスキエ・トリオ',h:'ヴァイオリンの弟、ヴィオラの兄、そしてチェロの盟友。三人そろえば……',
+  f:'1972年、レジスとブリュノのパスキエ兄弟は、チェロのロラン・ピドゥーと「新パスキエ・トリオ」を結成し、父たちのトリオの名を受け継いだ。',
+  lines:[['bruno','父さんたちのトリオの名前、ぼくらが継ごう。'],['pidoux','三人でなら、どこへでも行ける。'],['regis','では最初の曲は、ベートーヴェンの弦楽三重奏だ。']],
+  r:{boost:{regis:1,bruno:1,pidoux:1},xp:120,piece:['dream_np','新パスキエ・トリオ ベートーヴェン 弦楽三重奏曲 op.9','室内楽',[['vn','ヴァイオリン'],['va','ヴィオラ'],['vc','チェロ']],'scale','violin'],conc:['regis','bruno','pidoux']}},
+ {id:'trio27',need:['jeanp','pierrep','etiennep'],t:'パスキエ・トリオ、1927年',h:'三人の兄弟が、弦楽三重奏という編成を世界に広めた。',
+  f:'1927年、ジャン、ピエール、エティエンヌのパスキエ兄弟が「パスキエ・トリオ」を結成。弦楽三重奏の専門団体として世界を旅した。',
+  lines:[['jeanp','兄弟三人、ヴァイオリン、ヴィオラ、チェロ。'],['pierrep','四重奏より一人少ない。だから、ひとりひとりの音がよく聴こえる。'],['etiennep','さあ、モーツァルトのディヴェルティメントを。']],
+  r:{boost:{jeanp:1,pierrep:1,etiennep:1},xp:120,piece:['dream_pt','パスキエ・トリオ モーツァルト ディヴェルティメント K.563','室内楽',[['vn','ヴァイオリン'],['va','ヴィオラ'],['vc','チェロ']],'mozart','violin'],conc:['jeanp','pierrep','etiennep']}},
+ {id:'pqfather',need:['pierrep','regis','bruno'],t:'父と息子たち',h:'時の扉は、若き日の父と、年を重ねた息子たちを同じ稽古場に立たせた。',
+  f:'ピエール・パスキエの息子たち――ヴィオラのブリュノとヴァイオリンのレジスは、父のトリオの名を受け継いだ。',
+  lines:[['pierrep','おまえたちのほうが、わたしより年上に見えるな。'],['bruno','父さん、ヴィオラの持ち方、ずっと父さんの真似をしてきたんだ。'],['regis','父さん、今夜は二つのトリオで、六重奏をやろう。']],
+  r:{boost:{pierrep:1},xp:100,lucky:'allMood'}},
+ {id:'boulregis',need:['nboulanger','regis'],t:'マドモワゼルの教え',h:'20世紀最大の音楽教師と呼ばれた女性と、パリのヴァイオリニスト。',
+  f:'ナディア・ブーランジェは「20世紀最大の音楽教師」と呼ばれ、作曲家から演奏家まで、数え切れない名手を育てた。弟子たちは彼女を敬意をこめて「マドモワゼル」と呼んだ。',
+  lines:[['nboulanger','レジス、あなたの音には迷いがない。でも、和声をもう一度聴きなさい。'],['regis','はい、マドモワゼル。'],['nboulanger','音楽は、規律と自由のあいだにあるのですよ。']],
+  r:{boost:{regis:1},xp:90}},
+ {id:'pqpaganini',need:['regis','paganini'],t:'24のカプリース',h:'カプリースを書いた悪魔と、それを録音したフランスの名手。',
+  f:'レジス・パスキエはパガニーニの『24のカプリース』全曲を録音している。',
+  lines:[['paganini','わたしのカプリースを、全部弾いたそうだね。'],['regis','ええ。ただし悪魔に魂は売っていませんよ。'],['paganini','ははは！ それなら、なおさら見事だ。']],
+  r:{boost:{regis:1},xp:90}}
+);
+
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});
 $('#hFame').onclick=fameHelp;$('#hStC').onclick=staminaHelp;
