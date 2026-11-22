@@ -37,7 +37,7 @@ const FOLK={
   C('lehar','レハール','Franz Lehár','vienna','指揮','ロマン',5,[7,10,8,8],false,'expr',[1.2,.8,.7,1.2,1.2],'waltz','violin','『メリー・ウィドウ』ワルツ','口ずさめる旋律で、世界を踊らせたい。','オペレッタの楽団なら、任せてください。','元は軍楽隊長。1905年12月、ウィーンのアン・デア・ウィーン劇場で初演した喜歌劇『メリー・ウィドウ』が世界的な大ヒットとなった。')
  ]
 };
-for(const sc in FOLK){const S=SCEN[sc];for(const c of FOLK[sc])if(!S.chars.some(x=>x.id===c.id))S.chars.push(c);}
+for(const sc in FOLK){const S=SCEN[sc];for(const c of FOLK[sc]){if(!S.chars.some(x=>x.id===c.id))S.chars.push(c);try{ROSTER_ALL.add(c.id);}catch(e){}}}
 Object.assign(TR,{gay:{h:'wig',smile:1},carey:{h:'wig',smile:1},pepusch:{h:'allonge',age:2},schikaneder:{h:'wig',smile:1,round:1},dibdin:{h:'wig'},albrechtsberger:{h:'wig',age:2},
  lanner:{h:'curly',hc:'#5a3a22',b:'side'},musard:{h:'wild',hc:'#2a2018',b:'mus'},beranger:{h:'bald',age:2,round:1,smile:1},cherubini:{h:'receding',hc:'#cfc6b8',age:2,c:'cravat'},
  ziehrer:{h:'short',hc:'#3a2a1a',b:'mus'},theresa:{fem:1,h:'updo',hc:'#2a2018',smile:1,coat:'#8a1a3a'},sullivan:{h:'short',hc:'#2a2018',b:'side'},
