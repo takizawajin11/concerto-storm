@@ -24,3 +24,7 @@
 details.shelf{margin:6px 0;border:1px solid rgba(230,197,111,.4);border-radius:8px;padding:4px 8px}
 details.shelf summary{cursor:pointer;font-weight:bold;padding:4px 0}
 details.shelf summary small{font-weight:normal;opacity:.7;margin-left:6px;font-size:11px}
+.stbg.s-tavern{background:radial-gradient(circle at 50% 30%,#c8823a,#4a2a14 60%,#1a0e08)}
+.tag.stg{font-size:10px;padding:1px 5px;border-radius:6px;margin-left:3px}
+.tag.stg.st{background:rgba(200,130,58,.25);color:#f0c890;border:1px solid #c8823a}
+.tag.stg.hl{background:rgba(120,140,200,.2);color:#c8d4f0;border:1px solid #7a8ac8}

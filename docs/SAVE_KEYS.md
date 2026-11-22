@@ -20,7 +20,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `cards` | オブジェクト | 125_fate.js、130_chal.js |
 | `chMon` | — | 095_balance.js |
 | `chRec` | オブジェクト | 090_extra.js、100_flow.js |
-| `charOwner` | オブジェクト | 015_unify.js、130_chal.js、180_street.js、土台 |
+| `charOwner` | オブジェクト | 015_unify.js、130_chal.js、180_street.js、185_stage.js、土台 |
 | `chem` | オブジェクト | 土台 |
 | `church` | オブジェクト | 115_relig.js |
 | `cityF` | オブジェクト | 015_unify.js、土台 |
@@ -55,7 +55,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `lineage` | 配列 | 170_lineage.js |
 | `log` | 配列 | 土台 |
 | `lostTo` | 配列 | 土台 |
-| `members` | 配列 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、土台 |
+| `members` | 配列 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、185_stage.js、土台 |
 | `month` | 数 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、070_tut.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、115_relig.js、125_fate.js、130_chal.js、145_compose.js、150_gamble.js、160_quiz.js、165_wrapped.js、175_hub.js、180_street.js、土台 |
 | `mood` | オブジェクト | 土台 |
 | `myN` | 数 | 145_compose.js |
@@ -65,7 +65,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `over` | — | 105_dream.js、130_chal.js、土台 |
 | `owner` | オブジェクト | 015_unify.js、075_polish.js、110_cons.js、125_fate.js、130_chal.js、土台 |
 | `patron` | オブジェクト | 152_patron.js |
-| `pid` | — | 015_unify.js、060_duel.js、080_sig.js、085_rival.js、090_extra.js、105_dream.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、土台 |
+| `pid` | — | 015_unify.js、060_duel.js、080_sig.js、085_rival.js、090_extra.js、105_dream.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、185_stage.js、土台 |
 | `pop` | オブジェクト | 180_street.js |
 | `quiz` | オブジェクト | 160_quiz.js、175_hub.js |
 | `rel` | オブジェクト | 140_bond.js |
@@ -81,7 +81,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `side` | オブジェクト | 180_street.js |
 | `street` | オブジェクト | 180_street.js |
 | `talk` | オブジェクト | 015_unify.js |
-| `trust` | オブジェクト | 040_dud.js、土台 |
+| `trust` | オブジェクト | 040_dud.js、185_stage.js、土台 |
 | `tut` | オブジェクト | 070_tut.js、075_polish.js、130_chal.js |
 | `ueq` | 配列 | 015_unify.js、030_instruments.js、100_flow.js |
 | `uexp` | オブジェクト | 015_unify.js |

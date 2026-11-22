@@ -33,7 +33,7 @@ function streetSpot(id){
 function stOf(id,k){return mstat(id,k)||8;}
 function streetPlay(id,S){
   const k=P().city,c=ci(k);G.street.n++;
-  const base=(stOf(id,S.stat)*1.3+stOf(id,'expr')*.7+(id==='you'?8:moodOf(id)/12))*S.mul;const luck=rnd(.6,1.5);
+  const base=(stOf(id,S.stat)*1.3+stOf(id,'expr')*.7+(id==='you'?8:moodOf(id)/12))*S.mul*stageMul(id,S);const luck=rnd(.6,1.5);
   const score=base*luck+popOf(k)/10;const crowd=Math.max(3,Math.round(score*rnd(1.3,2.3)*(c.size/6+.3)));
   const era=1+(U_YEAR[G.sc]-1723)/250;const coins=Math.round(crowd*rnd(1.2,2.6)*era);
   const nm=id==='you'?P().name:nameOf(id),pid=id==='you'?G.pid:realId(id);
@@ -49,7 +49,7 @@ function streetPlay(id,S){
 function streetResult(id,S,crowd,coins,score){
   const k=P().city,nm=id==='you'?P().name:nameOf(id);const great=crowd>=60;
   P().money+=coins;popAdd(k,Math.min(18,Math.round(crowd/6)));sideAdd(-1,Math.min(6,Math.round(crowd/20)+1));
-  if(id!=='you')setMood(id,moodOf(id)+(great?8:3));if(id!=='you'&&typeof gainExp==='function')gainExp(id,Math.round(crowd/4));
+  if(id!=='you')setMood(id,moodOf(id)+stageMood(id,great));if(id!=='you'&&typeof gainExp==='function')gainExp(id,Math.round(crowd/4));
   let ex='',enc=null;
   /* 神童あらわる */
   G.flags.prodigy=G.flags.prodigy||{};
@@ -59,7 +59,7 @@ function streetResult(id,S,crowd,coins,score){
   if(great&&Math.random()<.45){const t=hitTitle(id);hitBorn(t,k);ex+=`<div class="stx">♪ 今日の旋律が「${t}」として、街の人々に口ずさまれはじめた。</div>`;}
   /* 通りがかりの出会い */
   if(Math.random()<.4)enc=pick(streetEncounters(id,S));
-  const body=`<div class="headline">${crowd}人が足を止めた</div>投げ銭 <b>+${fmt(coins)}fr</b>・${ci(k).name}の民衆の人気 <b>${popOf(k)}</b>/100${ex}${enc?`<div class="stenc">${enc.d}</div>`:''}`;
+  const body=`<div class="headline">${crowd}人が足を止めた</div>投げ銭 <b>+${fmt(coins)}fr</b>・${ci(k).name}の民衆の人気 <b>${popOf(k)}</b>/100${ex}${stageNote(id,S)}${enc?`<div class="stenc">${enc.d}</div>`:''}`;
   addLog(`${nm}が${ci(k).name}の${S.n}で弾き、${crowd}人が足を止めた（投げ銭+${coins}fr）。`);
   modal(great?'街角の大喝采':crowd>=25?'街角の拍手':'街角の演奏',body,enc?enc.btns:null,'paper');save();render();
 }

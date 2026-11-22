@@ -71,3 +71,8 @@ git add -A && git commit && git push
 - `G.evb` お知らせ窓の予算：bondMonthly・akiMonthly・patronMonthly の窓は月2つまで。超えた分は通知と日誌だけ
 - 地図の「遊びの棚」は `<details class="shelf">` にたたむ
 - 関係の値は `G.rel` / `G.relT`（基本の `G.bond` は出演回数なので使わない）
+
+## 185_stage（街角向き・舞台向き、音楽家17人追加）
+- `STAGE[id]=['street'|'hall',理由]`。路上の人だかり倍率は stageMul、機嫌は stageMood、結果の一言は stageNote（180_street から呼ぶ）
+- 演奏会：舞台向きは規模5以上の街で+0.3、街角向きは民衆の人気40以上の街で+0.3（合計0.9まで）
+- 路上の場所に「酒場」を追加。新しい演目：beggar / zauber / lannerw / trialjury / widow
