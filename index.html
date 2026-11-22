@@ -421,6 +421,17 @@ main{flex:1;padding:10px 12px 40px}
 .mzbar{margin:0 0 8px;padding:7px 10px;border-radius:10px;background:#2a0e14;border:1px solid #a8404f;color:#ffe0e6;font-size:13px}
 .chrank{font-size:64px;font-weight:bold;text-align:center;line-height:1;margin:4px 0;font-family:serif}.chrank.rS{color:#e6a817;text-shadow:0 0 18px #ffd860}.chrank.rA{color:#c9a24a}.chrank.rB{color:#7a8aa0}.chrank.rC{color:#8a6a5a}
 .chparts{margin:8px 0;font-size:13px}.chparts div{display:flex;justify-content:space-between;border-bottom:1px dashed #c9b88a;padding:3px 0}
+.hub{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 8px}.hub .btn{padding:7px 4px;font-size:12.5px;width:100%}
+.critbtn{width:100%;margin:0 0 8px;text-align:left;background:linear-gradient(90deg,#20141a,#3a1a24);color:#f0dce0;border-color:#7a3a4a}.critbtn svg{vertical-align:middle;margin-right:6px}
+.cbar{position:relative;height:16px;background:#3a2a2a;border-radius:8px;margin:4px 0;overflow:hidden}.cbar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#8a2a3a,#e0a040)}.cbar span{position:relative;font-size:11px;padding-left:8px;line-height:16px;color:#fff}
+.critic{display:flex;gap:8px;margin-top:10px;padding:8px;border-top:2px solid #8a2a3a;background:#f4ead8;font-size:12.5px;line-height:1.6;color:#2a1a10}.critic .cbar{background:#d8c8b0}.critic .cbar span{color:#2a1a10}
+.bmap{position:relative;width:100%;max-width:360px;aspect-ratio:1;margin:0 auto}.bmap svg{position:absolute;inset:0;width:100%;height:100%}
+.bnode{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;width:64px;text-align:center}.bnode span{font-size:9.5px;line-height:1.1;background:rgba(244,234,210,.9);border-radius:4px;padding:0 2px;color:#2a1a10}
+.btag{font-size:12.5px;padding:4px 0;border-bottom:1px dashed #c9b88a}.btag i{display:inline-block;width:10px;height:10px;border-radius:5px;margin-right:5px;vertical-align:middle}
+.wrapped{background:linear-gradient(160deg,#2a1d10,#5a3a18);color:#f4ead2;border-radius:14px;padding:14px;border:2px solid #c9a24a}.wy{font-size:44px;font-weight:bold;color:#ffd860;font-family:serif;line-height:1}.wt{font-size:14px;margin-bottom:8px;color:#e8d8b0}
+.wi{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid rgba(201,162,74,.3);font-size:13px}.wi b{color:#ffe9a0;text-align:right}
+.lintree,.lintree ul{list-style:none;padding-left:14px;margin:2px 0}.lintree{padding-left:0}.lintree li{position:relative;margin:3px 0}.lintree ul li:before{content:'└';position:absolute;left:-12px;color:#a08a5a}
+.ln{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;padding:1px 6px 1px 1px;border-radius:12px;background:#efe4cc}.ln.here{outline:2px solid #c9a24a}.ln.mine:after{content:'●';color:#c03030;font-size:9px;margin-left:2px}
 
 #tabs button{font-size:13px;padding:9px 0}
 .rkrow{display:flex;align-items:center;gap:8px;width:100%;margin:5px 0;padding:6px 8px}.rkrow.mine{border:2px solid #e6c56f}.rkno{width:34px;text-align:center;font-size:15px;flex:none}.rank{font-size:40px!important;margin:6px 0}.rank.rS{color:#c07a00!important;text-shadow:0 0 10px #ffd27a!important}.rank.rA{color:#b0404a!important}.rank.rB{color:#3f63a8!important}.rank.rC,.rank.rD{color:#777!important}
@@ -6086,6 +6097,324 @@ CHX.mozart91={t:'1791年、モーツァルトを救え',y0:1790,m0:6,sc:'s1781',
 try{const old=localStorage.getItem('concertoStormMozBest');if(old&&!localStorage.getItem('concertoStormChx_mozart91'))localStorage.setItem('concertoStormChx_mozart91',old);}catch(e){}
 const _startMZ=start;
 start=function(){try{if(G&&G.flags&&G.flags.mzEv){G.flags.cxEv=Object.assign({},G.flags.mzEv,G.flags.cxEv||{});delete G.flags.mzEv;}}catch(e){}return _startMZ();};
+
+/* =====================================================================
+   人間関係のドラマ：団員どうしの友情・恋・確執。相関図で見る
+   G.bond = {"a|b": -100〜100}、G.bondT = {"a|b": "見出し"}
+   ===================================================================== */
+const BOND_H=[
+ ['cuzzoni','faustina',-85,'宿敵の歌姫','1727年、ロンドンの舞台上で二人の歌姫が取っ組み合いの大喧嘩をした。'],
+ ['handel','bononcini',-55,'宿敵','ロンドンの歌劇場は、ヘンデル派とボノンチーニ派に割れた。'],
+ ['handel','senesino',-35,'衝突ばかり','名カストラートのセネジーノは、ヘンデルと何度も衝突した。'],
+ ['handel','mattheson',-30,'決闘の過去','1704年、若きヘンデルとマッテゾンは口論から剣で決闘した。ボタンが剣を止め、命拾いした。'],
+ ['haydn','mozart',75,'厚い友情','ハイドンはモーツァルトを「最も偉大な作曲家」と呼び、モーツァルトは6つの弦楽四重奏曲をハイドンに捧げた。'],
+ ['haydn','beethoven',10,'ぎくしゃくした師弟','ベートーヴェンはハイドンに学んだが、「何も教わらなかった」とこぼしたという。'],
+ ['schumann','clara',85,'夫婦','ロベルトとクララは、クララの父の猛反対を押し切って結婚した。'],
+ ['chopin','liszt',45,'友情（やがて冷える）','若い二人はパリで親しくしたが、のちに距離ができた。'],
+ ['liszt','thalberg',-50,'宿敵','1837年、パリでリストとタールベルクの「ピアノ決闘」が行われた。'],
+ ['berlioz','liszt',60,'盟友','リストはベルリオーズの『幻想交響曲』をピアノ用に編曲して広めた。'],
+ ['brahms','clara76',70,'敬愛','ブラームスは生涯、クララ・シューマンを敬い続けた。'],
+ ['brahms','joachim',65,'親友','ブラームスとヨアヒムは若い頃からの親友。ヴァイオリン協奏曲はヨアヒムのために書かれた。'],
+ ['brahms','bulow',55,'支持者','指揮者ビューローは「バッハ、ベートーヴェン、ブラームス」を「3つのB」と呼んで広めた。'],
+ ['wagner','bulow',-40,'複雑な因縁','ビューローはワーグナーの楽劇を初演して支えたが、妻コジマはのちにワーグナーと結ばれた。'],
+ ['wagner','brahms',-45,'楽派の冷戦','二人のまわりで、音楽界は「新ドイツ派」と「保守派」に割れた。'],
+ ['tchaikovsky','nrubinstein',-20,'衝突と和解','ルビンシテインはチャイコフスキーのピアノ協奏曲第1番を「弾けない」と酷評した。のちに和解し、この曲を弾いた。'],
+ ['mahler','walter',70,'師弟','ブルーノ・ワルターはマーラーの助手として学び、のちに『大地の歌』を初演した。'],
+ ['mahler','rstrauss',20,'好敵手','二人は互いの作品を演奏し合ったが、性格は正反対だった。'],
+ ['debussy','satie',65,'親友','ドビュッシーとサティは、パリのカフェで長年語り合う仲だった。'],
+ ['stravinsky','rimsky05',70,'師弟','ストラヴィンスキーはリムスキー=コルサコフに作曲を学んだ。'],
+ ['haru','aki',80,'兄弟','時の扉から来た兄弟。兄は堅実、弟は一か八か。'],
+ ['regis','bruno',85,'兄弟','新パスキエ・トリオの兄弟。'],
+ ['tsugio','eto',40,'腐れ縁','外れた音を出し合う古株どうし。']
+];
+const bkey=(a,b)=>[a,b].sort().join('|');
+function bondOf(a,b){G.bond=G.bond||{};const k=bkey(realId(a),realId(b));if(G.bond[k]==null){const h=BOND_H.find(x=>bkey(x[0],x[1])===k);G.bond[k]=h?h[2]:0;if(h){G.bondT=G.bondT||{};G.bondT[k]=h[3];}}return G.bond[k];}
+function bondAdd(a,b,n,label){const k=bkey(realId(a),realId(b));bondOf(a,b);G.bond[k]=Math.max(-100,Math.min(100,G.bond[k]+n));if(label){G.bondT=G.bondT||{};G.bondT[k]=label;}}
+const bondLabel=(a,b)=>{const v=bondOf(a,b),t=(G.bondT||{})[bkey(realId(a),realId(b))];return t||(v>=70?'固い絆':v>=40?'友情':v>=15?'気が合う':v<=-60?'犬猿の仲':v<=-30?'不仲':v<=-10?'ぎくしゃく':'');};
+const bondPairs=()=>{const m=['you'].concat(G.members),o=[];for(let i=0;i<m.length;i++)for(let j=i+1;j<m.length;j++){const a=m[i]==='you'?G.pid:m[i],b=m[j]==='you'?G.pid:m[j];o.push([m[i],m[j],bondOf(a,b)]);}return o;};
+/* 演奏会：名コンビと不仲 */
+const _evalLineupBD=evalLineup;
+evalLineup=function(p,L,opt){const r=_evalLineupBD(p,L,opt);try{opt=opt||{};const on=L.map((id,i)=>opt.standIn===i?null:id).filter(Boolean).map(id=>id==='you'?G.pid:id);let add=0;const nt=[];
+  for(let i=0;i<on.length;i++)for(let j=i+1;j<on.length;j++){const v=bondOf(on[i],on[j]);if(v>=60){add+=.6;nt.push(`${nameOf(on[i]===G.pid?'you':on[i])}と${nameOf(on[j]===G.pid?'you':on[j])}の名コンビ（+0.6）`);}else if(v<=-50){add-=.8;nt.push(`${nameOf(on[i]===G.pid?'you':on[i])}と${nameOf(on[j]===G.pid?'you':on[j])}は犬猿の仲（-0.8）`);}}
+  add=Math.max(-2,Math.min(2,add));if(add){r.q+=add;r.notes.push(...nt.slice(0,3));r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;}}catch(e){}return r;};
+/* 共演すると縁が深まる */
+const _concertResultBD=concertResult;
+concertResult=function(p,L,ev,fi){const r=_concertResultBD(p,L,ev,fi);try{const on=(L||[]).filter(Boolean).map(id=>id==='you'?G.pid:id);const good=(ev&&ev.stars||3)>=4;
+  for(let i=0;i<on.length;i++)for(let j=i+1;j<on.length;j++)bondAdd(on[i],on[j],good?3:1);}catch(e){}return r;};
+/* 月ごとの人間ドラマ */
+function bondMonthly(){
+  if(G.members.length<2)return;const prs=bondPairs().filter(([a,b])=>a!=='you'&&b!=='you');if(!prs.length)return;
+  const cf=prs.find(([a,b])=>['cuzzoni','faustina'].includes(realId(a))&&['cuzzoni','faustina'].includes(realId(b)));
+  if(cf&&!G.flags.rivalQueens&&Math.random()<.5){G.flags.rivalQueens=1;const[a,b]=cf;
+    modal('舞台の上の大喧嘩',`${portraitRow(a)}${portraitRow(b)}本番の最中、${nameOf(a)}と${nameOf(b)}が舞台の上でつかみ合いの喧嘩を始めた！ 客席は大喜びで、口笛と野次が飛ぶ。<br><span class="pmeta">史実でも1727年、ロンドンでこの二人の歌姫は舞台上で取っ組み合った。</span>`,
+      [{t:'幕を下ろして仲裁する<small>-300fr・二人の仲が少し戻る</small>',f(){P().money-=300;bondAdd(a,b,25);}},{t:'そのまま続けさせる<small>話題になって名声+15、二人の仲は最悪に</small>',f(){addXP(15);bondAdd(a,b,-15);}}],'paper');return;}
+  if(Math.random()>.35)return;
+  const bad=prs.filter(x=>x[2]<=-30),good=prs.filter(x=>x[2]>=50),zero=prs.filter(x=>Math.abs(x[2])<15);
+  const r=Math.random();
+  if(bad.length&&r<.45){const[a,b]=pick(bad);
+    modal('楽屋の口論',`${portraitRow(a)}${portraitRow(b)}${nameOf(a)}と${nameOf(b)}が、楽屋で激しく言い争っている。テンポのこと、出番の順番のこと、昔の恨み……。<br><span class="pmeta">いまの仲：${bondLabel(a,b)||'不仲'}</span>`,
+      [{t:'食事に連れ出して仲裁する<small>-200fr・仲+20</small>',cls:'gold',f(){if(P().money<200)return toast('お金が足りない');P().money-=200;bondAdd(a,b,20);addLog(`${nameOf(a)}と${nameOf(b)}は、ワインを酌み交わして少し打ち解けた。`);}},
+       {t:'放っておく<small>二人の気分が下がる</small>',f(){setMood(a,moodOf(a)-8);setMood(b,moodOf(b)-8);bondAdd(a,b,-5);}}],'paper');}
+  else if(good.length&&r<.75){const[a,b]=pick(good);setMood(a,moodOf(a)+5);setMood(b,moodOf(b)+5);bondAdd(a,b,3);
+    addLog(pick([`${nameOf(a)}と${nameOf(b)}が、夜更けまで連弾して笑い合っていた。`,`${nameOf(a)}が${nameOf(b)}の誕生日に、小さな曲を書いて贈った。`,`${nameOf(a)}と${nameOf(b)}が、馬車の中で次の演奏会の構想を語り合った。`]));}
+  else if(zero.length){const[a,b]=pick(zero);if(Math.random()<.65){bondAdd(a,b,18,'意気投合');addLog(`${nameOf(a)}と${nameOf(b)}が意気投合した。新しい名コンビになるかもしれない。`);}
+    else{bondAdd(a,b,-18,'ちょっとした行き違い');addLog(`${nameOf(a)}の何気ない一言に、${nameOf(b)}がむっとした。`);}}
+}
+const _memberMonthlyBD=memberMonthly;
+memberMonthly=function(){_memberMonthlyBD();try{bondMonthly();}catch(e){}};
+/* 相関図 */
+function bondMap(){
+  const ms=['you'].concat(G.members).slice(0,14),n=ms.length,W=360,H=360,cx=180,cy=180,R=n<=6?110:135;
+  const pos=ms.map((id,i)=>{const a=-Math.PI/2+i*2*Math.PI/n;return[cx+R*Math.cos(a),cy+R*Math.sin(a)];});
+  const rid=id=>id==='you'?G.pid:id;let lines='',tags=[];
+  for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const v=bondOf(rid(ms[i]),rid(ms[j]));if(Math.abs(v)<15)continue;const lb=bondLabel(rid(ms[i]),rid(ms[j]));
+    const col=/夫婦|恋/.test(lb)?'#e05a8a':v>0?(v>=60?'#d4a020':'#4aa070'):'#c03030';const w=Math.min(6,1+Math.abs(v)/20);
+    lines+=`<line x1="${pos[i][0]}" y1="${pos[i][1]}" x2="${pos[j][0]}" y2="${pos[j][1]}" stroke="${col}" stroke-width="${w}" ${v<0?'stroke-dasharray="6 4"':''} opacity=".85"/>`;
+    tags.push([Math.abs(v),`<div class="btag"><i style="background:${col}"></i><b>${nameOf(ms[i])}</b>と<b>${nameOf(ms[j])}</b>：${lb}${(BOND_H.find(x=>bkey(x[0],x[1])===bkey(rid(ms[i]),rid(ms[j])))||[])[4]?`<br><span class="pmeta">${BOND_H.find(x=>bkey(x[0],x[1])===bkey(rid(ms[i]),rid(ms[j])))[4]}</span>`:''}</div>`]);}
+  const pts=ms.map((id,i)=>`<div class="bnode" style="left:${pos[i][0]/W*100}%;top:${pos[i][1]/H*100}%">${portrait(rid(id),40,'#c9a24a')}<span>${nameOf(id)}</span></div>`).join('');
+  tags.sort((a,b)=>b[0]-a[0]);
+  modal('人間関係図',`<div class="bmap"><svg viewBox="0 0 ${W} ${H}">${lines}</svg>${pts}</div><div class="pmeta" style="margin:4px 0">金＝固い絆　緑＝友情　桃＝恋・夫婦　赤の点線＝不仲</div>${tags.slice(0,10).map(x=>x[1]).join('')||'<div class="pmeta">まだ目立った関係はない。共演を重ねると縁が生まれる。</div>'}`,null,'paper');
+}
+
+/* =====================================================================
+   自分で作曲する：形式・調・主題・献呈先・題名を選んで新作を書く
+   G.mywork = [{id,t,form,key,mo,ded,q,n,best}]
+   ===================================================================== */
+const CFORM=[
+ {f:'協奏曲',l:'協奏曲',sl:[['vn','独奏'],['cond','指揮'],['vn','コンサートマスター']],need:'tech'},
+ {f:'交響曲',l:'交響曲',sl:[['cond','指揮'],['vn','コンサートマスター'],['va','ヴィオラ'],['br','金管'],['fl','木管']],need:'theory'},
+ {f:'室内楽',l:'弦楽四重奏曲',sl:[['vn','第1ヴァイオリン'],['vn','第2ヴァイオリン'],['va','ヴィオラ'],['vc','チェロ']],need:'theory'},
+ {f:'オペラ',l:'オペラ',sl:[['voice','プリマ'],['cond','指揮'],['vn','コンサートマスター']],need:'expr'},
+ {f:'宗教曲',l:'ミサ曲',sl:[['voice','独唱'],['cond','指揮'],['pf','オルガン']],need:'expr'},
+ {f:'サロン',l:'ピアノ小品集',sl:[['pf','ピアノ']],need:'impro'}];
+const CKEY=[['ハ長調','明るく堂々と',{交響曲:1,宗教曲:1}],['ニ長調','華やかに',{協奏曲:1,交響曲:1}],['ト短調','切なく',{室内楽:1,サロン:1}],['変ホ長調','英雄的に',{交響曲:1,協奏曲:1}],['ニ短調','劇的に',{オペラ:1,宗教曲:1}],['変ニ長調','夢見るように',{サロン:1,室内楽:1}]];
+const CTHEME=[['scale','階段を駆け上がる主題'],['fanfare','ファンファーレの主題'],['nocturne','夜想曲風の歌'],['waltz','ワルツの主題'],['bach','フーガの主題'],['largo','祈りのラルゴ']];
+function myWorkPiece(w){const F=CFORM.find(x=>x.f===w.form)||CFORM[0];
+  return Pc(w.id,`【自作】${PL().name}「${w.t}」`,w.form,F.sl.map(([r,l])=>Sl([r],l)),[.4,.4,.2],PL().faction,G.pid,MOTIFS[w.mo]?w.mo:'scale',PL().tim||'piano');}
+function myWorkAdd(w){if(!SC.rep.some(p=>p.id===w.id))SC.rep.push(myWorkPiece(w));}
+function composeOpen(){
+  G.mywork=G.mywork||[];
+  if(G.compM!=null&&G.month-G.compM<3)return toast(`次の新作は${3-(G.month-G.compM)}か月後に書ける`);
+  const st={};
+  const step1=()=>modal('新作を書く（1/4）形式','どんな曲を書こう？<br><span class="pmeta">得意な能力に合う形式ほど、良い曲になりやすい。</span>',CFORM.map(F=>({t:`${F.l}<small>${{tech:'技巧',expr:'表現',impro:'即興',theory:'理論'}[F.need]}が生きる</small>`,f(){st.F=F;setTimeout(step2,50);}})).concat([{t:'やめる'}]),'paper');
+  const step2=()=>modal('新作を書く（2/4）調性','どの調で書こう？',CKEY.map(([k,d,fit])=>({t:`${k}<small>${d}${fit[st.F.f]?'・この形式に合う':''}</small>`,cls:fit[st.F.f]?'gold':'',f(){st.K=[k,d,fit];setTimeout(step3,50);}})),'paper');
+  const step3=()=>{modal('新作を書く（3/4）主題','曲の顔になる主題を選ぼう。押すと音が鳴る。',CTHEME.map(([m,l])=>({t:`${l}`,f(){st.M=m;try{playMotif(m,PL().tim||'piano',.05);}catch(e){}setTimeout(step4,350);}})),'paper');};
+  const step4=()=>modal('新作を書く（4/4）献呈','誰に捧げよう？<br><span class="pmeta">捧げた相手は大喜びする。</span>',G.members.slice(0,6).map(id=>({t:`${nameOf(id)}に`,f(){st.D=id;setTimeout(finish,50);}})).concat([{t:`${ci(P().city).name}の聴衆に`,f(){st.D=null;setTimeout(finish,50);}}]),'paper');
+  const finish=()=>{
+    const def=`${st.K[0]}の${st.F.l}`;let t=null;try{t=prompt('題名をつけよう（そのままでも可）',`${def}「${pick(['春','暁','嵐','夢','旅','祈り','祝祭','郷愁','星','約束'])}」`);}catch(e){}
+    t=(t||def).slice(0,30);
+    const P0=P(),base=(P0[st.F.need]||8)*1.2+(P0.theory||8)*.6+rnd(0,6)+(st.K[2][st.F.f]?3:0);const q=Math.round(Math.min(30,base));
+    const w={id:'my'+((G.myN=(G.myN||0)+1)),t,form:st.F.f,key:st.K[0],mo:st.M,ded:st.D,q,n:0,best:0};
+    G.mywork.push(w);G.compM=G.month;myWorkAdd(w);if(st.D){setMood(st.D,moodOf(st.D)+15);bondAdd(G.pid,st.D,15);}
+    addLog(`新作「${t}」（${st.F.l}・${st.K[0]}）を書き上げた${st.D?`。${nameOf(st.D)}に献呈`:''}。`);hpush(`新作「${t}」を書き上げた`);
+    try{playMotif(st.M,PL().tim||'piano',.05);}catch(e){}
+    modal('新作ができた',`<div class="headline">「${t}」</div>${st.F.l}・${st.K[0]}・${CTHEME.find(x=>x[0]===st.M)[1]}${st.D?`<br>献呈：${nameOf(st.D)}`:''}<br><br>出来ばえ：<b>${'★'.repeat(Math.max(1,Math.min(5,Math.round(q/6))))}</b><br><span class="pmeta">演奏会の演目に加わった。★4以上で3回演奏すると「代表作」になり、さらに評判が上がる。</span>`,null,'paper');save();render();};
+  step1();
+}
+/* 演奏会：自作の評判 */
+const _evalLineupCP=evalLineup;
+evalLineup=function(p,L,opt){const r=_evalLineupCP(p,L,opt);try{const w=(G.mywork||[]).find(x=>x.id===p.id);if(w){const b=Math.round((w.q/10+Math.min(2,w.n*.4)+(w.n>=3&&w.best>=4?1.5:0))*10)/10;r.q+=b;r.notes.push(`自作「${w.t}」${w.n>=3&&w.best>=4?'（代表作）':''}（+${b}）`);r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;}}catch(e){}return r;};
+const _concertResultCP=concertResult;
+concertResult=function(p,L,ev,fi){const r=_concertResultCP(p,L,ev,fi);try{const w=(G.mywork||[]).find(x=>x.id===p.id);if(w){w.n++;const s=ev&&ev.stars||0;w.best=Math.max(w.best,s);
+  if(w.n===3&&w.best>=4){hpush(`自作「${w.t}」が代表作になった`);setTimeout(()=>cutin(G.pid,`「${w.t}」`,'代表作になった！'),900);}}}catch(e){}return r;};
+const _startCP=start;
+start=function(){try{for(const w of (G&&G.mywork)||[])myWorkAdd(w);}catch(e){}return _startCP();};
+
+/* =====================================================================
+   興行の大勝負と、ハルの弟アキ（スター性と博打好き）
+   G.bet = {k:街, stake:賭け金, m:月}
+   ===================================================================== */
+function betOpen(){
+  const k=P().city;if(G.bet)return toast(`${ci(G.bet.k).name}の大勝負がまだ決着していない`);
+  const big=[1000,3000,8000];const aki=isMember('aki');
+  modal('興行の大勝負',`${ci(k).name}いちばんの大劇場を、借金して一夜だけ押さえる。<br>次に<b>この街で開く演奏会</b>の出来しだいで、<br>・★4以上：賭け金の<b>2.5倍</b>が入り、名声も大きく上がる<br>・★3：とんとん<br>・★2以下：賭け金を<b>まるごと失う</b><br>${aki?'<br><b>アキ</b>「兄さんには内緒で、全部賭けちゃおうよ」<br><span class="pmeta">アキが出演すると、★3でも勝ちになる。</span>':''}<br><span class="pmeta">手持ちが足りなければ借金になる。</span>`,
+    big.map(s=>({t:`${fmt(s)}fr 賭ける`,cls:s===8000?'crim':'',f(){G.bet={k,stake:s,m:G.month};P().money-=s;addLog(`${ci(k).name}で${fmt(s)}frを賭けた大勝負の興行を打つ。`);save();render();}})).concat([{t:'やめておく'}]),'paper');
+}
+const _concertResultGB=concertResult;
+concertResult=function(p,L,ev,fi){const r=_concertResultGB(p,L,ev,fi);try{
+  if(G.bet&&G.bet.k===P().city){const s=(ev&&ev.stars)||0,b=G.bet;G.bet=null;const aki=(L||[]).some(id=>realId(id)==='aki');const win=s>=4||(aki&&s>=3);
+    if(win){const pay=Math.round(b.stake*2.5);P().money+=pay;addXP(Math.round(b.stake/100));hpush(`大勝負に勝った（+${fmt(pay)}fr）`);setTimeout(()=>{cutin(aki?'aki':G.pid,'大勝負に勝った！',`+${fmt(pay)}fr`);if(typeof sfx==='function')sfx('coin');},800);}
+    else if(s===3){P().money+=b.stake;addLog('大勝負はとんとんに終わった。');}
+    else{hpush(`大勝負に負けた（-${fmt(b.stake)}fr）`);setTimeout(()=>{modal('大勝負に負けた',`客席はまばら、批評は冷たい。${fmt(b.stake)}frが消えた。<br><span class="pmeta">次こそは……。</span>`,null,'paper');if(typeof sfx==='function')sfx('lose');},800);}}}catch(e){}return r;};
+/* ---------- アキ ---------- */
+for(const sc in SCEN){const S=SCEN[sc];if(S.chars.some(x=>x.id==='aki'))continue;
+  S.chars.push(C('aki','アキ','Aki',S.cities[0],'コンサートマスター','名人芸',3,[9,9,13,5],true,'impro',[.6,1.2,.6,.7,1.5],'caprice24','violin','その場で決める即興演奏','一曲で、全部ひっくり返してみせるよ。','未来の大穴を、あなたの楽団に。','時の扉の向こうから来た、ハルの弟。スター性は抜群だが、博打好きで気分屋。調子のいい夜には誰にも止められない。'));}
+Object.assign(XTYPES,{aki:['vn','pf']});Object.assign(TR,{aki:{h:'wild',hc:'#2a1a10',b:'none',coat:'#8a1a2a'}});Object.assign(GROW,{aki:'late'});
+if(typeof UHIST!=='undefined')UHIST.aki=3;QUIRK.aki=['gamble'];QDEF.gamble='博打好き';
+SIG.aki=['一発逆転','ここからが本番だよ！','gold'];SIGM.aki='caprice24';
+const _poolCharsAK=poolChars;poolChars=function(){const a=_poolCharsAK();return G&&G.flags&&G.flags.aki?a:a.filter(c=>c.id!=='aki');};
+const _guestSrcAK=guestSrc;guestSrc=function(era,id){if(id==='aki')return null;return _guestSrcAK(era,id);};
+/* 演奏会：負けそうな夜ほど燃える */
+const _evalLineupAK=evalLineup;
+evalLineup=function(p,L,opt){const r=_evalLineupAK(p,L,opt);try{opt=opt||{};if(L.some((id,i)=>realId(id)==='aki'&&opt.standIn!==i)&&!opt.preview){
+  const low=r.stars<=2;G.flags.akiRoll=G.flags.akiRoll||{};const key=p.id+'|'+G.month;if(G.flags.akiRoll[key]==null)G.flags.akiRoll[key]=Math.random();const roll=G.flags.akiRoll[key];
+  if(low&&roll<.5){r.q+=4.5;r.notes.push('アキの一発逆転！ 崖っぷちの夜に、客席が総立ちになった（+4.5）');}
+  else if(low){r.q-=.5;r.notes.push('アキが大技を狙って空回りした（-0.5）');}
+  else if(roll<.3){r.q+=1.5;r.notes.push('アキのスター性で、客席の熱が一段上がった（+1.5）');}
+  r.stars=r.q<13?1:r.q<17?2:r.q<21?3:r.q<25?4:5;}}catch(e){}return r;};
+/* 巡演：味方が押されているほど、アキの見せ場が強い */
+const _uSimAK=uSim;
+uSim=function(B,encore){const ret=_uSimAK(B,encore);try{const u=B.us.find(x=>realId(x.id)==='aki'&&x.hp>0);if(u&&!B.akiDone){const down=B.us.filter(x=>x.hp<=x.max*.35).length;if(down>=Math.max(1,Math.floor(B.us.length/2))||Math.random()<.15){B.akiDone=1;
+  B.ev.push({k:'phase',txt:'アキの一発逆転'});B.ev.push({k:'skip',txt:'<b>アキ</b>「ここからが本番だよ！」'});
+  for(const e of B.en.filter(e=>e.hp>0)){const d=Math.round(e.max*.35);e.hp=Math.max(0,e.hp-d);u.dealt+=d;B.ev.push({k:'hit',u:u.i,e:B.en.indexOf(e),d,crit:true,txt:'一発逆転',kill:e.hp<=0});}}}}catch(e){}return ret;};
+/* 月ごとの博打 */
+function akiMonthly(){
+  G.flags.akiRoll={};
+  if(!isMember('aki')){
+    if(G.flags.aki||!isMember('haru')||Math.random()>.25)return;
+    G.flags.aki=1;const c=charById('aki');c.city=P().city;
+    modal('時の扉から：ハルの弟',`${portraitRow('aki')}扉がまた開いた。ヴァイオリンケースを振り回しながら、若者が飛び込んでくる。<br><br><b>アキ</b>「兄さん、やっぱりここにいた！ ぼくも入れてよ。損はさせないって」<br><br><span class="pmeta">${c.trivia}</span>`,[
+      {t:'楽団に迎える',cls:'gold',f(){ens5();G.members.push('aki');G.sal.aki=35;setMood('aki',95);bondOf('haru','aki');addLog('ハルの弟、アキが楽団に加わった。');hpush('アキ、時の扉から入団');render();}},
+      {t:'今はまだ',f(){G.flags.aki=0;addLog('アキは「ちぇっ」と言って、扉の向こうへ戻っていった。');}}]);return;}
+  if(Math.random()>.3)return;const s=Math.max(200,Math.round(Math.abs(P().money)*.2/100)*100);
+  modal('アキの賭け',`${portraitRow('aki')}<b>アキ</b>「街のカード賭博で、いい勝負があるんだ。${fmt(s)}fr貸してよ。倍にして返すから！」`,[
+    {t:'乗ってやる<small>勝てば2倍、負ければ失う</small>',cls:'crim',f(){const w=Math.random()<.5;if(w){P().money+=s;setMood('aki',moodOf('aki')+10);addLog(`アキが賭けに勝った（+${fmt(s)}fr）。「ほらね！」`);toast(`アキが勝った！ +${fmt(s)}fr`);}
+      else{P().money-=s;setMood('aki',moodOf('aki')-5);addLog(`アキが賭けに負けた（-${fmt(s)}fr）。「……次は勝つから」`);toast(`アキが負けた…… -${fmt(s)}fr`);}save();render();}},
+    {t:'やめさせる<small>アキは少しすねる</small>',f(){setMood('aki',moodOf('aki')-6);if(isMember('haru'))addLog('ハルが「やめておけ」とアキの肩を叩いた。');}}],'paper');
+}
+const _memberMonthlyAK=memberMonthly;
+memberMonthly=function(){_memberMonthlyAK();try{akiMonthly();}catch(e){}};
+DREAMS.push({id:'harualki',need:['haru','aki'],t:'兄弟、時を越えて',h:'時の扉から来た兄弟が、そろって舞台に立ったら……',f:'堅実な兄と、一か八かの弟。二人そろうと、どの時代の客席も笑顔になる。',
+  lines:[['aki','兄さん、今夜は全部ぼくのアドリブでいこうよ。'],['haru','譜面どおりに弾け。……でも、最後のカデンツァだけはおまえにやる。'],['aki','やった！']],r:{boost:{aki:1,haru:1},xp:60}});
+
+/* =====================================================================
+   宿敵の批評家：時代ごとに一人。演奏会のたびに批評を書き、ついに唸らせれば大きな名声
+   G.critic = {v:0〜100, won:bool, n:回数}
+   ===================================================================== */
+const CRITIC={
+ s1723:{id:'mattheson',n:'マッテゾン',paper:'ハンブルクの批評誌',like:['オペラ'],hate:[],likeBy:[],hateBy:['handel'],
+   bio:'ハンブルクの作曲家で、ドイツ最初期の音楽批評家。若い頃、ヘンデルと剣で決闘したことがある。',
+   hl:'ヘンデルの曲には、どうしても点が辛くなる。'},
+ s1781:{id:'reichardt',n:'ライヒャルト',paper:'ベルリンの音楽新聞',like:['オペラ','宗教曲'],hate:[],likeBy:['gluck'],hateBy:[],
+   bio:'ベルリンの作曲家で、辛口の音楽評論でも知られた。'},
+ s1832:{id:'fetis',n:'フェティス',paper:'ルヴュ・ミュジカル',like:['宗教曲','室内楽'],hate:['オペラ'],likeBy:[],hateBy:['berlioz'],
+   bio:'パリの音楽学者で批評家。ベルリオーズの音楽を手厳しく批判し続けた。'},
+ s1876:{id:'hanslick',n:'ハンスリック',paper:'新自由新聞',like:['交響曲','室内楽','協奏曲'],hate:['楽劇'],likeBy:['brahms'],hateBy:['wagner'],
+   bio:'ウィーンの大批評家。ブラームスを擁護し、ワーグナーを攻撃した。ワーグナーは『マイスタージンガー』の嫌みな書記ベックメッサーを彼になぞらえたといわれる。'},
+ s1905:{id:'plalo',n:'ピエール・ラロ',paper:'ル・タン',like:['交響曲'],hate:['バレエ'],likeBy:[],hateBy:['ravel'],
+   bio:'パリの新聞『ル・タン』の批評家。作曲家エドゥアール・ラロの息子で、ラヴェルの音楽を辛辣に批判した。'}
+};
+Object.assign(TR,{reichardt:{h:'wig',age:1},fetis:{h:'short',hc:'#888',b:'side',age:2},hanslick:{h:'receding',hc:'#555',b:'side',age:1},plalo:{h:'short',hc:'#444',b:'mus'}});
+const crit=()=>CRITIC[G.sc];
+const critSt=()=>{G.critic=G.critic||{v:20,won:false,n:0};return G.critic;};
+let _critRev=null;
+const REV={5:['認めざるをえない。今夜の演奏は、歴史に残るだろう。','……私の負けだ。今夜ばかりは、ペンが震える。'],4:['悪くない。だが、私はまだ満足していない。','光るところはあった。次に期待しよう。'],
+  3:['凡庸。眠気をこらえるのに苦労した。','可もなく不可もなく。つまり、退屈だ。'],2:['退屈きわまりない。客席の半分は時計を見ていた。','楽団は、まず楽譜を読むところから始めるべきだ。'],1:['入場料を返してもらいたい。','これは音楽ではない。騒音である。']};
+const _concertResultCR=concertResult;
+concertResult=function(p,L,ev,fi){
+  try{const C0=crit();if(C0){const s=critSt(),st=(ev&&ev.stars)||3;let d=(st-3)*7+rnd(-3,3),why='';
+    if(C0.like.includes(p.form)){d+=5;why='せめて、形式をわきまえた選曲は評価しよう。';}
+    if(C0.hate.includes(p.form)){d-=8;why=`そもそも${p.form}などという代物は、音楽の名に値しない。`;}
+    if(p.by&&C0.likeBy.includes(p.by)){d+=6;why='作曲者の筆は、さすがに確かだ。';}
+    if(p.by&&C0.hateBy.includes(p.by)){d-=8;why=C0.hl||'この作曲者の曲には、どうしても点が辛くなる。';}
+    d=Math.round(d);s.v=Math.max(0,Math.min(100,s.v+d));s.n++;
+    _critRev={st,txt:pick(REV[Math.max(1,Math.min(5,st))]),why,d,v:s.v};
+    if(s.v>=100&&!s.won){s.won=true;setTimeout(()=>{addXP(40);hpush(`宿敵の批評家${C0.n}を唸らせた`);cutin(C0.id,'見事だ……','宿敵の批評家、ついに絶賛');
+      modal(`${C0.n}、ついに絶賛`,`${portraitRow(C0.id)}あの${C0.n}が、${C0.paper}の一面であなたの楽団を絶賛した。街じゅうがこの記事の話でもちきりだ。<br><br>名声+40`,null,'paper');},2600);}
+    else if(s.v<=0){s.v=15;setTimeout(()=>{addXP(-10);modal('酷評の嵐',`${portraitRow(C0.id)}${C0.n}が三号続けてあなたの楽団をこき下ろした。客足に響きそうだ。<br><span class="pmeta">名声-10</span>`,null,'paper');},2600);}}}catch(e){}
+  return _concertResultCR(p,L,ev,fi);};
+const _modalCR=modal;
+modal=function(title,body,btns,cls){
+  try{if(_critRev&&G&&title===paperOf(P().city)){const C0=crit(),r=_critRev;_critRev=null;
+    body+=`<div class="critic">${portrait(C0.id,38,'#8a2a3a')}<div><b>宿敵 ${C0.n}の批評</b>（${C0.paper}）<br>「${r.txt}${r.why?' '+r.why:''}」<div class="cbar"><i style="width:${r.v}%"></i><span>${C0.n}の評価 ${r.v}/100（${r.d>=0?'+':''}${r.d}）</span></div></div></div>`;}}catch(e){}
+  return _modalCR(title,body,btns,cls);};
+function criticInfo(){const C0=crit();if(!C0)return;const s=critSt();
+  modal(`宿敵の批評家：${C0.n}`,`${portraitRow(C0.id)}${C0.bio}<br><br>好み：${C0.like.join('・')||'—'}${C0.hate.length?`／嫌い：${C0.hate.join('・')}`:''}<div class="cbar"><i style="width:${s.v}%"></i><span>いまの評価 ${s.v}/100</span></div><span class="pmeta">演奏会の出来と選曲で評価が上下する。100にすれば、ついに絶賛の記事が出る。0になると酷評の嵐。${s.won?'<br><b>すでに一度、唸らせた。</b>':''}</span>`,null,'paper');}
+
+/* =====================================================================
+   聴き当てクイズ：代表曲の一節を聴いて、作曲者・演奏者を当てる（月に3問まで）
+   ===================================================================== */
+function quizPool(){const ids=Object.keys(SIGM).filter(id=>MOTIFS[SIGM[id]]&&(SCEN[G.sc].chars.some(c=>c.id===id)||Object.values(SCEN).some(s=>s.chars.some(c=>c.id===id))));
+  const seen=new Set(),out=[];for(const id of ids){const m=SIGM[id];if(seen.has(m))continue;seen.add(m);out.push(id);}return out;}
+const QZ_PIECE={caprice24:'『24のカプリース』第24番',campanella:'『ラ・カンパネッラ』',nocturne:'夜想曲',surprise:'交響曲第94番「驚愕」',beethoven5:'交響曲第5番「運命」',tell:'『ウィリアム・テル』序曲',
+  danube:'『美しく青きドナウ』',swan:'『白鳥の湖』',ride:'『ワルキューレの騎行』',adagietto:'交響曲第5番のアダージェット',rite:'『春の祭典』',rach2:'ピアノ協奏曲第2番',danse:'『死の舞踏』',
+  gymno:'『ジムノペディ』',bach:'フーガ',hallelujah:'「ハレルヤ」',devil:'『悪魔のトリル』',spring:'『四季』の「春」',lullaby:'『子守歌』',verdi:'オペラの名旋律',zarathustra:'『ツァラトゥストラはかく語りき』',
+  faune:'『牧神の午後への前奏曲』',mozart:'アイネ・クライネ・ナハトムジーク',finlandia:'『フィンランディア』',moldau:'『モルダウ』',promenade:'『展覧会の絵』のプロムナード',bumblebee:'『熊蜂の飛行』',
+  cancan:'『天国と地獄』のカンカン',habanera:'ハバネラ',mendvc:'ヴァイオリン協奏曲 ホ短調',diesirae:'「怒りの日」',belcanto:'ベルカントのアリア',alphorn:'交響曲第1番のアルペンホルン',bvc:'ヴァイオリン協奏曲'};
+function quizOpen(){
+  G.quiz=G.quiz||{m:-1,n:0,ok:0,streak:0};if(G.quiz.m!==G.month){G.quiz.m=G.month;G.quiz.n=0;}
+  if(G.quiz.n>=3)return toast('今月のクイズはおしまい。来月また挑もう');
+  const pool=quizPool();if(pool.length<4)return toast('問題が足りない');
+  const ans=pick(pool);const opts=[ans];while(opts.length<4){const x=pick(pool);if(!opts.includes(x))opts.push(x);}opts.sort(()=>Math.random()-.5);
+  const nm=id=>{for(const s of Object.values(SCEN)){const c=s.chars.find(c=>c.id===id)||(s.players||{})[id];if(c)return c.name;}return id;};
+  const play=()=>{try{playMotif(SIGM[ans],'piano',.05);}catch(e){}};window._qzPlay=play;
+  G.quiz.n++;play();
+  modal(`聴き当てクイズ（今月${G.quiz.n}/3問目）`,`🎵 この一節は、誰の音楽？<br><br><button class="btn" style="width:100%;margin:6px 0" onclick="window._qzPlay&&window._qzPlay()">▶ もう一度聴く</button><span class="pmeta">連続正解で報酬が増える（いま${G.quiz.streak}連続）。</span>`,
+    opts.map(id=>({t:nm(id),f(){
+      const ok=id===ans;if(ok){G.quiz.ok++;G.quiz.streak++;const fr=60*Math.min(5,G.quiz.streak);P().money+=fr;addXP(2);if(typeof sfx==='function')sfx('coin');}else{G.quiz.streak=0;if(typeof sfx==='function')sfx('lose');}
+      setTimeout(()=>modal(ok?'正解！':'残念……',`${portraitRow(ans)}正解は<b>${nm(ans)}</b>。${QZ_PIECE[SIGM[ans]]?`<br>曲は${QZ_PIECE[SIGM[ans]]}。`:''}${ok?`<br><br>+${60*Math.min(5,G.quiz.streak)}fr（${G.quiz.streak}連続正解）`:''}`,G.quiz.n<3?[{t:'次の問題',cls:'gold',f(){setTimeout(quizOpen,50);}},{t:'閉じる'}]:null,'paper'),80);save();}})),'paper');
+}
+
+/* =====================================================================
+   楽団の年間まとめ（毎年1月に前年をふり返る1枚。送れる）
+   G.yr = {y, conc, star5, best, pieces{}, play{}, earn, recruit, duel, bet, quiz}
+   ===================================================================== */
+const yrSt=()=>{const y=ymd(G.month).y;if(!G.yr||G.yr.y!==y)G.yr={y,conc:0,star5:0,best:0,pieces:{},play:{},earn:0,recruit:0,duel:0,bet:0,quiz:0,m0:P().money};return G.yr;};
+const _concertResultYR=concertResult;
+concertResult=function(p,L,ev,fi){const before=P().money;const r=_concertResultYR(p,L,ev,fi);try{const Y=yrSt(),s=(ev&&ev.stars)||0;Y.conc++;if(s>=5)Y.star5++;Y.best=Math.max(Y.best,s);
+  Y.pieces[p.t]=(Y.pieces[p.t]||0)+1;for(const id of (L||[]).filter(Boolean))Y.play[id]=(Y.play[id]||0)+1;Y.earn+=Math.max(0,P().money-before);}catch(e){}return r;};
+function yrCard(Y){
+  const top=(o)=>Object.entries(o).sort((a,b)=>b[1]-a[1])[0];const tp=top(Y.pieces),tm=top(Y.play);
+  const saved=Object.keys(G.fate||{}).filter(k=>G.fate[k].saved&&G.fate[k].sy===Y.y).length;
+  const items=[['演奏会',`${Y.conc}回`],['★5の夜',`${Y.star5}回`],['いちばん弾いた曲',tp?`${tp[0].replace(/^【.】/,'')}（${tp[1]}回）`:'—'],['いちばん舞台に立った人',tm?`${nameOf(tm[0])}（${tm[1]}回）`:'—'],['演奏会の稼ぎ',`${fmt(Y.earn)}fr`],['新しく迎えた仲間',`${Y.recruit}人`]];
+  if(Y.dreams)items.push(['夢の顔合わせ',`${Y.dreams}組`]);if(saved)items.push(['史実を変えた',`${saved}人`]);
+  return{items,html:`<div class="wrapped"><div class="wy">${Y.y}</div><div class="wt">${P().name}管弦楽団の一年</div>${items.map(([a,b])=>`<div class="wi"><span>${a}</span><b>${b}</b></div>`).join('')}</div>`};
+}
+function yrShow(Y){const c=yrCard(Y);const txt=`『協奏の嵐』${P().name}管弦楽団の${Y.y}年：`+c.items.map(([a,b])=>`${a} ${b}`).join('／');
+  modal(`${Y.y}年のまとめ`,c.html,[{t:'送る',cls:'gold',f(){const full=`${txt} ${shBase()}`;if(navigator.share)navigator.share({text:full}).catch(()=>{});else navigator.clipboard.writeText(full).then(()=>toast('コピーしました')).catch(()=>{});}},{t:'閉じる'}],'paper');}
+const _memberMonthlyYR=memberMonthly;
+memberMonthly=function(){const prev=G.yr&&{...G.yr};_memberMonthlyYR();try{const d=ymd(G.month);if(d.mo===1&&prev&&prev.y===d.y-1&&prev.conc>0&&G.flags.yrShown!==prev.y){G.flags.yrShown=prev.y;G.yrLast=prev;setTimeout(()=>yrShow(prev),1200);}yrSt();}catch(e){}};
+/* 数える：入団、夢の顔合わせ、運命の夜を越えた年 */
+const _odaiHitYR=odaiHit;
+odaiHit=function(k){if(k==='recruit')try{yrSt().recruit++;}catch(e){}return _odaiHitYR(k);};
+const _dreamCheckYR=dreamCheck;
+dreamCheck=function(){const r=_dreamCheckYR();if(r)try{const Y=yrSt();Y.dreams=(Y.dreams||0)+1;}catch(e){}return r;};
+const _fateNightYR=fateNight;
+fateNight=function(id,E){return _fateNightYR(id,E).then(ok=>{if(ok)try{fateSt(id).sy=ymd(G.month).y;}catch(e){}return ok;});};
+function yrOpen(){const Y=yrSt();if(Y.conc)return yrShow(Y);if(G.yrLast)return yrShow(G.yrLast);toast('まだまとめるほどの記録がない');}
+
+/* =====================================================================
+   師弟の系譜図：史実の師弟と、楽団で育てた弟子・卒業生を一本の系図に
+   G.lineage = [[師, 弟子], ...]（楽団で生まれた師弟）
+   ===================================================================== */
+const LIN_H=[['bach','jcbach'],['haydn','beethoven'],['beethoven','czerny'],['czerny','liszt'],['salieri','beethoven'],['salieri','liszt'],['mozart','hummel'],['leopold','mozart'],
+ ['liszt76','sauer'],['liszt76','rosenthal'],['leschetizky','paderewski'],['auer05','elman'],['auer05','zimbalist'],['joachim','huberman'],['hubay','vecsey'],['rimsky05','stravinsky'],
+ ['taneyev','rachmaninoff'],['taneyev','scriabin'],['faure','ravel'],['faure','nboulanger'],['faure','enescu'],['mahler','walter'],['hasselmans','renie'],['porpora','farinelli'],['viotti','rode'],['regis','haru']];
+const linRec=(t,s)=>{G.lineage=G.lineage||[];if(!G.lineage.some(([a,b])=>a===t&&b===s))G.lineage.push([t,s]);};
+const _deshiMonthlyLN=deshiMonthly;
+deshiMonthly=function(){const snap=Object.entries(G.deshi||{}).map(([s,d])=>[s,d.t]);_deshiMonthlyLN();try{for(const [s,t] of snap)if(!(G.deshi||{})[s]&&(G.deshiDone||{})[realId(s)])linRec(t==='you'?G.pid:realId(t),realId(s));}catch(e){}};
+const _consGradLN=consGrad;
+consGrad=function(k){const n=(G.grads||[]).length;const r=_consGradLN(k);try{const g=(G.grads||[])[n];const d=(G.consv||{})[k]&&G.consv[k].dir;if(g&&d)linRec(realId(d),g.id);}catch(e){}return r;};
+function linName(id){if(id===G.pid)return P().name;const c=charById(id);if(c)return c.name;for(const s of Object.values(SCEN)){const x=s.chars.find(c=>c.id===id)||(s.players||{})[id];if(x)return x.name;}return null;}
+function lineageOpen(){
+  const mine=G.lineage||[];const known=new Set(['you',...G.members].map(x=>x==='you'?G.pid:realId(x)));
+  const hist=LIN_H.filter(([a,b])=>known.has(a)||known.has(b));const edges=[...hist.map(e=>[...e,0]),...mine.map(e=>[...e,1])].filter(([a,b])=>linName(a)&&linName(b));
+  if(!edges.length)return modal('師弟の系譜図','<div class="pmeta">まだ系図がない。弟子入りで免許皆伝を受けたり、音楽院から卒業生が出たりすると、ここに枝が伸びる。楽団にいる人の、史実の師弟も載る。</div>',null,'paper');
+  const kids={},par={};for(const [a,b] of edges){(kids[a]=kids[a]||[]).push(b);par[b]=1;}
+  const roots=[...new Set(edges.map(e=>e[0]))].filter(a=>!par[a]);const mk=new Set(mine.map(e=>e[1]));const seen=new Set();
+  const node=(id,d)=>{if(seen.has(id)||d>6)return '';seen.add(id);const cs=(kids[id]||[]);
+    return`<li><span class="ln${mk.has(id)?' mine':''}${known.has(id)?' here':''}">${portrait(id,26,'#c9a24a')}${linName(id)}</span>${cs.length?`<ul>${cs.map(c=>node(c,d+1)).join('')}</ul>`:''}</li>`;};
+  modal('師弟の系譜図',`<div class="pmeta">金の枠＝楽団にいる人　赤い印＝楽団で育った弟子</div><ul class="lintree">${roots.map(r=>node(r,0)).join('')}</ul><div class="pmeta">楽団で生まれた師弟：${mine.length}組</div>`,null,'paper');
+}
+
+/* =====================================================================
+   地図の「遊びの棚」：人間関係図・新作・大勝負・クイズ・系譜・年間まとめ・宿敵の批評家
+   ===================================================================== */
+const _mapHTMLHB=mapHTML;
+mapHTML=function(){let h=_mapHTMLHB();try{
+  const C0=typeof crit==='function'?crit():null,s=C0?critSt():null;const cm=G.compM!=null&&G.month-G.compM<3?`あと${3-(G.month-G.compM)}か月`:'書ける';
+  const qn=G.quiz&&G.quiz.m===G.month?3-G.quiz.n:3;
+  const hub=`<div class="hub">
+    <button class="btn" data-hub="bond">👥 人間関係図</button>
+    <button class="btn" data-hub="comp">✒️ 新作を書く<small>${cm}</small></button>
+    <button class="btn" data-hub="bet">🎲 大勝負${G.bet?'<small>勝負中</small>':''}</button>
+    <button class="btn" data-hub="quiz">🎵 聴き当て<small>残り${qn}問</small></button>
+    <button class="btn" data-hub="lin">🌳 師弟の系譜</button>
+    <button class="btn" data-hub="yr">📊 今年のまとめ</button>
+  </div>${C0?`<button class="btn critbtn" data-hub="crit">${portrait(C0.id,24,'#8a2a3a')}宿敵の批評家 ${C0.n}<div class="cbar"><i style="width:${s.v}%"></i><span>評価 ${s.v}/100${s.won?'・唸らせた':''}</span></div></button>`:''}`;
+  const m=h.match(/<button class="btn zkbtn"[\s\S]*?<\/button>/);h=m?h.replace(m[0],m[0]+hub):hub+h;}catch(e){}return h;};
+const _renderHB=render;
+render=function(){_renderHB();document.querySelectorAll('[data-hub]').forEach(b=>b.onclick=()=>({bond:bondMap,comp:composeOpen,bet:betOpen,quiz:quizOpen,lin:lineageOpen,yr:yrOpen,crit:criticInfo})[b.dataset.hub]());};
 
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});
