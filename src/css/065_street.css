@@ -1,0 +1,26 @@
+.streetbtn{width:100%;margin:6px 0;background:linear-gradient(135deg,#5a3a1a,#8a5a2a)!important;color:#fbe9c6!important;border:1px solid #e6c56f!important}
+.streetbtn small{display:block;opacity:.8;font-size:11px}
+.popbar,.sidebar{display:flex;align-items:center;gap:8px;font-size:12px;margin:4px 0}
+.popbar .cbar{flex:1}
+.sidebar{justify-content:space-between;padding:4px 8px;background:rgba(0,0,0,.25);border-radius:8px}
+.sidebar .sbar{flex:1;height:8px;display:flex;justify-content:space-between;background:rgba(255,255,255,.08);border-radius:4px;overflow:hidden}
+.sidebar .sbar .c{background:#c9a43a}.sidebar .sbar .f{background:#5aa36a}
+.stx{margin-top:8px;padding:6px 8px;background:rgba(230,197,111,.15);border-left:3px solid #e6c56f;font-size:13px}
+.stenc{margin-top:10px;padding:8px;border:1px dashed #8a6a3a;border-radius:6px;font-size:13px}
+.streetov{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center}
+.stbox{position:relative;width:min(92vw,420px);height:300px;border-radius:12px;overflow:hidden;border:2px solid #e6c56f}
+.stbg{position:absolute;inset:0;background:linear-gradient(#2a3550,#6a5a4a 70%,#4a3a2a)}
+.stbg.s-church{background:linear-gradient(#3a3050,#7a6a5a 70%,#5a4a3a)}.stbg.s-bridge{background:linear-gradient(#e08a5a,#6a4a6a 60%,#2a3a5a)}
+.stbg.s-market{background:linear-gradient(#6a8ab0,#a08a5a 70%,#6a4a2a)}.stbg.s-cafe{background:linear-gradient(#2a2a3a,#7a5a3a 70%,#3a2a1a)}
+.stp{position:absolute;left:50%;top:40px;transform:translateX(-50%);animation:stsway 1.2s ease-in-out infinite alternate}
+@keyframes stsway{from{transform:translateX(-52%) rotate(-3deg)}to{transform:translateX(-48%) rotate(3deg)}}
+.stcrowd{position:absolute;left:0;right:0;bottom:30px;height:80px}
+.stcrowd i{position:absolute;bottom:0;font-style:normal;font-size:22px;animation:stin .4s ease-out}
+@keyframes stin{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
+.stcount{position:absolute;right:10px;top:8px;font-size:22px;font-weight:bold;color:#fbe9c6;text-shadow:0 2px 4px #000}
+.stname{position:absolute;left:0;right:0;bottom:6px;text-align:center;color:#fbe9c6;font-size:13px}
+.stbox .coin{position:absolute;top:-20px;font-size:20px;animation:stcoin 1.2s ease-in forwards}
+@keyframes stcoin{to{transform:translateY(300px) rotate(540deg)}}
+details.shelf{margin:6px 0;border:1px solid rgba(230,197,111,.4);border-radius:8px;padding:4px 8px}
+details.shelf summary{cursor:pointer;font-weight:bold;padding:4px 0}
+details.shelf summary small{font-weight:normal;opacity:.7;margin-left:6px;font-size:11px}

@@ -62,3 +62,12 @@ git add -A && git commit && git push
 2. 空欄に訳を入れる。長い文言から順に置き換えるので、短い語だけを訳すと文の途中が混ざることがある。文単位で訳す。
 3. `python3 tools/build.py --lang en` で `en/index.html` ができる。
 4. `catalog.json` で `code: true` の15語（「古典」「交響」「オペラ」など）は、プログラムの中で名前として使っているので訳さない。表示で訳す仕組みは、翻訳に取りかかるときに作る。
+
+## 180_street（街角・流行り歌・宮廷か民衆か）
+- `G.pop[街]` 民衆の人気 0〜100（毎月-1）。演奏会で人気×規模×2.2fr の上乗せ
+- `G.hits` 流行り歌。ROUTES づたいに毎月35%で隣の街へ。14か月まで楽譜収入
+- `G.side={court,folk}` 宮廷と民衆の支持。宮廷70で宮廷楽長の打診、民衆70で「民衆の楽団」
+- `G.street` 路上演奏の月回数（月2回まで）、`G.flags.prodigy` 神童デビュー済み
+- `G.evb` お知らせ窓の予算：bondMonthly・akiMonthly・patronMonthly の窓は月2つまで。超えた分は通知と日誌だけ
+- 地図の「遊びの棚」は `<details class="shelf">` にたたむ
+- 関係の値は `G.rel` / `G.relT`（基本の `G.bond` は出演回数なので使わない）

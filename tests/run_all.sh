@@ -13,5 +13,6 @@ for c in mozart91 chopin49 mahler11; do
   out=$(timeout 200 python3 tests/challenge.py $c safe 2>&1)
   if echo "$out" | tail -1 | grep -q "^\[\]"; then echo "OK  挑戦 $c"; else echo "NG  挑戦 $c"; echo "$out" | tail -3; fail=1; fi
 done
+for c in s1781 s1876; do if python3 tests/street.py $c >/tmp/st_$c.log 2>&1; then echo "OK  街角 $c"; else echo "NG  街角 $c"; tail -3 /tmp/st_$c.log; fail=1; fi; done
 pkill -f "http.server 8766"
 exit $fail

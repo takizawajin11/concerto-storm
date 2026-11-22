@@ -1,6 +1,6 @@
 /* =====================================================================
    人間関係のドラマ：団員どうしの友情・恋・確執。相関図で見る
-   G.bond = {"a|b": -100〜100}、G.bondT = {"a|b": "見出し"}
+   G.rel = {"a|b": -100〜100}、G.relT = {"a|b": "見出し"}
    ===================================================================== */
 const BOND_H=[
  ['cuzzoni','faustina',-85,'宿敵の歌姫','1727年、ロンドンの舞台上で二人の歌姫が取っ組み合いの大喧嘩をした。'],
@@ -28,9 +28,9 @@ const BOND_H=[
  ['tsugio','eto',40,'腐れ縁','外れた音を出し合う古株どうし。']
 ];
 const bkey=(a,b)=>[a,b].sort().join('|');
-function bondOf(a,b){G.bond=G.bond||{};const k=bkey(realId(a),realId(b));if(G.bond[k]==null){const h=BOND_H.find(x=>bkey(x[0],x[1])===k);G.bond[k]=h?h[2]:0;if(h){G.bondT=G.bondT||{};G.bondT[k]=h[3];}}return G.bond[k];}
-function bondAdd(a,b,n,label){const k=bkey(realId(a),realId(b));bondOf(a,b);G.bond[k]=Math.max(-100,Math.min(100,G.bond[k]+n));if(label){G.bondT=G.bondT||{};G.bondT[k]=label;}}
-const bondLabel=(a,b)=>{const v=bondOf(a,b),t=(G.bondT||{})[bkey(realId(a),realId(b))];return t||(v>=70?'固い絆':v>=40?'友情':v>=15?'気が合う':v<=-60?'犬猿の仲':v<=-30?'不仲':v<=-10?'ぎくしゃく':'');};
+function bondOf(a,b){G.rel=G.rel||{};const k=bkey(realId(a),realId(b));if(G.rel[k]==null){const h=BOND_H.find(x=>bkey(x[0],x[1])===k);G.rel[k]=h?h[2]:0;if(h){G.relT=G.relT||{};G.relT[k]=h[3];}}return G.rel[k];}
+function bondAdd(a,b,n,label){const k=bkey(realId(a),realId(b));bondOf(a,b);G.rel[k]=Math.max(-100,Math.min(100,G.rel[k]+n));if(label){G.relT=G.relT||{};G.relT[k]=label;}}
+const bondLabel=(a,b)=>{const v=bondOf(a,b),t=(G.relT||{})[bkey(realId(a),realId(b))];return t||(v>=70?'固い絆':v>=40?'友情':v>=15?'気が合う':v<=-60?'犬猿の仲':v<=-30?'不仲':v<=-10?'ぎくしゃく':'');};
 const bondPairs=()=>{const m=['you'].concat(G.members),o=[];for(let i=0;i<m.length;i++)for(let j=i+1;j<m.length;j++){const a=m[i]==='you'?G.pid:m[i],b=m[j]==='you'?G.pid:m[j];o.push([m[i],m[j],bondOf(a,b)]);}return o;};
 /* 演奏会：名コンビと不仲 */
 const _evalLineupBD=evalLineup;
@@ -75,3 +75,6 @@ function bondMap(){
   tags.sort((a,b)=>b[0]-a[0]);
   modal('人間関係図',`<div class="bmap"><svg viewBox="0 0 ${W} ${H}">${lines}</svg>${pts}</div><div class="pmeta" style="margin:4px 0">金＝固い絆　緑＝友情　桃＝恋・夫婦　赤の点線＝不仲</div>${tags.slice(0,10).map(x=>x[1]).join('')||'<div class="pmeta">まだ目立った関係はない。共演を重ねると縁が生まれる。</div>'}`,null,'paper');
 }
+/* 以前の版で、土台の「出演回数」(G.bond) と同じ入れ物に関係を入れていたのを分ける */
+const _startREL=start;
+start=function(){try{if(G&&G.bond){for(const k of Object.keys(G.bond))if(k.includes('|')){G.rel=G.rel||{};if(G.rel[k]==null)G.rel[k]=G.bond[k];delete G.bond[k];}}if(G&&G.bondT){G.relT=Object.assign({},G.bondT,G.relT||{});delete G.bondT;}}catch(e){}return _startREL();};
