@@ -9,3 +9,4 @@
 .wi{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid rgba(201,162,74,.3);font-size:13px}.wi b{color:#ffe9a0;text-align:right}
 .lintree,.lintree ul{list-style:none;padding-left:14px;margin:2px 0}.lintree{padding-left:0}.lintree li{position:relative;margin:3px 0}.lintree ul li:before{content:'└';position:absolute;left:-12px;color:#a08a5a}
 .ln{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;padding:1px 6px 1px 1px;border-radius:12px;background:#efe4cc}.ln.here{outline:2px solid #c9a24a}.ln.mine:after{content:'●';color:#c03030;font-size:9px;margin-left:2px}
+.patbtn{width:100%;margin:0 0 8px;text-align:left;background:linear-gradient(90deg,#2a2208,#5a4410);color:#fff3c8;border-color:#c9a24a}

@@ -46,8 +46,8 @@ function akiMonthly(){
       {t:'今はまだ',f(){G.flags.aki=0;addLog('アキは「ちぇっ」と言って、扉の向こうへ戻っていった。');}}]);return;}
   if(Math.random()>.3)return;const s=Math.max(200,Math.round(Math.abs(P().money)*.2/100)*100);
   modal('アキの賭け',`${portraitRow('aki')}<b>アキ</b>「街のカード賭博で、いい勝負があるんだ。${fmt(s)}fr貸してよ。倍にして返すから！」`,[
-    {t:'乗ってやる<small>勝てば2倍、負ければ失う</small>',cls:'crim',f(){const w=Math.random()<.5;if(w){P().money+=s;setMood('aki',moodOf('aki')+10);addLog(`アキが賭けに勝った（+${fmt(s)}fr）。「ほらね！」`);toast(`アキが勝った！ +${fmt(s)}fr`);}
-      else{P().money-=s;setMood('aki',moodOf('aki')-5);addLog(`アキが賭けに負けた（-${fmt(s)}fr）。「……次は勝つから」`);toast(`アキが負けた…… -${fmt(s)}fr`);}save();render();}},
+    {t:'乗ってやる<small>勝てば2倍、負ければ失う</small>',cls:'crim',f(){const w=Math.random()<.5;if(w){P().money+=s;setMood('aki',moodOf('aki')+10);if(typeof patronLuck==='function')patronLuck(5);addLog(`アキが賭けに勝った（+${fmt(s)}fr）。「ほらね！」`);toast(`アキが勝った！ +${fmt(s)}fr`);}
+      else{P().money-=s;setMood('aki',moodOf('aki')-5);if(typeof patronSour==='function')patronSour('賭けに負けた');addLog(`アキが賭けに負けた（-${fmt(s)}fr）。「……次は勝つから」`);toast(`アキが負けた…… -${fmt(s)}fr`);}save();render();}},
     {t:'やめさせる<small>アキは少しすねる</small>',f(){setMood('aki',moodOf('aki')-6);if(isMember('haru'))addLog('ハルが「やめておけ」とアキの肩を叩いた。');}}],'paper');
 }
 const _memberMonthlyAK=memberMonthly;

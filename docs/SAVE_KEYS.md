@@ -6,6 +6,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | --- | --- | --- |
 | `B` | — | 030_instruments.js |
 | `P` | — | 土台 |
+| `akiLuck` | 数 | 152_patron.js |
 | `alumni` | 配列 | 015_unify.js、土台 |
 | `away` | オブジェクト | 015_unify.js、土台 |
 | `bet` | オブジェクト | 150_gamble.js、175_hub.js |
@@ -61,6 +62,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `odaiStreak` | 数 | 125_fate.js |
 | `over` | — | 105_dream.js、130_chal.js、土台 |
 | `owner` | オブジェクト | 015_unify.js、075_polish.js、110_cons.js、125_fate.js、130_chal.js、土台 |
+| `patron` | オブジェクト | 152_patron.js |
 | `pid` | — | 015_unify.js、060_duel.js、080_sig.js、085_rival.js、090_extra.js、105_dream.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、土台 |
 | `quiz` | オブジェクト | 160_quiz.js、175_hub.js |
 | `reportId` | — | 土台 |
@@ -68,7 +70,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `rv` | オブジェクト | 土台 |
 | `sal` | オブジェクト | 015_unify.js、040_dud.js、090_extra.js、110_cons.js、120_pasq.js、130_chal.js、150_gamble.js、土台 |
 | `salonInsp` | 数 | 土台 |
-| `sc` | — | 015_unify.js、030_instruments.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、110_cons.js、125_fate.js、130_chal.js、155_critic.js、160_quiz.js、土台 |
+| `sc` | — | 015_unify.js、030_instruments.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、110_cons.js、125_fate.js、130_chal.js、152_patron.js、155_critic.js、160_quiz.js、土台 |
 | `scout` | 配列 | 土台 |
 | `sg` | オブジェクト | 015_unify.js |
 | `talk` | オブジェクト | 015_unify.js |
