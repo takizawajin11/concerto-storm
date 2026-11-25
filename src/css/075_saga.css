@@ -1,0 +1,15 @@
+.sagabtn{width:100%;margin:8px 0;text-align:left;border:1px solid #cfa84f!important;background:linear-gradient(135deg,#3a2414,#5a3a1c)!important;color:#fbe9c6!important}
+.sagabtn small{display:block;font-size:11.5px;opacity:.85;margin-top:2px}
+.sgtag{font-size:11.5px;color:#9a8c70;margin:4px 0 0}.sgtag.new{color:#f0d58a}
+.saga{margin-top:8px;text-align:left}
+.sgera{display:flex;gap:10px;padding:8px 0;border-top:1px solid rgba(90,60,30,.3);opacity:.6}
+.sgera.on{opacity:1}
+.sgy{font-weight:bold;font-size:17px;min-width:46px;color:#8a1a22}
+.sgb{flex:1;font-size:13px;line-height:1.55}
+.sgr,.sgm{margin-top:4px}
+.sgr span,.sgm span{display:inline-block;font-size:10.5px;padding:0 6px;border-radius:6px;margin-right:6px;background:rgba(0,0,0,.12)}
+.sgr{color:#6a5a48;font-size:12px}
+.sgm{padding:6px 8px;background:rgba(207,168,79,.22);border-left:3px solid #b8892a;border-radius:4px}
+.sgm span{background:#b8892a;color:#fff}
+.sgn{font-size:12px;color:#8a7a68;margin-top:4px}
+.sgact{display:flex;gap:8px;margin-top:10px}.sgact .btn{flex:1}

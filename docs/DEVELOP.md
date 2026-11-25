@@ -84,3 +84,9 @@ git add -A && git commit && git push
 - 判断は2回（テンポ／終わり方）。lvJudge1・lvJudge2 が評判（ev.q）に −1.0〜+1.8 を足す
 - 自動テストでは出ない（navigator.webdriver）。`window.LIVE_FORCE=1` で出す。確認は `python3 tests/live.py s1781 k525`
 - 注意：base の舞台は `.stage .stbg`。同じクラス名を別の用途に使わない（街角の背景は `.stbk`）
+
+## 195_saga（もしもの音楽史：時代をつなぐ）
+- 結末（saveReport）のたびに localStorage `concertoStormSaga` へ時代ごとの記録を残す（最高点の1件。挑戦シナリオは対象外）
+- あとの時代の start() で sagaPieces（【遺産】【もしもの古典】を演目に追加）と sagaInherit（最初の月だけ：資金・名声・民謡の人気、案内の窓）
+- 運命を越えた人があとの時代に残す曲は FATE の幻の曲＋ `SAGA_IF`（モーツァルト交響曲第42番など）
+- 年表は sagaOpen（タイトル画面の「あなたの音楽史」）。sagaText で文章共有、sagaImage で画像保存。確認は `python3 tests/saga.py`
