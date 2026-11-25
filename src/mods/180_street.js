@@ -39,7 +39,7 @@ function streetPlay(id,S){
   const nm=id==='you'?P().name:nameOf(id),pid=id==='you'?G.pid:realId(id);
   /* 舞台：人だかりが増え、投げ銭が舞う */
   const d=document.createElement('div');d.className='streetov';
-  d.innerHTML=`<div class="stbox"><div class="stbg s-${S.id}"></div><div class="stp">${portrait(pid,90,'#e6c56f')}</div><div class="stcrowd"></div><div class="stcount">0人</div><div class="stname">${nm}・${c.name}の${S.n}</div></div>`;
+  d.innerHTML=`<div class="stbox"><div class="stbk s-${S.id}"></div><div class="stp">${portrait(pid,90,'#e6c56f')}</div><div class="stcrowd"></div><div class="stcount">0人</div><div class="stname">${nm}・${c.name}の${S.n}</div></div>`;
   document.body.appendChild(d);const cr=d.querySelector('.stcrowd'),ct=d.querySelector('.stcount');
   try{const c0=charById(pid)||PL();playMotif(c0.motif,c0.tim||'violin',.05);}catch(e){}
   let n=0;const tot=Math.min(crowd,60);const iv=setInterval(()=>{if(n>=tot){clearInterval(iv);return;}n++;const p=document.createElement('i');p.style.left=(5+Math.random()*90)+'%';p.style.animationDelay='0s';p.textContent=pick(['👤','🧑','👩','👨','🧒','👴','👵','🎩']);cr.appendChild(p);ct.textContent=Math.round(crowd*n/tot)+'人';

@@ -76,3 +76,11 @@ git add -A && git commit && git push
 - `STAGE[id]=['street'|'hall',理由]`。路上の人だかり倍率は stageMul、機嫌は stageMood、結果の一言は stageNote（180_street から呼ぶ）
 - 演奏会：舞台向きは規模5以上の街で+0.3、街角向きは民衆の人気40以上の街で+0.3（合計0.9まで）
 - 路上の場所に「酒場」を追加。新しい演目：beggar / zauber / lannerw / trialjury / widow
+
+## 190_live（生演奏：聴ける・振れる演奏会）
+- `LIVE[曲id]` に名曲の一節を mel / mid / bass の3声で持つ。書き方は `lvParse`（例 `g4:1 r:.5 a4+c5:2 =.5 d5`）。3区切り（segs）で、区切りごとに各声部の拍の合計をそろえる（合わないと起動時に console.warn）
+- 担当：指揮以外の最初の席が旋律、cb→vc→pf→tim の順で低音、残りが内声。担当のいない声部は「楽団」が小さく鳴らし、空席の声部は鳴らない
+- 出来（ev.contrib の v）が低いほど音を外し、指揮者の出来でテンポが揺れる。指揮の席が空だと声部がずれる
+- 判断は2回（テンポ／終わり方）。lvJudge1・lvJudge2 が評判（ev.q）に −1.0〜+1.8 を足す
+- 自動テストでは出ない（navigator.webdriver）。`window.LIVE_FORCE=1` で出す。確認は `python3 tests/live.py s1781 k525`
+- 注意：base の舞台は `.stage .stbg`。同じクラス名を別の用途に使わない（街角の背景は `.stbk`）

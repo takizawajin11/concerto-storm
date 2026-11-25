@@ -43,7 +43,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `fate` | オブジェクト | 125_fate.js、130_chal.js、165_wrapped.js |
 | `fateSaved` | 数 | 125_fate.js |
 | `fire` | オブジェクト | 土台 |
-| `flags` | オブジェクト | 015_unify.js、040_dud.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、115_relig.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、150_gamble.js、165_wrapped.js、180_street.js、土台 |
+| `flags` | オブジェクト | 015_unify.js、040_dud.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、115_relig.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、150_gamble.js、165_wrapped.js、180_street.js、190_live.js、土台 |
 | `fleet` | 配列 | 015_unify.js、050_share.js、075_polish.js、090_extra.js、095_balance.js、125_fate.js、130_chal.js |
 | `gradN` | 数 | 110_cons.js |
 | `grads` | 配列 | 110_cons.js、170_lineage.js |

@@ -9,9 +9,9 @@
 .stenc{margin-top:10px;padding:8px;border:1px dashed #8a6a3a;border-radius:6px;font-size:13px}
 .streetov{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center}
 .stbox{position:relative;width:min(92vw,420px);height:300px;border-radius:12px;overflow:hidden;border:2px solid #e6c56f}
-.stbg{position:absolute;inset:0;background:linear-gradient(#2a3550,#6a5a4a 70%,#4a3a2a)}
-.stbg.s-church{background:linear-gradient(#3a3050,#7a6a5a 70%,#5a4a3a)}.stbg.s-bridge{background:linear-gradient(#e08a5a,#6a4a6a 60%,#2a3a5a)}
-.stbg.s-market{background:linear-gradient(#6a8ab0,#a08a5a 70%,#6a4a2a)}.stbg.s-cafe{background:linear-gradient(#2a2a3a,#7a5a3a 70%,#3a2a1a)}
+.stbk{position:absolute;inset:0;background:linear-gradient(#2a3550,#6a5a4a 70%,#4a3a2a)}
+.stbk.s-church{background:linear-gradient(#3a3050,#7a6a5a 70%,#5a4a3a)}.stbk.s-bridge{background:linear-gradient(#e08a5a,#6a4a6a 60%,#2a3a5a)}
+.stbk.s-market{background:linear-gradient(#6a8ab0,#a08a5a 70%,#6a4a2a)}.stbk.s-cafe{background:linear-gradient(#2a2a3a,#7a5a3a 70%,#3a2a1a)}
 .stp{position:absolute;left:50%;top:40px;transform:translateX(-50%);animation:stsway 1.2s ease-in-out infinite alternate}
 @keyframes stsway{from{transform:translateX(-52%) rotate(-3deg)}to{transform:translateX(-48%) rotate(3deg)}}
 .stcrowd{position:absolute;left:0;right:0;bottom:30px;height:80px}
@@ -24,7 +24,7 @@
 details.shelf{margin:6px 0;border:1px solid rgba(230,197,111,.4);border-radius:8px;padding:4px 8px}
 details.shelf summary{cursor:pointer;font-weight:bold;padding:4px 0}
 details.shelf summary small{font-weight:normal;opacity:.7;margin-left:6px;font-size:11px}
-.stbg.s-tavern{background:radial-gradient(circle at 50% 30%,#c8823a,#4a2a14 60%,#1a0e08)}
+.stbk.s-tavern{background:radial-gradient(circle at 50% 30%,#c8823a,#4a2a14 60%,#1a0e08)}
 .tag.stg{font-size:10px;padding:1px 5px;border-radius:6px;margin-left:3px}
 .tag.stg.st{background:rgba(200,130,58,.25);color:#f0c890;border:1px solid #c8823a}
 .tag.stg.hl{background:rgba(120,140,200,.2);color:#c8d4f0;border:1px solid #7a8ac8}
