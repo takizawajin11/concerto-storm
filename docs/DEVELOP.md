@@ -96,3 +96,13 @@ git add -A && git commit && git push
 - 点数は dyScore（本編の evalLineup とは別。G を使わない）。最高の布陣は dyBest の総当たり
 - 記録は localStorage `concertoStormDaily`。確認は `python3 tests/daily.py`
 - 生演奏の曲は11曲（190_live.js の lvDef）
+
+## 205_creed（音楽観の論争）
+- 説得の2小節目の返事（counter）の代わりに、相手が論点を問う。論点は `CREED`、時代ごとの出し分けは `CREED_ERA`、相手の立場は `creedOf`（史実の人は `CREED_X`、ほかは能力値と好みから）
+- 答えは `G.creed[論点]={s,n}`。立場を変えた回数は `G.flags.creedFlip`。出典の文は時代ごとに変える（その時代にまだいない人を出典にしない）
+- 案内中の最初の2か月と、挑戦シナリオでは出さない
+
+## 210_first（最初の10分）
+- はじめての人（セーブ・殿堂・各種記録がない）のタイトルは「はじめての方はここから」を先頭にし、ほかは `details.moreplay` に折りたたむ。テストで挑戦シナリオなどを押すときは evaluate の click を使う（見えていない要素は pg.click できない）
+- firstStart → 1781年・モーツァルト・入門で開始 → firstConcert がトルコ行進曲の布陣画面を開く
+- UNL に street（2か月目）と odai（3か月目）を追加。閉じている間は body に `lk-street` / `lk-odai` が付き、CSSで隠す

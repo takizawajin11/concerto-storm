@@ -29,6 +29,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `cond` | オブジェクト | 土台 |
 | `cons` | 配列 | 110_cons.js、土台 |
 | `consv` | オブジェクト | 110_cons.js、170_lineage.js |
+| `creed` | オブジェクト | 205_creed.js |
 | `critic` | オブジェクト | 155_critic.js |
 | `dead` | 配列 | 015_unify.js、125_fate.js、130_chal.js、土台 |
 | `dealer` | オブジェクト | 030_instruments.js |
@@ -43,7 +44,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `fate` | オブジェクト | 125_fate.js、130_chal.js、165_wrapped.js、195_saga.js |
 | `fateSaved` | 数 | 125_fate.js |
 | `fire` | オブジェクト | 土台 |
-| `flags` | オブジェクト | 015_unify.js、040_dud.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、115_relig.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、150_gamble.js、165_wrapped.js、180_street.js、190_live.js、195_saga.js、土台 |
+| `flags` | オブジェクト | 015_unify.js、040_dud.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、115_relig.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、150_gamble.js、165_wrapped.js、180_street.js、190_live.js、195_saga.js、205_creed.js、210_first.js、土台 |
 | `fleet` | 配列 | 015_unify.js、050_share.js、075_polish.js、090_extra.js、095_balance.js、125_fate.js、130_chal.js |
 | `gradN` | 数 | 110_cons.js |
 | `grads` | 配列 | 110_cons.js、170_lineage.js |
@@ -55,8 +56,8 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `lineage` | 配列 | 170_lineage.js、195_saga.js |
 | `log` | 配列 | 土台 |
 | `lostTo` | 配列 | 土台 |
-| `members` | 配列 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、185_stage.js、土台 |
-| `month` | 数 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、070_tut.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、115_relig.js、125_fate.js、130_chal.js、145_compose.js、150_gamble.js、160_quiz.js、165_wrapped.js、175_hub.js、180_street.js、195_saga.js、土台 |
+| `members` | 配列 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、120_pasq.js、125_fate.js、130_chal.js、136_chal_mozart.js、140_bond.js、145_compose.js、150_gamble.js、170_lineage.js、180_street.js、185_stage.js、205_creed.js、土台 |
+| `month` | 数 | 015_unify.js、030_instruments.js、040_dud.js、050_share.js、070_tut.js、090_extra.js、095_balance.js、100_flow.js、105_dream.js、110_cons.js、115_relig.js、125_fate.js、130_chal.js、145_compose.js、150_gamble.js、160_quiz.js、165_wrapped.js、175_hub.js、180_street.js、195_saga.js、205_creed.js、210_first.js、土台 |
 | `mood` | オブジェクト | 土台 |
 | `myN` | 数 | 145_compose.js |
 | `mywork` | 配列 | 145_compose.js、180_street.js、195_saga.js |
@@ -75,7 +76,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `rv` | オブジェクト | 土台 |
 | `sal` | オブジェクト | 015_unify.js、040_dud.js、090_extra.js、110_cons.js、120_pasq.js、130_chal.js、150_gamble.js、180_street.js、土台 |
 | `salonInsp` | 数 | 土台 |
-| `sc` | — | 015_unify.js、030_instruments.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、110_cons.js、125_fate.js、130_chal.js、152_patron.js、155_critic.js、160_quiz.js、180_street.js、195_saga.js、土台 |
+| `sc` | — | 015_unify.js、030_instruments.js、070_tut.js、075_polish.js、090_extra.js、100_flow.js、110_cons.js、125_fate.js、130_chal.js、152_patron.js、155_critic.js、160_quiz.js、180_street.js、195_saga.js、205_creed.js、210_first.js、土台 |
 | `scout` | 配列 | 土台 |
 | `sg` | オブジェクト | 015_unify.js |
 | `side` | オブジェクト | 180_street.js |
@@ -87,7 +88,7 @@ tools/audit_keys.py が自動で作る。新しい部品で G に名前を足す
 | `uexp` | オブジェクト | 015_unify.js |
 | `uidc` | 数 | 015_unify.js |
 | `uinv` | 数 | 015_unify.js |
-| `unl` | オブジェクト | 100_flow.js、130_chal.js |
+| `unl` | オブジェクト | 100_flow.js、130_chal.js、210_first.js |
 | `ust` | オブジェクト | 015_unify.js、050_share.js、100_flow.js |
 | `ux` | オブジェクト | 015_unify.js、020_violin.js、030_instruments.js |
 | `yr` | オブジェクト | 165_wrapped.js |
