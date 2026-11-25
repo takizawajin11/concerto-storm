@@ -90,3 +90,9 @@ git add -A && git commit && git push
 - あとの時代の start() で sagaPieces（【遺産】【もしもの古典】を演目に追加）と sagaInherit（最初の月だけ：資金・名声・民謡の人気、案内の窓）
 - 運命を越えた人があとの時代に残す曲は FATE の幻の曲＋ `SAGA_IF`（モーツァルト交響曲第42番など）
 - 年表は sagaOpen（タイトル画面の「あなたの音楽史」）。sagaText で文章共有、sagaImage で画像保存。確認は `python3 tests/saga.py`
+
+## 200_daily（今日の演奏会：1日1問の布陣パズル）
+- 日本時間の日付から dyMake が曲・手札9人・客席の好み・今日の決まり（DY_RULES）を決める。乱数は dyRng（日付の種）だけを使い、Math.random は使わない（人によって変わってしまうため）
+- 点数は dyScore（本編の evalLineup とは別。G を使わない）。最高の布陣は dyBest の総当たり
+- 記録は localStorage `concertoStormDaily`。確認は `python3 tests/daily.py`
+- 生演奏の曲は11曲（190_live.js の lvDef）

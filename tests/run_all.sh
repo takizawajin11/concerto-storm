@@ -16,5 +16,6 @@ done
 for c in s1781 s1876; do if python3 tests/street.py $c >/tmp/st_$c.log 2>&1; then echo "OK  街角 $c"; else echo "NG  街角 $c"; tail -3 /tmp/st_$c.log; fail=1; fi; done
 if python3 tests/live.py s1781 k525 >/tmp/lv.log 2>&1; then echo "OK  生演奏 k525"; else echo "NG  生演奏 k525"; tail -3 /tmp/lv.log; fail=1; fi
 if python3 tests/saga.py >/tmp/sg.log 2>&1; then echo "OK  音楽史"; else echo "NG  音楽史"; tail -3 /tmp/sg.log; fail=1; fi
+if python3 tests/daily.py >/tmp/dy.log 2>&1; then echo "OK  今日の演奏会"; else echo "NG  今日の演奏会"; tail -3 /tmp/dy.log; fail=1; fi
 pkill -f "http.server 8766"
 exit $fail

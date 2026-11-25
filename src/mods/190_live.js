@@ -61,12 +61,40 @@ lvDef('gymno',{t:'ゆっくりと、痛ましげに',bpm:84,ch:'sing',fin:'soft'
  {mel:'r:6 r f#5 a5 g5 f#5 c#5',bass:gyB.repeat(2),mid:gyM.repeat(2)},
  {mel:'b4 c#5 d5 a4:3 f#4:6',bass:gyB.repeat(2),mid:gyM.repeat(2)},
  {mel:'r f#5 a5 g5 f#5 c#5 b4 c#5 d5 a4:3 r:3',bass:gyB.repeat(2)+'g2:3',mid:gyM.repeat(2)+'r b3+d4+f#4:2'}]});
+/* ---- ヴィヴァルディ『四季』より「春」第1楽章（冒頭の主題と、そのこだま） ---- */
+const spB='g#5:.5 g#5:.5 g#5:.5 f#5:.25 e5:.25 b5:1.5 b5:.25 a5:.25 ',spC='g#5:.5 a5:.25 b5:.25 a5:.5 g#5:.5 f#5:.5 d#5:.5 ';
+const spL='=.5 '+'e3 '.repeat(20)+'b2 b2 b2 b2 ',spM='=1 g#3 b3 g#3 b3 g#3 b3 g#3 b3 g#3 b3 f#3 b3 ';
+lvDef('seasons',{t:'「春」第1楽章',bpm:100,gate:.9,ch:'drive',fin:'big',segs:[
+ {mel:'e5:.5 '+spB+spB+spC+'b4:.5 e5:.5',bass:'r:.5 '+spL,mid:'r:.5 '+spM},
+ {vol:.55,mel:spB+spB+spC+'b4:1',bass:spL,mid:spM},
+ {mel:'e5+g#5:3',mid:'g#3+b3:3',bass:'e2+e3:3'}]});
+/* ---- モーツァルト ピアノ・ソナタ第11番 第3楽章「トルコ行進曲」（冒頭8小節を繰り返しつき） ---- */
+const tkP='=.25 b4 a4 g#4 a4 ',tkM='c5:.5 r:.5 =.25 d5 c5 b4 c5 e5:.5 r:.5 =.25 f5 e5 d#5 e5 b5 a5 g#5 a5 b5 a5 g#5 a5 c6:1 a5:.5 c6:.5 =.5 b5 a5 g5 a5 b5 a5 g5 a5 b5 a5 g5 f#5 ';
+const tkb=x=>`${x}:.5 r:1.5 `,tkc=x=>`r:.5 ${x}:.5 ${x}:.5 ${x}:.5 `;
+const tkL=tkb('a3').repeat(4)+tkb('e3').repeat(2)+tkb('b2'),tkI=tkc('c4+e4').repeat(4)+tkc('b3+e4').repeat(2)+tkc('b3+d#4');
+lvDef('k331',{t:'トルコ行進曲',bpm:120,gate:.85,ch:'drive',fin:'big',segs:[
+ {mel:tkP+tkM+'e5:1 '+tkP,bass:'r:1 '+tkL+'e3:1 r:1',mid:'r:1 '+tkI+'r:2'},
+ {mel:tkM+'e5:1 r:1',bass:tkL+'e3:1 r:1',mid:tkI+'r:2'},
+ {mel:'e4+b4+e5:2',mid:'g3+b3:2',bass:'e2+e3:2'}]});
+/* ---- オッフェンバック『天国と地獄』より「地獄のギャロップ」 ---- */
+const ccM='d5 d5 =.5 e5 g5 f#5 e5 =1 a5 a5 =.5 a5 b5 f#5 g5 =1 e5 e5 =.5 e5 g5 f#5 e5 d5 d6 c#6 b5 a5 g5 f#5 e5',ccD='r:.5 f#4+a4:.5 r:.5 f#4+a4:.5 ',ccA='r:.5 g4+c#5:.5 r:.5 g4+c#5:.5 ';
+const ccL='d3 a2 d3 a2 d3 a2 d3 a2 a2 e3 a2 e3 d3 a2 a2 a2',ccI=ccD.repeat(4)+ccA.repeat(2)+ccD+ccA;
+lvDef('orphee',{t:'地獄のギャロップ（カンカン）',bpm:152,gate:.8,ch:'drive',fin:'big',segs:[
+ {mel:ccM,bass:ccL,mid:ccI},{vol:1.1,mel:ccM,bass:ccL,mid:ccI},
+ {mel:'d5 a5 d6:2',mid:'f#4+a4 e4+c#5 f#4+a4:2',bass:'d3 a2 d2+d3:2'}]});
+/* ---- ブラームス「子守歌」 ---- */
+lvDef('wiegen',{t:'子守歌',bpm:84,gate:1.1,ch:'sing',fin:'soft',segs:[
+ {mel:'e4:.5 e4:.5 g4:1.5 e4:.5 e4:1 g4:2 e4:.5 g4:.5 c5:1 b4:1.5 a4:.5 a4:1 g4:1 d4:.5 e4:.5',bass:'r:1 c3:3 c3:3 c3:3 g2:3',mid:'r:1 '+'r e3+g3:2 '.repeat(3)+'r f3+b3:2'},
+ {mel:'f4:1 d4:1 d4:.5 e4:.5 f4:2 d4:.5 f4:.5 b4:.5 a4:.5 g4:1 b4:1 c5:2 c4:.5 c4:.5',bass:'g2:3 g2:3 g2:3 c3:3',mid:'r f3+b3:2 '.repeat(3)+'r e3+g3:2'},
+ {mel:'c5:2 a4:.5 f4:.5 g4:2 e4:.5 c4:.5 f4:1 e4:1 d4:1 c4:3',bass:'f2:3 c3:3 g2:3 c3:3',mid:'r a3+c4:2 r e3+g3:2 r f3+b3:2 e3+g3+c4:3'}]});
 for(const id in LIVE)LIVE[id].segs.forEach((s,i)=>{const bs=['mel','mid','bass'].filter(v=>s[v]).map(v=>lvBeats(s[v]));if(bs.some(b=>Math.abs(b-bs[0])>1e-6))console.warn('生演奏の拍が合わない',id,i,bs);});
 
 /* 生演奏のために足す演目 */
 MOTIFS.jesu=[[67,.2],[69,.2],[71,.2],[74,.2],[72,.2],[72,.2],[76,.2],[74,.2],[74,.2],[79,.2],[78,.2],[79,.2],[74,.2],[71,.2],[67,.5]];
 SCEN.s1723.rep.push(Pc('bwv147','バッハ カンタータ147番「主よ、人の望みの喜びよ」','宗教曲',[Sl('vn','オブリガート'),Sl('voice','コラール'),Sl('cb','通奏低音')],[.3,.6,.1],'古典',null,'jesu','violin'));
 SCEN.s1781.rep.push(Pc('k525','モーツァルト『アイネ・クライネ・ナハトムジーク』','室内楽',[Sl('vn','第1ヴァイオリン'),Sl('vn','第2ヴァイオリン'),Sl('vc','チェロ')],[.4,.4,.2],'古典',null,'mozart','violin'));
+SCEN.s1781.rep.push(Pc('k331','モーツァルト ピアノ・ソナタ第11番「トルコ行進曲」','独奏',[Sl(['pf'],'ピアノ')],[.5,.2,.3],'古典',null,'turkish','piano'));
+SCEN.s1876.rep.push(Pc('wiegen','ブラームス「子守歌」','室内楽',[Sl('voice','歌'),Sl(['pf'],'ピアノ')],[.1,.8,.1],'古典',null,'lullaby','voice'));
 SCEN.s1832.rep.push(Pc('b9','ベートーヴェン 交響曲第9番「歓喜の歌」','交響曲',[Sl('cond','指揮'),Sl('voice','独唱'),Sl('vn','コンサートマスター'),Sl('vc','チェロ')],[.3,.5,.2],'古典',null,'ninth','voice'));
 
 /* ---------- 音 ---------- */
