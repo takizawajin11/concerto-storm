@@ -95,7 +95,7 @@ git add -A && git commit && git push
 - 日本時間の日付から dyMake が曲・手札9人・客席の好み・今日の決まり（DY_RULES）を決める。乱数は dyRng（日付の種）だけを使い、Math.random は使わない（人によって変わってしまうため）
 - 点数は dyScore（本編の evalLineup とは別。G を使わない）。最高の布陣は dyBest の総当たり
 - 記録は localStorage `concertoStormDaily`。確認は `python3 tests/daily.py`
-- 生演奏の曲は11曲（190_live.js の lvDef）
+- 生演奏の曲は14曲（190_live.js の lvDef）。照合の記録は docs/FACTCHECK.md
 
 ## 205_creed（音楽観の論争）
 - 説得の2小節目の返事（counter）の代わりに、相手が論点を問う。論点は `CREED`、時代ごとの出し分けは `CREED_ERA`、相手の立場は `creedOf`（史実の人は `CREED_X`、ほかは能力値と好みから）

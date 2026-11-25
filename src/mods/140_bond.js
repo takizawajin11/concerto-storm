@@ -3,7 +3,7 @@
    G.rel = {"a|b": -100〜100}、G.relT = {"a|b": "見出し"}
    ===================================================================== */
 const BOND_H=[
- ['cuzzoni','faustina',-85,'宿敵の歌姫','1727年、ロンドンの舞台上で二人の歌姫が取っ組み合いの大喧嘩をした。'],
+ ['cuzzoni','faustina',-85,'宿敵の歌姫','1727年、ロンドンで二人の歌姫のひいき客どうしが客席で大騒ぎを起こし、公演が中断した。「舞台上で取っ組み合った」という話は、当時の風刺から広まった作り話とされる。'],
  ['handel','bononcini',-55,'宿敵','ロンドンの歌劇場は、ヘンデル派とボノンチーニ派に割れた。'],
  ['handel','senesino',-35,'衝突ばかり','名カストラートのセネジーノは、ヘンデルと何度も衝突した。'],
  ['handel','mattheson',-30,'決闘の過去','1704年、若きヘンデルとマッテゾンは口論から剣で決闘した。ボタンが剣を止め、命拾いした。'],
@@ -46,7 +46,7 @@ function bondMonthly(){
   if(G.members.length<2)return;const prs=bondPairs().filter(([a,b])=>a!=='you'&&b!=='you');if(!prs.length)return;
   const cf=prs.find(([a,b])=>['cuzzoni','faustina'].includes(realId(a))&&['cuzzoni','faustina'].includes(realId(b)));
   if(cf&&!G.flags.rivalQueens&&Math.random()<.5){G.flags.rivalQueens=1;const[a,b]=cf;
-    modal('舞台の上の大喧嘩',`${portraitRow(a)}${portraitRow(b)}本番の最中、${nameOf(a)}と${nameOf(b)}が舞台の上でつかみ合いの喧嘩を始めた！ 客席は大喜びで、口笛と野次が飛ぶ。<br><span class="pmeta">史実でも1727年、ロンドンでこの二人の歌姫は舞台上で取っ組み合った。</span>`,
+    modal('舞台の上の大喧嘩',`${portraitRow(a)}${portraitRow(b)}本番の最中、${nameOf(a)}と${nameOf(b)}が舞台の上でつかみ合いの喧嘩を始めた！ 客席は大喜びで、口笛と野次が飛ぶ。<br><span class="pmeta">1727年のロンドンでも、この二人をめぐって客席が大騒ぎになった（舞台上の取っ組み合いは、当時の風刺が生んだ作り話とされる）。</span>`,
       [{t:'幕を下ろして仲裁する<small>-300fr・二人の仲が少し戻る</small>',f(){P().money-=300;bondAdd(a,b,25);}},{t:'そのまま続けさせる<small>話題になって名声+15、二人の仲は最悪に</small>',f(){addXP(15);bondAdd(a,b,-15);}}],'paper');return;}
   if(Math.random()>.35)return;
   const bad=prs.filter(x=>x[2]<=-30),good=prs.filter(x=>x[2]>=50),zero=prs.filter(x=>Math.abs(x[2])<15);

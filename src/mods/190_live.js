@@ -19,19 +19,20 @@ const csB=(a,b,c,d)=>`${a} ${b} ${c} ${d} ${c} ${b} ${c} ${b} `;
 lvDef('cellosuite',{t:'プレリュード',bpm:66,gate:1.5,ch:'sing',fin:'any',segs:[
  {mel:'=.25 '+csB('g2','d3','b3','a3').repeat(2)+csB('g2','e3','c4','b3').repeat(2)},
  {mel:'=.25 '+csB('g2','f#3','c4','b3').repeat(2)+csB('g2','g3','b3','a3')+'g2 g3 b3 a3 b3 g3 b3 f#3'},
- {mel:'=.25 g2 e3 b3 a3 b3 g3 f#3 g3 e3 g3 f#3 g3 b2 d3 c#3 b2 '+'c#3 g3 a3 g3 a3 g3 a3 g3 '.repeat(2)+'f#3 a3 d4 c#4 d4 a3 g3 a3 f#3 a3 g3 a3 d3 f#3 e3 d3 g2+d3+b3:3'}]});
+ {mel:'=.25 g2 e3 b3 a3 b3 g3 f#3 g3 e3 g3 f#3 g3 b2 d3 c#3 b2 '+'c#3 g3 a3 g3 a3 g3 a3 g3 '.repeat(2)+'f#3 a3 d4 c#4 d4 a3 g3 a3 f#3 a3 g3 a3 d3 f#3 e3 d3 g2+b3+g4:3'}]});
 /* ---- カンタータ147番「主よ、人の望みの喜びよ」（1拍＝8分音符） ---- */
 lvDef('bwv147',{t:'主よ、人の望みの喜びよ',bpm:190,gate:1.15,ch:'sing',fin:'soft',segs:[
  {mel:'r g4 a4 b4 d5 c5 c5 e5 d5 d5 g5 f#5 g5 d5 b4 g4 a4 b4 c5 d5 e5 d5 c5 b4 a4 b4 g4',mid:'=3 d4 d4 e4 d4 b3 d4 e4 d4 c4',bass:'=3 g3 b3 c4 b3 e3 g3 c3 b2 a2'},
  {mel:'f#4 g4 a4 d4 f#4 a4 c5 b4 a4 b4 g4 a4 b4 d5 c5 c5 e5 d5 d5 g5 f#5 g5 d5 b4 g4 a4 b4',mid:'=3 a3 a3 c4 d4 d4 e4 d4 b3 d4',bass:'=3 d3 d3 f#3 g3 b3 c4 b3 e3 g3'},
  {mel:'e5 d5 c5 b4 a4 g4 d4 g4 f#4 g4 b4 d5 g5:6',mid:'=3 e4 d4 c4 b3:9',bass:'=3 c3 d3 d3 g2:9'}]});
-/* ---- アイネ・クライネ・ナハトムジーク 第1楽章（1〜8小節＋終わりの和音） ---- */
+/* ---- アイネ・クライネ・ナハトムジーク 第1楽章（1〜10小節＋締めの和音。公開楽譜と照合済み） ---- */
 const ekA='g5:1 r:.5 d5:.5 g5:1 r:.5 d5:.5 =.5 g5 d5 g5 b5 d6:1 r:1 c6:1 r:.5 a5:.5 c6:1 r:.5 a5:.5 c6 a5 f#5 a5 d5:1 r:1';
 lvDef('k525',{t:'第1楽章 アレグロ',bpm:126,gate:.9,orn:1,key:7,ch:'drive',fin:'big',segs:[
- {mel:ekA,mid:lvOct(ekA,-1),bass:lvOct(ekA,-2)},
- {vol:.75,mel:'g5:2.5 =.5 b5 a5 g5 g5 f#5 f#5:1.5 a5 c6 f#5 a5 g5 g5:1.5 b5 a5 g5 g5 f#5 f#5:1.5 a5 c6 f#5',
-  mid:'=.5 '+'b4+d5 '.repeat(8)+'a4+c5 '.repeat(8)+'b4+d5 '.repeat(8)+'a4+c5 '.repeat(8),bass:'=.5 '+'g3 '.repeat(32)},
- {mel:'g5 g5 g5:2',mid:'b4+d5 b4+d5 b4+d5:2',bass:'g3 g3 g2+g3:2'}]});
+ {mel:'g5+b4+d4'+ekA.slice(2),mid:lvOct(ekA,-1),bass:lvOct(ekA,-2)},
+ {vol:.75,mel:'g5:.5 r:.5 g5:1.5 =.5 b5 a5 g5 g5 f#5 f#5:1.5 a5 c6 f#5 a5 g5 g5:1.5 b5 a5 g5 g5 f#5 f#5:1.5 a5 c6 f#5',
+  mid:'=.25 '+'d4+b4 '.repeat(16)+'d4+c5 '.repeat(16)+'d4+b4 '.repeat(16)+'d4+c5 '.repeat(16),bass:'=.5 '+'g3 '.repeat(32)},
+ {mel:'=.5 g5 g5 f#5 e5:.25 f#5:.25 g5 g5 a5 g5:.25 a5:.25 b5 b5 c6 b5:.25 c6:.25 d6:1 r:1 g5+b4+d4:2',
+  mid:'d4+b4:1 =.5 c5 c5 d5 d5 c5 b4:.25 a4:.25 g4 g4 f#4 f#4 g4:1 r:1 b4+d5:2',bass:'=.5 g3 g3 a3 a3 b3 b3 f#3 f#3 g3 g3 a3 a3 b3:1 r:1 g2+g3:2'}]});
 /* ---- ハイドン 交響曲第94番「驚愕」第2楽章 ---- */
 const hsM='=.5 c5 c5 e5 e5 g5 g5 e5:1 f5 f5 d5 d5 b4 b4 g4:1 c5 c5 e5 e5 g5 g5 e5:1 c6 c6 f#5 f#5 g5:1',
  hsI='e4+g4 e4+g4 e4+g4 e4+g4 b3+f4 b3+f4 b3+d4 b3+d4 e4+g4 e4+g4 e4+g4 e4+g4 c4+e4 a3+c4 b3+d4',hsB='c3 c3 c3 c3 g2 g2 g2 g2 c3 c3 c3 c3 a2 d3 g2';
@@ -47,31 +48,37 @@ lvDef('b9',{t:'歓喜の歌',bpm:144,gate:1.05,ch:'any',fin:'big',segs:[
   bass:'=2 d3 d3 d3 a2 d3 d3 a2 a2 d3 d3 d3 a2 d3 d3 a2 d3'},
  {mel:'e5 e5 f#5 d5 e5 f#5:.5 g5:.5 f#5 d5 e5 f#5:.5 g5:.5 f#5 e5 d5 e5 a4',mid:'g4 g4 a4 f#4 g4 a4:.5 b4:.5 a4 f#4 g4 a4:.5 b4:.5 a4 g4 f#4 g#4 e4',bass:'=2 a2 d3 a2 d3 a2 =1 d3 a2 b2 e3 a2'},
  {mel:'f#5:2 f#5 g5 a5 a5 g5 f#5 e5 d5 d5 e5 f#5 e5:1.5 d5:.5 d5:2',mid:'a4:2 a4 b4 c#5 c#5 b4 a4 g4 f#4 f#4 g4 a4 g4:1.5 f#4:.5 f#4:2',bass:'a2:1 =2 d3 d3 d3 a2 d3 d3 a2 d3'}]});
-/* ---- 美しく青きドナウ（第1ワルツ） ---- */
-const bdD='f#3+a3+d4',bdA='e3+g3+c#4',bdm=x=>`r ${x} ${x} `;
-lvDef('danube',{t:'第1ワルツ',bpm:174,gate:.95,tim:{mid:'violin'},ch:'any',fin:'big',segs:[
- {mel:'r:2 d4 d4 f#4 a4 a4 r a5+f#5 a5+f#5 r f#5+d5 f#5+d5 r d4 d4 f#4 a4 a4 r a5+f#5 a5+f#5 r g5+e5 g5+e5 r c#4',
-  bass:'r:3 '+'d3 r:2 '.repeat(7)+'a2 r:2',mid:'r:3 '+bdm(bdD).repeat(6)+`r ${bdD} ${bdA} `+bdm(bdA)},
- {mel:'c#4 e4 b4 b4 r b5+g5 b5+g5 r g5+e5 g5+e5 r c#4 c#4 e4 b4 b4 r b5+g5 b5+g5 r f#5+d5 f#5+d5 r d4',
-  bass:'a2 r:2 '.repeat(7)+'d3 r:2',mid:bdm(bdA).repeat(6)+`r ${bdA} ${bdD} `+bdm(bdD)},
- {mel:'d4 f#4 a4 d5 r d6+a5 d6+a5 r a5+f#5 a5+f#5 r r d5+f#5+a5:3',bass:'d3 r:2 '.repeat(4)+'d2+d3:3',mid:bdm(bdD).repeat(4)+'f#3+a3+d4:3'}]});
+/* ---- 美しく青きドナウ（第1ワルツの前半を終止まで。公開されているピアノ編曲譜と照合済み） ---- */
+const bdD='f#3+a3',bdA='g3+a3',bdE='a3+d4',bdG='b3+e4',bdm=x=>`r ${x} ${x} `,bdb=x=>`${x} r:2 `;
+const bdp=(a,b,c,x,y,z)=>`${a} ${b} ${c} ${c}:2 ${x} ${x}:1 r:1 ${y} ${y}:1 r:1 ${z} `;
+lvDef('danube',{t:'第1ワルツ',bpm:192,gate:.95,tim:{mid:'violin'},ch:'any',fin:'big',segs:[
+ {mel:'r:2 d4 '+bdp('d4','f#4','a4','f#5+a5','d5+f#5','d4')+bdp('d4','f#4','a4','g5+a5','c#5+g5','c#4'),
+  bass:'r:3 '+bdb('d3').repeat(5)+bdb('e3').repeat(3),mid:'r:3 '+bdm(bdD).repeat(5)+bdm(bdA).repeat(3)},
+ {mel:bdp('c#4','e4','b4','g5+b5','c#5+g5','c#4')+bdp('c#4','e4','b4','f#5+b5','d5+f#5','d4')+bdp('d4','f#4','a4','a5+d6','f#5+a5','d4').replace('a4 a4:2','a4 d5:2')+bdp('d4','f#4','a4','b5+d6','g5+b5','e4').replace('a4 a4:2','a4 d5:2'),
+  bass:bdb('e3').repeat(5)+bdb('d3').repeat(4)+bdb('f#3').repeat(4)+bdb('g3').repeat(2)+'g3:3',
+  mid:bdm(bdA).repeat(5)+bdm(bdD).repeat(4)+bdm(bdE).repeat(4)+bdm(bdG).repeat(2)+'b3+e4:3'},
+ {mel:'e4 g4 b4 b4:4 g#4 a4 f#5:4 d5 f#4 f#4:2 e4 b4:2 a4 d4:1.5 d5:.5 d5 d5 r:2',
+  bass:'b3 g3 e3 '+bdb('e3')+bdb('c#3')+bdb('d3')+bdb('f#3')+'g2:3 a2:3 d3:2 d3 d2+d3 r:2',
+  mid:'r:3 '+bdm(bdA).repeat(2)+bdm(bdD)+bdm(bdE)+'g3+b3+d4:3 e3+a3+c#4:3 d3+f#3+a3:2 d3+f#3+a3 d3+f#3+a3 r:2'}]});
 /* ---- サティ ジムノペディ第1番 ---- */
 const gyB='g2:3 d2:3 ',gyM='r b3+d4+f#4:2 r a3+c#4+f#4:2 ';
 lvDef('gymno',{t:'ゆっくりと、痛ましげに',bpm:84,ch:'sing',fin:'soft',segs:[
  {mel:'r:6 r f#5 a5 g5 f#5 c#5',bass:gyB.repeat(2),mid:gyM.repeat(2)},
  {mel:'b4 c#5 d5 a4:3 f#4:6',bass:gyB.repeat(2),mid:gyM.repeat(2)},
  {mel:'r f#5 a5 g5 f#5 c#5 b4 c#5 d5 a4:3 r:3',bass:gyB.repeat(2)+'g2:3',mid:gyM.repeat(2)+'r b3+d4+f#4:2'}]});
-/* ---- ヴィヴァルディ『四季』より「春」第1楽章（冒頭の主題と、そのこだま） ---- */
-const spB='g#5:.5 g#5:.5 g#5:.5 f#5:.25 e5:.25 b5:1.5 b5:.25 a5:.25 ',spC='g#5:.5 a5:.25 b5:.25 a5:.5 g#5:.5 f#5:.5 d#5:.5 ';
-const spL='=.5 '+'e3 '.repeat(20)+'b2 b2 b2 b2 ',spM='=1 g#3 b3 g#3 b3 g#3 b3 g#3 b3 g#3 b3 f#3 b3 ';
+/* ---- ヴィヴァルディ『四季』より「春」第1楽章（1〜10小節。公開楽譜と照合済み） ---- */
+const spB='g#5:.5 g#5:.5 g#5:.5 f#5:.25 e5:.25 b5:1.5 b5:.25 a5:.25 ',spC='g#5:.5 a5:.25 b5:.25 a5:.5 g#5:.5 ';
+const spM='e5:.5 e5:.5 e5:.5 e5:.5 g#5:1.5 g#5:.25 f#5:.25 ',spN='e5:.5 f#5:.25 g#5:.25 f#5:.5 e5:.5 d#5:1 r:.5 ';
+const spL='=1 '+'e3 '.repeat(8)+'e3:.5 e3:.5 a2:.5 a#2:.5 b2:1 r:.5 e3:.5';
+const spT='b5:.5 a5:.25 g#5:.25 a5:.5 b5:.5 c#6:.5 b5:1 e5:.5 ',spU='g#5:.5 f#5:.25 e5:.25 f#5:.5 g#5:.5 a5:.5 g#5:1 g#5:.5 ';
 lvDef('seasons',{t:'「春」第1楽章',bpm:100,gate:.9,ch:'drive',fin:'big',segs:[
- {mel:'e5:.5 '+spB+spB+spC+'b4:.5 e5:.5',bass:'r:.5 '+spL,mid:'r:.5 '+spM},
- {vol:.55,mel:spB+spB+spC+'b4:1',bass:spL,mid:spM},
- {mel:'e5+g#5:3',mid:'g#3+b3:3',bass:'e2+e3:3'}]});
-/* ---- モーツァルト ピアノ・ソナタ第11番 第3楽章「トルコ行進曲」（冒頭8小節を繰り返しつき） ---- */
-const tkP='=.25 b4 a4 g#4 a4 ',tkM='c5:.5 r:.5 =.25 d5 c5 b4 c5 e5:.5 r:.5 =.25 f5 e5 d#5 e5 b5 a5 g#5 a5 b5 a5 g#5 a5 c6:1 a5:.5 c6:.5 =.5 b5 a5 g5 a5 b5 a5 g5 a5 b5 a5 g5 f#5 ';
+ {mel:'e5:.5 '+spB+spB+spC+'f#5:.5 d#5:.5 b4:.5 e5:.5',mid:'b4:.5 '+spM+spM+spN+'b4:.5',bass:'e3:.5 '+spL},
+ {vol:.55,mel:spB+spB+spC+'f#5:1 r:.5 e5:.5',mid:spM+spM+spN+'g#5:.5',bass:spL},
+ {mel:spT+spT+'c#6:.5 b5:1 a5:.5 g#5:.5 f#5:.25 e5:.25 f#5:1 e5:2',mid:spU+spU+'a5:.5 g#5:1 f#5:.5 e5:1 d#5:1 e5:2',bass:'=1 '+'e3 '.repeat(8)+'e3:1 e3:.5 b2:.5 e3:.5 e2:.5 b3:.5 b2:.5 e2:2'}]});
+/* ---- モーツァルト ピアノ・ソナタ第11番 第3楽章「トルコ行進曲」（冒頭8小節を繰り返しつき。公開楽譜と照合済み） ---- */
+const tkP='=.25 b4 a4 g#4 a4 ',tkM='c5:.5 r:.5 =.25 d5 c5 b4 c5 e5:.5 r:.5 =.25 f5 e5 d#5 e5 b5 a5 g#5 a5 b5 a5 g#5 a5 c6:1 a5:.5 c6:.5 =.5 b5 f#5+a5 e5+g5 f#5+a5 b5 f#5+a5 e5+g5 f#5+a5 b5 f#5+a5 e5+g5 d#5+f#5 ';
 const tkb=x=>`${x}:.5 r:1.5 `,tkc=x=>`r:.5 ${x}:.5 ${x}:.5 ${x}:.5 `;
-const tkL=tkb('a3').repeat(4)+tkb('e3').repeat(2)+tkb('b2'),tkI=tkc('c4+e4').repeat(4)+tkc('b3+e4').repeat(2)+tkc('b3+d#4');
+const tkL=tkb('a3').repeat(2)+'a3:.5 r:.5 a3:.5 r:.5 '+tkb('a3')+tkb('e3').repeat(2)+'e3:.5 r:.5 b2:.5 b3:.5 ',tkI=tkc('c4+e4').repeat(2)+'r:.5 c4+e4:.5 r:.5 c4+e4:.5 '+tkc('c4+e4')+tkc('b3+e4').repeat(2)+'r:.5 b3+e4:.5 r:1 ';
 lvDef('k331',{t:'トルコ行進曲',bpm:120,gate:.85,ch:'drive',fin:'big',segs:[
  {mel:tkP+tkM+'e5:1 '+tkP,bass:'r:1 '+tkL+'e3:1 r:1',mid:'r:1 '+tkI+'r:2'},
  {mel:tkM+'e5:1 r:1',bass:tkL+'e3:1 r:1',mid:tkI+'r:2'},
@@ -82,11 +89,38 @@ const ccL='d3 a2 d3 a2 d3 a2 d3 a2 a2 e3 a2 e3 d3 a2 a2 a2',ccI=ccD.repeat(4)+cc
 lvDef('orphee',{t:'地獄のギャロップ（カンカン）',bpm:152,gate:.8,ch:'drive',fin:'big',segs:[
  {mel:ccM,bass:ccL,mid:ccI},{vol:1.1,mel:ccM,bass:ccL,mid:ccI},
  {mel:'d5 a5 d6:2',mid:'f#4+a4 e4+c#5 f#4+a4:2',bass:'d3 a2 d2+d3:2'}]});
-/* ---- ブラームス「子守歌」 ---- */
+/* ---- ブラームス「子守歌」（原曲は変ホ長調。ハ長調に移して収録。公開楽譜と照合済み） ---- */
 lvDef('wiegen',{t:'子守歌',bpm:84,gate:1.1,ch:'sing',fin:'soft',segs:[
- {mel:'e4:.5 e4:.5 g4:1.5 e4:.5 e4:1 g4:2 e4:.5 g4:.5 c5:1 b4:1.5 a4:.5 a4:1 g4:1 d4:.5 e4:.5',bass:'r:1 c3:3 c3:3 c3:3 g2:3',mid:'r:1 '+'r e3+g3:2 '.repeat(3)+'r f3+b3:2'},
- {mel:'f4:1 d4:1 d4:.5 e4:.5 f4:2 d4:.5 f4:.5 b4:.5 a4:.5 g4:1 b4:1 c5:2 c4:.5 c4:.5',bass:'g2:3 g2:3 g2:3 c3:3',mid:'r f3+b3:2 '.repeat(3)+'r e3+g3:2'},
- {mel:'c5:2 a4:.5 f4:.5 g4:2 e4:.5 c4:.5 f4:1 e4:1 d4:1 c4:3',bass:'f2:3 c3:3 g2:3 c3:3',mid:'r a3+c4:2 r e3+g3:2 r f3+b3:2 e3+g3+c4:3'}]});
+ {mel:'e4:.5 e4:.5 g4:1.5 e4:.5 e4:1 g4:1 r:1 e4:.5 g4:.5 c5:1 b4:1.5 a4:.5 a4:1 g4:1 d4:.5 e4:.5',bass:'r:1 c2 e3 g2 c2 e3 g2 c2 g3 g2 c2 d3 g2',
+  mid:'r:1 e4+g4 c4+e4 g3 e4+g4 c4+e4 g3 e4+g4 c5+e5 c5+e5 c5+e5 b4+f5 f4+b4'},
+ {mel:'f4:1 d4:1 d4:.5 e4:.5 f4:1 r:1 d4:.5 f4:.5 b4:.5 a4:.5 g4:1 b4:1 c5:1 r:1 c4:.5 c4:.5',bass:'c2 d3 g2 c2 d3 g2 c2 g3 g2 c2 g3 c3',
+  mid:'e4+g4 d4+f4 g3+d4 f4+a4 d4+f4 g3+d4 f4+a4 d4+f4 f4+b4 f4+d5 e4+c5 e4+g4'},
+ {mel:'c5:2 a4:.5 f4:.5 g4:2 e4:.5 c4:.5 f4:1 e4:1 d4:1 c4:3',bass:'c2 f3 f2 c3 e3 g2 c2 g3 g2 c2 g3+c4+e4:2',
+  mid:'a4+c5:1 f4+a4:.5 a4+c5:1.5 f4+a4:.5 e4+g4:.5 c4+e4:.5 e4+g4:1.5 b3+d4:.5 g4:.5 c4+e4:.5 a4:.5 d4+f4:.5 b4:.5 e4+g4+c5:3'}]});
+/* ---- ベートーヴェン 交響曲第5番「運命」第1楽章（1〜24小節。フェルマータは長さを足して表す。公開楽譜と照合済み） ---- */
+lvDef('b5',{t:'第1楽章 アレグロ・コン・ブリオ',bpm:200,gate:.9,rit:false,ch:'drive',fin:'big',
+ d2:{q:'最後にもう一度「運命の動機」。どう鳴らす？',big:'渾身の力で',normal:'楽譜どおり',soft:'抑えて不気味に'},segs:[
+ {mel:'=.5 r g4 g4 g4 eb4:4 r f4 f4 f4 d4:6 r:4 r eb5 eb5 eb5 c5:3 r:1',
+  mid:'=.5 r g3 g3 g3 eb3:4 r f3 f3 f3 d3:6 r g4 g4 g4 eb4 ab4+eb4 ab4+eb4 ab4+eb4 g4+eb4:4 eb4 g4 g4 g4',
+  bass:'=.5 r g2 g2 g2 eb2:4 r f2 f2 f2 d2:6 r:2 c4:8'},
+ {mel:'=.5 r:2 r f5 f5 f5 d5:2 d5 g5 g5 f5 eb5:2 d5 g5 g5 f5 eb5:2 d5 g5 g5 f5 eb5:1 r:1 a3+f#4+c5:1 r:1 g5:4',
+  mid:'=.5 d4 ab4+d4 ab4+d4 ab4+d4 g4+d4:6 g4 eb4 eb4 f4 g4:2 g4 eb4 eb4 f4 g4 d5 d5 g4 c4+g4+eb5:1 r:1 a3+f#4+c5:1 r:1 g3+d4+b4:1 r:3',
+  bass:'=.5 b3:8 c4:2 b3:2 c4:2 b3 b3 b3 b3 c4:1 r:1 ab2:1 r:1 g2:1 r:3'},
+ {vol:1.25,mel:'=.5 r ab4 ab4 ab4 f4:6',mid:'=.5 r ab3 ab3 ab3 f3:6',bass:'=.5 r ab2 ab2 ab2 f2:6'}]});
+/* ---- ショパン 夜想曲 変ホ長調 op.9-2（1〜4小節。1拍＝8分音符。公開楽譜と照合済み） ---- */
+const ncG=(b,x,y)=>[`${b} r:2 `,`r ${x} ${y} `],ncJ=(gs,i)=>gs.map(g=>g[i]).join('');
+const nc1=[ncG('eb2','g3+eb4','bb3+eb4+g4'),ncG('eb3','ab3+d4','cb4+d4+ab4'),ncG('eb2','g3+eb4','bb3+eb4+g4'),ncG('d2','g3+eb4','bb3+eb4+g4')];
+const nc2=[ncG('c2','g3+e4','bb3+e4+g4'),ncG('c3','g3+e4','c4+e4+bb4'),ncG('f2','f3+db4','bb3+db4+e4'),ncG('f2','f3+c4','ab3+c4+f4'),
+ ncG('bb2','f3+d4','bb3+d4+ab4'),ncG('b2','g3+f4','d4+f4+g4'),ncG('c3','g3+eb4','c4+eb4+g4'),ncG('a2','gb3+eb4','c4+eb4+gb4')];
+const nc3=[ncG('bb2','f3+eb4','bb3+eb4+ab4'),ncG('bb1','f3+d4','bb3+ab4'),ncG('eb2','g3+eb4','bb3+eb4+g4')];
+lvDef('noct92',{t:'夜想曲 変ホ長調 op.9-2',bpm:132,gate:1.25,ch:'sing',fin:'soft',segs:[
+ {mel:'bb4:1 g5:4 f5:1 g5:1 f5:3 eb5:2 bb4:1',bass:'r:1 '+ncJ(nc1,0),mid:'r:1 '+ncJ(nc1,1)},
+ {mel:'g5:2 c5:1 c6:2 g5:1 bb5:3 ab5:2 g5:1 f5:3 g5:2 d5:1 eb5:3 c5:3',bass:ncJ(nc2,0),mid:ncJ(nc2,1)},
+ {mel:'bb4:1 d6:1 c6:1 bb5:.5 ab5:.5 g5:.5 ab5:.5 c5:.5 d5:.5 eb5:6',bass:ncJ(nc3,0)+'eb2:3',mid:ncJ(nc3,1)+'g3+bb3+eb4:3'}]});
+/* ---- パガニーニ『24のカプリース』第24番の主題（公開楽譜と照合済み） ---- */
+const cpA='a4:.5 r:.25 a4:.25 =.25 a4 c5 b4 a4 e5:.5 r:.25 e4:.25 =.25 e4 g#4 f#4 e4 a4:.5 r:.25 a4:.25 =.25 a4 c5 b4 a4 e5:1 e4:.5 r:.5 ';
+const cpB='a5:.5 r:.25 a5:.25 =.25 a5 bb5 a5 g5 f5:.5 r:.25 d5:.25 =.25 d5 f5 e5 d5 g5:.5 r:.25 g5:.25 =.25 g5 a5 g5 f5 e5:.5 r:.25 c5:.25 =.25 c5 e5 d5 c5 f5:.5 r:.25 b4:.25 =.25 b4 d5 c5 b4 e5:.5 r:.25 a4:.25 =.25 a4 c5 b4 a4 f4:.5 r:.25 d#5:.25 =.25 e4 e5 d5 b4 a4:1 a3:.5 r:.5 ';
+lvDef('cap24',{t:'第24番 主題',bpm:112,gate:.85,ch:'drive',fin:'big',segs:[{mel:cpA+cpA},{mel:cpB},{mel:cpB}]});
 for(const id in LIVE)LIVE[id].segs.forEach((s,i)=>{const bs=['mel','mid','bass'].filter(v=>s[v]).map(v=>lvBeats(s[v]));if(bs.some(b=>Math.abs(b-bs[0])>1e-6))console.warn('生演奏の拍が合わない',id,i,bs);});
 
 /* 生演奏のために足す演目 */
@@ -95,6 +129,8 @@ SCEN.s1723.rep.push(Pc('bwv147','バッハ カンタータ147番「主よ、人�
 SCEN.s1781.rep.push(Pc('k525','モーツァルト『アイネ・クライネ・ナハトムジーク』','室内楽',[Sl('vn','第1ヴァイオリン'),Sl('vn','第2ヴァイオリン'),Sl('vc','チェロ')],[.4,.4,.2],'古典',null,'mozart','violin'));
 SCEN.s1781.rep.push(Pc('k331','モーツァルト ピアノ・ソナタ第11番「トルコ行進曲」','独奏',[Sl(['pf'],'ピアノ')],[.5,.2,.3],'古典',null,'turkish','piano'));
 SCEN.s1876.rep.push(Pc('wiegen','ブラームス「子守歌」','室内楽',[Sl('voice','歌'),Sl(['pf'],'ピアノ')],[.1,.8,.1],'古典',null,'lullaby','voice'));
+SCEN.s1832.rep.push(Pc('noct92','ショパン 夜想曲 変ホ長調 op.9-2','独奏',[Sl(['pf'],'ピアノ')],[.2,.6,.2],'ロマン',null,'nocturne','piano'));
+SCEN.s1832.rep.push(Pc('cap24','パガニーニ『24のカプリース』第24番','独奏',[Sl(['vn'],'独奏ヴァイオリン')],[.6,.2,.2],'名人芸',null,'caprice24','violin'));
 SCEN.s1832.rep.push(Pc('b9','ベートーヴェン 交響曲第9番「歓喜の歌」','交響曲',[Sl('cond','指揮'),Sl('voice','独唱'),Sl('vn','コンサートマスター'),Sl('vc','チェロ')],[.3,.5,.2],'古典',null,'ninth','voice'));
 
 /* ---------- 音 ---------- */
@@ -127,7 +163,8 @@ function lvCast(p,L,ev,sc){
   if(pl.length===1){for(const v of voices)cast[v]=[pl[0]];}
   else if(pl.length){const rest=pl.slice();cast.mel=[rest.shift()];
     if(voices.includes('bass')&&rest.length){let bi=-1;for(const r of ['cb','vc','pf','tim']){bi=rest.findIndex(w=>w.r===r);if(bi>=0)break;}if(bi<0)bi=rest.length-1;cast.bass=[rest.splice(bi,1)[0]];}
-    if(rest.length){if(voices.includes('mid'))cast.mid=rest;else cast.mel=cast.mel.concat(rest);}}
+    if(rest.length){if(voices.includes('mid'))cast.mid=rest;else cast.mel=cast.mel.concat(rest);}
+    else if(voices.includes('mid')&&cast.bass&&['pf','hp'].includes(cast.bass[0].r))cast.mid=cast.bass;}
   return{cast,cond,condSlot,voices,solo:pl.length===1};
 }
 /* ---------- 一区切りぶんの音を並べる。戻り値は長さ（秒） ---------- */
