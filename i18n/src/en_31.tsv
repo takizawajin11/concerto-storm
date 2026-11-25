@@ -1,0 +1,39 @@
+5971	We shall get on, I think.
+5972	'I have heard of your reputation. I, you understand, am on the side of ⟦0⟧.'
+5973	Your creed ⟦0⟧⟦1⟧
+5974	<div class="pmeta crline">Your creed: ⟦0⟧</div>
+5975	'Tell me one thing. ⟦0⟧'
+5976	⟦0⟧ asks: ⟦1⟧
+5977	<div class="crh">🗣 Debate: <b>⟦0⟧</b>⟦1⟧</div>\n    <button class="btn" data-cr="⟦2⟧"><b>⟦3⟧</b>   ⟦4⟧<small>⟦5⟧</small></button>\n    <button class="btn" data-cr="⟦6⟧"><b>⟦7⟧</b>   ⟦8⟧<small>⟦9⟧</small></button>\n    <button class="btn" data-cr="mid"><b>Both</b>   ⟦10⟧<small>Take no side. With high Theory or Expression you can sidestep neatly</small></button>\n    <div class="pmeta">Take the same side as the other and rapport rises sharply. Even on the opposite side, you can win respect if your Theory is higher (you ⟦11⟧ / them ⟦12⟧). Changing sides costs you credibility.</div>
+5978	<span>You so far: ⟦0⟧ (×⟦1⟧)</span>
+5979	Debates on the nature of music
+5980	Musicians of note will question you, in the middle of a persuasion, about <b>your view of music</b>.<br><br> · Your answer becomes known to the world as <b>your creed</b>.<br> · Hold to the same side and kindred spirits will be easier to talk to from the first meeting.<br> · Say different things to different people and you will be seen as a <b>weathercock</b>.<br><br><span class="pmeta">In Germany in the later 19th century the Brahms party and the Wagner party fought fiercely over 'what music says'.</span>
+5981	Both
+5982	Debate
+5983	Neatly put. …Well, so be it.
+5984	Neither one thing nor the other. Have you no view of your own?
+5985	Debate:
+5986	I hear you have long said so. A person of conviction.
+5987	To meet someone of the same mind! That saves time.
+5988	…I heard you said the opposite the other day. Are you not simply agreeing with whoever is in front of you?
+5989	…Hm. We think differently, but your argument holds together.
+5990	There is nothing to discuss. Study a little more and come back.
+5991	The other day you said the opposite, I am told. The word of a weathercock cannot be trusted.
+5992	Your players' reaction: ⟦0⟧ nodded, ⟦1⟧ frowned
+5993	Called the standard-bearer of '⟦0⟧'
+5994	You have come to be called the standard-bearer of '⟦0⟧' (fame +15)
+5995	⟦0⟧   Rapport ⟦1⟧⟦2⟧
+5996	Standard-bearer of ⟦0⟧
+5997	It was also whispered that you were a 'weathercock' who said different things to different people.
+5998	Your creed
+5999	The sides you took in debates during persuasions are known to the world as your creed.<div class="saga">⟦0⟧</div>\n    <div class="pmeta">A side you have held twice or more is known even to those you meet for the first time (kindred spirits +6 / the opposite side −5). At four times you are called a 'standard-bearer'.</div>
+6000	not declared
+6001	$1<button class="btn" id="creedBtn">🗣 Creed</button>
+6002	<b>Take to the streets</b> has been added to the city screen. Play in the street and win the people's hearts, and they will crowd into your concerts in that city. The <b>Court / People</b> band above the map shows which of the two supports you.
+6003	This month's tasks and Diversions
+6004	<b>This month's tasks</b> and <b>Diversions</b> have been added to the map. There are three tasks each month, with a reward for completing them. Diversions holds side paths such as the relationship map, composing and the quiz. Open it whenever you feel like it.
+6005	Choose a scenario
+6006	<summary>More ways to play<small>Today's Concert, challenge scenarios, your history of music, Hall of Fame</small></summary>
+6007	<span class="fb1">▶ New here? Start with this</span><span class="fb2">Vienna, 1781. Become Mozart and give your first concert</span><span class="fb3">about 3 minutes · with sound</span>
+6008	— Choose your own era —
+6009	<div class="firstguide">⟦0⟧<div><b>⟦1⟧</b><br>Welcome to Vienna. First of all, play a piece. You are already in your seat. Just press <b>Curtain up</b> below.<br>Once the music begins, <b>the tempo</b> and <b>the ending</b> are yours to decide.</div></div>

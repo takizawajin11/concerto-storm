@@ -1,0 +1,126 @@
+2370	Fame Lv20
+2371	Reached fame Lv20
+2372	Immortal of music
+2373	Reached fame Lv30 (the maximum)
+2374	First ★5
+2375	Gave a ★5 concert
+2376	A mountain of great performances
+2377	Gave ten ★5 concerts
+2378	Legendary partnership
+2379	Formed a pair with ensemble Lv5
+2380	Millionaire
+2381	Saved 100,000 francs
+2382	Final boss beaten
+2383	Won the final showdown
+2384	Through the hard gate
+2385	Cleared on 'Hard' or above
+2386	Prodigious talent
+2387	Cleared on 'Very hard' or above
+2388	Kapellmeister of the Inferno
+2389	Cleared on 'Inferno'
+2390	Traveller through music history
+2391	Cleared all five scenarios
+2392	Nine masters
+2393	Cleared with all nine protagonists
+2394	🏅 Achievement unlocked: ⟦0⟧!
+2395	🏅 Achievement unlocked: ⟦0⟧
+2396	Achievements ⟦0⟧/⟦1⟧
+2397	<p style="font-size:12px">Scenarios cleared: ⟦0⟧<br>Protagonists cleared: ⟦1⟧</p>
+2398	Continue (⟦1|mon⟧ ⟦0⟧ · ⟦2⟧)
+2399	<div class="title"><div class="en">Tempesta di Concerti</div><h1 class="logo">Concerto Storm</h1><div style="color:var(--gold2);letter-spacing:.2em">COMPLETE EDITION</div><div class="staff"></div>\n   ⟦0⟧\n   <div style="display:flex;gap:8px;margin-bottom:10px"><button class="btn" id="hofBtn" style="flex:1">📜 Hall of Fame (⟦1⟧)</button><button class="btn" id="achBtn" style="flex:1">🏅 Achievements ⟦2⟧/⟦3⟧</button></div>\n   <div class="sec-t" style="text-align:left">— Choose a scenario —</div>\n   ⟦4⟧\n   ⟦5⟧\n   <div class="credit">Instrument samples: <a href="https://github.com/nbrosowsky/tonejs-instruments">tonejs-instruments</a> (CC BY 3.0), compressed</div></div>
+2400	<button class="btn scen" data-s="⟦0⟧"><span class="y">⟦1⟧</span> <b>⟦2⟧</b><br><span style="font-size:13px;color:var(--gold2)">⟦3⟧</span><p>⟦4⟧</p><p>Protagonists: ⟦5⟧</p></button>
+2401	<div class="title"><div class="en">⟦0⟧</div><h1 class="logo" style="font-size:32px">⟦1⟧</h1><div style="color:var(--gold2)">⟦2⟧</div><div class="staff"></div>\n   <div class="sec-t" style="text-align:left">— Choose your protagonist —</div>\n   ⟦3⟧\n   <div class="card" style="text-align:left;font-size:13px"><b>Rival camps</b><br>⟦4⟧</div>\n   <button class="btn" id="back" style="width:100%">Back</button></div>
+2402	<button class="btn hero" data-h="⟦0⟧">⟦1⟧<div><div class="pname">⟦2⟧<span class="lat">⟦3⟧</span></div><p style="color:var(--gold2)">Character difficulty ⟦4⟧</p><p>⟦5⟧</p><p>Possession: ⟦6⟧</p></div></button>
+2403	<span style="color:var(--mute)">* if you choose ⟦0⟧</span>
+2404	Choose the difficulty
+2405	You will begin as ⟦0⟧ (character difficulty ⟦1⟧).
+2406	<details class="card howto" style="margin-top:12px"><summary style="color:var(--gold2)">How to play</summary><ol>\n  <li>Tap a city on the map to travel. <b>Persuade</b> the musicians in each city to join your orchestra.</li>\n  <li>A persuasion lasts 8 bars. Use Fee, Scandal, Theory, Fame and Passion as the moment requires; push the rapport needle all the way to the right and they are won over. Different approaches work on different people (and repeating one weakens it).</li>\n  <li>When inspiration is full, a <b>cadenza</b> gives a big push. Attend a salon beforehand and you start with inspiration already stored.</li>\n  <li>If talks break down, you can convince them in a <b>performance duel</b>: Technique, Expression and Improvisation, like rock-paper-scissors.</li>\n  <li>Persuade the ruler of a city (a theatre or a court) and the city is yours, with an income every month.</li>\n  <li>Every month the <b>rival camps</b> poach musicians, seize cities and launch <b>concert wars</b> against your cities. Win back their cities by concert war and their followers by poaching.</li>\n  <li>Those far above you (Lv more than your fame Lv+2) will turn you away. Give concerts to raise your fame.</li>\n  <li>Choose a venue: <b>salon, medium hall or large theatre</b>. Bigger earns more but empties more easily. The audience's reaction (bravos, bouquets, swoons, boos, dozing, walk-outs) depends on the reception.</li>\n  <li>Each player has a <b>★trait</b> (attendance +20%, strings +3, lesson income…) and a <b>quirk</b> (frail, miser, difficult, amorous…). When satisfaction falls they may leave, or go over to a rival. A friend already in your orchestra will put in a word during persuasion.</li>\n  <li><b>Scouting</b>: first 🔍scout (150 fr) to learn which approaches work, the growth type (early / normal / late), potential, contract terms and chemistry. Without scouting you cannot tell which approach worked. Once they are won over, negotiate the signing fee and salary (haggling is a gamble).</li>\n  <li><b>Ensemble and chemistry</b>: the more two players appear together, the higher their ensemble Lv and the better the reception. Pairs with ◎○ chemistry grow quickly; ✕ pairs drag each other down and lose satisfaction.</li>\n  <li><b>Growth types</b>: early bloomers grow fast at first but decline from the fifth year; late bloomers grow strongly after two and a half years.</li>\n  <li>Meet the victory conditions and you face the <b>final showdown</b> (best of three). Win it and the grand concert follows.</li>\n  <li>At a <b>concert</b> you choose the programme and place your players in each part, like a football formation. The abilities the piece calls for, form (which changes monthly), historical partnerships (chemistry), the composer's presence and the city's taste decide the reception (★).</li>\n  <li>In a performance duel, taking a player as your <b>second</b> strengthens that person's best card.</li>\n  <li>There are five difficulty levels: Beginner, Normal, Hard, Very hard, Inferno. The victory conditions (cities held and seats filled) and the time limit vary with difficulty. The more cities you hold, the more wary the remaining theatres and courts become, and their rank rises.</li>\n  <li>Fame tops out at Lv30. After clearing the game you can go on without a time limit in endless mode and collect 🏅achievements.</li></ol></details>
+2407	Vienna, 1781
+2408	In June you were thrown out by Count Arco, chamberlain to the Archbishop of Salzburg — literally with a kick on the backside.<br><br>You give up the post of court musician to live in Vienna as a freelance.<div class="trivia">History: with this 'kick' Mozart broke with the court of Salzburg.</div>
+2409	Warsaw
+2410	National Theatre, Warsaw
+2411	Theatre director
+2412	The ladies of the Warsaw salons
+2413	Moscow
+2414	Bolshoi Theatre
+2415	Director of the Imperial Theatres
+2416	The great merchants of Moscow
+2418	Toccata in C major
+2419	The organ of St James's is where I belong.
+2420	Bohemian counterpoint, for your orchestra.
+2421	An organist and friar of Prague, called 'the Bohemian Bach'. He is also said to have taught Tartini and Gluck.
+2423	Choral concerto
+2424	The singing I learned in Italy, for the chants of Russia.
+2425	The court chapel choir and I are at your service.
+2426	Born in Ukraine. After studying in Italy he returned to St Petersburg in 1779 and led the court chapel choir.
+2428	Variations on Russian folk songs
+2429	In playing folk songs I yield to no one.
+2430	I long to play freely, away from the court.
+2431	One of Russia's earliest violin virtuosos, known for his variations on Russian folk songs.
+2433	Symphony in G minor
+2434	I was born on a Bohemian farm.
+2435	My symphonies, with your orchestra.
+2436	Born in Bohemia. He wrote many symphonies in Vienna and is said to have played string quartets with Haydn and Mozart.
+2438	Piano Concerto in F major
+2439	Teaching the young ladies of Vienna is my best income.
+2440	The sound of fashion, for your orchestra.
+2441	A Bohemian-born pianist and composer. He moved to Vienna in 1778 and also taught the piano to the imperial family.
+2443	Piano Concerto in D major
+2444	Prague is a city that loves music.
+2445	My wife Josepha and I are at your service.
+2446	A pianist of Prague. He later welcomed Mozart to the Villa Bertramka outside the city and watched over the finishing of Don Giovanni.
+2448	Opera in Polish
+2449	That boy overturned everything I taught him.
+2450	The heart of Poland, for your orchestra.
+2451	Director of the Warsaw Conservatory and Chopin's teacher. On Chopin's report he wrote: 'musical genius'.
+2453	Opera: Krakowiacy i Górale
+2454	The lights of the National Theatre must not go out.
+2455	A baton trained in the theatre, for your orchestra.
+2456	Conductor of the National Theatre in Warsaw. From the podium he supported the young Chopin's Warsaw concerts.
+2458	Violin Concerto 'à la militaire'
+2459	I have stood on the same stage as Paganini.
+2460	The Polish bow, in your orchestra.
+2461	A Polish violin virtuoso. He played a double concerto with Paganini, who is said to have rated him 'the second best'.
+2463	Nocturne No. 5
+2464	I have grown used even to the Moscow winter.
+2465	Nocturnes, for your orchestra.
+2466	An Irish-born pianist who lived in Moscow. He created the form of the 'nocturne' and influenced Chopin.
+2468	Opera: Askold's Grave (1835)
+2469	I am the one who keeps the Moscow theatres running.
+2470	Opera in Russian, with your orchestra.
+2471	A composer who ran the theatres of Moscow. His opera Askold's Grave was a great hit.
+2473	Russian imperial anthem 'God Save the Tsar!' (1833)
+2474	My duties at court keep me busy.
+2475	The sound of the Russian court, for your orchestra.
+2476	A violin virtuoso and an army officer. In 1833 he composed the anthem of the Russian Empire.
+2478	Eclogues
+2479	I have been teaching in Prague for decades now.
+2480	Bohemian lyricism, for your orchestra.
+2481	A great teacher of Prague. His piano 'eclogues' are sometimes called forerunners of Schubert's impromptus.
+2483	Grand Caprice on 'Erlkönig'
+2484	I have come this far following in Paganini's footsteps.
+2485	Transcendent technique, in your orchestra.
+2486	From Brno in Moravia. He followed Paganini about, stole his secrets, and was called his successor.
+2488	Tchaikovsky: Piano Concerto No. 1
+2489	Welcome to the Moscow Conservatory.
+2490	My piano and my baton, for your orchestra.
+2491	Founder of the Moscow Conservatory. At first he tore Tchaikovsky's First Piano Concerto to pieces; later he played it himself.
+2493	I have not finished my counterpoint homework yet.
+2494	My teacher's concerto, with your orchestra.
+2495	The young pianist who played his teacher Tchaikovsky's First Piano Concerto in Moscow in 1875.
+2497	Melody in F
+2498	The piano is there to be made to sing.
+2499	The Russian lion will join your orchestra.
+2500	Founder of the St Petersburg Conservatory. A great pianist said to resemble Beethoven in both looks and playing.
+2502	Symphonic suite: Scheherazade
+2503	In the navy I read charts rather than scores.
+2504	Orchestral colour, for your orchestra.
+2505	A former naval officer. He taught at the St Petersburg Conservatory from 1871, and is said to have relearned harmony as he taught it.
+2507	Suite: Pictures at an Exhibition (1874)
+2508	…I should like to give up my post in the civil service.
+2509	The truth of Russia, for your orchestra.
+2510	One of the 'Mighty Handful' (The Five). He wrote Boris Godunov and Pictures at an Exhibition while working as a civil servant.
+2512	Symphonic poem: In the Steppes of Central Asia
+2513	I write a little at a time, between experiments.
+2514	A head for chemistry and a head for music, both for your orchestra.
+2515	A chemist and medical-school professor by profession. He kept composing as, in his own words, a 'Sunday composer'.

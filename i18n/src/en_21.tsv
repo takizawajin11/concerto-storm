@@ -1,0 +1,257 @@
+4036	<button id="tutOpen" title="Open the guide">⟦0⟧<span>Guide</span></button>
+4037	Fold
+4038	<div class="warn" style="color:#a22;font-size:12px;margin-top:2px">* Risky while the orchestra is small. Better to gather two or more companions before setting out.</div>
+4039	ppraisal
+4040	fake
+4041	<div class="sec-t">Strongholds by city</div>
+4042	<div class="sgc mine ⟦0⟧"><b>⟦1⟧</b><span>yours</span></div>
+4043	 camp$
+4044	<div class="sec-t">Strongholds by city</div><div class="sggrid">⟦0⟧</div><div class="pmeta" style="margin-top:4px">A tour targets the city you are in (the one with the glowing frame). Move on the map first, then set out.</div>
+4045	Cathedral of fugue
+4046	I shall stack as many voices as you please.
+4047	The Hallelujah on its feet
+4048	Even His Majesty will find himself rising.
+4049	A thousand pieces at speed
+4050	A piece? I shall write one here and now.
+4051	The notes the Devil played in my dream — I shall reproduce them now.
+4052	The voice that heals a king
+4053	With one note I lift the King's melancholy.
+4054	Crossing hands
+4055	Right hand or left: guess which is on top.
+4056	The laws of harmony
+4057	Harmony is the fundamental principle of music.
+4058	The angel's viol
+4059	I shall play it like an angel.
+4060	The devil's viol
+4061	To play like a devil is my way.
+4062	Caprice of the labyrinth
+4063	Can you find your way out of this labyrinth?
+4064	The miracle of the Pietà
+4065	From behind the grille, the sound of heaven.
+4066	The King's flute
+4067	For His Majesty alone I wrote three hundred pieces.
+4068	The queen's top notes
+4069	No one can imitate this high note.
+4070	Melody from heaven
+4071	In my head it is all finished already.
+4072	The surprise stroke
+4073	Those dozing: it is time to wake up.
+4074	The fist of fate
+4075	Hear the sound the heart makes.
+4076	Sword and bow
+4077	Sword or bow, each dances in my hand.
+4078	The singing violin
+4079	A violin must sing.
+4080	The miracle of the horn
+4081	A fugitive's horn — listen well.
+4082	Minuet with a smile
+4083	The quieter the sound, the farther it carries.
+4084	The reform of opera
+4085	Music is the servant of poetry.
+4086	The Devil's 24 challenges
+4087	One string is quite enough.
+4088	The swooning recital
+4089	Now, ladies — do keep hold of yourselves.
+4090	Raindrops of the nocturne
+4091	I shall make the piano sing.
+4092	The grand march of fantasy
+4093	I need about five hundred more in the orchestra.
+4094	The Rossini crescendo
+4095	Louder and louder, merrier and merrier!
+4096	A song that burns life away
+4097	When I sing, I sing as if it were the last time.
+4098	Clara's theme
+4099	This theme is mine alone.
+4100	The whirl of the waltz
+4101	Come — you cannot help but dance.
+4102	It sounds as though I had three hands, does it not?
+4103	Northern fantasy
+4104	The wind of the fjords, on my bow.
+4105	The giant's double bass
+4106	When the bass sounds, the theatre shakes.
+4107	The Erlking's hammering
+4108	I eavesdropped from behind Maestro Paganini.
+4109	Endless melody
+4110	This music has no end.
+4111	Unshakeable harmony
+4112	I hear the tread of a giant. Still I write.
+4113	Free but lonely
+4114	What is written in the score, played straight.
+4115	Zigeunerweisen
+4116	My fingers begin to dance of themselves.
+4117	The swan's tears
+4118	No one hears this melody without weeping.
+4119	The Abbé's prayer
+4120	Now I play as one prays.
+4121	Triumphal march
+4122	Trumpets — further forward!
+4123	The golden diva
+4124	My fee is paid in advance, in gold.
+4125	Carnival of the animals
+4126	This is a private joke, you understand.
+4127	The Blue Danube
+4128	Vienna's nights grow late to the waltz.
+4129	Flash of the polonaise
+4130	This bow is quicker than lightning.
+4131	The whip of the baton
+4132	If the audience makes a noise, we start again from the beginning.
+4133	A symphony that embraces the world
+4134	A symphony must be like the world: it must contain everything.
+4135	A hero's life
+4136	The hero is myself.
+4137	Liebesfreud
+4138	I found an old masterpiece, you see (I wrote it).
+4139	Vesti la giubba
+4140	Laugh, clown — though your heart is weeping.
+4141	The cello's prayer
+4142	Every morning, first of all, I play Bach.
+4143	The Swiss watch
+4144	My music is precision clockwork.
+4145	The Rite of Spring uproar
+4146	The house in uproar? That is the proof of success.
+4147	Chords like bells
+4148	With these hands I reach from one end of the keyboard to the other.
+4149	The baton of thunder
+4150	Tempo! The tempo!
+4151	King of the unaccompanied
+4152	With one violin I shall make an orchestra sound.
+4153	Furniture music
+4154	Please, there is no need to listen.
+4155	The magic gaze
+4156	Conduct with the eyes and you need no baton.
+4157	The roar of Boris
+4158	With this voice, the Tsar's torment.
+4159	The voice of the oboe
+4160	Cascade of the harp
+4161	Like water running over the strings.
+4162	Legend of the harp
+4163	Great solo works for the harp, too.
+4164	Thunder of the Gewandhaus
+4165	Let me play you thunder that changes its pitch.
+4166	The French oboe
+4167	My pupils play the same sound all over the world.
+4168	The ultimate funny face
+4169	Look — look at this face!
+4170	My party piece
+4171	When I was young, mind you… Tonight I mean it.
+4172	The great thunderclap
+4173	Pianissimo? Never heard of it!
+4174	Swoon after swoon in the audience!
+4175	Snap! A string has gone… and still the playing goes on!
+4176	Showpiece [⟦0⟧]
+4177	^Showpiece
+4178	⟦0⟧: Showpiece [⟦1⟧] (+0.8)
+4179	<span class="sigline">Showpiece [⟦0⟧]: '⟦1⟧'</span><br>⟦2⟧
+4180	The court Kapellmeister of Vienna is I.
+4181	The majesty of the court Kapellmeister
+4182	Which of us, I wonder, is His Majesty's favourite?
+4183	…Splendid. I could wish you were my pupil.
+4184	Learn a little more of the manners of the court, and come back.
+4185	At the keyboard I lose to no one.
+4186	Gradus ad Parnassum
+4187	Can you play this étude through to the end?
+4188	Since I have lost — how about a piano from my workshop?
+4189	Your fingers want training. Practise it a hundred times.
+4190	Let me play you the music of Leipzig.
+4191	A Midsummer Night's Dream
+4192	Dance, you fairies.
+4193	Wonderful. Allow me to invite you to the Gewandhaus.
+4194	Listen carefully to Bach once more.
+4195	Can you see through the secret of the three hands?
+4196	I lost to young Liszt in just the same way.
+4197	A gentleman does not thump the keyboard.
+4198	Will you match yourself against a man who sold his soul to the Devil?
+4199	One string is quite enough.
+4200	…Hm. Even the Devil loses now and then.
+4201	Tonight's ticket prices will be doubled.
+4202	I shall let you hear the music of the future.
+4203	This music has no end!
+4204	We shall settle it again in Bayreuth.
+4205	I have no use for the music of the past.
+4206	…I am better at writing than at speaking.
+4207	That was good music. A beer, perhaps?
+4208	If there is anyone here I have not yet offended, I apologise.
+4209	Let me show the heart of Italy in song.
+4210	Va, pensiero
+4211	Fly, thought, on golden wings!
+4212	I am a farmer. I shall begin again from the fields.
+4213	Bravo is an Italian word, you know.
+4214	The Red Priest's violin — listen well.
+4215	Storm of the Seasons
+4216	The summer storm is coming!
+4217	So much for slipping out of Mass… it was not worth it.
+4218	The girls of the Pietà play better than that.
+4219	The theatres of London are my garden.
+4220	I should like to meet the Kantor of Leipzig some day.
+4221	An opera audience is an honest one.
+4222	London is waiting for my melodies.
+4223	A sweet aria
+4224	All London is drunk on this melody.
+4225	I am quite used to being compared with Handel.
+4226	Fashion is on my side.
+4227	Ring out, whole universe!
+4228	It is only that my time has not yet come.
+4229	Once more, from the first bar.
+4230	Let me show you a hero's life.
+4231	I shall make it up with the next work.
+4232	Well, I must go and work out the royalties.
+4233	Rules? They exist for my pleasure.
+4234	Afternoon of a faun
+4235	Light and shadow melt away…
+4236	…Well, the impression was not bad.
+4237	Do stop imitating Wagner.
+4238	Welcome to the dream.
+4239	This trill — play it if you can.
+4240	Tch… so you have woken from the dream.
+4241	I shall come again to collect the price of your soul.
+4242	…Splendid. Tonight is your night.
+4243	You still have much to learn.
+4244	Curtain up
+4245	⟦0⟧: Showpiece [⟦1⟧]
+4246	Enter ⟦0⟧
+4247	: Showpiece [⟦0⟧]
+4248	⟦0⟧ is won over
+4249	⟦0⟧ looks perfectly at ease
+4250	Showpiece [⟦0⟧] incoming!
+4251	Showpiece [⟦0⟧] strikes home! Focus -⟦1⟧
+4252	⚠ Showpiece [⟦0⟧] is coming! Now is the time for 'Improvised riposte'!
+4253	Showpiece turned back!
+4254	Turned ⟦0⟧'s [⟦1⟧] to your own use
+4255	You turned the showpiece back! ⟦0⟧ is shaken
+4256	Showpiece turned back
+4257	Showpiece|Witness to history|Full mastery|Master of the next generation
+4258	Showpiece
+4259	Good Friday at the Thomaskirche. Two choirs and two orchestras face each other: a Passion like none before it.
+4260	Westminster Abbey. Handel's coronation anthem 'Zadok the Priest' rings out.
+4261	An English play that makes fun of Italian opera is a smash hit. A cold wind blows through London's opera house.
+4262	Premiere of Rameau's Hippolyte et Aricie
+4263	The first opera of the 50-year-old Rameau. The Lullistes frowned; the young audience went wild.
+4264	Farinelli heals the King of Spain with song
+4265	For the melancholy Philip V, the task of singing the same songs every night. It was the Queen's earnest wish.
+4266	The Burgtheater. A dangerously exhilarating opera in which servants outwit a count. There were so many encores that the Emperor later restricted them.
+4267	The fencing match at Carlton House
+4268	The violin virtuoso Saint-Georges shows his swordsmanship before the Prince of Wales. His opponent: the famous Chevalier d'Éon.
+4269	Premiere of Don Giovanni
+4270	The theatre in Prague. The overture was finished only the night before, at the Dušeks' villa.
+4271	Haydn in London
+4272	A concert of the impresario Salomon. The Esterházy Kapellmeister has crossed the sea for the first time.
+4273	Premiere of the Clarinet Concerto
+4274	The last concerto, which Mozart wrote for his friend Stadler.
+4275	Chopin's Paris debut
+4276	The Pleyel salon. Liszt and Mendelssohn are in the audience.
+4277	Premiere of Lucia di Lammermoor
+4278	The Teatro San Carlo. In the Mad Scene the audience held its breath.
+4279	Benefit concerts for the Danube flood
+4280	Learning of the flood in his native Hungary, Liszt gives benefit concerts in Vienna.
+4281	Premiere of Schubert's 'Great' Symphony
+4282	The score Schumann found in Vienna is given its first performance by Mendelssohn at the Gewandhaus.
+4283	Opening of the Bayreuth Festspielhaus
+4284	First complete performance of Der Ring des Nibelungen. An emperor, a king and musicians from all over the world gathered in a small town.
+4285	Brahms: Symphony No. 1, Vienna premiere
+4286	More than 20 years from first idea. The symphony called 'Beethoven's Tenth' reaches Vienna at last.
+4287	Premiere of Swan Lake
+4288	The Bolshoi Theatre. The ballet that would become the most famous in the world was only moderately received at the time.
+4289	Brahms: Violin Concerto, premiere
+4290	New Year's Day at the Gewandhaus. The soloist is his close friend Joachim; the conductor, Brahms himself.
+4291	Tchaikovsky: Violin Concerto, premiere
+4292	Soloist Brodsky, conductor Richter. The critic Hanslick savaged it as music that 'stinks'.

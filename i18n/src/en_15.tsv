@@ -1,0 +1,131 @@
+2945	 <b class="hs3">fatigued</b>
+2946	 <b class="busy">on engagement</b>
+2947	 <b class="busy">away</b>
+2948	<div class="ftabs"><button data-ufs="0" class="⟦0⟧">Touring party</button><button data-ufs="1" class="⟦1⟧">Engagement party</button></div>\n   <div class="card" style="font-size:12.5px">⟦2⟧</div>\n   ⟦3⟧\n   <div class="sec-t">Cures and workshop</div>\n   <div class="actions"><button class="btn" id="uSpa" ⟦4⟧>Take the waters at Baden-Baden<small>⟦5⟧</small></button>\n    <button class="btn" id="uDev" ⟦6⟧>Order from the instrument workshop<small>300 fr · an instrument of this era</small></button>\n    <button class="btn ⟦7⟧" id="uInv" ⟦8⟧>Invitation across Time<small>⟦9⟧</small></button>\n    <button class="btn" id="uStore">Instrument store<small>⟦10⟧ item(s)</small></button></div>\n   <div class="sec-t">All players (tap for details, belongings, awakening, a talk)</div>⟦11⟧
+2949	The party you take on tour. The first is the concertmaster (who never leaves the orchestra, even after collapsing). You can join it yourself. ⟦0⟧⟦1⟧
+2950	<br><b style="color:var(--gold2)">Historical ties: ⟦0⟧</b>⟦1⟧
+2951	<br>Chemistry: ⟦0⟧
+2952	The party you send on engagements. Players away on an engagement cannot appear in concerts either. ⟦0⟧
+2953	<br><b class="busy">On engagement: ⟦0⟧ (back in ⟦1⟧ month(s))</b>
+2954	<div class="mcx">⟦0⟧<button class="mini" data-urm="⟦1⟧">Remove</button></div>
+2955	<span class="flag">Leader</span>
+2956	<div class="mc empty" data-uslot="⟦0⟧">＋ Place</div>
+2957	Restore everyone's spirit in full (⟦0⟧ fr)
+2958	Everyone is well
+2959	⟦0⟧ in hand. Invite a musician from another era
+2960	Obtained by conquering a Door of Time
+2961	Cannot be changed during an engagement
+2962	Took the waters at Baden-Baden (⟦0⟧ fr).
+2963	Everyone's spirit was restored
+2964	From the workshop
+2965	What arrived was… just a music stand.
+2966	⟦0⟧ arrived from the instrument workshop.
+2967	Arrived from the workshop!
+2968	Instrument store
+2969	 · in use by ⟦0⟧
+2970	Defence
+2971	All
+2972	<div class="sc"><h3>Party ⟦0⟧, position ⟦1⟧</h3><div class="subt">Choose a player</div>\n   ⟦2⟧\n   <button class="btn" id="upx" style="width:100%;margin-top:8px">Back</button></div>
+2973	2
+2974	1
+2975	<div class="mcx"><span class="pmeta">Party ⟦0⟧</span></div>
+2976	Players on an engagement cannot be moved
+2977	Away at present
+2978	<div style="display:flex;gap:10px;align-items:center">⟦0⟧<div><b>⟦1⟧⟦2⟧</b><br><span class="pmeta">⟦3⟧ · Lv⟦4⟧⟦5⟧⟦6⟧⟦7⟧</span><br>\n   <span class="pmeta">Technique ⟦8⟧ Expression ⟦9⟧ Improvisation ⟦10⟧ Theory ⟦11⟧ · Defence ⟦12⟧</span><br><span class="pmeta">spirit ⟦13⟧/⟦14⟧</span></div></div>\n   ⟦15⟧\n   ⟦16⟧⟦17⟧\n   <div class="pmeta" style="margin-top:6px">Lv rises through concerts and tours; every 10 levels add +1 to all abilities. At Lv20 a player can be 'awakened' (all abilities +2, spirit +12, trait effect ×1.5).</div>
+2979	 (awakened)
+2980	 (fame Lv×3)
+2981	 (⟦0⟧ to next)
+2982	 · guest from ⟦0⟧⟦1⟧
+2983	 (in their prime)
+2984	<br>Historical rank <span style="color:⟦0⟧">⟦1⟧</span> (still young in this era)
+2985	 (a fake)
+2986	Awaken<small>⟦0⟧</small>
+2987	Unlocks at Lv20
+2988	⟦0⟧ has awakened to a new mastery of the art.
+2989	⟦0⟧ awakens
+2990	Awakened!
+2991	⟦0⟧ reaches a new plane
+2992	Talk<small>hear them out; satisfaction +2 (once a month)</small>
+2993	My strength is ⟦0⟧. One day I want to play at my very best in your orchestra.
+2994	Lately I feel as though the sound rings out by itself, apart from my hands.
+2995	Since I awakened I can sense even the audience's breathing.
+2996	What would my friends from the ⟦0⟧ say if they heard the music of this age?
+2997	…I am a little tired. Might you also think about my pay?
+2998	This orchestra is the best there is. I will follow it anywhere.
+2999	A talk with ⟦0⟧
+3000	♪ Hear a phrase
+3001	Baton
+3002	Pen and paper
+3003	Stage costume
+3004	Instrument
+3005	Bow
+3006	Accessory
+3007	Only items that fit this slot are shown.
+3008	Nothing fits. Get something from an instrument dealer or the workshop.
+3009	Remove
+3010	Invitation across Time
+3011	Choose whom to invite (8 candidates this month).<br>A guest musician appears at their <b>historical rank (the ★ and strength of their prime)</b>. They join without a signing fee, but draw a monthly salary.
+3012	<span style="display:inline-block;vertical-align:middle">⟦0⟧</span> ⟦1⟧<small><span style="color:⟦2⟧">⟦3⟧</span> ⟦4⟧ · ⟦5⟧⟦6⟧</small>
+3013	 · appears in their prime
+3014	Answering an Invitation across Time, ⟦1⟧ has come from the ⟦0⟧ as a guest!
+3015	⟦1⟧ crosses time from the ⟦0⟧ as a guest
+3016	Here, from across time!
+3017	The challenging orchestra
+3018	⟦0⟧ (leader of the ⟦1⟧ camp)
+3019	<div class="ftabs"><button data-ust="city" class="⟦0⟧">Tour</button><button data-ust="exp" class="⟦1⟧">Engagements</button><button data-ust="door" class="⟦2⟧" ⟦3⟧>Door of Time</button></div>
+3020	<div class="card pmeta">Send the engagement party out to earn funds (they return as the months pass). If the conditions are not met, the engagement fails.</div>\n    ⟦0⟧\n    ⟦1⟧
+3021	<div class="card"><b class="busy">On engagement: ⟦0⟧</b>   ⟦1⟧ month(s) left</div>
+3022	<div class="card"><b>⟦0⟧</b>   <span class="pmeta">⟦1⟧ month(s)</span><br><span class="pmeta">Conditions: ⟦2⟧ or more players⟦3⟧⟦4⟧</span><br><span class="pmeta">Reward: ⟦5⟧ fr⟦6⟧⟦7⟧</span>\n      <button class="btn" data-uex="⟦8⟧" style="width:100%;margin-top:4px" ⟦9⟧>Send the engagement party⟦10⟧</button></div>
+3023	 · including ⟦0⟧
+3024	 or
+3025	 · total Lv ⟦0⟧ or more
+3026	 · an instrument
+3027	 (conditions met)
+3028	<div class="card pmeta">A bout with musicians from beyond your era. Win and you obtain an 'Invitation across Time', which lets you invite a musician of another era into your orchestra (travel costs doubled, 1 month).</div>
+3029	Opens once the other three doors are conquered
+3030	Awaiting you: ⟦0⟧
+3031	 · conquered (can be replayed)
+3032	<div class="card"><div style="display:flex;gap:10px;align-items:center">⟦0⟧<div style="flex:1"><b>Concert tour of ⟦1⟧</b><br><span class="pmeta">Grand master: ⟦2⟧</span>\n    ⟦3⟧</div></div>\n    <div class="pmeta" style="margin-top:6px">Route: ⟦4⟧</div>\n    <div class="pmeta">City rank Lv⟦5⟧ · touring party strength ⟦6⟧</div>\n    ⟦7⟧\n    <button class="btn gold" id="uGo" style="width:100%;margin-top:6px" ⟦8⟧>Set out on tour<small>travel ⟦9⟧ fr · 1 month</small></button></div>\n   <div class="sec-t">Strongholds by city</div><div class="card" style="font-size:12.5px">⟦10⟧<span class="pmeta">A tour targets the city you are in. Move on the map first, then set out.</span></div>
+3033	<div class="gauge"><i style="width:⟦0⟧%"></i></div><span class="pmeta">Stronghold ⟦1⟧/⟦2⟧ (it crumbles each time you win an ovation on the grand master's stage; at 0 the city is yours)</span>
+3034	<br><span class="pmeta">A city you control. A tour here brings experience and income.</span>
+3035	<div class="pmeta" style="color:#f88">Players at the limit: ⟦0⟧</div>
+3036	<div>⟦0⟧: <b style="color:var(--gold2)">yours</b></div>
+3037	<div>⟦0⟧: stronghold ⟦1⟧/⟦2⟧⟦3⟧</div>
+3038	 (⟦0⟧ camp)
+3039	needs ⟦0⟧ or more players
+3040	needs ⟦0⟧
+3041	needs total Lv ⟦0⟧ or more
+3042	Tour ⟦0⟧
+3043	You set out with the touring party (⟦0⟧ players). Cost ⟦1⟧ fr. A month will have passed when you return. ⟦2⟧
+3044	<br><b style="color:#c22">At the limit: ⟦0⟧. Facing an onslaught on the road, they may leave the orchestra.</b>
+3045	Set out
+3046	Choose the members of the engagement party first
+3047	Send on an engagement
+3048	Engagement party (⟦0⟧) to '⟦1⟧'. Back in ⟦2⟧ month(s). ⟦3⟧
+3049	<br><b style="color:#c22">Conditions not met: ⟦0⟧ (as things stand it will fail)</b>
+3050	Send them off
+3051	On engagement
+3052	The engagement party left for '⟦0⟧'.
+3053	A bout with the musicians of the ⟦0⟧. Cost ⟦1⟧ fr, 1 month.
+3054	Open the door
+3055	Rehearsal
+3056	Tours
+3057	Tour: ⟦0⟧ is yours. <button class="mini" id="uGoTab">Go on tour</button>
+3058	This city's stronghold ⟦0⟧/⟦1⟧   <button class="mini" id="uGoTab">Prepare a tour</button><br><span class="pmeta">Besides persuasion and concert wars, you can also win a city by touring it with your orchestra.</span>
+3059	Setting out
+3060	Went on tour for the first time
+3061	A travelling orchestra
+3062	Conquered a city on tour
+3063	An orchestra on campaign
+3064	Conquered 3 cities on tour
+3065	Awakening
+3066	A player awakened
+3067	Maturity
+3068	A player reached Lv50
+3069	Invited a musician from another era
+3070	A pact with the Devil
+3071	Conquered [EX] Tartini's dream
+3072	History re-enacted
+3073	Formed a historical tie
+3074	How to play the Complete Edition
+3075	Travel, persuasion, duels and concerts are as before. Added to them are <b>tours on which you train and lead your orchestra</b>.\n <div class="sec-p">Rehearsal room</div>Choose up to six for the touring party (you may be one of them). The first is the concertmaster. Players grow from Lv1 to 99 and at Lv20 can be <b>awakened</b> (abilities and trait grow). Give each up to two <b>belongings</b> — instruments or tools (only ones that exist in that era). Gather companions from history and a <b>historical tie</b> is formed.\n <div class="sec-p">Tours</div>You play the venues of the city you are in, one night at a time. Each night you look at the audience and choose a playing style; the performance runs overture → first movement → second movement → encore. On the road between venues, things happen. Each ovation on the grand master's stage crumbles the <b>stronghold</b>; at 0 <b>the city is yours</b>. Musicians you meet may ask to join. <b>Force a player at the limit on stage and they will leave the orchestra.</b>\n <div class="sec-p">Engagements</div>Send the engagement party out on a job lasting some months to earn funds.\n <div class="sec-p">Door of Time</div>Opens once you hold 3 cities. Conquer it for an 'Invitation across Time', with which you can invite a musician of another era (Bach, Mahler and others) as a guest.

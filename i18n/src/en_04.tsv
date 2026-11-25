@@ -1,0 +1,156 @@
+786	Victory!
+787	Convinced ⟦0⟧ with sound
+788	Defeat
+789	Won the performance duel with ⟦0⟧ (⟦1⟧-⟦2⟧). ⟦3⟧ joined the orchestra.
+790	⟦0⟧<hr>⟦1⟧: '…You have beaten me. ⟦2⟧'<br><br>Joins as <b>⟦3⟧</b>. Fame +⟦4⟧
+791	Lost the performance duel with ⟦0⟧ (⟦1⟧-⟦2⟧).
+792	⟦0⟧<hr>⟦1⟧: 'Come back when you are ready.'<br><br>Stamina -20 / Rapport falls to -50. Raise your fame and try again.
+793	The Legendary Grand Concert
+794	Gave the legendary grand concert.
+795	 (solo)
+796	Prelude to Act I of Die Meistersinger von Nürnberg
+797	Symphony No. 1 in C minor, Op. 68: finale
+798	 · full orchestra
+799	<div class="sc" style="text-align:center"><div class="title" style="padding-top:10px"><div class="en">Gran Concerto</div><h1 class="logo" style="font-size:30px">The Legendary Grand Concert</h1><div class="staff"></div></div>\n   <div class="card" style="text-align:left"><div class="inst">⟦1|mon⟧ ⟦0⟧   ⟦2⟧</div>\n   <div class="sec-t">Programme</div><div class="prog">⟦3⟧</div>\n   <div class="sec-t">Orchestra</div><div style="font-size:13px">⟦4⟧</div></div>\n   <button class="btn gold" id="playAll" style="width:100%;margin:6px 0">♪ Hear the programme</button><button class="btn" id="endless" style="width:100%;margin:0 0 6px">Keep playing (endless mode)<small>No time limit. Aim for every city and fame Lv30</small></button>\n   <div class="card">Score <b style="font-size:22px">⟦5⟧</b><br><span style="font-size:12.5px;color:var(--mute)">Cities ⟦6⟧ · seats filled ⟦7⟧ · fame Lv⟦8⟧ · funds left ⟦9⟧ fr</span></div>\n   <button class="btn gold" id="rep" style="width:100%;margin-bottom:8px">📜 Read the orchestra's history</button><button class="btn" id="again" style="width:100%">Back to title</button></div>
+800	Endless mode
+801	The time limit is gone. Aim for every city, fame Lv30 and a clean sweep of the achievements.<br>When you want to draw a line, use 'Retire' on the Camps tab to write the orchestra's history.
+802	The story ends: ⟦0⟧
+803	<div class="sc" style="text-align:center"><div class="title"><h1 class="logo" style="font-size:30px">⟦0⟧</h1><div class="staff"></div></div>\n   <div class="card">⟦1⟧<br><br>Score <b style="font-size:22px">⟦2⟧</b></div><button class="btn gold" id="rep" style="width:100%;margin-bottom:8px">📜 Read the orchestra's history</button><button class="btn" id="again" style="width:100%">Back to title</button></div>
+804	Beginner
+805	Easy-going rivals, funds ×1.5, a 10-year limit. Win with 4 cities and 6 seats. Bigger names are readier to listen to you.
+806	Normal
+807	Standard. Win with 5 cities and 7 seats within 8 years. The more cities you hold, the harder the remaining ones resist.
+808	Hard
+809	Rivals grow 1.5× as fast and their leaders are one tier higher. Funds at 70%. Win with 6 cities and 7 seats.
+810	Very hard
+811	Rivals grow 2× as fast, leaders two tiers higher. Half funds, a 7-year limit. Win with 7 cities and 8 seats.
+812	Inferno
+813	Rivals grow 2.5× as fast, leaders three tiers higher, funds at 35%, a 6-year limit. Win with 8 cities and all 9 seats. The final boss is at full strength too.
+814	Violin
+815	Piano
+816	Singer
+817	Cello
+818	Double bass
+819	Flute
+820	Clarinet
+821	Bosom friends
+822	The creators of Norma
+823	A 20,000-franc friendship
+824	Romantic allies
+825	Rivals of Paris
+826	The bond of marriage
+827	Allies of K. 581
+828	The bond of the 'Haydn' Quartets
+829	Friends of the Bertramka
+830	The first Susanna
+831	Esterházy colleagues
+832	Mannheim friends
+833	Friends of F-A-E
+834	Lifelong friends
+835	Late inspiration
+836	Master and pupil
+837	Old friends
+838	Comrades of the Ring
+839	Father-in-law and son-in-law
+840	Adoration
+841	The first Valkyries
+842	Emperor of the cello
+843	The bond of the Rondo capriccioso
+844	Aida colleagues
+845	The autographed fan
+846	Conservatoire colleagues
+847	Italian elder and junior
+848	The Cosima affair
+849	Cat and dog
+850	Estrangement
+851	The Gluck–Piccinni quarrel
+852	Fated rivals
+853	Piano Concerto No. 20 in D minor, K. 466
+854	Concerto
+855	Solo piano
+856	Chamber
+857	First violin
+858	Le nozze di Figaro: highlights
+859	Opera
+860	Susanna
+861	Continuo
+862	Aria 'Per questa bella mano', K. 612
+863	Solo double bass
+864	Symphony
+865	'Dance of the Blessed Spirits' from Orfeo ed Euridice
+866	Solo flute
+867	Orfeo
+868	Sinfonia in the Mannheim manner
+869	Paisiello: Il barbiere di Siviglia
+870	Rosina
+871	Solo cello
+872	Premiere of a new sinfonia
+873	Premiere
+874	Paganini: Violin Concerto No. 1
+875	Solo violin
+876	Symphonie fantastique
+877	E-flat clarinet (witches' round dance)
+878	Flute (idée fixe)
+879	Chopin: Piano Concerto No. 2
+880	Beethoven: Symphony No. 5
+881	Beethoven: Triple Concerto
+882	Norma
+883	Flute (introduction)
+884	Orchestral
+885	Solo cello (the opening quintet)
+886	Lucia: the Mad Scene
+887	Lucia
+888	Flute obbligato
+889	An evening of waltzes
+890	Ball
+891	Conductor (from the keyboard)
+892	Solo clarinet
+893	Premiere of a new symphony
+894	Brahms: Symphony No. 1
+895	Flute (alphorn theme)
+896	Brahms: Violin Concerto
+897	Die Walküre, Act I
+898	Music drama
+899	Sieglinde
+900	Chamber orchestra
+901	Tchaikovsky: Piano Concerto No. 1
+902	Dvořák: Slavonic Dances
+903	Bruckner: Symphony No. 4 'Romantic'
+904	Saint-Saëns: Introduction et Rondo capriccioso
+905	Schumann: Piano Concerto
+906	Bottesini: Gran Duo
+907	'Dies irae' from Verdi's Requiem
+908	Sacred
+909	Soprano
+910	Solo recital: ⟦0⟧ and more
+911	Solo
+912	Solo (you)
+913	⟦0⟧ vacant (-6)
+914	the composer takes part (+6)
+915	the composer is present (+3)
+916	to the taste of ⟦0⟧ (×1.15)
+917	not to the taste of ⟦0⟧ (×0.85)
+918	<div class="sc"><h3>Choose the programme</h3><div class="subt">Programma — ⟦0⟧</div>\n   <div class="tell">This city's taste: <b style="color:⟦1⟧">⟦2⟧</b>   A piece to its taste scores ×1.15; a piece of the opposite school ×0.85.<br>If the composer is in your orchestra, their presence or participation raises the reception further.</div>\n   ⟦3⟧\n   <button class="btn" id="prCancel" style="width:100%;margin-top:6px">Cancel</button></div>
+919	 ·
+920	   Composer: ⟦0⟧
+921	   <span style="color:#e77">Needs ⟦0⟧ in the orchestra</span>
+922	<div class="sc"><h3>Set the line-up</h3><div class="subt">⟦0⟧</div>\n   <div class="card" style="text-align:center"><b style="font-size:16px">⟦1⟧</b><br><button class="btn" id="lis" style="padding:3px 12px;font-size:12px;margin-top:6px">♪ Preview</button></div>\n   ⟦2⟧\n   <div class="card"><div style="font-size:22px;color:var(--gold2);text-align:center;letter-spacing:.1em">⟦3⟧</div>\n     <div style="font-size:12.5px;color:#d8c9a8">⟦4⟧</div></div>\n   <div class="actions"><button class="btn gold" id="go">Curtain up!<small>⟦5⟧</small></button><button class="btn" id="chg">Change the programme</button></div>\n   <button class="btn" id="prCancel" style="width:100%;margin-top:8px">Cancel</button></div>
+923	<div class="pmeta">form ⟦0⟧ · Lv⟦1⟧ · strength in this piece <b style="color:var(--gold2)">⟦2⟧</b></div>
+924	<div class="pmeta">Candidates: ⟦0⟧</div>
+925	 · nothing of note
+926	You perform too (stamina -25)
+927	You direct as impresario (stamina -10)
+928	⟦0⟧   form ⟦1⟧   strength ⟦2⟧⟦3⟧
+929	<small>(moves from ⟦0⟧)</small>
+930	Leave vacant
+931	Back
+932	Choose: ⟦0⟧
+933	Choose from your players. Picking someone from another seat swaps the two.
+934	No one in your orchestra can take this seat (⟦0⟧). Persuade someone to join.
+935	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧</div>\n   <div class="stage"><svg viewBox="0 0 360 210" class="stbg"><rect width="360" height="210" fill="#1a0e0a"/>\n    <path d="M40,150 L320,150 L352,210 L8,210Z" fill="#5a3a22"/><path d="M40,150 L320,150" stroke="#8a6a3a" stroke-width="2"/>\n    ⟦2⟧\n    <path d="M14,210 L14,34 Q180,-12 346,34 L346,210" fill="none" stroke="#cfa84f" stroke-width="7"/>\n    <path d="M18,24 Q60,70 46,210 L18,210Z" fill="#8a1a22"/><path d="M342,24 Q300,70 314,210 L342,210Z" fill="#8a1a22"/>\n    <path d="M18,26 Q100,64 180,42 Q260,64 342,26 L342,14 L18,14Z" fill="#a01e28"/></svg>\n    <div class="spot"></div>⟦3⟧\n    ⟦4⟧\n   </div>\n   <div class="aud">⟦5⟧</div>\n   <div class="mlab" style="margin-top:8px"><span>Applause</span><span id="stx"></span></div><div class="applause"><i id="apl"></i></div></div>
+936	Cries of 'Money back!'
+937	A disappointing night
+938	A solid performance
+939	The audience went wild
+940	A night for the history books
+941	Jeers flew from the stalls, and more than a few left their seats early.

@@ -1,0 +1,247 @@
+1296	📋Report
+1297	🔍Scout
+1298	<div class="trivia hidden" id="tv_⟦0⟧">⟦1⟧<br><span style="color:var(--mute)">Signature piece: ⟦2⟧</span>⟦3⟧⟦4⟧</div>
+1299	<br><b>★Trait [⟦0⟧]</b>: ⟦1⟧
+1300	<br>Quirk [⟦0⟧]: ⟦1⟧
+1301	<div class="seat"><span class="r">⟦0⟧</span>⟦1⟧<span class="n">⟦2⟧⟦3⟧<br><span class="pmeta">form ⟦4⟧ · satisfaction ⟦5⟧ · ⟦6⟧ appearances<br>⟦7⟧ · potential ⟦8⟧ · growth ⟦9⟧⟦10⟧ · ⟦11⟧ fr/month</span><div class="qrow">⟦12⟧</div></span><span class="chip" style="--c:⟦13⟧">Lv⟦14⟧</span></div>
+1302	<div class="card"><div class="city-h"><h2>The ⟦0⟧ Orchestra<small>Orchestra</small></h2></div>\n    <div class="inst">Soloist: ⟦1⟧ (⟦2⟧)</div>\n    ⟦3⟧\n    ⟦4⟧\n    ⟦5⟧<div style="font-size:12px;color:var(--mute);margin-top:8px">★ marks a trait (active when performing or simply on the roster). When satisfaction ♥ falls, strength drops and the player talks of leaving. It falls with unpaid wages, a miser's grumbling and quarrels; it rises with fine performances and MVP awards.</div></div>\n    <div class="card" style="font-size:14px">\n      <div>Monthly income (cities and more): <b>+⟦6⟧ fr</b></div>\n      ⟦7⟧\n      <div>Monthly players' pay: <b>-⟦8⟧ fr</b></div>\n      <div style="margin-top:6px">Abilities: Technique ⟦9⟧ · Expression ⟦10⟧ · Improvisation ⟦11⟧ · Theory ⟦12⟧</div></div>
+1303	<div class="seat"><span class="r">⟦0⟧</span><span class="n empty">— vacant —</span></div>
+1304	<div>Income from players' traits: <b>+⟦0⟧ fr</b>   <span class="pmeta">⟦1⟧</span></div>
+1305	Early bloomer
+1306	Late bloomer
+1307	⟦0⟧ (all abilities +1)
+1308	[Early bloomer] ⟦0⟧ is beginning to decline (all abilities -1).
+1309	Perfect partners
+1310	Good chemistry
+1311	Bad chemistry
+1312	Neutral
+1313	⟦0⟧×⟦1⟧ ensemble Lv⟦2⟧
+1314	<div class="scout"><b>Scouting report</b><br>\n   Approaches that work: ⟦0⟧<br>\n   Growth type: <b>⟦1⟧</b>   Potential: ⟦2⟧<br>\n   Signing fee: <b>⟦3⟧ fr</b>   Salary asked: ⟦4⟧ fr/month<br>\n   Chemistry with your players: ⟦5⟧</div>
+1315	Nothing in particular
+1316	Scouting report: ⟦0⟧
+1317	Scout ⟦0⟧
+1318	⟦0⟧You attend a concert and learn their character and tastes, potential and contract terms.<br>Cost: 150 fr, stamina -5 (the month does not advance)
+1319	Scout
+1320	Poached ⟦1⟧ from the ⟦0⟧ camp!
+1321	Signed ⟦0⟧, who joined the orchestra (⟦1⟧ · ⟦2⟧ fr/month).
+1322	Contract signed!
+1323	⟦0⟧ joins as ⟦1⟧
+1324	⟦0⟧ joins
+1325	'⟦0⟧'<br><br>Joined the orchestra as <b>⟦1⟧</b>.<br>Signing fee ⟦2⟧ fr / salary ⟦3⟧ fr a month⟦4⟧
+1326	Contract talks with ⟦0⟧
+1327	⟦0⟧⟦1⟧ has been won over. Now it comes down to terms.<br><br>Signing fee: <b>⟦2⟧ fr</b><br>Salary: <b>⟦3⟧ fr a month</b>⟦4⟧<br><span class="pmeta">Your funds: ⟦5⟧ fr</span>
+1328	 (a miser, so on the high side)
+1329	Accept the terms
+1330	Haggle<small>An even gamble. Success: 30% off the fee and 20% off the salary. Failure: talks collapse</small>
+1331	Haggling with ⟦0⟧ ended in a breakdown.
+1332	Talks collapsed
+1333	⟦0⟧: 'I would ask you not to hold me so cheap.'
+1334	Not now<small>resume next time from rapport 60</small>
+1335	<div class="sec-t">Chemistry and ensemble</div>⟦0⟧
+1336	 · <b style="color:var(--gold2)">ensemble Lv⟦0⟧</b>
+1337	Hamburg
+1338	Oper am Gänsemarkt
+1339	Theatre director
+1340	The Hanseatic merchants
+1341	Rome
+1342	Palace of Cardinal Ottoboni
+1343	Cardinal Ottoboni
+1344	The cardinals
+1345	Iberia
+1346	The Iberian courts (Lisbon / Madrid)
+1347	The royal house
+1348	Princess Maria Barbara
+1349	New York
+1350	Metropolitan Opera
+1351	The millionaires of New York
+1352	Across the Atlantic. Three months by ship.
+1353	Colleagues since Cöthen
+1354	Godfather to C.P.E.
+1355	The star pairing (never short of quarrels)
+1356	A scuffle on stage
+1357	A duel with swords
+1358	'I'll hang you out of the window'
+1359	Dresden colleagues
+1360	The keyboard contest in Rome
+1361	Tweedledum and Tweedledee
+1362	Twin pillars of the court orchestra
+1363	The French keyboard school
+1364	The Casals Trio
+1365	The grudge of the 1905 competition
+1366	The Prix de Rome affair
+1367	Allies of La Scala
+1368	Rodolfo in La bohème
+1369	Moscow Conservatory classmates
+1370	Champion
+1371	Publisher and composer
+1372	A celebrated duo
+1373	Berlin allies
+1374	An awkward distance
+1375	Feud at the Met
+1376	Respect and envy
+1377	The Notebook
+1378	Satisfaction of the whole orchestra +2 every month
+1379	Viola da gamba
+1380	Publication by subscription
+1381	The critic's pen
+1382	Taught by Vivaldi himself
+1383	The violone's support
+1384	The French traverso
+1385	The new diva
+1386	Voice of an angel
+1387	Star castrato
+1388	Sweet melody
+1389	Taught by Corelli himself
+1390	The finest oboe of the age
+1391	The Devil's Trill
+1392	The Red Priest's protégée
+1393	The greatest castrato in history
+1394	Attendance +25% when performing
+1395	Great teacher of singing
+1396	Founder of the Neapolitan school
+1397	Treatise on harmony
+1398	Reception +3 when performing
+1399	Couperin le Grand
+1400	The left-handed flute
+1401	Gradus ad Parnassum
+1402	A guide to thoroughbass
+1403	Sacred reception +3 when performing
+1404	555 sonatas
+1405	Flute teacher to Frederick the Great
+1406	Mahler's favourite pupil
+1407	Symphony reception +3 when performing
+1408	Destroyer of tonality
+1409	Own strength +2; reception +2 when performing
+1410	Viennese miniatures
+1411	Wizard of the orchestra
+1412	Orchestral and ballet reception +4 when performing
+1413	Conservatoire director
+1414	Discoverer of the solo suites
+1415	Poetry at the piano
+1416	Sweet tone
+1417	Prince of the flute
+1418	Dedicatee of the Rhapsody
+1419	Record royalties
+1420	+400 fr every month
+1421	Peach Melba
+1422	Ticket prices ×1.4 when she performs
+1423	The sound of the British Empire
+1424	Orchestral reception +4 when performing / +2 in London
+1425	Superstar of the piano
+1426	Conducting like sorcery
+1427	A touch of steel
+1428	Great teacher
+1429	As written!
+1430	Melodies that bring tears
+1431	Opera reception +5 when performing
+1432	Hands that span a thirteenth
+1433	Colour keyboard
+1434	Wealth and a publishing house
+1435	Primal rhythm
+1436	Ballet reception +6 when performing
+1437	Symphonies of the North
+1438	Collecting folk songs
+1439	Reception in Pest +5
+1440	Harpsichord revival
+1441	Reception +4 when performing in a salon
+1442	The Belgian school
+1443	Other violins +3 when performing
+1444	Alessandro Scarlatti has died in Naples. He was the founder of the Neapolitan school.
+1445	Mahler has died in Vienna, aged 50.
+1446	Drillhaus
+1447	The Cardinal's salon
+1448	Teatro Capranica
+1449	The Princess's music room
+1450	Great hall of the royal palace
+1451	Theatre of the Buen Retiro
+1452	Millionaire's mansion
+1453	Carnegie Hall
+1454	Chapel of the Ospedale della Pietà
+1455	Teatro Sant'Angelo
+1456	St Mark's Basilica
+1457	Zimmermann's coffee house
+1458	Nikolaikirche
+1459	Thomaskirche
+1460	Hickford's Room
+1461	King's Theatre (Haymarket)
+1462	Court salon
+1463	Concert Spirituel (Tuileries)
+1464	Paris Opéra (Académie royale de musique)
+1465	Salon of the Princesse de Polignac
+1466	Salle Gaveau
+1467	Great hall of the court
+1468	Court theatre
+1469	Salon of Alma Mahler
+1470	Musikverein, Brahms-Saal
+1471	Vienna Court Opera
+1472	Bechstein Hall
+1473	Kapellmeister (music director)
+1474	Harpsichord soloist
+1475	Singer (diva or castrato)
+1476	Principal cello / gamba
+1477	Violone (continuo)
+1478	Principal traverso
+1479	Principal oboe
+1480	Lead singer
+1481	Harpsichord
+1482	Oboe
+1483	Traverso
+1484	Violone
+1485	Kapellmeister
+1486	Cello / gamba
+1487	Twilight of the Baroque
+1488	The Thomaskantor and the opera king
+1489	The year Bach became Thomaskantor in Leipzig. In London Handel stakes everything on Italian opera at the Royal Academy of Music, and in Venice the 'Red Priest' Vivaldi reigns.
+1490	Contrapuntists
+1491	French style
+1492	Italian style
+1493	Thomaskirche (town council)
+1494	Town council
+1495	Leipzig town council
+1496	Turned down by its first choice, Telemann, and its second, Graupner, the council appointed its third: Bach.
+1497	Royal Academy of Music (opera company)
+1498	Shareholders' meeting
+1499	King George I
+1500	An Italian opera company founded in 1719 with capital subscribed by the nobility.
+1501	The courtiers of Versailles
+1502	Ospedale della Pietà
+1503	Famous for its ensemble of orphaned girls. Vivaldi taught there for many years.
+1504	Teatro San Bartolomeo
+1505	Court orchestra of the Elector of Saxony
+1506	Elector Augustus the Strong
+1507	Augustus the Strong
+1508	A court orchestra praised as the finest in Europe. The city where the keyboard contest between Bach and Marchand was arranged in 1717.
+1509	Vienna court orchestra
+1510	Court Kapellmeister Fux
+1511	Emperor Charles VI
+1512	Prague Castle
+1513	Castle governor
+1514	The Bohemian nobility
+1515	In 1723 an opera by Fux was staged in the open air for the coronation of Charles VI.
+1516	The Prussian court
+1517	The Soldier King
+1518	Frederick William I, the Soldier King
+1519	The Soldier King disbanded the court orchestra the moment he took the throne. The music-loving prince (later Frederick the Great) is learning the flute in secret.
+1520	Teatro Regio Ducale
+1522	A giant of counterpoint and a master improviser. But the pay is poor, the children are many and costly, and he is forever at odds with the town council. With theory as your weapon, overturn the verdict of 'second-rate'.
+1523	A Silbermann organ (Improvisation +1 in duels)
+1524	Toccata and Fugue in D minor
+1525	Improvised six-part fugue
+1526	The Well-Tempered Clavier
+1527	In Dresden, Marchand ran away from a contest with me.
+1528	Seat me at an organ and I will make a fugue of any subject you give me.
+1530	King of Italian opera in London. He has funds and fame, but temperamental singers, soaring fees and the Beggar's Opera craze of 1728 lie in wait.
+1531	The King's pension (+300 every month)
+1532	Organ concerto (with improvisation)
+1533	'Lascia ch'io pianga' from Rinaldo
+1534	Water Music: Hornpipe
+1535	On a barge on the Thames, His Majesty asked for it three times over.
+1536	In Rome I competed with Scarlatti at the keyboard — and at the organ, I won.
+1537	Vivaldi
+1538	'Spring' from The Four Seasons
+1539	A violin virtuoso known as the 'Red Priest'. He gave asthma as his reason for not saying Mass. In 1725 he published a set of concertos that includes The Four Seasons.
+1540	Water Music
+1541	Born in 1685, the same year as Bach and barely 130 km away, yet the two never met in their lives.
+1543	Opera: Griselda
+1544	He shared the favour of London with Handel, and their rivalry was mocked as 'Tweedledum and Tweedledee'.
+1546	Notebook for Anna Magdalena Bach

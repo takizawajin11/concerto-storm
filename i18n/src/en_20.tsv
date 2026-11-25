@@ -1,0 +1,141 @@
+3895	⟦0⟧'s orchestra<br>
+3896	<div class="rp-sec">Historical ties</div><p class="rp-p">⟦0⟧</p>
+3897	<div class="rp-sec">Great performances</div>⟦0⟧
+3898	<div class="tl"><b>⟦0⟧</b><span>⟦1⟧ (⟦2⟧)<br><span style="color:#8a6420">⟦3⟧⟦4⟧</span>   Star: ⟦5⟧</span></div>
+3899	<div class="rp-sec">Achievements (⟦0⟧)</div><p class="rp-p">⟦1⟧</p>
+3900	The link to this history seems to be broken
+3901	ConcertoStorm_save_⟦0⟧.json
+3902	Confirm import
+3903	The save, Hall of Fame and achievements on this device will be replaced by the contents of the file.
+3904	Import
+3905	Imported
+3906	Cannot import
+3907	This does not seem to be a Concerto Storm save file.
+3908	Show this history<small>share as a link and an image · total score ⟦0⟧ '⟦1⟧'</small>
+3909	<b>Backup</b><br><span class="pmeta">Export your save, Hall of Fame and achievements to a file to move them to another device.</span><div class="actions" style="grid-template-columns:1fr 1fr;margin-top:6px"><button class="btn" id="shEx">Export</button><button class="btn" id="shIm">Import</button></div>
+3910	Show your orchestra now<small>share your progress as a link and an image</small>
+3911	⟦1|mon⟧ ⟦0⟧ (in progress)
+3912	As of ⟦1|mon⟧ ⟦0⟧, ⟦2⟧ is still on its journey: ⟦3⟧ players⟦4⟧⟦5⟧. ⟦6⟧
+3913	, based in ⟦0⟧
+3914	, with ⟦0⟧ (Lv⟦1⟧) as its star
+3915	The tie '⟦0⟧' holds the orchestra together.
+3916	1723 Baroque
+3917	1781 Classical
+3918	1832 Romantic
+3919	1876 Late Romantic
+3920	1905 New Century
+3921	\\(in progress\\)$
+3922	Add to Everyone's Orchestras<small>⟦0⟧</small>
+3923	Enter this history in the rankings
+3924	Enter as work in progress (overwritten once you clear the game)
+3925	Please enter a name
+3926	Sending…
+3927	Entered! Overall no. ⟦0⟧ of ⟦1⟧ orchestras<small>⟦2⟧</small>
+3928	Updated the record of the same orchestra
+3929	Now listed in Everyone's Orchestras
+3930	Wait a little and try again
+3931	Could not be entered (try again)
+3932	Could not connect (try again)
+3933	<div class="sc"><h3>Everyone's Orchestras</h3><div class="subt">Histories by other directors</div>\n   <div class="ftabs">⟦0⟧⟦1⟧⟦2⟧</div>\n   <div class="ftabs"><button data-rs="" class="⟦3⟧">All eras</button>⟦4⟧</div>\n   <div id="rkList"><div class="card pmeta" style="text-align:center">Loading…</div></div>\n   <div class="card pmeta">You can list your own orchestra with 'Show' on the history screen or the Chronicle tab. Inappropriate words cannot be used in names.</div>\n   <button class="btn" id="rkBack" style="width:100%;margin-top:6px">Back</button></div>
+3934	Overall ranking
+3935	Newest
+3936	My records
+3937	<div class="card pmeta">Could not load just now. Please open this again a little later.</div>
+3938	You have no records yet.
+3939	No records yet. Be the first orchestra.
+3940	No. ⟦0⟧
+3941	<div class="pmeta" style="margin:4px 0">⟦0⟧ orchestras⟦1⟧</div>
+3942	 (by total score)
+3943	 (newest first)
+3944	<button class="btn rkrow ⟦0⟧" data-ri="⟦1⟧"><span class="rkno">⟦2⟧</span>⟦3⟧<div style="flex:1;text-align:left"><b>⟦4⟧</b>⟦5⟧<br><span class="pmeta">⟦6⟧ · ⟦7⟧ · ⟦8⟧</span><br><span class="pmeta">⟦9⟧ · '⟦10⟧'</span></div><div style="text-align:right"><b style="font-size:17px">⟦11⟧</b><br><span class="pmeta">⟦12⟧</span></div></button>
+3945	<span class="kai" style="background:#557">in progress</span>
+3946	Back to Everyone's Orchestras
+3947	This record could not be loaded
+3948	Everyone's Orchestras<small>other directors' histories and rankings</small>
+3949	See Everyone's Orchestras<small>rankings and other directors' histories</small>
+3950	Transcendent technique
+3951	wears down confidence
+3952	Sing it through
+3953	wears down composure
+3954	Improvised riposte
+3955	both; turns back a counter-attack
+3956	Parody the theme
+3957	heavy blow to composure; has a cooldown
+3958	Smile at the audience
+3959	builds applause
+3960	Strike a grand pose
+3961	tells in the cadenza
+3962	Introduction: Maestoso
+3963	Adagio: the song movement
+3964	'Sing it through' shines
+3965	Scherzo: the playful movement
+3966	'Improvised riposte' and 'Parody' shine
+3967	Presto: the racing movement
+3968	'Transcendent technique' shines
+3969	Cadenza: solo
+3970	'Grand pose' shines
+3971	raises bow (or fingers)! A volley of transcendent technique is coming
+3972	⟦0⟧'s volley! Focus -⟦1⟧
+3973	gives a cold laugh…
+3974	A sneer! Your combo is broken (focus -⟦0⟧)
+3975	opens both arms to the audience!
+3976	The audience was stolen! Opponent's composure +⟦0⟧, applause -20
+3977	frowns and opens their mouth…
+3978	'That reading is wrong.' Your moves are half as effective for a while (focus -⟦0⟧)
+3979	Weak point
+3980	Their home ground
+3981	Movement
+3982	The same trick again… the audience is tiring of it
+3983	Riposte! You turn the opponent's attack to your own use
+3984	Riposte
+3985	Perfect!
+3986	Killer cadenza!
+3987	⟦0⟧ is in earnest now! The attacks come faster
+3988	⚠ ⟦0⟧ ⟦1⟧
+3989	⟦0⟧ foamed at the mouth and keeled over!
+3990	⟦0⟧, ⟦1⟧, surrendered!
+3991	lowering both hands from the keyboard
+3992	laying down the bow
+3993	Your focus broke… your fingers stopped
+3994	Won on points! ⟦0⟧ gave the verdict to you
+3995	Lost on points… ⟦0⟧ gave the verdict to your opponent
+3996	<b>Single combat</b>   ⟦0⟧<br><span class="pmeta">max combo ⟦1⟧ · damage dealt ⟦2⟧ · ripostes ⟦3⟧ · weak points hit ⟦4⟧</span>
+3997	You took too many attacks and your focus broke. When '⚠' appears, press 'Improvised riposte' to throw the attack back.
+3998	⟦0⟧ favours '⟦1⟧'. Strike with '⟦2⟧' and it is 1.4× as effective.
+3999	Too much reliance on '⟦0⟧'. Repeat the same trick and the audience tires of it and it weakens.
+4000	Each movement favours a different trick. Watch the movement name at the top and switch. When applause is full: 'Killer cadenza'.
+4001	On points, the opponent's remainder (confidence ⟦0⟧%, composure ⟦1⟧%) is compared with your remaining focus (⟦2⟧%).
+4002	<div class="anl"><b>⟦0⟧</b><br>Max combo ⟦1⟧ / weak points hit ⟦2⟧ / ripostes ⟦3⟧⟦4⟧⟦5⟧</div>
+4003	Why you won
+4004	Why you lost
+4005	 / most used: '⟦0⟧' ×⟦1⟧
+4006	<br><b>Advice for next time</b><br>
+4007	<div class="sc rt" id="rtWrap">\n   <div class="rt-top"><span id="rtTime">45</span><span id="rtPh">⟦0⟧</span></div>\n   <div class="rt-g"><label>Confidence</label><div class="rtbar"><i id="rtHp" class="hp"></i></div></div>\n   <div class="rt-g"><label>Composure</label><div class="rtbar"><i id="rtMp" class="mp"></i></div></div>\n   <div class="rt-stage"><div class="rt-you" id="rtYou">⟦1⟧</div><div class="rt-vs">VS</div>\n    <div class="rt-opp" id="rtOpp">⟦2⟧<div class="rt-face" id="rtFace"></div><div class="rt-name">⟦3⟧<br><span class="pmeta">Strength: ⟦4⟧ / weak point: ⟦5⟧</span></div></div></div>\n   <div class="rt-say" id="rtSay">With ⟦6⟧ looking on, the duel began!</div>\n   <div class="rt-btns">⟦7⟧</div>\n   <button class="btn rt-fin" id="rtFin" disabled>Killer cadenza<small id="rtCh">applause 0%</small></button>\n   <div class="rt-g"><label>Focus</label><div class="rtbar"><i id="rtFoc" class="foc"></i></div></div>\n   <div class="rt-c"><span>Combo <b id="rtCombo">0</b></span><span class="pmeta">While '⚠' shows, 'Improvised riposte' throws the attack back</span></div></div>
+4008	Applause is full! Now!
+4009	applause ⟦0⟧%
+4010	Form of the duel
+4011	Chosen piece: ⟦0⟧. Which form will you fight in?
+4012	Single combat<small>45 seconds of rapid tapping. Bring the opponent's confidence or composure to 0 for a knock-out</small>
+4013	Three movements<small>reading each other across Technique, Expression and Improvisation (the original form)</small>
+4014	<div class="pmeta" style="margin-top:4px">After choosing a piece you can pick <b>single combat</b> (win by rapid tapping) or <b>three movements</b> (win by reading your opponent).</div>
+4015	Soloist
+4016	Pfff!
+4017	That face!
+4018	What is that face?
+4019	Pfft!
+4020	Ahahahaha
+4021	Hee—!
+4022	Bwah
+4023	When I was young…
+4024	Too fast!
+4025	In the old days…
+4026	So you have come, ⟦0⟧. First, try giving a <b>concert</b> in this city. The programme you choose and whom you seat where decide the reception. <b>In a concerto, everything turns on the choice of soloist.</b>
+4027	Splendid. Next, <b>gather companions</b>. Approach a musician in this city with 'Persuade'. The knack is to find the approach that suits their taste.
+4028	When you have more players, go to the <b>rehearsal room</b>. There you choose who goes on tour and give them <b>instruments and bows</b>. Fine instruments can be had from dealers… but beware of fakes.
+4029	Once the party is chosen, go on <b>tour</b>. You play the venues one night at a time, and <b>each ovation on the grand master's stage crumbles the city's stronghold</b>. Bring it all the way down and the city is yours.
+4030	Now, set out. Every night, look at the audience and choose your playing style. <b>Force a player at the limit on stage and they will leave the orchestra.</b>
+4031	That is all the basics. From here, do as you please. Win cities, fill the seats, and aim for the legendary grand concert. Press the <b>ⓘ</b> beside fame or stamina for an explanation. …Oh, and do be very careful of the <b>odd players</b> you come across in town.
+4032	<div>⟦0⟧</div><div class="tb"><b>⟦1⟧</b>   <span style="font-size:11px;color:#8a6a3a">guide ⟦2⟧/⟦3⟧</span><br>⟦4⟧\n    <div class="tbn"><button id="tutX">End the guide</button>⟦5⟧</div></div>
+4033	Master
+4034	<button class="go" id="tutOk">I see</button>
+4035	<button class="go" id="tutGo">Go there</button>

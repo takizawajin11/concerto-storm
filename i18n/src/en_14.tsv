@@ -1,0 +1,195 @@
+2750	Conservatoire hall
+2751	Musikverein, Great Hall
+2752	Theater an der Wien
+2753	King's Theatre, Haymarket
+2754	Queen's Hall
+2755	Zimmermann's coffee house
+2756	Semperoper
+2757	Dresden court chapel
+2758	Festspielhaus
+2759	Hall of the Nobility
+2760	Court chapel
+2761	Sing-Akademie
+2762	Court Opera
+2763	Estates Theatre
+2764	Rudolfinum
+2765	Church of St James
+2766	Grand Theatre, Warsaw
+2767	Warsaw Philharmonic
+2768	Hall of Columns, House of the Nobility
+2769	Great Hall of the Moscow Conservatory
+2770	Teatro Argentina
+2771	Weimar court theatre
+2772	Pesti Vigadó
+2773	Royal Hungarian Opera
+2774	Buen Retiro Palace
+2775	A lady's salon
+2776	Banker's mansion
+2777	Soirée at a ducal house
+2778	Public music hall
+2779	Great room of the music society
+2780	Ballroom
+2781	Municipal theatre
+2782	Subscription concert of the concert society
+2783	University auditorium
+2784	Artists' café
+2785	Cathedral organ
+2786	Musicians' tavern
+2787	Open-air stage in the square
+2788	⟦1⟧, ⟦0⟧
+2789	Fervent students
+2790	Thrilled by improvisation. The Virtuoso style goes down well
+2791	Conservative courtiers
+2792	Dislike the unconventional. The Purist style goes down well
+2793	Discerning connoisseurs
+2794	Hear depth of expression. The Chamber style goes down well
+2795	A rowdy crowd
+2796	Heckling flies (onslaught +15%). Silence them with virtuosity
+2797	Critics in the house
+2798	Tough, but an ovation pays well (fee +30%)
+2799	The ladies
+2800	Song and sweet melody are favoured
+2801	A wheel came off the coach
+2802	Just before the pass the coach lurched to one side. The coachman says: 'Half a day and I can mend it.'
+2803	Wait for the repair<small>everyone's spirit -10%</small>
+2804	While waiting, the night dew chilled you all.
+2805	Shoulder the instruments and walk<small>players' satisfaction -5</small>
+2806	Grumbling, everyone walked to the next post town.
+2807	A village festival in a post town
+2808	In the square before the inn the villagers are dancing.
+2809	Join in and play<small>experience +, fame +3, spirit -5%</small>
+2810	The villagers danced late into the night, and the orchestra's name spread along the road.
+2811	Turn in early<small>spirit +15%</small>
+2812	Everyone slept soundly and looked the better for it.
+2813	An invitation from a countess
+2814	The countess of a nearby house begs for a piece at her soirée.
+2815	Call at the soirée<small>funds +, satisfaction +5, spirit -5%</small>
+2816	The countess was delighted and pressed a fee of ⟦0⟧ fr on you.
+2817	Decline politely and press on
+2818	The countess seemed a little disappointed.
+2819	Manuscripts in an old bookshop
+2820	In a bookshop on a street corner you found a dusty bundle of manuscript music. The owner will take 200 fr.
+2821	Buy<small>-200 fr</small>
+2822	Among them was a rare first edition! You obtained a 'First-edition score'.
+2823	Packed with melodies no one had ever seen. Everyone played through them all night (experience +).
+2824	The owner shrugged.
+2825	The pass in the rain
+2826	A downpour has turned the pass to mud. The long way round is safe, but you will arrive late.
+2827	Take the long way<small>satisfaction -3</small>
+2828	You arrived late. The audience was a little tired of waiting.
+2829	Push through<small>spirit -15%, attack +10% on the next stage</small>
+2830	You arrived soaked — but the audience, kept waiting, is on fire.
+2831	Highwaymen
+2832	In the forest you are surrounded by highwaymen! 'Your instruments or your money — leave one.'
+2833	Hand over money<small>- funds</small>
+2834	You handed over ⟦0⟧ fr and were let through.
+2835	Protect the instruments and run<small>someone's spirit -25%</small>
+2836	⟦0⟧ fell clutching an instrument and was badly worn down.
+2837	The same inn as a rival orchestra
+2838	The rival orchestra's people are in the inn's dining room, glancing your way.
+2839	Challenge them to an improvisation contest in the taproom<small>fame + if you win</small>
+2840	Your improvisation had the whole room on its feet! Fame +8.
+2841	They were a cut above. Everyone withdrew to their rooms, chagrined.
+2842	Ignore them
+2843	You finished supper quietly.
+2844	A young would-be pupil
+2845	A young person with an instrument came to the inn: 'Just one lesson, I beg you.'
+2846	Have the concertmaster give a lesson<small>concertmaster: experience +, spirit -5%</small>
+2847	In teaching, ⟦0⟧ took a fresh look at their own playing.
+2848	Decline courteously
+2849	'One day, without fail,' said the youngster, and left.
+2850	On the road: ⟦0⟧
+2851	Travel on
+2852	I have come across time to be here.
+2853	Let me play to my heart's content in your orchestra.
+2854	Tired
+2855	Worn
+2856	At the limit
+2857	<br>Brought back <b>⟦0⟧</b> as a souvenir.
+2858	Touring engagement '⟦0⟧': ⟦1⟧. Income ⟦2⟧ fr.
+2859	a great success
+2860	a success
+2861	Touring engagement: a great success!
+2862	Touring engagement: success
+2863	The touring party has returned from '⟦0⟧'.<br>Income <b>⟦1⟧ fr</b>⟦2⟧⟦3⟧
+2864	 · fame +⟦0⟧
+2865	The touring engagement '⟦0⟧' ended in failure.
+2866	Touring engagement: failure
+2867	The conditions were not met: ⟦0⟧<br>They brought back only a token fee (50 fr).
+2868	A favourite piece
+2869	Kapellmeister of the challenging orchestra
+2870	A stern jury
+2871	The door to ⟦0⟧
+2872	The Devil
+2873	[EX] Tartini's dream
+2874	⟦0⟧ is out of temper and will not play!
+2875	⟦0⟧ hit a wrong note
+2876	A perfect note!
+2877	Performance
+2878	Overture
+2879	The overture strikes first
+2880	Encore
+2881	A fiery encore
+2882	<div class="sc battle"><h3>⟦0⟧</h3><div class="subt">On stage in ⟦1⟧ · ⟦2⟧⟦3⟧⟦4⟧</div>\n   ⟦5⟧\n   <div class="side-e">⟦6⟧</div>\n   <div class="bphase" id="bph">Curtain up</div>\n   <div class="side-u">⟦7⟧</div>\n   <div class="blog" id="blog"></div><button class="btn" id="bskip" style="width:100%;margin-top:6px">Fast forward</button></div>
+2883	 · ⟦0⟧
+2884	 · ensemble +⟦0⟧%
+2885	<div class="tell" style="padding:4px">Historical ties: ⟦0⟧</div>
+2886	Historical tie [⟦0⟧]
+2887	Ensemble +⟦0⟧%
+2888	 → <b>⟦1⟧</b> to ⟦0⟧⟦2⟧
+2889	 (won over!)
+2890	<div class="eh">⟦0⟧'s ⟦1⟧ → <b>⟦3⟧</b> to ⟦2⟧⟦4⟧</div>
+2891	<b style="color:#f66"> (collapsed…)</b>
+2892	<div class="eh">⟦0⟧ presses… ⟦1⟧ is unmoved</div>
+2893	Answer the call for an encore?
+2894	You have not yet fully won the audience (⟦0⟧ remaining).<br>An encore lets you press on, but the onslaught you face grows fiercer too (worn-out players sit it out).
+2895	Bring down the curtain
+2896	⟦0⟧, ⟦1⟧, left the orchestra.
+2897	⟦0⟧ leaves the orchestra after a punishing tour
+2898	made to go on stage at the limit
+2899	<b style="color:var(--gold2)">Door of Time conquered!</b><br>You obtained an 'Invitation across Time' (⟦0⟧ in hand).
+2900	Conquered the Door of Time '⟦0⟧'
+2901	<b style="color:var(--gold2)">⟦0⟧ conquered!</b><br>⟦1⟧ is now under your control.
+2902	Conquered ⟦0⟧ on tour⟦1⟧.
+2903	 (seized from a rival camp)
+2904	Conquered ⟦0⟧ on tour
+2905	The stronghold of ⟦0⟧ is shaken. Gauge remaining ⟦1⟧/⟦2⟧
+2906	Frenzy!
+2907	Star of the night: ⟦0⟧
+2908	Welcome ⟦0⟧<small>signing fee halved: ⟦1⟧ fr · ⟦2⟧ fr/month</small>
+2909	⟦0⟧ joined the orchestra in the course of the tour.
+2910	Joined on the road!
+2911	Tonight's reception
+2912	<div class="rank r⟦0⟧">⟦1⟧</div>\n    <div style="display:flex;align-items:center;gap:8px;justify-content:center">⟦2⟧<span>Star of the night<br><b>⟦3⟧</b><br><span style="font-size:12px">emotion stirred ⟦4⟧</span></span></div>\n    ⟦5⟧<p style="font-size:12.5px">⟦6⟧Fame +⟦7⟧⟦8⟧</p>\n    ⟦9⟧\n    ⟦10⟧\n    ⟦11⟧\n    ⟦12⟧
+2913	Takings +⟦0⟧ fr ·
+2914	<br>Level up: ⟦0⟧
+2915	<p style="color:#a22"><b>⟦0⟧</b> was made to go on stage at the limit, and left the orchestra…</p>
+2916	<p>Obtained <b>⟦0⟧</b> on the road!⟦1⟧</p>
+2917	<p>⟦0⟧<b>⟦1⟧</b> has offered: 'I should like to play in your orchestra.'</p>
+2918	<p style="color:#a22"><b>At the limit: ⟦0⟧</b><br>If you go on to the next city and they face another onslaught, they may leave the orchestra (and never return).</p>
+2919	Return home
+2920	On to the next city
+2921	Cut it short and go home
+2922	Concert tour
+2923	To the next stage
+2924	End the tour and return home.
+2925	⟦0⟧Go on, or turn back?
+2926	<b style="color:#a22">At the limit: ⟦0⟧</b><br>
+2927	The touring party is empty
+2928	Not enough for the travel costs
+2929	The grand master's stage:
+2930	Night ⟦0⟧:
+2931	⟦0⟧ · on stage in ⟦1⟧⟦2⟧
+2932	 (the coachman took the ⟦0⟧ road)
+2933	right
+2934	left
+2935	anyone
+2936	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧</div>\n   <div class="card" style="text-align:center">⟦2⟧<br><span class="pmeta">⟦3⟧</span></div>\n   ⟦4⟧\n   <div class="tell">Choose a playing style<br><span class="pmeta">On this stage ⟦5⟧ tend to shine</span></div>\n   <div class="cards3"><button class="pc" data-sty="0"><span class="ic">⚖</span>Purist<small>attack and defence in balance</small></button><button class="pc" data-sty="1"><span class="ic">⚡</span>Virtuoso<small>attack +20%<br>defence -20%</small></button><button class="pc" data-sty="2"><span class="ic">❦</span>Chamber<small>defence +25%<br>evasion ↑, attack -10%</small></button></div></div>
+2937	<div class="card" style="font-size:12.5px"><b>Tonight's audience: ⟦0⟧</b><br><span class="pmeta">⟦1⟧</span></div>
+2938	Enter the grand master
+2939	The musicians of ⟦0⟧ await you
+2940	<div class="mc r⟦0⟧ ⟦1⟧" ⟦2⟧><div class="mcp">⟦3⟧⟦4⟧</div>\n   <div class="mci"><div class="mcn">⟦5⟧⟦6⟧⟦7⟧ <span class="pmeta">Lv⟦8⟧</span></div>\n   <div class="pmeta">⟦9⟧ · <span style="color:⟦10⟧">⟦11⟧</span>⟦12⟧</div>\n   <div class="hpb"><i class="h⟦13⟧" style="width:⟦14⟧%"></i></div>\n   <div class="pmeta">spirit ⟦15⟧/⟦16⟧ ⟦17⟧ ⟦18⟧⟦19⟧⟦20⟧</div></div>⟦21⟧</div>
+2941	<span class="kai">Awakened</span>
+2942	<span class="kai" style="background:#6a4bd0">Guest</span>
+2943	stamina ⟦0⟧
+2944	satisfaction ⟦0⟧

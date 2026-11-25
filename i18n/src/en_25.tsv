@@ -1,0 +1,153 @@
+4889	Three brothers: violin, viola, cello.
+4890	One fewer than a quartet. That is why each voice is heard so clearly.
+4891	Now, the Mozart Divertimento.
+4892	Trio Pasquier: Mozart, Divertimento, K. 563
+4893	Father and sons
+4894	The Door of Time set a father in his youth and his sons in their maturity in the same rehearsal room.
+4895	The sons of Pierre Pasquier — Bruno the violist and Régis the violinist — took up the name of their father's trio.
+4896	You two look older than I do.
+4897	Father, the way I hold the viola — I have been copying you all my life.
+4898	Father, tonight let us play a sextet, with both trios.
+4899	Mademoiselle's lesson
+4900	The woman called the greatest music teacher of the 20th century, and a violinist of Paris.
+4901	Nadia Boulanger was called 'the greatest music teacher of the 20th century' and trained countless fine musicians, composers and performers alike. Her pupils called her, with respect, 'Mademoiselle'.
+4902	Régis, there is no hesitation in your sound. But listen to the harmony once more.
+4903	Yes, Mademoiselle.
+4904	Music lies between discipline and freedom.
+4905	24 Caprices
+4906	The Devil who wrote the Caprices, and the French virtuoso who recorded them.
+4907	Régis Pasquier has recorded all of Paganini's 24 Caprices.
+4908	I hear you have played all my Caprices.
+4909	I have. Though I did not sell my soul to the Devil.
+4910	Ha ha ha! Then it is all the more splendid.
+4911	Mozart has died in Vienna, aged 35. The Requiem was left unfinished.
+4912	Paganini has died in Nice, aged 57. The Devil's bow has fallen silent at last.
+4913	A. Scarlatti: the last opera that never was
+4914	Alessandro Scarlatti, father of the Neapolitan school, wrote more than 100 operas and died in 1725.
+4915	Marais: Pièces de viole, Book 6
+4916	Marin Marais published five books of pieces for the viol. A sixth does not exist in this world.
+4917	Gluck: the opera that never was, Hermannsschlacht
+4918	In his last years Gluck long planned a Hermannsschlacht on Klopstock's poetry, but no score survives.
+4919	Mozart: Requiem, completed by the composer himself
+4920	Mozart died at 35 with the Requiem unfinished; his pupil Süssmayr completed it.
+4921	Bellini: the next opera that never was
+4922	Bellini died at 33, eight months after the premiere of I puritani.
+4923	The arias for Malibran that never were
+4924	Mezzo-soprano
+4925	The diva Maria Malibran died at 28 of injuries from a riding accident.
+4926	Field: the nocturnes that never were (new works)
+4927	It was the Irish-born Field who created the genre of the nocturne. Chopin inherited the style.
+4928	Hummel: the piano concerto that never was
+4929	Hummel, a pupil of Mozart, was a pianist ranked alongside Beethoven.
+4930	Paganini: the Violin Concerto No. 7 that never was
+4931	Paganini's violin concertos are known up to No. 6.
+4932	Mussorgsky: Khovanshchina, completed by the composer himself
+4933	Bass
+4934	Mussorgsky died at 42 with Khovanshchina unfinished; Rimsky-Korsakov completed it.
+4935	N. Rubinstein's farewell concert that never was
+4936	Nikolai Rubinstein, founder of the Moscow Conservatory, died in 1881 in Paris, where he had gone for his health.
+4937	Wagner: the symphony that never was
+4938	Wagner tuba
+4939	In his last years Wagner said he wished to write symphonies from then on, but he died in Venice in 1883.
+4940	Smetana: the symphonic poem that never was
+4941	Even after losing his hearing, Smetana completed the cycle of symphonic poems Má vlast.
+4942	Rimsky-Korsakov: The Golden Cockerel, premiered by the composer himself
+4943	Percussion
+4944	His last opera, The Golden Cockerel, was held up by the censor, and its premiere came the year after the composer's death.
+4945	Karłowicz: the Violin Concerto No. 2 that never was
+4946	The Polish composer Karłowicz died at 32 in an avalanche in the Tatra mountains.
+4947	Mahler: Symphony No. 10 (completed by the composer himself)
+4948	Viola (the opening monologue)
+4949	Mahler died at 50 with his Tenth Symphony unfinished.
+4950	You have already called the doctor this month
+4951	Not enough money (⟦0⟧ fr)
+4952	Called an eminent doctor for ⟦0⟧ (⟦1⟧ fr).
+4953	Already resting this month
+4954	Gave ⟦0⟧ this month to rest. No touring.
+4955	Book of Fate
+4956	<div class="pmeta" style="margin-bottom:6px">In history these people die before long. Take them into your orchestra, call an eminent doctor, let them rest and keep them in good spirits, and they may survive the night of fate. Those who do leave a 'masterpiece that never was', unknown to history.</div>
+4957	<div class="fbk⟦0⟧"><div>⟦1⟧</div><div style="flex:1"><b>⟦2⟧</b>   <span class="pmeta">Death in history: ⟦4|mon⟧ ⟦3⟧ (in ⟦5⟧⟦6⟧ mo.)</span>\n        <div class="fbar"><i style="width:⟦7⟧%"></i><span>chance of overcoming fate ⟦8⟧</span></div>\n        ⟦9⟧\n        <div class="pmeta">If saved: ⟦10⟧</div></div></div>
+4958	 yr
+4959	—— (cannot be saved unless in your orchestra)
+4960	<div class="fbt"><button class="btn" data-fdoc="⟦0⟧">Call an eminent doctor</button><button class="btn" data-frest="⟦1⟧">Rest this month</button></div>
+4961	<div class="pmeta">No fate is pressing at present.</div>
+4962	<div class="sec-t">Fates overcome</div>⟦0⟧
+4963	The footsteps of fate
+4964	⟦0⟧In history, <b>⟦1⟧</b> dies in ⟦3|mon⟧ ⟦2⟧: <b>⟦4⟧ month(s) from now</b>.<br><br>Chance at present: <b>⟦5⟧%</b><br><span class="pmeta">From the 'Book of Fate' on the map you can call a doctor or order rest.</span>
+4965	Open the Book of Fate
+4966	The night of fate
+4967	⟦0⟧⟦2|mon⟧ ⟦1⟧. The night that history records has come.<br>The whole orchestra holds its breath at the bedside of ⟦3⟧.<br><br><span class="pmeta">Chance of overcoming fate: ⟦4⟧%</span>
+4968	Wait for the dawn
+4969	History changed!
+4970	⟦0⟧ survives the night of fate
+4971	History changed: ⟦0⟧ survived the night of fate.
+4972	History changed: ⟦0⟧ lives
+4973	History changed
+4974	⟦0⟧Day broke. <b>⟦1⟧</b> opened their eyes and murmured: 'I have a piece half written.'<br><br><div class="dreamf">⟦2⟧</div><div class="dreamr"> · The masterpiece that never was, '⟦3⟧', can now be chosen for concerts⟦4⟧</div>
+4975	<br> · ⟦0⟧: all abilities +2
+4976	Everything was done for ⟦0⟧, but fate did not change.
+4977	[Never was] ⟦0⟧
+4978	a masterpiece that never was, played by the one who overcame fate
+4979	Score ★4 or better in a concert
+4980	Score ★5 (a night for the history books) in a concert
+4981	Win an ovation or better on tour
+4982	Welcome one new player
+4983	Perform a concerto
+4984	Perform a sacred work or a cantata
+4985	Give a concert in a city you control
+4986	Give a concert in a city you do not yet control
+4987	Perform a symphony or a music drama
+4988	Win a single combat
+4989	Task done: ⟦0⟧ (+⟦1⟧ fr)
+4990	All three of this month's tasks done (⟦0⟧ month(s) running)
+4991	All of this month's tasks done!
+4992	<div class="headline">⟦0⟧ month(s) running</div>Bonus +⟦1⟧ fr, fame +⟦2⟧<br><span class="pmeta">The longer the run, the bigger the bonus (greatest at 5 months running).</span>
+4993	You missed this month's tasks, and a run of ⟦0⟧ month(s) is broken.
+4994	<div class="card3"><div class="cfront r⟦0⟧"><div class="cst">⟦1⟧</div><div class="cpt">⟦2⟧</div><div class="cnm">⟦3⟧</div><div class="cin">⟦4⟧ · ⟦5⟧</div>⟦6⟧<div class="cqt">'⟦7⟧'</div><div class="cno">Musicians' album ⟦8⟧/⟦9⟧</div></div></div><div class="ctap">Tap to close</div>
+4995	<div class="csg">Showpiece [⟦0⟧]</div>
+4996	Musicians' album (⟦0⟧/⟦1⟧)
+4997	<div class="pmeta">Musicians you have welcomed into your orchestra appear here. Everything collected across games in every era is combined.</div>
+4998	<div class="pmeta">Musicians not yet met: ⟦0⟧</div>
+4999	<div class="odai"><b>This month's tasks</b>⟦0⟧⟦1⟧</div>
+5000	<span class="streak">🔥⟦0⟧ mo. running</span>
+5001	 <small>(hard)</small>
+5002	<button class="btn fatebtn" id="fateBtn">⏳ Book of Fate<small>⟦0⟧</small></button>
+5003	⟦0⟧ in your orchestra: the death recorded by history draws near
+5004	fate closes in on ⟦0⟧
+5005	<button class="btn zkbtn" id="zkBtn">Musicians' album<small>⟦0⟧/⟦1⟧</small></button>
+5006	<b>History changed</b>: ⟦0⟧ survived the night of fate and left '⟦1⟧'.
+5007	Defier of fate
+5008	Demon of the tasks
+5009	Chopin has died in Paris, aged 39. Mozart's Requiem was sung at his funeral.
+5010	Chopin: the Piano Concerto No. 3 that never was
+5011	Chopin's only piano concertos are the two he wrote around the age of 20. In his last years he had also begun a piano method for his pupils.
+5012	Save Chopin from consumption
+5013	As his old friend Liszt, stay by him through his last two years.
+5014	Paris, January 1848. Chopin is 37, his body eaten away by tuberculosis. In history he dies on 17 October 1849. As his friend, will you stop the journeys that earn him money, or urge him on?
+5015	<b>Paris, January 1848.</b><br>You are Liszt. Chopin, your friend since youth, has parted from George Sand, and his cough will not stop.<br>In history he dies on <b>17 October 1849</b>.<br><br>Concerts and journeys fill his purse and his fame but eat away his body. Call an eminent doctor, find a house with good air, and bring him through the night of fate.
+5016	The last recital at the Salle Pleyel
+5017	His first public concert in six years. The tickets sold out within days. But Chopin can barely climb the stairs.
+5018	Let him go on stage<small>+800 fr, fame +20, chance ↓</small>
+5019	Chopin's last recital in Paris
+5020	Have him pass<small>chance ↑</small>
+5021	An invitation from Scotland
+5022	Revolution has Paris in turmoil. His pupil Jane Stirling is pressing a concert tour of England and Scotland on him. Damp, cold country.
+5023	Let him travel<small>+1,500 fr, fame +25, chance ↓↓</small>
+5024	Chopin crossed the sea. In London he even played before the Queen, but the cold mists of Scotland told on his body.
+5025	Keep him in Paris<small>chance ↑</small>
+5026	A benefit concert for Polish exiles
+5027	The Guildhall in London. Chopin says he wants to appear on a stage for the exiles of his homeland.
+5028	Let him appear<small>fame +15, chance ↓</small>
+5029	Stop him<small>chance ↑</small>
+5030	The house at Chaillot
+5031	On the heights outside Paris, overlooking the Seine, rooms with good air have been found. The rent is high.
+5032	Rent them for him<small>-900 fr, chance ↑↑</small>
+5033	Not enough money…
+5034	Chopin moved to the house at Chaillot.
+5035	His sister Ludwika arrives
+5036	His sister Ludwika has hurried all the way from Warsaw. For the first time in a long while a smile came to Chopin's face.
+5037	Leave brother and sister their time
+5038	The last work
+5039	On his sickbed Chopin gazes at the score of a half-written mazurka. 'Burn it,' he murmurs.
+5040	Keep the score safe<small>fame +10 (it will be finished if he overcomes fate)</small>
+5041	Do as he says

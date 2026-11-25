@@ -1,0 +1,109 @@
+2261	(joined the orchestra|Signed |ook control of|seized|Repelled|Lost .* to the|Surrendered|Obituary|inal showdown|collapse|left the orchestra|moved to the|oached|Won the performance duel|verturn|at court|before the Emperor|by command|reviv|Fame rose to Lv)
+2262	Unfinished
+2263	The ⟦0⟧ Orchestra
+2264	In ⟦1|mon⟧ ⟦0⟧, ⟦2⟧ brought off the legendary grand concert.
+2265	In ⟦1|mon⟧ ⟦0⟧, the story of ⟦2⟧ ended with '⟦3⟧'. ⟦4⟧
+2266	The orchestra made ⟦0⟧ its base.
+2267	The face of the orchestra was ⟦0⟧, named MVP ⟦1⟧ time(s).
+2268	The perfectly matched playing of ⟦0⟧ and ⟦1⟧ was long spoken of as a 'legendary partnership' (ensemble Lv⟦2⟧).
+2269	It gave ⟦0⟧ concert(s), and ticket sales came to ⟦1⟧ francs in all.
+2270	⟦0⟧: ⟦1⟧
+2271	⟦1|mon⟧ ⟦0⟧ – ⟦3|mon⟧ ⟦2⟧
+2272	A History of ⟦0⟧
+2273	Ending: ⟦0⟧ (score ⟦1⟧, difficulty ⟦2⟧)
+2274	■ Afterwards
+2275	■ Chronicle
+2276	■ The players
+2277	⟦0⟧ (⟦1⟧): ⟦2⟧ appearances, MVP ×⟦3⟧⟦4⟧⟦5⟧⟦6⟧
+2278	 · growth ⟦0⟧⟦1⟧
+2279	 · perfect partner: ⟦0⟧ (ensemble Lv⟦1⟧)
+2280	 · died in service
+2281	 · left
+2282	■ Great performances
+2283	<p>No record</p>
+2284	<div class="sc report">\n   <div class="rp-cover"><div class="en">Historia Orchestrae</div><h1>A History of ⟦0⟧</h1><div class="rp-sub">⟦1⟧<br>⟦2⟧</div>\n    <div style="margin:10px auto;width:fit-content">⟦3⟧</div>\n    <div class="rp-res ⟦4⟧">⟦5⟧</div><div class="rp-sub">Score ⟦6⟧   Difficulty ⟦7⟧   Final fame Lv⟦8⟧</div></div>\n   <div class="rp-sec">Afterwards</div><p class="rp-p">⟦9⟧</p>⟦10⟧\n   <div class="rp-sec">The players</div>\n   ⟦11⟧\n   <div class="rp-sec">Great performances</div>\n   ⟦12⟧\n   <div class="rp-p">Concerts: ⟦13⟧ / total ticket sales ⟦14⟧ fr / final funds ⟦15⟧ fr⟦16⟧</div>\n   <div class="rp-sec">Chronicle</div>⟦17⟧\n   <div class="rp-p rp-note">⟦18⟧</div>\n   <button class="btn gold" id="rpCopy" style="width:100%;margin:6px 0">Copy the text</button>\n   <textarea id="rpTxt" class="hidden" readonly></textarea>\n   ⟦19⟧\n   <button class="btn" id="rpBack" style="width:100%">⟦20⟧</button></div>
+2285	<p class="rp-p rp-note">[History] ⟦0⟧</p>
+2286	<div class="rp-m">⟦0⟧<div><b>⟦1⟧</b> <span class="pmeta">⟦2⟧⟦3⟧</span><br><span class="pmeta">⟦4⟧ appearances · MVP ×⟦5⟧⟦6⟧⟦7⟧⟦8⟧</span></div></div>
+2287	 · ★⟦0⟧
+2288	 · left along the way
+2289	<p class="rp-p">The orchestra had no players.</p>
+2290	<p class="rp-p">There is no record of any concert.</p>
+2291	<br>Cities held: ⟦0⟧
+2292	This record entered the Hall of Fame on ⟦0⟧.
+2293	This history has been saved to the Hall of Fame on this device. You can reread it at any time from the title screen.
+2294	<button class="btn" id="rpDel" style="width:100%;margin-bottom:6px">Remove this record from the Hall of Fame</button>
+2295	Back to the Hall of Fame
+2296	Back to title
+2297	History copied
+2298	Delete record
+2299	'A History of ⟦0⟧' (⟦1⟧) will be removed from the Hall of Fame. This cannot be undone.
+2300	Delete
+2301	Press and hold in the box below to copy
+2302	<div class="sc"><h3>Hall of Fame</h3><div class="subt">Hall of Fame</div>\n   ⟦0⟧\n   <button class="btn" id="hofBack" style="width:100%;margin-top:6px">Back to title</button></div>
+2303	<button class="btn hof" data-r="⟦0⟧"><div><b>A History of ⟦1⟧</b><br><span class="pmeta">⟦2⟧ · ⟦3⟧</span><br><span style="color:⟦4⟧">⟦5⟧</span>   <span class="pmeta">score ⟦6⟧ · ⟦7⟧ · ⟦8⟧</span></div></button>
+2304	<div class="card" style="color:var(--mute)">No records yet. Play a game through to the end and its history will be kept here.</div>
+2305	Ability
+2306	Chosen piece
+2307	Instrument
+2308	Second ⟦0⟧
+2309	No instrument
+2310	Strength
+2311	Gap in rank
+2312	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧⟦2⟧</div>\n    <div class="score"><div>⟦3⟧<span>⟦4⟧</span></div><div style="color:var(--mute)">:</div><div>⟦5⟧<span>⟦6⟧</span></div></div>\n    <div class="tell">⟦7⟧: ⟦8⟧<br><span class="pmeta">The hint is true 7 times in 10. If it points to '⟦9⟧', '⟦10⟧' has the edge.</span></div>\n    <div class="card" style="font-size:12.5px;padding:8px 10px">Opponent's strength (this movement): ⟦11⟧<br><span class="pmeta">Favourite card: '⟦12⟧' (played half the time)</span></div>\n    <div class="cards3">⟦13⟧</div>\n    <div class="pmeta" style="margin-top:6px">Rules: the better match-up wins — unless the opponent's strength is 5 or more higher, which overturns it. Identical cards are decided by strength. Both sides add 0–3 for 'form on the night'.</div>\n    <div class="mvlog">⟦14⟧</div></div>
+2313	<button class="pc" data-k="⟦0⟧"><span class="ic">⟦1⟧</span>⟦2⟧<small>⟦3⟧<br>You <b>⟦4⟧</b></small></button>
+2314	Match-up: ⟦0⟧ beats ⟦1⟧ (in your favour)
+2315	won on the match-up
+2316	the match-up favoured you, but the opponent's strength was ⟦0⟧ higher and overturned it (a gap of 5 or more)
+2317	Match-up: ⟦0⟧ beats ⟦1⟧ (against you)
+2318	the match-up was against you, but you were ⟦0⟧ stronger and overturned it!
+2319	lost on the match-up (a strength lead of 5 or more is needed to overturn it)
+2320	Match-up: ⟦0⟧ against ⟦0⟧ (decided by strength)
+2321	stronger by ⟦0⟧
+2322	weaker by ⟦0⟧
+2323	⟦0⟧<b>⟦1⟧</b>   You: ⟦2⟧ / ⟦3⟧: ⟦4⟧   → ⟦5⟧\n   <br><span class="pmeta">⟦6⟧⟦7⟧</span>\n   <br>You ⟦8⟧ + form ⟦9⟧ = <b>⟦10⟧</b>\n   <br>⟦11⟧ ⟦12⟧ + form ⟦13⟧ = <b>⟦14⟧</b>\n   <br>Verdict: ⟦15⟧<br><span class="pmeta">⟦16⟧: ⟦17⟧</span>
+2324	 (the hint was false)
+2325	You had the better match-up in ⟦0⟧ movement(s).
+2326	In ⟦0⟧ movement(s) your strength overturned a bad match-up.
+2327	Your second's ⟦0⟧ told.
+2328	Average strength: you ⟦0⟧ / opponent ⟦1⟧.
+2329	<div class="anl"><b>Why you won</b><br>⟦0⟧</div>
+2330	 · <b>Lost the match-up ⟦0⟧ time(s)</b>. ⟦1⟧⟦2⟧
+2331	Went against a true hint ⟦0⟧ time(s).
+2332	Unlucky with a false hint ⟦0⟧ time(s).
+2333	 · <b>Won the match-up but was overturned on strength ⟦0⟧ time(s)</b>. The opponent was 5 or more stronger.
+2334	 · <b>Lost ⟦0⟧ same-card contest(s) of strength</b>.
+2335	 · Average strength: you ⟦0⟧ / ⟦1⟧ ⟦2⟧⟦3⟧.
+2336	. You are simply outmatched
+2337	⟦0⟧ favours '⟦1⟧' and plays it half the time. When in doubt, '⟦2⟧' is the safe choice.
+2338	Raising your fame Lv through concerts adds +1 to Technique, Expression or Improvisation with each level.
+2339	You had no second. With one, that person's best card becomes stronger.
+2340	Your second's strength helps only '⟦0⟧'. Choose again to suit the opponent.
+2341	Your chosen piece gives +2 to its card. The second movement adds +2 to Expression, the third +2 to Technique.
+2342	<div class="anl"><b>Why you lost</b><br>⟦0⟧<br><b>Advice for next time</b><br>⟦1⟧</div>
+2343	⟦0⟧: '…You have beaten me. ⟦1⟧'<br>Joins as <b>⟦2⟧</b>. Fame +⟦3⟧<hr>⟦4⟧
+2344	⟦0⟧: 'Come back when you are ready.'<br>Stamina -20 / Rapport falls to -50.<hr>⟦1⟧
+2345	<div class="anl"><b>Looking back</b><br>Your average move +⟦0⟧ / their average rebuttal -⟦1⟧<br>⟦2⟧\n   ⟦3⟧\n   <br>Repeating the same approach makes it 30% weaker. When inspiration is full, a cadenza gives a big push. ⟦4⟧</div>
+2346	Your pushing power lost out to their rebuttals.
+2347	You ran out of moves before you could carry it.
+2348	<br>Approaches that work: ⟦0⟧⟦1⟧
+2349	 / that do not: ⟦0⟧
+2350	<br>Scouting tells you which approaches work.
+2351	<br>They outrank you (their Lv⟦0⟧, your Lv⟦1⟧), so their rebuttals are strong.
+2352	How to raise your fame
+2353	<b>Fame Lv⟦0⟧</b>   ⟦1⟧\n   <div class="fillbar" style="background:#d8c9a8"><i style="width:⟦2⟧%"></i></div>\n   <div class="sec-p">What raises fame</div>\n   <table class="ftab"><tr><td>Concert (⟦3⟧ · ★1 / ★3 / ★5)</td><td>Salon ⟦4⟧<br>Medium hall ⟦5⟧<br>Large theatre ⟦6⟧</td></tr>\n   <tr><td>Persuading a musician</td><td>15 + their Lv×5</td></tr><tr><td>Winning a performance duel</td><td>30 + their Lv×8</td></tr>\n   <tr><td>Seizing a city in a concert war</td><td>40 + leader Lv×5</td></tr><tr><td>Defending in a concert war</td><td>25</td></tr>\n   <tr><td>Attending a salon</td><td>6</td></tr><tr><td>Historical events, command performances</td><td>30–80</td></tr>\n   <tr><td>Losing a performance duel</td><td>5</td></tr></table>\n   <div class="pmeta" style="margin-top:4px">Bigger cities, bigger venues and better receptions raise it more. With a player whose trait is of the 'Neue Zeitschrift' kind (Schumann, for one), ×1.3.</div>\n   <div class="sec-p">What fame Lv changes</div>\n    · Each level adds +1 to Technique, Expression or Improvisation (and +1 Theory every 3 levels). The maximum is Lv30<br>\n    · Whom you can persuade: musicians up to Lv⟦7⟧, theatres and courts up to Lv⟦8⟧ (above that you are turned away)<br>\n    · Large theatres open at Lv4 (or at any time in a city you control)<br>\n    · Concert attendance rises (about +7% per level)
+2354	<b>⟦0⟧ more</b> to the next Lv (⟦1⟧ / ⟦2⟧)
+2355	Maximum Lv
+2356	Stamina
+2357	Stamina now <b>⟦0⟧</b> / 100\n   <div class="sec-p">Falls</div>Performing in a concert -25 (directing only: -10) / performance duel -20 / scouting -5 / command performance -20\n   <div class="sec-p">Rises</div>Every month +8 / resting +50 (60 fr) / no spa cure (that is for players)\n   <div class="sec-p">Effect</div>Your form when performing: ◎ above 70, ○ from 41 to 70, △ at 40 or below. Persuasion needs stamina 10 or more; a duel needs 20.
+2358	Founding
+2359	Welcomed your first player
+2360	Full house
+2361	Filled all 9 seats
+2362	Master of the musical world
+2363	Held 5 cities at once
+2364	Kapellmeister of the continent
+2365	Held 9 cities at once
+2366	Europe united
+2367	Held every city of the scenario at once
+2368	Fame Lv10
+2369	Reached fame Lv10

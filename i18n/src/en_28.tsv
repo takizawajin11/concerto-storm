@@ -1,0 +1,156 @@
+5410	Your arch-critic: ⟦0⟧
+5411	⟦0⟧⟦1⟧<br><br>Likes: ⟦2⟧⟦3⟧<div class="cbar"><i style="width:⟦4⟧%"></i><span>opinion now ⟦5⟧/100</span></div><span class="pmeta">It rises and falls with your concerts and your choice of programme. Bring it to 100 and a rave review appears at last. At 0, a storm of bad reviews. ⟦6⟧</span>
+5412	 / dislikes: ⟦0⟧
+5413	<br><b>You have already drawn one grunt of admiration.</b>
+5414	Caprice No. 24 from the 24 Caprices
+5415	La campanella
+5416	Nocturne
+5417	Symphony No. 5
+5418	William Tell Overture
+5419	Swan Lake
+5420	Ride of the Valkyries
+5421	the Adagietto from Symphony No. 5
+5422	Danse macabre
+5423	Gymnopédies
+5424	Fugue
+5425	'Hallelujah'
+5426	The Devil's Trill
+5427	'Spring' from The Four Seasons
+5428	Wiegenlied (Lullaby)
+5429	A famous opera melody
+5430	Eine kleine Nachtmusik
+5431	Finlandia
+5432	Vltava (The Moldau)
+5433	the Promenade from Pictures at an Exhibition
+5434	Flight of the Bumblebee
+5435	the cancan from Orphée aux enfers
+5436	Habanera
+5437	Violin Concerto in E minor
+5438	'Dies irae'
+5439	A bel canto aria
+5440	the alphorn theme from Symphony No. 1
+5441	That is all for this month's quiz. Try again next month
+5442	Not enough questions
+5443	Listening quiz (question ⟦0⟧ of 3 this month)
+5444	🎵 Whose music is this phrase?<br><br><button class="btn" style="width:100%;margin:6px 0" onclick="window._qzPlay&&window._qzPlay()">▶ Hear it again</button><span class="pmeta">The reward grows with consecutive correct answers (⟦0⟧ in a row now).</span>
+5445	Correct!
+5446	Not this time…
+5447	⟦0⟧The answer is <b>⟦1⟧</b>. ⟦2⟧⟦3⟧
+5448	<br>The piece: ⟦0⟧.
+5449	<br><br>+⟦0⟧ fr (⟦1⟧ in a row)
+5450	Next question
+5451	⟦0⟧
+5452	★5 nights
+5453	Most played piece
+5454	⟦0⟧ (×⟦1⟧)
+5455	Most often on stage
+5456	Concert earnings
+5457	New companions welcomed
+5458	⟦0⟧
+5459	Dream meetings
+5460	⟦0⟧
+5461	<div class="wrapped"><div class="wy">⟦0⟧</div><div class="wt">The ⟦1⟧ Orchestra's year</div>⟦2⟧</div>
+5462	Concerto Storm — the ⟦0⟧ Orchestra in ⟦1⟧:
+5463	⟦0⟧ in review
+5464	Send
+5465	Not enough on record yet to sum up
+5466	Tree of masters and pupils
+5467	<div class="pmeta">No tree yet. When an apprentice receives full mastery, or a conservatory produces a graduate, branches grow here. Historical masters and pupils among your players appear too.</div>
+5468	<div class="pmeta">gold frame = in your orchestra   red mark = pupil raised in your orchestra</div><ul class="lintree">⟦0⟧</ul><div class="pmeta">Master–pupil pairs born in your orchestra: ⟦1⟧</div>
+5469	in ⟦0⟧ mo.
+5470	ready
+5471	<div class="hub">\n    <button class="btn" data-hub="bond">👥 Relationship map</button>\n    <button class="btn" data-hub="comp">✒️ Write a new work<small>⟦0⟧</small></button>\n    <button class="btn" data-hub="bet">🎲 Big gamble⟦1⟧</button>\n    <button class="btn" data-hub="quiz">🎵 Listening quiz<small>⟦2⟧ left</small></button>\n    <button class="btn" data-hub="lin">🌳 Masters and pupils</button>\n    <button class="btn" data-hub="yr">📊 This year in review</button>\n  </div>⟦3⟧
+5472	<small>in play</small>
+5473	<button class="btn critbtn" data-hub="crit">⟦0⟧Arch-critic ⟦1⟧<div class="cbar"><i style="width:⟦2⟧%"></i><span>opinion ⟦3⟧/100⟦4⟧</span></div></button>
+5474	 · won over once
+5475	The square
+5476	The most passers-by. Anything goes down well, but it is noisy.
+5477	The market
+5478	You need enough show to beat the hawkers' cries. The coins thrown are mostly small.
+5479	The foot of the bridge
+5480	At dusk, lovers and strollers stop to listen.
+5481	In front of the church
+5482	Devout people on their way home from Mass. Refined playing is preferred.
+5483	In front of the café
+5484	Gentlemen with newspapers, and students. Their ears are trained; improvisation goes down well.
+5485	You have already played in the street twice this month. Go out again next month
+5486	As court Kapellmeister you cannot stand in the streets of this city
+5487	Take to the streets (⟦0⟧)
+5488	Who will play?<br><span class="pmeta">Popularity with the people: ⟦0⟧/100. The more popular you are in a city, the more its people crowd into your concerts. With a young player, word of 'a prodigy' may spread.</span>
+5489	<small>young talent</small>
+5490	Where will you play?
+5491	<div class="stbox"><div class="stbk s-⟦0⟧"></div><div class="stp">⟦1⟧</div><div class="stcrowd"></div><div class="stcount">0</div><div class="stname">⟦2⟧ · ⟦4⟧, ⟦3⟧</div></div>
+5492	 listeners
+5493	A prodigy appears: ⟦0⟧
+5494	<div class="stx">★ <b>A prodigy appears!</b> 'Who is that young ⟦0⟧ player?' — the whole city is talking. ⟦1⟧: all abilities +1; popularity in this city +15</div>
+5495	<div class="stx">♪ Today's melody has begun to be hummed by the townspeople as '⟦0⟧'.</div>
+5496	<div class="headline">⟦0⟧ people stopped to listen</div>Coins thrown <b>+⟦1⟧ fr</b> · popularity with the people in ⟦2⟧ <b>⟦3⟧</b>/100⟦4⟧⟦5⟧⟦6⟧
+5497	⟦0⟧ played at ⟦2⟧ in ⟦1⟧, and ⟦3⟧ people stopped to listen (coins +⟦4⟧ fr).
+5498	An ovation in the street
+5499	Applause in the street
+5500	A street performance
+5501	The Elector, incognito
+5502	Emperor Joseph II, incognito
+5503	The King, incognito
+5504	The Crown Prince, incognito
+5505	The Grand Duke, incognito
+5506	Behind the ring of listeners a gentleman in a plain cloak was listening intently. An attendant whispers: '…It is ⟦0⟧.'<br>⟦1⟧
+5507	<span class="pmeta">Joseph II really is known to have walked the streets of Vienna incognito.</span>
+5508	Play on as if you had not noticed<small>court support +12, fame +10</small>
+5509	⟦0⟧ seems to have taken a liking to ⟦1⟧'s street performance.
+5510	Stop playing and bow<small>court support +6; the crowd cools</small>
+5511	⟦0⟧When the playing ended a young person ran up: <b>⟦1⟧</b>. 'I heard your sound and made up my mind. Please take me into your orchestra!'
+5512	Welcome them<small>they say a small salary will do</small>
+5513	⟦0⟧, moved by the street performance, joined the orchestra.
+5514	Another time
+5515	A policeman approached. 'Your permit to perform here?'
+5516	Pay the fine<small>-80 fr</small>
+5517	Grab the instrument and run<small>popularity in this city -5; it makes a good story: popular support +3</small>
+5518	A street musician playing on the opposite corner challenged you: 'Let us see who draws the bigger crowd.'
+5519	Take him on<small>depending on skill, coins doubled or halved</small>
+5520	You won! The crowd came over to you (+⟦0⟧ fr)
+5521	You lost… he took the crowd clean away
+5522	A man from a music publisher held out his card. 'That melody just now — would you care to sell it as sheet music?'
+5523	Sell<small>+150 fr; it becomes a popular song</small>
+5524	Song of the Street Corner
+5525	Waltz of the Square
+5526	Serenade on the Bridge
+5527	March of the Market
+5528	Romance at Dusk
+5529	A Whimsical Caprice
+5530	The popular song '⟦0⟧' was born in ⟦1⟧
+5531	A popular song is born
+5532	'⟦0⟧' has begun to be hummed in the streets. A popular song spreads along the roads to neighbouring cities. Where it spreads your popularity rises, and the sheet music sells, bringing a monthly income.<br><br><span class="pmeta">Verdi is said to have kept 'La donna è mobile' from Rigoletto hidden from everyone but the singer until just before the premiere. Had it leaked, the gondoliers of Venice would have been whistling it and it would have spread before the first night.</span>
+5533	The popular song '⟦0⟧' is now sung in four cities.
+5534	<div class="stx">👥 Thanks to your popularity with the people (⟦0⟧), the house was full to standing room (+⟦1⟧ fr)</div>
+5535	Melody of ⟦0⟧
+5536	An offer of the post of court Kapellmeister
+5537	A messenger came from the court: 'We wish to receive you as court Kapellmeister of ⟦0⟧.'<br>A salary of <b>⟦1⟧ fr</b> every month. But a court Kapellmeister cannot very well play in the streets of this city.<br><span class="pmeta">Support at present: court ⟦2⟧, people ⟦3⟧</span>
+5538	Accept<small>a monthly salary; no more street performances in this city</small>
+5539	Appointed court Kapellmeister of ⟦0⟧
+5540	Remain a free agent<small>popular support +8</small>
+5541	Hailed as a hero of the people
+5542	The people's orchestra
+5543	In every city, voices can be heard humming your orchestra's melodies. The newspapers have begun to call you 'the people's orchestra'.<br>Fame +30; popularity in every city +5<br><span class="pmeta">In 1848, the year of revolutions, musicians too took to the streets. Wagner joined the Dresden uprising the following year and went into exile.</span>
+5544	Court or people?
+5545	A letter came from a nobleman: 'For an orchestra received at court to take coins in the public street is unseemly. Might you not give it up?'
+5546	Defer to the nobleman<small>court +10, people -8</small>
+5547	Music belongs to no one<small>people +10, court -8</small>
+5548	<button class="btn streetbtn" id="aStreet" ⟦0⟧>🎻 Take to the streets<small>win the people's hearts by playing in the street (⟦1⟧ more this month)</small></button>\n    <div class="popbar"><span>Popularity</span><div class="cbar"><i style="width:⟦2⟧%"></i><span>⟦3⟧/100</span></div></div>⟦4⟧
+5549	<div class="trivia">♪ In this city people are humming '⟦0⟧'</div>
+5550	<div class="sidebar"><span>👑 Court <b>⟦0⟧</b></span><div class="sbar"><i class="c" style="width:⟦1⟧%"></i><i class="f" style="width:⟦2⟧%"></i></div><span><b>⟦3⟧</b> People 🧑‍🤝‍🧑</span></div>
+5551	The popular song '⟦0⟧' was sung on from city to city.
+5552	From a street corner, the prodigy ⟦0⟧ was born.
+5553	📜 ⟦0⟧ (noted in the journal)
+5554	<details class="shelf"⟦0⟧><summary>🎪 Diversions (⟦1⟧)<small>relationship map, new works, big gamble, quiz and more</small></summary>⟦2⟧</details>
+5556	Rather than difficult Italian, I want to make them laugh with songs everybody knows.
+5557	With tavern songs I shall beat the opera house.
+5558	In 1728 he had a smash hit with The Beggar's Opera, stitched together from songs sung in the streets. For a time it ate into the popularity of Italian opera, and was said to have 'made Gay rich and Rich gay'.
+5560	Song: Sally in Our Alley
+5561	The song about the girl in the alley sells best of all, you know.
+5562	Songs of the town? I shall write as many as you like.
+5563	Author of songs who won popularity with 'Sally in Our Alley'. His son claimed that 'God Save the King' was his father's work (the truth is unknown).
+5565	The Beggar's Opera: overture
+5566	Play in the street? I am a scholar, sir.
+5567	Let us perform the old masterpieces correctly.
+5568	A scholarly musician, German-born and active in London. He was involved in founding the Academy of Ancient Music, which performed old masterpieces. For The Beggar's Opera he supplied the overture and the accompaniments.

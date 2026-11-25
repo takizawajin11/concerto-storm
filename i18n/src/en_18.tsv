@@ -1,0 +1,181 @@
+3528	Carlo Bergonzi, 1730s
+3529	A master of Cremona who learned his craft close to the Stradivari workshop.
+3530	G.B. Guadagnini, 1750s
+3531	A master who moved from city to city. Much prized for his powerful sound.
+3532	Gasparo da Salò violin, 1570s
+3533	By the founder of the Brescian school. Ole Bull played a carved example.
+3534	J.B. Vuillaume (copy of a great instrument)
+3535	The great maker and dealer of Paris. His copies of Stradivari were so fine as to be all but indistinguishable from the originals.
+3536	Stradivarius cello 'Duport', 1711
+3537	Napoleon is said to have tried it and scratched it with the spur of his boot.
+3538	Domenico Montagnana cello
+3539	The maker called 'the Lion of Venice'. A broad, rich sound.
+3540	Baroque bow (Corelli type)
+3541	A light bow curving outwards. Suited to short, singing notes.
+3542	Cramer bow
+3543	The transitional bow favoured by Cramer in London, a bridge to the modern bow.
+3544	John Dodd bow
+3545	By the bow maker called 'the English Tourte'.
+3546	François Tourte bow
+3547	'The Stradivari of the bow', who perfected the modern form. Pernambuco wood and an inward curve gave a long, powerful tone.
+3548	Dominique Peccatte bow
+3549	A great bow maker who learned his craft in Vuillaume's workshop.
+3550	Nikolaus Kittel bow
+3551	The great bow maker of St Petersburg, called 'the Russian Tourte'.
+3552	François Nicolas Voirin bow
+3553	A slender, supple bow for a new age.
+3554	Eugène Sartory bow
+3555	A powerful bow, loved by the great violinists of the 20th century.
+3556	Ordinary bow
+3557	A common bow, to be had at any workshop.
+3558	Broadwood piano
+3559	The great London firm. In 1818 one was presented to Beethoven.
+3560	Conrad Graf piano
+3561	The Viennese master, known for the piano of Beethoven's last years and the one Schumann gave to Clara.
+3562	Bösendorfer
+3563	The great Viennese firm, founded in 1828. It made its name by surviving Liszt's ferocious playing.
+3564	Bechstein
+3565	The great Berlin firm, founded in 1853. Played by Bülow and Liszt.
+3566	 (fake)
+3567	J.B. Vuillaume (Paris)
+3568	Every Cremonese instrument leaves my shop with my certificate.
+3569	W.E. Hill & Sons (London)
+3570	With a Hill certificate, it will be accepted wherever you go.
+3571	Luigi Tarisio, pedlar
+3572	A rare find, sir — out of an attic in Italy.
+3573	Local instrument dealer
+3574	Sound, honest trade is what we offer.
+3575	Falsoni, a dubious dealer
+3576	Guv'nor, this is a genuine Stradivari, true as I stand here. At this price, today only.
+3577	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧ · c. ⟦2⟧</div>\n   <div class="bubble" style="margin:8px 0">'⟦3⟧'</div>\n   <div class="card pmeta">⟦4⟧   Your funds: ⟦5⟧ fr</div>\n   ⟦6⟧\n   <button class="btn" id="dlBack" style="width:100%;margin-top:6px">Leave the shop</button></div>
+3578	Goods from this shop come with a certificate (guaranteed genuine).
+3579	<b style="color:#e88">Far below the going rate. If it sounds too good to be true, it may be.</b>
+3580	Whether it is genuine cannot be known until it is appraised.
+3581	<div class="card" style="font-size:12.5px"><b>⟦0⟧</b>   <span style="color:⟦1⟧">⟦2⟧</span><br><span class="pmeta">⟦3⟧ · ⟦4⟧</span>⟦5⟧\n     <br><button class="btn ⟦6⟧" data-buy="⟦7⟧" style="width:100%;margin-top:4px" ⟦8⟧>⟦9⟧</button></div>
+3582	Sold
+3583	Buy   ⟦0⟧ fr
+3584	Bought ⟦1⟧ from ⟦0⟧ for ⟦2⟧ fr.
+3585	Obtained the fine instrument '⟦0⟧'
+3586	Purchased
+3587	You obtained <b>⟦0⟧</b>. ⟦1⟧<br><span class="pmeta">Assign it to an instrument or bow slot from a player's details in the rehearsal room.</span>
+3588	<br>With certificate.
+3589	<br>Whether it is genuine is not yet known…
+3590	Back to the shop
+3591	Vuillaume
+3592	Hill & Sons
+3593	A seasoned luthier
+3594	<div class="sc"><h3>Instrument store</h3><div class="subt">⟦0⟧ item(s)</div>\n   <div class="card pmeta">Appraisal: ⟦1⟧ (⟦2⟧ fr each). A fine instrument without a certificate may be a fake.</div>\n   ⟦3⟧\n   <button class="btn" id="stBack" style="width:100%;margin-top:6px">Back</button></div>
+3595	<div class="card" style="font-size:12.5px"><b>⟦0⟧</b> <span style="color:⟦1⟧">⟦2⟧</span>⟦3⟧⟦4⟧\n      <br><span class="pmeta">⟦5⟧⟦6⟧</span>\n      <div class="sec2" style="margin-top:4px">⟦7⟧<button class="btn" data-sell="⟦8⟧" ⟦9⟧>Sell (⟦10⟧ fr)</button></div></div>
+3596	 <span class="kai" style="background:#3a6a3a">Certificate</span>
+3597	 <span class="pmeta"> · in use by ⟦0⟧</span>
+3598	 · bought from ⟦0⟧
+3599	<button class="btn" data-ap="⟦0⟧" ⟦1⟧>Appraise</button>
+3600	<div class="card pmeta">Nothing here yet</div>
+3601	Appraised by ⟦0⟧, ⟦1⟧ proved to be a fake.
+3602	'⟦0⟧' proves to be a fake
+3603	The appraisal
+3604	⟦0⟧ peered inside at the back and shook his head.<br><br>'The label alone is the very image of the real thing. But this is ⟦1⟧.'<br><br><b>It was a fake…</b>⟦2⟧
+3605	a mass-produced Mirecourt fiddle
+3606	a cheap piece from a Saxon workshop
+3607	a nameless instrument with a new label stuck in
+3608	<br><span class="pmeta">Palmed off on you by ⟦0⟧.</span>
+3609	⟦0⟧ was appraised as genuine.
+3610	⟦0⟧: 'There is no doubt. It is <b>genuine</b>. I shall give you a certificate.'
+3611	Sell
+3612	You will part with ⟦0⟧ for ⟦1⟧ fr.
+3613	Sold ⟦0⟧ for ⟦1⟧ fr.
+3614	The ⟦1⟧ that ⟦0⟧ was playing turned out to be a fake.
+3615	It simply will not ring…
+3616	⟦0⟧⟦1⟧ looks puzzled.<br>'However I play this instrument, the sound will not carry.'<br><br>Peering through the f-hole, you see that only the paper of the label is new. <b>⟦2⟧ was a fake!</b>⟦3⟧
+3617	A pedlar on the road
+3618	Outside the inn a pedlar opened an old violin case. 'A Stradivari. At this price — now or never.'
+3619	Buy<small>a third of the going rate. If genuine, a fortune made</small>
+3620	You did not have enough on you.
+3621	You obtained '⟦1⟧' for ⟦0⟧ fr. …Can it be genuine?
+3622	The pedlar clicked his tongue and went looking for his next customer.
+3623	<button class="btn gold" id="uDeal">Visit the instrument dealer<small>⟦0⟧ · fine instruments and bows (stock changes monthly)</small></button><button class="btn" id="uStore">
+3624	Principal viola
+3625	Principal brass
+3626	Brass
+3627	Principal trumpet
+3628	Principal horn
+3630	Haydn: Trumpet Concerto
+3631	I devised a trumpet with keys myself.
+3632	A trumpet that can play semitones, for your orchestra.
+3633	Trumpeter of the Viennese court. He developed the keyed trumpet, and Haydn wrote his concerto for the instrument.
+3635	Method for the valve horn
+3636	The horn with pistons is the instrument of the future.
+3637	The new horn, for your orchestra.
+3638	A pioneer of the valve (piston) horn. He taught the valve horn at the Paris Conservatoire from 1833.
+3640	The horn solo in Beethoven's Ninth
+3641	I am a horn player of the Kärntnertortheater.
+3642	The horn of Vienna, for your orchestra.
+3643	A celebrated Viennese horn player, said to have played the famous horn solo of the third movement at the premiere of Beethoven's Ninth.
+3645	Pieces for viola alta
+3646	Maestro Wagner has taken a liking to my large viola.
+3647	The sound of the viola alta, for your orchestra.
+3648	The player who devised the large 'viola alta'. Invited by Wagner, he played at the first Bayreuth Festival in 1876.
+3649	Cornet
+3651	Cornet solo: The Carnival of Venice
+3652	I play in Sousa's band.
+3653	The king of the cornet, for your orchestra.
+3654	Star cornettist of Sousa's band. His studies of transcendent difficulty are still the brass player's bible.
+3656	The horn parts of Brahms's symphonies
+3657	Thirty years of horn at the Gewandhaus.
+3658	The horn of Leipzig, for your orchestra.
+3659	Principal horn of the Gewandhaus Orchestra and a great teacher, known for his orchestral studies for horn.
+3660	Horn and brass
+3661	[Vv]iola
+3662	Haydn: Trumpet Concerto (1796)
+3663	Solo trumpet
+3664	Brandenburg Concerto No. 2 (high trumpet)
+3665	Recorder
+3666	written for Weidinger's keyed trumpet
+3667	the trumpet virtuoso of Bach's own town
+3668	Deep inner voices
+3669	A ringing fanfare
+3670	A festive fanfare
+3671	Filled all ⟦0⟧ seats
+3672	Gasparo da Salò viola
+3673	For great violas, look to the Brescian school: a deep, large sound.
+3674	Stradivarius viola, 1719
+3675	Only about ten Stradivari violas survive.
+3676	Workshop viola
+3677	A common viola.
+3678	Raoux silver horn
+3679	A masterpiece of the Raoux workshop in Paris. Punto is said to have played a Raoux horn of silver.
+3680	Natural horn
+3681	The old horn, whose pitch is altered with the hand in the bell.
+3682	Valve horn
+3683	The horn with valves, born about 1818. Semitones come easily.
+3684	Keyed trumpet
+3685	Developed by Weidinger: a trumpet that produces semitones by means of keys.
+3686	Cornet à pistons
+3687	A brass instrument with pistons, born in Paris about 1828. A star instrument of the 19th century.
+3688	Baroque trumpet
+3689	A long trumpet without valves. Playing melodies in its high register took a virtuoso.
+3690	(\\d+) of the 9 seats
+3691	⟦1⟧ of the ⟦0⟧ seats
+3692	all 9 seats
+3693	all ⟦0⟧ seats
+3694	Rhythm drifts
+3695	Cracks notes
+3696	Funny faces
+3697	Long old stories
+3698	Never leaves
+3700	Zigeunerweisen (his own reading)
+3701	Konnichiwa! No, I mean — bonjour!
+3702	I came from Japan to study music! Please let me in!
+3703	A student from Japan who somehow turns up in every era of Europe. He does not count the beat, but the destructive power of his funny faces is the greatest on the continent. He changes the mood of the house in an instant.
+3705	'My party piece' (the title changes every time)
+3706	When I was young, mind you, 'concertmaster' meant me.
+3707	This orchestra would never hold together without me, eh?
+3708	An elderly fiddler who has taken up residence in the orchestra. Generous with intonation, but in theory and old stories he yields to no one. He has no intention of giving up the concertmaster's chair.
+3710	Horn solo (cracked note included)
+3711	On the night you get one shot. If it cracks, that is music too.
+3712	With my horn I shall lend this orchestra some gravitas.
+3713	A horn player of long standing. The cracked first note is a tradition by now, and the audience waits for it with bated breath. Plenty of old stories, too.
+3715	Flute concerto (the music is at home)
+3716	Oh — the music… I am sure I brought it.
+3717	I forget things, but my playing is sound! Probably.
+3718	A flautist who forgets the music, the stand, and sometimes the instrument itself. Not good at counting rests, either.

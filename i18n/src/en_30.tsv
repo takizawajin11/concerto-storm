@@ -1,0 +1,160 @@
+5811	<div class="sec-t">What passes to the next era</div>⟦0⟧
+5812	<span class="pmeta">Begin the next era, '⟦0⟧' (from ⟦1⟧), and you play in a world where this legacy lives on.</span>
+5813	<span class="pmeta">See the chronicle under 'Your history of music' on the title screen.</span>
+5814	Your own work ⟦0⟧ joins the [Legacy] programmes
+5815	⟦0⟧'s '⟦1⟧' joins the [What-if classics]
+5816	'⟦0⟧' comes into being
+5817	The popular song '⟦0⟧' survives as a folk song
+5818	The name of the great house ⟦0⟧ (funds and fame)
+5819	[Legacy] ⟦0⟧⟦1⟧ (⟦2⟧)
+5820	[What-if classic] ⟦0⟧
+5821	<b>⟦0⟧–⟦1⟧</b>   ⟦2⟧
+5822	The masterpiece ⟦0⟧
+5823	⟦0⟧, who overcame fate
+5824	'⟦0⟧', now a folk song (popularity in ⟦1⟧ +8)
+5825	'⟦0⟧', now a folk song
+5826	The fame of 'the people's orchestra'
+5827	A lineage of court Kapellmeisters
+5828	<div class="trivia">[What-if world] ⟦0⟧: ⟦1⟧</div>
+5829	Inherited the legacy of those who came before
+5830	A history of music handed down
+5831	This world continues the history of music you have been changing. ⟦0⟧⟦1⟧\n    <div class="stx">The name of a great house: funds +⟦2⟧ fr, fame +⟦3⟧<br>[Legacy] and [What-if classic] pieces have joined the programmes (performing them raises the reception)</div>
+5832	a masterpiece handed down
+5833	a predecessor's signature work
+5834	a masterpiece born of changed history
+5835	Bach worked at the Thomaskirche in Leipzig; Handel staged operas in London. The two never met in their lives.
+5836	Mozart set up on his own in Vienna and died in 1791 at 35. The Requiem was left unfinished.
+5837	Paganini and Liszt sent Europe into a frenzy, and Chopin played in the salons of Paris. Paganini died in 1840.
+5838	Wagner opened his own theatre in Bayreuth, and Brahms brought out his First Symphony. Wagner died in 1883.
+5839	Mahler led the Vienna Court Opera, and died in 1911 leaving his Tenth Symphony unfinished.
+5840	The story's end
+5841	✦ ⟦0⟧ overcame fate⟦1⟧
+5842	♪ A new masterpiece: ⟦0⟧
+5843	♪ The popular song '⟦0⟧' was sung in ⟦1⟧ cities
+5844	★ A prodigy from the street: ⟦0⟧
+5845	★ Called 'the people's orchestra'
+5846	★ Appointed court Kapellmeister
+5847	🎓 Left ⟦0⟧ master–pupil line(s)
+5848	[Concerto Storm] My what-if history of music
+5849	■ From ⟦0⟧   ⟦1⟧
+5850	 (as in history)
+5851	<div class="sgera⟦0⟧"><div class="sgy">⟦1⟧</div><div class="sgb"><b>⟦2⟧</b>\n      <div class="sgr"><span>History</span>⟦3⟧</div>\n      ⟦4⟧</div></div>
+5852	<div class="sgm"><span>Your history</span>⟦0⟧</div>
+5853	<div class="sgn">Not yet played (as in history)</div>
+5854	Your history of music
+5855	<div class="pmeta">Play the eras in order from the oldest, and the legacy of each passes to the next. (⟦0⟧/⟦1⟧ eras)</div><div class="saga">⟦2⟧</div>\n    ⟦3⟧
+5856	<div class="sgact"><button class="btn" id="sgShare">Share as text</button><button class="btn" id="sgImg">Save as image</button></div>
+5857	Chronicle copied
+5858	History: ⟦0⟧
+5859	My what-if history of music
+5860	Concerto Storm
+5861	ConcertoStorm_my_history_of_music.png
+5862	Chronicle image saved
+5863	The image could not be made
+5864	<button class="btn sagabtn" id="sagaBtn">📜 Your history of music<small>⟦0⟧</small></button>
+5865	⟦0⟧/⟦1⟧ eras written. The legacy of older eras passes to the next
+5866	Reach an ending and that era is written into your history of music and handed on to the next
+5867	<p class="sgtag">📜 Written into music history</p>
+5868	<p class="sgtag new">✦ Begins with the legacy of ⟦0⟧ era(s)</p>
+5869	An audience exacting about technique
+5870	Technique counts double
+5871	An audience easily moved to tears
+5872	Expression counts double
+5873	Young players' day
+5874	+1.5 for each performer of Lv6 or below
+5875	A night across time
+5876	+4 if every performer is from a different era
+5877	A night of contemporaries
+5878	+3 with three or more performers from the same era
+5879	A night of women musicians
+5880	+1.5 for each woman performer
+5881	⟦1⟧ to the audience's taste, '⟦0⟧' (+⟦2⟧)
+5882	⟦0⟧<div class="dyc"><b>⟦1⟧</b><span>⟦2⟧ · ⟦3⟧ · Lv⟦4⟧</span><span>T⟦5⟧ E⟦6⟧ I⟦7⟧</span></div>
+5883	<div class="dyrow"><span class="dym">⟦0⟧</span><span>Try ⟦1⟧   reception <b>⟦2⟧</b> (⟦3⟧% of the best)</span></div>
+5884	<div class="dyres"><div class="headline">⟦0⟧</div>\n      <div class="pmeta">⟦1⟧Best line-up: reception ⟦2⟧</div>\n      <div class="sec-t">Today's best line-up</div>⟦3⟧\n      <div class="pmeta">⟦4⟧</div>\n      <div class="stx">🔥 Streak: <b>⟦5⟧</b> day(s)   /   played ⟦6⟧ day(s), solved ⟦7⟧<br>A new puzzle arrives at midnight (Japan time).</div>\n      <button class="btn gold" id="dyShare" style="width:100%;margin-top:8px">Share the result</button></div>
+5885	The best line-up on try ⟦0⟧!
+5886	That is all for today
+5887	Your best: reception ⟦0⟧ /
+5888	<div class="sec-t">Line-up (⟦0⟧ tries left)</div>⟦1⟧\n      <div class="dynow">Reception now <b>⟦2⟧</b>⟦3⟧</div>\n      <button class="btn gold" id="dyGo" style="width:100%" ⟦4⟧>Curtain up with this line-up (try ⟦5⟧ of ⟦6⟧)</button>\n      <div class="sec-t">Today's hand (9 musicians)</div><div class="dyhand">⟦7⟧</div>
+5889	<div class="empty-pt">?</div><div class="dyc"><span>Tap to choose</span></div>
+5890	Perc
+5891	<div class="sc daily"><h3>Today's Concert</h3><div class="subt">⟦0⟧   everyone faces the same puzzle</div>\n    <div class="card"><b style="font-size:16px">⟦1⟧</b><br><span class="pmeta">A programme of the era from ⟦2⟧ · this piece is Technique ⟦3⟧%, Expression ⟦4⟧%, Improvisation ⟦5⟧%</span>\n      <div class="dyinfo">Audience's taste: <b>⟦6⟧</b> (+0.8 each)<br>Today's rule: <b>⟦7⟧</b> — ⟦8⟧⟦9⟧</div></div>\n    ⟦10⟧\n    ⟦11⟧\n    <button class="btn" id="dyClose" style="width:100%;margin-top:8px">Back to title</button></div>
+5892	<br>The composer is in your hand (+6 if performing)
+5893	<div class="dyhist">⟦0⟧<div class="pmeta">🟩 right in that seat   🟨 right in another seat   ⬜ not in the best line-up</div></div>
+5894	⟦0⟧<small>⟦1⟧ · ⟦2⟧ · Lv⟦3⟧   T⟦4⟧ E⟦5⟧ I⟦6⟧⟦7⟧</small>
+5895	   (now ⟦0⟧)
+5896	Clear
+5897	Reception ⟦0⟧ (⟦1⟧% of the best). Use the marks as clues: ⟦2⟧ tries left
+5898	Concerto Storm: Today's Concert ⟦0⟧
+5899	Best line-up in ⟦0⟧/⟦1⟧ tries!
+5900	Reached ⟦0⟧% of the best
+5901	🔥⟦0⟧-day streak
+5902	<button class="btn dailybtn" id="dailyBtn">📅 Today's Concert<small>⟦0⟧</small></button>
+5903	Solved today in ⟦0⟧ tries!
+5904	Already played today
+5905	   🔥⟦0⟧-day streak
+5906	In progress (⟦0⟧ tries left)
+5907	One puzzle a day, three minutes. Everyone has the same hand and looks for the best line-up
+5908	What does music say?
+5909	Absolute music
+5910	Programme music
+5911	Music is complete in sound alone. To use it to explain stories and pictures is to degrade it, do you not think?
+5912	Only when joined to poetry and story does music open new worlds. Music that is nothing but form is out of date, do you not think?
+5913	The content of music is nothing other than forms set in motion in sound
+5914	the view of those who prized Classical form (later given its theory by the critic Hanslick)
+5915	the view the critic Hanslick set out in On the Musically Beautiful (1854)
+5916	Joined to poetry, music depicts what words cannot reach
+5917	the view Berlioz showed in the Symphonie fantastique (1830)
+5918	the view Liszt showed in the symphonic poem and Wagner in the music drama
+5919	Form and poetry are both wings of music
+5920	How to regard virtuosity
+5921	Service to the work
+5922	The performer is the composer's servant. To flaunt one's skill and carry off the applause is not art, I should say?
+5923	Transcendent technique that takes the audience's breath away is a performer's life. Anyone can simply play what is written, do you not think?
+5924	The performer is one who serves the work
+5925	the view of composers who honoured the notes on the page
+5926	the stance Gluck demanded in his reform of opera (drama and music before the singer's skill)
+5927	the stance Clara Schumann and Joachim held to throughout
+5928	Skill no one can imitate takes music to new places
+5929	the brilliant ornamented singing of castrati such as Farinelli
+5930	the path on which Clementi and the other keyboard virtuosos vied
+5931	the path opened by Paganini and Liszt
+5932	Skill exists to make the work shine
+5933	For whom does music exist?
+5934	For art
+5935	For the audience
+5936	Let those understand who can. To write to suit the public's taste is decadence, do you not think?
+5937	If the public takes no pleasure in it, what is music for? A piece that is merely difficult is the maker's self-indulgence, is it not?
+5938	Music aims at the heights without courting the listener
+5939	Bach wrote at the end of his scores: 'To the glory of God alone'
+5940	the stance of forebears such as J.S. Bach, who aimed at the heights of craft rather than fashion
+5941	the idea of 'art for art's sake', which spread in the 19th century
+5942	Music exists for those who listen
+5943	the stance Telemann and Handel showed through public concerts and enterprise
+5944	To satisfy connoisseur and layman alike is the real thing
+5945	Tradition or innovation?
+5946	Tradition
+5947	Innovation
+5948	Our forebears' rules have their reasons. To claim 'novelty' without having studied counterpoint or form is mere ignorance, is it not?
+5949	Rules exist to be broken. What sort of artist writes the same music as yesterday?
+5950	Only when the rules are known through and through is music free
+5951	the teaching handed down since Fux's counterpoint treatise Gradus ad Parnassum (1725)
+5952	If it pleases the ear, that is the new rule
+5953	the view Monteverdi showed in the 'second practice'
+5954	the view of C.P.E. Bach and the others of the 'sensitive style'
+5955	the view of Berlioz and Liszt
+5956	the 'music of the future' that Wagner proclaimed
+5957	a view attributed to Debussy ('pleasure is the rule')
+5958	On the foundation of tradition, one builds a new house
+5959	A nation's music, or a universal language?
+5960	A universal language
+5961	A nation's music
+5962	Music is a language that crosses frontiers. To cling to folk song and national character is narrow, do you not think?
+5963	Music born of our own folk songs and our own language is the real thing. What is gained by imitating other countries?
+5964	Music is a language understood by people of every country
+5965	the universality at which Viennese Classicism aimed
+5966	From the songs of the soil comes a music that belongs to that country alone
+5967	the view of the national schools: Smetana, Dvořák and others
+5968	Only what is rooted in its soil reaches the world
+5969	'I hear you are a believer in ⟦0⟧. ⟦1⟧'
+5970	…Though there are points I do not care for.
