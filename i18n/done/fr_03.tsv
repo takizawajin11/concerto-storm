@@ -1,0 +1,99 @@
+687	<span class="chip solid" style="--c:var(--gold)">À vous</span>
+688	<span class="chip solid" style="--c:⟦0⟧">camp ⟦1⟧</span>
+689	<div class="trivia" style="border-color:#c33">Épidémie de choléra : recettes réduites de moitié</div>
+690	<div class="card" style="color:var(--mute);font-size:13px">Il n'y a personne ici pour l'instant.</div>
+691	<div class="card"><div class="city-h"><h2>Orchestre ⟦0⟧<small>Orchestra</small></h2></div>\n    <div class="inst">Soliste : ⟦1⟧ (⟦2⟧)</div>\n    ⟦3⟧\n    ⟦4⟧\n    <div style="font-size:12px;color:var(--mute);margin-top:8px">La forme (◎○△) change chaque mois. Toutes les 3 apparitions, les capacités d'un musicien augmentent de 1.</div></div>\n    <div class="card" style="font-size:14px">\n      <div>Revenu mensuel : <b>+⟦5⟧ fr</b></div><div>Salaires mensuels des musiciens : <b>-⟦6⟧ fr</b></div>\n      <div style="margin-top:6px">Capacités : Technique ⟦7⟧ · Expression ⟦8⟧ · Improvisation ⟦9⟧ · Théorie ⟦10⟧</div></div>
+692	— vacant —
+693	<br><span class="pmeta">forme ⟦0⟧ · ⟦1⟧ apparitions⟦2⟧</span>
+694	 · progression +⟦0⟧
+695	<div class="sec-t">Musiciens</div>⟦0⟧
+696	<div class="seat"><span class="r">⟦0⟧</span>⟦1⟧<span class="n">⟦2⟧<br><span class="pmeta">forme ⟦3⟧ · ⟦4⟧ apparitions</span></span></div>
+697	<div class="card fac" style="--c:var(--gold)"><div style="display:flex;gap:10px;align-items:center">⟦0⟧<h3>Camp ⟦1⟧ (vous)<br><span class="pmeta">Difficulté : ⟦2⟧</span></h3></div>\n    <div class="row">Renommée Lv⟦3⟧ · ⟦4⟧</div>\n    <div class="row">Villes : ⟦5⟧</div>\n    <div class="row">Orchestre : ⟦6⟧</div></div>
+698	Aucune
+699	Personne encore
+700	<div class="card fac" style="--c:⟦0⟧"><div style="display:flex;gap:10px;align-items:center">⟦1⟧<h3>Camp ⟦2⟧</h3></div>\n    <div class="row">Chef Lv⟦3⟧ · ⟦4⟧ · morceau fétiche : ⟦5⟧</div>\n    <div class="row">Villes : ⟦6⟧</div>\n    <div class="row">Partisans : ⟦7⟧</div>\n    <div class="trivia">⟦8⟧</div></div>
+701	<button class="btn crim" id="retire" style="width:100%;margin-bottom:10px">Se retirer et écrire l'histoire de l'orchestre</button>
+702	<div style="font-size:12px;color:var(--mute);padding:0 4px">Chaque mois, les camps rivaux débauchent des musiciens, s'emparent de villes et lancent des guerres des concerts contre les vôtres. Vous pouvez reprendre une ville rivale par une guerre des concerts, et leurs musiciens par le débauchage.</div>
+703	Touchez une ville sur la carte pour vous y rendre
+704	Retraite
+705	Confiez l'orchestre à la génération suivante, retirez-vous, et consignez le chemin parcouru dans l'histoire de l'orchestre.
+706	Se retirer
+707	Une retraite glorieuse
+708	⟦0⟧ a confié l'orchestre à la génération suivante et quitté le devant de la scène.
+709	Annuler
+710	Partir pour ⟦0⟧
+711	En diligence : <b>⟦0⟧ mois</b>, voyage <b>⟦1⟧ francs</b>.<br><span style="font-size:12.5px">⟦2⟧ / Lv⟦3⟧ / ⟦4⟧</span>
+712	Sous votre contrôle
+713	 : territoire du camp
+714	Départ
+715	Arrivée à ⟦0⟧.
+716	Concert à ⟦0⟧. Programme : ⟦1⟧. Recette : ⟦2⟧ francs.
+717	Concert
+718	<b>⟦0⟧</b><br>Programme : ⟦1⟧⟦2⟧⟦3⟧<br><br>Recette <b>+⟦4⟧ francs</b> / Renommée +⟦5⟧
+719	<br>Avec : ⟦0⟧⟦1⟧
+720	 et d'autres
+721	<br><span style="font-size:12.5px">(territoire rival : la salle était clairsemée)</span>
+722	Mois suivant
+723	<br><br>Vous avez longuement conversé avec ⟦0⟧. <b>Affinité +15</b>
+724	Potins de salon
+725	Sous les lustres, vous avez entendu ce potin.<div class="trivia">[⟦0⟧] ⟦1⟧</div>Votre inspiration s'est élevée (inspiration +40 pour la prochaine persuasion). ⟦2⟧
+726	Repos.
+727	Guerre des concerts
+728	Le camp ⟦0⟧ battu dans une guerre des concerts : vous vous emparez de ⟦1⟧ !
+729	⟦0⟧ est désormais sous votre contrôle.
+730	Guerre des concerts perdue à ⟦0⟧.
+731	Le bastion du camp ⟦0⟧ a tenu. Augmentez votre renommée et revenez.
+732	Porte close
+733	<b>⟦0⟧</b> : « Nous ne sommes pas du même rang. Faites-vous un nom et revenez. »<br><br><span style="font-size:12.5px">Un musicien ne vous écoute pas si son niveau dépasse votre niveau de renommée +1 (+2 pour les théâtres et les cours). Donnez des concerts pour accroître votre renommée.</span>
+734	<div class="sc"><h3>⟦0⟧</h3><div class="subt">Persuasione</div>\n    <div class="vs"><div class="side">⟦1⟧<div>⟦2⟧</div></div><div class="mid">vs</div>\n      <div class="side">⟦3⟧<div>⟦4⟧<br><span style="font-size:11px;color:var(--mute)">Lv⟦5⟧ · ⟦6⟧</span></div></div></div>\n    <div class="meter"><div class="c0"></div><div class="ndl" id="ndl"></div></div><div class="mlab"><span>Rupture</span><span>Affinité</span><span>Conquis</span></div>\n    <div class="bubbles" id="bubs"></div>\n    <div class="insp" id="insp"><i id="inspI"></i></div><div class="mlab"><span>Inspiration</span><span id="inspT"></span></div>\n    <div class="cmds" id="cmds">⟦7⟧\n      <button class="btn gold" id="cad">Cadence<small>quand l'inspiration est pleine</small></button></div>\n    ⟦8⟧<div class="rinfo"><span id="rnd"></span><button class="btn" id="quit" style="padding:3px 10px;font-size:12px">Se retirer</button></div></div>
+735	Débauchage
+736	<div class="pmeta" style="margin-top:6px">* Sans repérage, impossible de savoir quelle approche a porté.</div>
+737	(⟦0⟧ a glissé un mot en votre faveur : « ⟦1⟧, vous pouvez vous fier à cette personne. »)
+738	Le bon mot d'un ami +25
+739	⟦0⟧ : « Soyez bref, je vous prie. »
+740	« Vous me demandez de trahir le maître ⟦0⟧ ? »
+741	<span class="fx">— cela porte !</span>
+742	<span class="fx">— sans effet…</span>
+743	<span class="fx" style="color:#c22">— effet contraire !</span>
+744	Mesure ⟦0⟧ sur ⟦1⟧   Affinité ⟦2⟧
+745	Cadence !
+746	Emporter la décision par une improvisation
+747	(Vous enlevez d'un trait une cadence improvisée… ♪)
+748	Cadence
+749	⟦0⟧ est à vous ! ⟦1⟧ passe sous votre contrôle.
+750	Ville conquise
+751	<b>⟦0⟧</b> vous soutient désormais.<br>Vous recevez <b>+⟦1⟧ francs</b> chaque mois.
+752	Les pourparlers avec ⟦0⟧ ont échoué.
+753	Rupture
+754	⟦0⟧ : « Inutile de poursuivre. Veuillez vous retirer. »⟦1⟧⟦2⟧
+755	<br><br>…Si les mots ne suffisent pas, il ne reste qu'à <b>convaincre par le son</b>.
+756	Convaincre en jouant
+757	Se retirer
+758	En suspens
+759	⟦0⟧ : « Laissez-moi y réfléchir. »⟦1⟧<br>Vous pourrez reprendre à une affinité d'environ <b>⟦2⟧</b>.
+760	<div class="sc"><h3>⟦0⟧</h3><div class="subt">Duello musicale — ⟦1⟧</div>\n    <div class="vs"><div class="side">⟦2⟧<div>⟦3⟧</div></div><div class="mid">vs</div>\n    <div class="side">⟦4⟧<div>⟦5⟧<br><span style="font-size:11px;color:var(--mute)">Lv⟦6⟧</span></div></div></div>\n    <div class="tell">Juge : <b>⟦7⟧</b><br>Morceau de l'adversaire : ⟦8⟧ (point fort : ⟦9⟧)</div>\n    ⟦10⟧\n    <div class="sec-t">— Choisissez votre morceau —</div>\n    ⟦11⟧\n    <div style="font-size:12px;color:var(--mute);margin-top:6px">Sur trois mouvements, chacun joue une carte : Technique, Expression ou Improvisation. La Technique l'emporte sur l'Expression, l'Expression sur l'Improvisation, l'Improvisation sur la Technique. Même du mauvais côté, un écart de capacité de 5 ou plus renverse le résultat. Au deuxième mouvement (Adagio), l'Expression reçoit +2 ; au troisième (Presto), la Technique reçoit +2.</div></div>
+761	Duel musical
+762	<div class="sec-t">— Second (votre conseiller en coulisse) —</div><div class="sec2">⟦0⟧</div>
+763	<button class="btn piece" data-pc="⟦0⟧">⟦1⟧<small>+2 en ⟦2⟧</small></button>
+764	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧⟦2⟧</div>\n    <div class="score"><div>⟦3⟧<span>⟦4⟧</span></div><div style="color:var(--mute)">:</div><div>⟦5⟧<span>⟦6⟧</span></div></div>\n    <div class="tell">⟦7⟧ : ⟦8⟧</div>\n    <div class="cards3">⟦9⟧</div>\n    <div class="mvlog">⟦10⟧</div></div>
+765	 — +2 en ⟦0⟧
+766	<button class="pc" data-k="⟦0⟧"><span class="ic">⟦1⟧</span>⟦2⟧<small>⟦3⟧<br>Vous ⟦4⟧</small></button>
+767	(sans instrument personnel : Technique -2)
+768	<b style="color:var(--gold2)">La chanterelle a cassé ! Mais vous avez tenu jusqu'au bout sur la seule corde de sol (Improvisation +4)</b>
+769	<span style="color:#e77">La chanterelle a cassé ! (-3)</span>
+770	l'avantage était de votre côté
+771	l'avantage était de votre côté, mais une maîtrise écrasante l'a renversé
+772	l'avantage était contre vous, mais une maîtrise écrasante l'a renversé !
+773	l'avantage a joué contre vous
+774	Même carte (⟦0⟧) : ⟦1⟧
+775	vous l'emportez de peu
+776	il s'en est fallu de peu
+777	Toute la salle s'est levée.
+778	Les dames se sont évanouies l'une après l'autre.
+779	Les « Bravo ! » ne cessent pas.
+780	Le son de ⟦0⟧ a régné sur la salle.
+781	Les applaudissements ont été plus longs pour l'adversaire.
+782	La salle se tait. L'adversaire a gagné.
+783	⟦0⟧<b>⟦1⟧</b>   Vous : ⟦2⟧ / ⟦3⟧ : ⟦4⟧   → ⟦5⟧ (⟦6⟧)<br><span style="color:var(--mute)">⟦7⟧ : ⟦8⟧</span>
+784	<span style="color:var(--gold2)">Gagné</span>
+785	<span style="color:#e77">Perdu</span>

@@ -1,0 +1,141 @@
+3895	L'orchestre de ⟦0⟧<br>
+3896	<div class="rp-sec">Liens historiques</div><p class="rp-p">⟦0⟧</p>
+3897	<div class="rp-sec">Les grandes soirées</div>⟦0⟧
+3898	<div class="tl"><b>⟦0⟧</b><span>⟦1⟧ (⟦2⟧)<br><span style="color:#8a6420">⟦3⟧⟦4⟧</span>   Vedette : ⟦5⟧</span></div>
+3899	<div class="rp-sec">Succès (⟦0⟧)</div><p class="rp-p">⟦1⟧</p>
+3900	Le lien de cette histoire semble endommagé
+3901	ConcertoStorm_sauvegarde_⟦0⟧.json
+3902	Confirmer l'importation
+3903	La sauvegarde, le Panthéon et les succès de cet appareil seront remplacés par le contenu du fichier.
+3904	Importer
+3905	Importé
+3906	Importation impossible
+3907	Ce fichier ne semble pas être une sauvegarde de Concerto Storm.
+3908	Montrer cette histoire<small>partage par lien et image · score total ⟦0⟧ « ⟦1⟧ »</small>
+3909	<b>Copie de sécurité</b><br><span class="pmeta">Exportez votre sauvegarde, le Panthéon et les succès dans un fichier pour les transférer sur un autre appareil.</span><div class="actions" style="grid-template-columns:1fr 1fr;margin-top:6px"><button class="btn" id="shEx">Exporter</button><button class="btn" id="shIm">Importer</button></div>
+3910	Montrer votre orchestre maintenant<small>partagez votre progression par lien et image</small>
+3911	⟦1|mon⟧ ⟦0⟧ (en cours)
+3912	En ⟦1|mon⟧ ⟦0⟧, ⟦2⟧ poursuit son voyage : ⟦3⟧ musiciens⟦4⟧⟦5⟧. ⟦6⟧
+3913	, basé à ⟦0⟧
+3914	, avec ⟦0⟧ (Lv⟦1⟧) pour vedette
+3915	Le lien « ⟦0⟧ » soutient l'orchestre.
+3916	1723 Baroque
+3917	1781 Classique
+3918	1832 Romantique
+3919	1876 Postromantique
+3920	1905 Nouveau siècle
+3921	\\(en cours\\)$
+3922	Ajouter aux Orchestres de tous<small>⟦0⟧</small>
+3923	Inscrire cette histoire au classement
+3924	Inscrire comme partie en cours (remplacée après la victoire)
+3925	Veuillez saisir un nom
+3926	Envoi…
+3927	Inscrit ! ⟦0⟧e au général sur ⟦1⟧ orchestres<small>⟦2⟧</small>
+3928	L'histoire du même orchestre a été mise à jour
+3929	Désormais présent dans les Orchestres de tous
+3930	Attendez un peu et réessayez
+3931	Inscription impossible (réessayez)
+3932	Connexion impossible (réessayez)
+3933	<div class="sc"><h3>Les Orchestres de tous</h3><div class="subt">Les histoires d'autres directeurs</div>\n   <div class="ftabs">⟦0⟧⟦1⟧⟦2⟧</div>\n   <div class="ftabs"><button data-rs="" class="⟦3⟧">Toutes époques</button>⟦4⟧</div>\n   <div id="rkList"><div class="card pmeta" style="text-align:center">Chargement…</div></div>\n   <div class="card pmeta">Vous pouvez inscrire votre orchestre avec « Montrer », sur l'écran de l'histoire ou dans l'onglet Chronique. Les mots déplacés sont interdits dans les noms.</div>\n   <button class="btn" id="rkBack" style="width:100%;margin-top:6px">Retour</button></div>
+3934	Classement général
+3935	Récents
+3936	Mes histoires
+3937	<div class="card pmeta">Chargement impossible pour l'instant. Rouvrez cette page un peu plus tard.</div>
+3938	Vous n'avez encore aucune histoire inscrite.
+3939	Aucune histoire encore. Soyez le premier orchestre.
+3940	N° ⟦0⟧
+3941	<div class="pmeta" style="margin:4px 0">⟦0⟧ orchestres⟦1⟧</div>
+3942	 (par score total)
+3943	 (les plus récents d'abord)
+3944	<button class="btn rkrow ⟦0⟧" data-ri="⟦1⟧"><span class="rkno">⟦2⟧</span>⟦3⟧<div style="flex:1;text-align:left"><b>⟦4⟧</b>⟦5⟧<br><span class="pmeta">⟦6⟧ · ⟦7⟧ · ⟦8⟧</span><br><span class="pmeta">⟦9⟧ · « ⟦10⟧ »</span></div><div style="text-align:right"><b style="font-size:17px">⟦11⟧</b><br><span class="pmeta">⟦12⟧</span></div></button>
+3945	<span class="kai" style="background:#557">en cours</span>
+3946	Retour aux Orchestres de tous
+3947	Cette histoire n'a pas pu être chargée
+3948	Les Orchestres de tous<small>histoires et classement d'autres directeurs</small>
+3949	Voir les Orchestres de tous<small>classement et histoires d'autres directeurs</small>
+3950	Technique transcendante
+3951	entame la confiance
+3952	Chanter à plein cœur
+3953	entame le sang-froid
+3954	Riposte improvisée
+3955	les deux ; renvoie une contre-attaque
+3956	Parodier le thème
+3957	coup rude au sang-froid ; temps de recharge
+3958	Sourire au public
+3959	fait monter les applaudissements
+3960	Prendre la pose
+3961	porte dans la cadence
+3962	Introduction : Maestoso
+3963	Adagio : le mouvement du chant
+3964	« Chanter à plein cœur » brille
+3965	Scherzo : le mouvement espiègle
+3966	« Riposte improvisée » et « Parodier » brillent
+3967	Presto : le mouvement de la course
+3968	« Technique transcendante » brille
+3969	Cadenza : solo
+3970	« Prendre la pose » brille
+3971	lève l'archet (ou les doigts) ! Une salve de technique transcendante arrive
+3972	Salve de ⟦0⟧ ! Concentration -⟦1⟧
+3973	a un rire froid…
+3974	Un ricanement ! Votre combo est rompu (concentration -⟦0⟧)
+3975	ouvre les bras vers le public !
+3976	On vous a volé le public ! Sang-froid de l'adversaire +⟦0⟧, applaudissements -20
+3977	fronce le sourcil et ouvre la bouche…
+3978	« Cette lecture est fausse. » Vos coups portent moitié moins pendant un moment (concentration -⟦0⟧)
+3979	Point faible
+3980	Son terrain
+3981	Mouvement
+3982	Toujours le même tour… le public se lasse
+3983	Riposte ! Vous retournez l'attaque de l'adversaire à votre profit
+3984	Riposte
+3985	Parfait !
+3986	Cadence fatale !
+3987	⟦0⟧ ne plaisante plus ! Les attaques s'accélèrent
+3988	⚠ ⟦0⟧ ⟦1⟧
+3989	⟦0⟧ s'est écroulé, l'écume aux lèvres !
+3990	⟦0⟧, ⟦1⟧, s'est rendu !
+3991	ôtant les mains du clavier
+3992	posant l'archet
+3993	Votre concentration s'est rompue… vos doigts se sont arrêtés
+3994	Victoire aux points ! ⟦0⟧ vous a donné l'avantage
+3995	Défaite aux points… ⟦0⟧ a donné l'avantage à l'adversaire
+3996	<b>Combat singulier</b>   ⟦0⟧<br><span class="pmeta">combo max ⟦1⟧ · dégâts infligés ⟦2⟧ · ripostes ⟦3⟧ · points faibles touchés ⟦4⟧</span>
+3997	Vous avez subi trop d'attaques et votre concentration s'est rompue. Quand « ⚠ » paraît, appuyez sur « Riposte improvisée » pour renvoyer l'attaque.
+3998	⟦0⟧ préfère « ⟦1⟧ ». Frappez avec « ⟦2⟧ » : c'est 1,4 fois plus efficace.
+3999	Vous comptez trop sur « ⟦0⟧ ». À répéter le même tour, le public se lasse et l'effet faiblit.
+4000	Chaque mouvement favorise un tour différent. Regardez le nom du mouvement, en haut, et changez. Quand les applaudissements sont au plus haut : « Cadence fatale ».
+4001	Aux points, on compare ce qui reste à l'adversaire (confiance ⟦0⟧ %, sang-froid ⟦1⟧ %) et ce qui vous reste de concentration (⟦2⟧ %).
+4002	<div class="anl"><b>⟦0⟧</b><br>Combo max ⟦1⟧ / points faibles touchés ⟦2⟧ / ripostes ⟦3⟧⟦4⟧⟦5⟧</div>
+4003	Pourquoi vous avez gagné
+4004	Pourquoi vous avez perdu
+4005	 / le plus utilisé : « ⟦0⟧ » ×⟦1⟧
+4006	<br><b>Conseil pour la prochaine fois</b><br>
+4007	<div class="sc rt" id="rtWrap">\n   <div class="rt-top"><span id="rtTime">45</span><span id="rtPh">⟦0⟧</span></div>\n   <div class="rt-g"><label>Confiance</label><div class="rtbar"><i id="rtHp" class="hp"></i></div></div>\n   <div class="rt-g"><label>Sang-froid</label><div class="rtbar"><i id="rtMp" class="mp"></i></div></div>\n   <div class="rt-stage"><div class="rt-you" id="rtYou">⟦1⟧</div><div class="rt-vs">VS</div>\n    <div class="rt-opp" id="rtOpp">⟦2⟧<div class="rt-face" id="rtFace"></div><div class="rt-name">⟦3⟧<br><span class="pmeta">Point fort : ⟦4⟧ / point faible : ⟦5⟧</span></div></div></div>\n   <div class="rt-say" id="rtSay">Sous le regard de ⟦6⟧, le duel a commencé !</div>\n   <div class="rt-btns">⟦7⟧</div>\n   <button class="btn rt-fin" id="rtFin" disabled>Cadence fatale<small id="rtCh">applaudissements 0 %</small></button>\n   <div class="rt-g"><label>Concentration</label><div class="rtbar"><i id="rtFoc" class="foc"></i></div></div>\n   <div class="rt-c"><span>Combo <b id="rtCombo">0</b></span><span class="pmeta">Tant que « ⚠ » s'affiche, « Riposte improvisée » renvoie l'attaque</span></div></div>
+4008	Les applaudissements sont au plus haut ! Maintenant !
+4009	applaudissements ⟦0⟧ %
+4010	Forme du duel
+4011	Morceau choisi : ⟦0⟧. Sous quelle forme l'affrontez-vous ?
+4012	Combat singulier<small>45 secondes de frappes rapides. Amenez à 0 la confiance ou le sang-froid de l'adversaire pour le mettre K.-O.</small>
+4013	Trois mouvements<small>se deviner l'un l'autre entre Technique, Expression et Improvisation (la forme d'origine)</small>
+4014	<div class="pmeta" style="margin-top:4px">Après avoir choisi un morceau, vous optez pour le <b>combat singulier</b> (gagner par des frappes rapides) ou les <b>trois mouvements</b> (gagner en devinant l'adversaire).</div>
+4015	Soliste
+4016	Pfff !
+4017	Cette tête !
+4018	Qu'est-ce que c'est que cette tête ?
+4019	Pfft !
+4020	Ah ah ah ah
+4021	Hii !
+4022	Bwah
+4023	De mon temps…
+4024	Trop vite !
+4025	Autrefois…
+4026	Vous voilà donc, ⟦0⟧. Commencez par donner un <b>concert</b> dans cette ville. Le programme choisi et le placement de chacun décident de l'accueil. <b>Dans un concerto, tout tient au choix du soliste.</b>
+4027	Superbe. Ensuite, <b>rassemblez des compagnons</b>. Abordez un musicien de cette ville avec « Persuader ». Le secret est de trouver l'approche qui convient à ses goûts.
+4028	Quand vous aurez plus de musiciens, allez aux <b>Répétitions</b>. Vous y choisissez qui part en tournée et leur confiez <b>instruments et archets</b>. Les beaux instruments se trouvent chez les marchands… mais gare aux imitations.
+4029	Le groupe choisi, partez en <b>tournée</b>. Vous jouez dans les salles un soir après l'autre, et <b>chaque ovation sur la scène du grand maître effrite le bastion de la ville</b>. Abattez-le entièrement et la ville est à vous.
+4030	Allons, en route. Chaque soir, observez le public et choisissez votre style de jeu. <b>Forcez un musicien à bout à monter en scène et il quittera l'orchestre.</b>
+4031	Voilà pour les bases. Désormais, faites à votre guise. Gagnez des villes, remplissez les pupitres et visez le grand concert légendaire. Appuyez sur le <b>ⓘ</b> de la renommée ou de l'endurance pour une explication. …Ah, et méfiez-vous beaucoup des <b>drôles de musiciens</b> que vous croiserez en ville.
+4032	<div>⟦0⟧</div><div class="tb"><b>⟦1⟧</b>   <span style="font-size:11px;color:#8a6a3a">guide ⟦2⟧/⟦3⟧</span><br>⟦4⟧\n    <div class="tbn"><button id="tutX">Terminer le guide</button>⟦5⟧</div></div>
+4033	Le maître
+4034	<button class="go" id="tutOk">Compris</button>
+4035	<button class="go" id="tutGo">S'y rendre</button>

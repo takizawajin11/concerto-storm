@@ -1,0 +1,181 @@
+3528	Carlo Bergonzi, années 1730
+3529	Un maître de Crémone formé tout près de l'atelier de Stradivari.
+3530	G. B. Guadagnini, années 1750
+3531	Un maître qui alla de ville en ville. Très recherché pour sa sonorité puissante.
+3532	Violon Gasparo da Salò, années 1570
+3533	Par le fondateur de l'école de Brescia. Ole Bull en jouait un exemplaire sculpté.
+3534	J.-B. Vuillaume (copie d'un grand instrument)
+3535	Le grand luthier et marchand de Paris. Ses copies de Stradivari étaient si belles qu'on les distinguait à peine des originaux.
+3536	Violoncelle Stradivarius « Duport », 1711
+3537	Napoléon l'aurait essayé et éraflé de l'éperon de sa botte.
+3538	Violoncelle Domenico Montagnana
+3539	Le luthier surnommé « le Lion de Venise ». Un son ample et riche.
+3540	Archet baroque (type Corelli)
+3541	Un archet léger, à cambrure extérieure. Fait pour les notes brèves et chantantes.
+3542	Archet Cramer
+3543	L'archet de transition qu'affectionnait Cramer à Londres, un pont vers l'archet moderne.
+3544	Archet John Dodd
+3545	Par l'archetier surnommé « le Tourte anglais ».
+3546	Archet François Tourte
+3547	« Le Stradivari de l'archet », qui fixa la forme moderne. Le bois de pernambouc et la cambrure intérieure donnèrent un son long et puissant.
+3548	Archet Dominique Peccatte
+3549	Grand archetier formé dans l'atelier de Vuillaume.
+3550	Archet Nikolaus Kittel
+3551	Le grand archetier de Saint-Pétersbourg, surnommé « le Tourte russe ».
+3552	Archet François Nicolas Voirin
+3553	Un archet mince et souple, pour une ère nouvelle.
+3554	Archet Eugène Sartory
+3555	Un archet puissant, aimé des grands violonistes du XXe siècle.
+3556	Archet ordinaire
+3557	Un archet courant, qu'on trouve dans n'importe quel atelier.
+3558	Piano Broadwood
+3559	La grande maison londonienne. En 1818, elle en offrit un à Beethoven.
+3560	Piano Conrad Graf
+3561	Le maître viennois, connu pour le piano des dernières années de Beethoven et celui que Schumann offrit à Clara.
+3562	Bösendorfer
+3563	La grande maison viennoise, fondée en 1828. Elle se fit un nom en résistant au jeu féroce de Liszt.
+3564	Bechstein
+3565	La grande maison berlinoise, fondée en 1853. Jouée par Bülow et Liszt.
+3566	 (imitation)
+3567	J.-B. Vuillaume (Paris)
+3568	Tout instrument de Crémone sort de chez moi avec mon certificat.
+3569	W. E. Hill & Sons (Londres)
+3570	Avec un certificat Hill, il sera reçu partout où vous irez.
+3571	Luigi Tarisio, colporteur
+3572	Une trouvaille rare, monsieur, sortie d'un grenier d'Italie.
+3573	Marchand d'instruments local
+3574	Un commerce sûr et honnête, voilà ce que nous offrons.
+3575	Falsoni, marchand douteux
+3576	Patron, c'est un vrai Stradivari, parole d'honneur. À ce prix-là, aujourd'hui seulement.
+3577	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧ · vers ⟦2⟧</div>\n   <div class="bubble" style="margin:8px 0">« ⟦3⟧ »</div>\n   <div class="card pmeta">⟦4⟧   Vos fonds : ⟦5⟧ fr</div>\n   ⟦6⟧\n   <button class="btn" id="dlBack" style="width:100%;margin-top:6px">Quitter la boutique</button></div>
+3578	Les articles de cette boutique sont vendus avec certificat (authenticité garantie).
+3579	<b style="color:#e88">Bien en dessous du cours. Si c'est trop beau pour être vrai, il y a peut-être anguille sous roche.</b>
+3580	L'authenticité ne peut être connue avant l'expertise.
+3581	<div class="card" style="font-size:12.5px"><b>⟦0⟧</b>   <span style="color:⟦1⟧">⟦2⟧</span><br><span class="pmeta">⟦3⟧ · ⟦4⟧</span>⟦5⟧\n     <br><button class="btn ⟦6⟧" data-buy="⟦7⟧" style="width:100%;margin-top:4px" ⟦8⟧>⟦9⟧</button></div>
+3582	Vendu
+3583	Acheter   ⟦0⟧ fr
+3584	⟦1⟧ acheté à ⟦0⟧ pour ⟦2⟧ fr.
+3585	Le bel instrument « ⟦0⟧ » est à vous
+3586	Achat conclu
+3587	Vous avez obtenu <b>⟦0⟧</b>. ⟦1⟧<br><span class="pmeta">Attribuez-le à un emplacement d'instrument ou d'archet depuis la fiche d'un musicien, aux Répétitions.</span>
+3588	<br>Avec certificat.
+3589	<br>Son authenticité n'est pas encore établie…
+3590	Retour à la boutique
+3591	Vuillaume
+3592	Hill & Sons
+3593	Un luthier chevronné
+3594	<div class="sc"><h3>Réserve d'instruments</h3><div class="subt">⟦0⟧ objet(s)</div>\n   <div class="card pmeta">Expertise : ⟦1⟧ (⟦2⟧ fr pièce). Un bel instrument sans certificat peut n'être qu'une imitation.</div>\n   ⟦3⟧\n   <button class="btn" id="stBack" style="width:100%;margin-top:6px">Retour</button></div>
+3595	<div class="card" style="font-size:12.5px"><b>⟦0⟧</b> <span style="color:⟦1⟧">⟦2⟧</span>⟦3⟧⟦4⟧\n      <br><span class="pmeta">⟦5⟧⟦6⟧</span>\n      <div class="sec2" style="margin-top:4px">⟦7⟧<button class="btn" data-sell="⟦8⟧" ⟦9⟧>Vendre (⟦10⟧ fr)</button></div></div>
+3596	 <span class="kai" style="background:#3a6a3a">Certificat</span>
+3597	 <span class="pmeta"> · utilisé par ⟦0⟧</span>
+3598	 · acheté à ⟦0⟧
+3599	<button class="btn" data-ap="⟦0⟧" ⟦1⟧>Expertiser</button>
+3600	<div class="card pmeta">Rien encore</div>
+3601	Expertisé par ⟦0⟧, ⟦1⟧ s'est révélé être une imitation.
+3602	« ⟦0⟧ » se révèle être une imitation
+3603	L'expertise
+3604	⟦0⟧ a regardé l'intérieur du fond et secoué la tête.<br><br>« L'étiquette seule est la copie conforme de la vraie. Mais ceci est ⟦1⟧. »<br><br><b>C'était un faux…</b>⟦2⟧
+3605	un violon de série de Mirecourt
+3606	une pièce bon marché d'un atelier saxon
+3607	un instrument anonyme à l'étiquette recollée
+3608	<br><span class="pmeta">Refilé par ⟦0⟧.</span>
+3609	⟦0⟧ a été expertisé : authentique.
+3610	⟦0⟧ : « Aucun doute. Il est <b>authentique</b>. Je vous remets un certificat. »
+3611	Vendre
+3612	Vous vous séparerez de ⟦0⟧ pour ⟦1⟧ fr.
+3613	⟦0⟧ vendu pour ⟦1⟧ fr.
+3614	L'instrument que jouait ⟦0⟧ (⟦1⟧) s'est révélé être une imitation.
+3615	Il ne sonne décidément pas…
+3616	⟦0⟧⟦1⟧ a l'air perplexe.<br>« J'ai beau jouer de cet instrument, le son ne porte pas. »<br><br>En regardant par l'ouïe, vous voyez que seul le papier de l'étiquette est neuf. <b>⟦2⟧ n'était qu'une imitation !</b>⟦3⟧
+3617	Un colporteur sur la route
+3618	Devant l'auberge, un colporteur a ouvert un vieil étui à violon. « Un Stradivari. À ce prix-là, c'est maintenant ou jamais. »
+3619	Acheter<small>un tiers du cours. S'il est vrai, fortune faite</small>
+3620	Vous n'aviez pas assez sur vous.
+3621	Vous avez obtenu « ⟦1⟧ » pour ⟦0⟧ fr. …Serait-il authentique ?
+3622	Le colporteur a claqué la langue et s'en est allé chercher son prochain client.
+3623	<button class="btn gold" id="uDeal">Aller chez le marchand d'instruments<small>⟦0⟧ · beaux instruments et archets (le stock change chaque mois)</small></button><button class="btn" id="uStore">
+3624	Alto solo
+3625	Cuivre solo
+3626	Cuivres
+3627	Trompette solo
+3628	Cor solo
+3630	Haydn : Concerto pour trompette
+3631	J'ai imaginé moi-même une trompette à clés.
+3632	Une trompette capable de demi-tons, pour votre orchestre.
+3633	Trompettiste de la cour de Vienne. Il mit au point la trompette à clés, pour laquelle Haydn écrivit son concerto.
+3635	Méthode de cor à pistons
+3636	Le cor à pistons est l'instrument de l'avenir.
+3637	Le nouveau cor, pour votre orchestre.
+3638	Pionnier du cor à pistons. Il l'enseigna au Conservatoire de Paris à partir de 1833.
+3640	Le solo de cor de la Neuvième de Beethoven
+3641	Je suis corniste au Kärntnertortheater.
+3642	Le cor de Vienne, pour votre orchestre.
+3643	Corniste viennois réputé ; il aurait joué le fameux solo de cor du troisième mouvement à la création de la Neuvième de Beethoven.
+3645	Pièces pour viola alta
+3646	Le maître Wagner s'est pris d'affection pour mon grand alto.
+3647	Le son de la viola alta, pour votre orchestre.
+3648	L'instrumentiste qui conçut le grand alto dit « viola alta ». Invité par Wagner, il joua au premier festival de Bayreuth en 1876.
+3649	Cornet
+3651	Solo de cornet : Le Carnaval de Venise
+3652	Je joue dans l'harmonie de Sousa.
+3653	Le roi du cornet, pour votre orchestre.
+3654	Cornettiste vedette de l'harmonie de Sousa. Ses études d'une difficulté transcendante sont encore la bible des cuivres.
+3656	Les parties de cor des symphonies de Brahms
+3657	Trente ans de cor au Gewandhaus.
+3658	Le cor de Leipzig, pour votre orchestre.
+3659	Cor solo de l'Orchestre du Gewandhaus et grand pédagogue, connu pour ses études d'orchestre pour cor.
+3660	Cor et cuivres
+3661	(^|[^r])[Aa]lto
+3662	Haydn : Concerto pour trompette (1796)
+3663	Trompette soliste
+3664	Concerto brandebourgeois n° 2 (trompette aiguë)
+3665	Flûte à bec
+3666	écrit pour la trompette à clés de Weidinger
+3667	le virtuose de la trompette de la ville même de Bach
+3668	Voix intérieures profondes
+3669	Une fanfare éclatante
+3670	Une fanfare de fête
+3671	Les ⟦0⟧ pupitres occupés
+3672	Alto Gasparo da Salò
+3673	Pour les grands altos, voyez l'école de Brescia : un son profond et large.
+3674	Alto Stradivarius, 1719
+3675	Il ne subsiste qu'une dizaine d'altos de Stradivari.
+3676	Alto d'atelier
+3677	Un alto courant.
+3678	Cor d'argent Raoux
+3679	Un chef-d'œuvre de l'atelier Raoux, à Paris. Punto aurait joué un cor Raoux en argent.
+3680	Cor naturel
+3681	Le cor d'autrefois, dont on modifie la hauteur de la main dans le pavillon.
+3682	Cor à pistons
+3683	Le cor à pistons, né vers 1818. Les demi-tons viennent sans peine.
+3684	Trompette à clés
+3685	Mise au point par Weidinger : une trompette qui donne les demi-tons au moyen de clés.
+3686	Cornet à pistons
+3687	Un cuivre à pistons né à Paris vers 1828. Instrument vedette du XIXe siècle.
+3688	Trompette baroque
+3689	Une longue trompette sans pistons. Jouer des mélodies dans l'aigu demandait un virtuose.
+3690	(\\d+) des 9 pupitres
+3691	⟦1⟧ des ⟦0⟧ pupitres
+3692	tous les 9 pupitres
+3693	tous les ⟦0⟧ pupitres
+3694	Rythme flottant
+3695	Fausses notes
+3696	Grimaces
+3697	Longues histoires d'autrefois
+3698	Ne part jamais
+3700	Zigeunerweisen (lecture personnelle)
+3701	Konnichiwa ! Non, je veux dire : bonjour !
+3702	Je viens du Japon pour étudier la musique ! Prenez-moi, s'il vous plaît !
+3703	Un étudiant venu du Japon qui, on ne sait comment, paraît à toutes les époques de l'Europe. Il ne compte pas les temps, mais la puissance de ses grimaces est sans rivale sur le continent. Il change en un instant l'humeur de la salle.
+3705	« Mon morceau de prédilection » (le titre change chaque fois)
+3706	De mon temps, voyez-vous, « violon solo », cela voulait dire moi.
+3707	Cet orchestre ne tiendrait pas sans moi, hein ?
+3708	Un vieux violoneux qui a élu domicile dans l'orchestre. Généreux sur la justesse, mais pour la théorie et les histoires d'autrefois, il ne le cède à personne. Il n'a aucune intention de céder le pupitre de violon solo.
+3710	Solo de cor (couac compris)
+3711	Le soir du concert, on n'a qu'un coup. S'il casse, c'est aussi de la musique.
+3712	Avec mon cor, je donnerai du poids à cet orchestre.
+3713	Un corniste blanchi sous le harnais. Le couac de la première note est désormais une tradition, et le public l'attend en retenant son souffle. Des histoires d'autrefois à foison, aussi.
+3715	Concerto pour flûte (la partition est à la maison)
+3716	Oh, la partition… je l'ai pourtant apportée, c'est certain.
+3717	J'oublie des choses, mais mon jeu est sûr ! Probablement.
+3718	Flûtiste qui oublie la partition, le pupitre et parfois l'instrument lui-même. Guère à l'aise non plus pour compter les silences.

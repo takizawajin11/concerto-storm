@@ -1,0 +1,137 @@
+1159	Magnifique !
+1160	♡ pâmoison
+1161	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧   salle ⟦2⟧ %</div>\n   <div class="stage"><svg viewBox="0 0 360 210" class="stbg"><rect width="360" height="210" fill="#1a0e0a"/>\n    <path d="M40,150 L320,150 L352,210 L8,210Z" fill="#5a3a22"/><path d="M40,150 L320,150" stroke="#8a6a3a" stroke-width="2"/>\n    ⟦3⟧\n    <path d="M14,210 L14,34 Q180,-12 346,34 L346,210" fill="none" stroke="#cfa84f" stroke-width="7"/>\n    <path d="M18,24 Q60,70 46,210 L18,210Z" fill="#8a1a22"/><path d="M342,24 Q300,70 314,210 L342,210Z" fill="#8a1a22"/>\n    <path d="M18,26 Q100,64 180,42 Q260,64 342,26 L342,14 L18,14Z" fill="#a01e28"/></svg>\n    <div class="spot"></div>⟦4⟧\n    ⟦5⟧\n   </div>\n   <div id="audwrap" class="audwrap">⟦6⟧</div>\n   <div class="mlab" style="margin-top:6px"><span>Applaudissements</span><span id="stx"></span></div><div class="applause"><i id="apl"></i></div>\n   <div id="critic"></div></div>
+1162	<small>Magistral !</small>
+1163	Oh… !
+1164	Superbe !
+1165	…Hum ?
+1166	Une fausse note ?
+1167	La maîtresse du salon
+1168	Le critique du journal
+1169	« Je ne veux plus jamais entendre cela. »
+1170	« C'était ennuyeux. »
+1171	« Une exécution solide. »
+1172	« Une soirée superbe. »
+1173	« Une interprétation qui restera dans les annales. »
+1174	★⟦0⟧ [⟦1⟧] billets ×⟦2⟧
+1175	Fièvre du bal +⟦0⟧ fr
+1176	★Schumann [Neue Zeitschrift für Musik] renommée ×1,3
+1177	★Cimarosa [Roi des bis] renommée ×1,5
+1178	Sans <b>⟦0⟧</b> (avec un remplaçant), l'accueil aurait été de ⟦1⟧. Grâce à ce musicien, force +⟦2⟧.
+1179	Un concert ★5 : ⟦0⟧ (⟦1⟧). Héros : ⟦2⟧
+1180	⟦1⟧ à ⟦0⟧. Accueil ⟦2⟧, solde ⟦3⟧⟦4⟧ fr. Héros : ⟦5⟧
+1181	<div class="headline">⟦0⟧</div><div class="dateline">⟦2|mon⟧ ⟦1⟧   ⟦3⟧</div>\n    <p>L'orchestre ⟦4⟧ a donné ⟦5⟧. ⟦6⟧⟦7⟧</p>\n    <div class="stars">⟦8⟧</div>\n    <div class="sec-p">L'apport de chaque interprète</div>⟦9⟧\n    ⟦10⟧\n    <div class="sec-p">Les comptes</div>\n    <p style="font-size:12.5px">Billets ⟦11⟧ fr (salle ⟦12⟧ % · ⟦13⟧ places)⟦14⟧⟦15⟧⟦16⟧⟦17⟧<br>Location de la salle -⟦18⟧ fr<br><b>Solde ⟦19⟧⟦20⟧ fr</b> / Renommée +⟦21⟧⟦22⟧</p>\n    ⟦23⟧⟦24⟧
+1182	<br>   dont attirés par les idoles du public <b>+⟦0⟧ fr</b> (⟦1⟧)
+1183	<br>Recette amputée par un coup du sort (×⟦0⟧)
+1184	<p>Progrès par l'expérience : <b>⟦0⟧</b></p>
+1185	<p>Cohésion renforcée : <b>⟦0⟧</b></p>
+1186	En convalescence
+1187	⟦0⟧ tombe malade
+1188	⟦0⟧⟦1⟧ est tombé malade et ne pourra pas monter sur scène pendant ⟦2⟧ mois.<div class="trivia">Travers : Santé fragile</div>
+1189	Envoyer en cure thermale (-400 fr)<small>guérison plus rapide, satisfaction +10</small>
+1190	⟦0⟧ est parti prendre les eaux.
+1191	Attendre<small>parfois l'état s'aggrave</small>
+1192	L'état de ⟦0⟧ s'est brusquement aggravé ; la mort l'a emporté.
+1193	Une escapade amoureuse
+1194	⟦0⟧ disparaît
+1195	⟦0⟧⟦1⟧ s'est enfui avec une certaine comtesse et ne reviendra pas avant 3 mois.<div class="trivia">Dans la réalité aussi, Liszt s'enfuit à Genève avec la comtesse Marie d'Agoult en 1835.</div>
+1196	Révision d'une symphonie
+1197	⟦0⟧ est absorbé par la révision d'une symphonie : absent ce mois-ci.
+1198	⟦0⟧ demande un prêt
+1199	⟦0⟧ : « Environ ⟦1⟧ francs, pour quelque temps seulement… Je vous les rendrai sans faute. »<div class="trivia">Travers : Emprunteur. Aucun remboursement n'a jamais été constaté.</div>
+1200	Prêter (-⟦0⟧ fr)<small>satisfaction +10</small>
+1201	Refuser<small>satisfaction -20</small>
+1202	Dispute dans l'orchestre
+1203	⟦0⟧⟦1⟧⟦2⟧ et ⟦3⟧ se sont violemment querellés en répétition. Pour qui prenez-vous parti ?<div class="trivia">Travers : Difficile</div>
+1204	Prendre le parti de ⟦0⟧
+1205	Une gratification aux deux (-300 fr)
+1206	⟦0⟧ demande à partir
+1207	⟦0⟧ : « Je ne vois plus d'avenir dans cet orchestre. »⟦1⟧
+1208	<br>(Le mécontentement sur les salaires couvait, semble-t-il.)
+1209	Payer pour retenir (-⟦0⟧ fr)<small>la satisfaction revient à 60</small>
+1210	Laisser partir
+1211	⟦0⟧ a quitté l'orchestre.
+1212	Sous la férule de ★⟦0⟧ [⟦1⟧], ⟦2⟧.
+1213	Nécrologie : ⟦0⟧
+1214	Nécrologie
+1215	⟦0⟧⟦1⟧<br><br><i>L'orchestre a porté le crêpe à son concert suivant.</i>
+1216	Le camp ⟦0⟧ s'effondre
+1217	⟦0⟧⟦1⟧<br><br>Privé de son chef, le camp ⟦2⟧ s'est dispersé. Ses villes et ses partisans sont libres.
+1218	Le camp ⟦0⟧ s'est effondré.
+1219	Incendie au théâtre !
+1220	Un incendie s'est déclaré à ⟦0⟧. Pendant les 3 mois de travaux, cette ville ne rapporte plus rien et les recettes y sont réduites.<div class="trivia">Les théâtres d'alors étaient éclairés à la chandelle et au gaz, et les incendies n'étaient pas rares.</div>
+1221	Un mystérieux mécène
+1222	Une dame qui ne dit pas son nom a envoyé un don de ⟦0⟧ francs. La lettre porte seulement : « D'une admiratrice de votre musique. »
+1223	L'agent s'enfuit avec la caisse
+1224	L'agent à qui vous aviez confié la prévente a filé dans la nuit avec ⟦0⟧ francs.
+1225	Un critique vous éreinte
+1226	⟦0⟧ a démoli vos récents concerts : « Rien de plus qu'un étalage de technique. » Votre renommée a un peu baissé.
+1227	Un rhume de saison
+1228	Un rhume a gagné tout l'orchestre. Ce mois-ci, tout le monde est en forme △.
+1229	Une invitation princière
+1230	Un prince vous invite à jouer à la cour.
+1231	Accepter<small>endurance -20 / renommée +30, +1 000 fr</small>
+1232	Concert donné à la cour, sur ordre du prince.
+1233	Décliner
+1234	Votre instrument a été volé !
+1235	Votre cher violon a été volé à l'auberge. Le voleur exige une rançon de ⟦0⟧ francs.
+1236	Payer (-⟦0⟧ fr)
+1237	Le chercher vous-même<small>pendant 2 mois, Technique -2 en duel</small>
+1238	Des retrouvailles inattendues
+1239	Dans une auberge, en voyage, vous avez partagé par hasard la table de ⟦0⟧. Vous avez parlé musique toute la nuit.<br><b>Affinité avec ⟦1⟧ +30</b>
+1240	Louis Marchand (organiste du roi de France)
+1241	L'homme qui, en 1717, avait accepté une joute au clavier avec Bach à Dresde, puis s'était enfui le matin même, paraît enfin. Cette fois, dit-il, il ne fuira pas.<div class="trivia">Le vrai Marchand aurait écouté Bach en cachette la veille, pris peur, et quitté Dresde par la première diligence.</div>
+1242	Pièces de clavecin, Livre premier
+1243	Pièces d'orgue
+1244	Fugue improvisée
+1245	La troupe de John Gay (The Beggar's Opera)
+1246	Le ballad opera anglais The Beggar's Opera balaie Londres en se moquant de l'opéra italien. Votre orchestre saura-t-il reconquérir les acclamations du public ?
+1247	The Beggar's Opera
+1248	La suite, Polly
+1249	Recueil de ballades à la mode
+1250	Les Ballets russes de Diaghilev
+1251	Diaghilev, l'impresario venu de Russie, entouré de Stravinsky, Nijinski, Picasso et d'autres, enflamme Paris et le monde. Votre orchestre tiendra-t-il face au tourbillon d'une ère nouvelle ?
+1252	L'Oiseau de feu
+1253	Petrouchka
+1254	Le Sacre du printemps
+1255	Salieri (maître de chapelle de la cour impériale)
+1256	L'empereur Joseph II a ordonné une joute en trois manches, avec pour enjeu le poste de maître de chapelle de la cour. Salieri a derrière lui tous les chanteurs et musiciens de la cour de Vienne.<div class="trivia">Dans la réalité, Salieri et Mozart écrivirent en 1786, sur ordre de l'Empereur, des œuvres rivales pour Schönbrunn.</div>
+1257	Opéra : Tarare
+1258	Opéra : Les Danaïdes
+1259	Opera buffa : Prima la musica e poi le parole
+1260	Le Diable (le violoneux du rêve)
+1261	Par une nuit d'orage, un violoniste inconnu a paru au théâtre : celui-là même, dit-on, qui vint jadis à Tartini en rêve et joua le « Trille du Diable ».<br><br>« Gagnez, et la gloire éternelle est à vous. Perdez… et je prendrai une de vos villes. »<div class="trivia">Tartini racontait avoir composé le « Trille du Diable » en tâchant de noter ce que le Diable avait joué dans son rêve.</div>
+1262	Tartini : « Le Trille du Diable »
+1263	Caprice infernal
+1264	Danse macabre
+1265	Hanslick (la Ligue de la musique pure)
+1266	Le critique Hanslick rassemble le parti de Brahms et prononce le jugement dernier au nom du « beau dans la musique ».<div class="trivia">Wagner aurait donné les traits de Hanslick à Beckmesser, le marqueur malveillant des Meistersinger.</div>
+1267	Brahms : Symphonie n° 2
+1268	Brahms : Un requiem allemand
+1269	Beethoven : Symphonie n° 9
+1270	Wagner (l'empire de Bayreuth)
+1271	Wagner, soutenu par Louis II, s'avance à la tête de toute l'armée de sa tétralogie. La « musique de l'avenir », ou l'héritier de Beethoven ?
+1272	Das Rheingold
+1273	Die Walküre
+1274	Götterdämmerung
+1275	Duel final
+1276	<div style="text-align:center">⟦0⟧</div><b>⟦1⟧</b><br><br>⟦2⟧<br><br>En trois manches. Gagnez-en deux et le grand concert légendaire est à vous. Choisissez une œuvre différente à chaque manche.
+1277	Pas encore prêt (dans 3 mois)
+1278	Manche ⟦0⟧
+1279	⟦0⟧ vaincu au duel final !
+1280	Duel final : victoire
+1281	<div style="text-align:center">⟦0⟧</div>⟦1⟧ a enfin plié le genou.<br>Le rideau se lève sur le grand concert légendaire.
+1282	Vers le grand concert
+1283	Duel final perdu : ⟦0⟧.
+1284	 est perdue
+1285	votre renommée a baissé
+1286	Duel final : défaite
+1287	Vous avez plié devant ⟦0⟧. ⟦1⟧<br>Nouvel essai possible dans 3 mois (si les conditions de victoire sont toujours remplies).
+1288	<br>Vous avez perdu le contrôle de ⟦0⟧.
+1289	Manche ⟦0⟧ : ⟦1⟧
+1290	Victoire
+1291	<div style="display:flex;justify-content:space-around;align-items:center;text-align:center"><div>⟦0⟧<b style="font-size:20px">⟦1⟧</b></div><div style="font-size:22px">vs</div><div>⟦2⟧<b style="font-size:20px">⟦3⟧</b></div></div>\n    <p style="text-align:center">Vous : ⟦4⟧ — ⟦5⟧ : ⟦6⟧</p><p style="text-align:center;font-size:18px"><b>⟦7⟧ gagnée(s), ⟦8⟧ perdue(s)</b></p>
+1292	Vers le dénouement
+1293	Manche suivante
+1294	<div class="person">⟦0⟧\n    <div class="pinfo"><div class="pname">⟦1⟧<span class="lat">⟦2⟧</span>⟦3⟧⟦4⟧</div>\n      <div class="pmeta">⟦5⟧ · Lv⟦6⟧ · <span style="color:⟦7⟧">⟦8⟧</span>⟦9⟧</div>\n      ⟦10⟧\n      ⟦11⟧\n      <div class="trust">⟦12⟧</div></div>\n    <div class="pbtns"><button class="btn gold" data-p="⟦13⟧" ⟦14⟧>⟦15⟧</button>\n      ⟦16⟧\n      ⟦17⟧</div></div>\n    ⟦18⟧
+1295	<div class="pmeta" style="color:#9fd0c7">Votre ami ⟦0⟧ glissera un mot</div>

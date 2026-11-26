@@ -7526,6 +7526,11 @@ function firstConcert(){try{
   const go=$('#go');if(go){go.classList.add('tut-hl');setTimeout(()=>{try{go.scrollIntoView({block:'center',behavior:'smooth'});}catch(e){}},400);}
   save();}catch(e){console.warn(e);}}
 
+/* ======================= 言語の切り替え（タイトルの下に、日本語・English・Français のリンク） ======================= */
+const _titleLG=title;title=function(){_titleLG();try{const t=document.querySelector('.title');if(!t||t.querySelector('.langs'))return;
+  const cur=document.documentElement.lang||'ja',base=cur==='ja'?'':'../';const L=[['ja','\u65e5\u672c\u8a9e',base||'./'],['en','English',base+'en/'],['fr','Fran\u00e7ais',base+'fr/']];
+  const d=document.createElement('div');d.className='credit langs';d.innerHTML=L.map(([k,n,h])=>k===cur?`<b>${n}</b>`:`<a href="${h}">${n}</a>`).join(' \u00b7 ');t.appendChild(d);}catch(e){}};
+
 
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;render();});
 $('#hFame').onclick=fameHelp;$('#hStC').onclick=staminaHelp;

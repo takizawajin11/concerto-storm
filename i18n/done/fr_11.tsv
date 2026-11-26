@@ -1,0 +1,109 @@
+2261	(a rejoint l'orchestre|Contrat signé|pris le contrôle|empare|Repouss|au profit du camp|Cédé|Nécrologie|uel final|effondr|a quitté l'orchestre|passé au camp|ébauch|Duel musical remporté|renvers|à la cour|devant l'Empereur|ecréation|renaître|Renommée : niveau)
+2262	Inachevé
+2263	Orchestre ⟦0⟧
+2264	En ⟦1|mon⟧ ⟦0⟧, ⟦2⟧ a réussi le grand concert légendaire.
+2265	En ⟦1|mon⟧ ⟦0⟧, l'histoire de ⟦2⟧ s'est achevée sur « ⟦3⟧ ». ⟦4⟧
+2266	L'orchestre avait pour base ⟦0⟧.
+2267	Le visage de l'orchestre fut ⟦0⟧, héros de la soirée à ⟦1⟧ reprise(s).
+2268	Le jeu si accordé de ⟦0⟧ et ⟦1⟧ resta dans les mémoires comme un « duo de légende » (cohésion Lv⟦2⟧).
+2269	Il donna ⟦0⟧ concert(s), et la billetterie atteignit ⟦1⟧ francs au total.
+2270	⟦0⟧ : ⟦1⟧
+2271	⟦1|mon⟧ ⟦0⟧ – ⟦3|mon⟧ ⟦2⟧
+2272	Histoire de ⟦0⟧
+2273	Dénouement : ⟦0⟧ (score ⟦1⟧, difficulté ⟦2⟧)
+2274	■ Par la suite
+2275	■ Chronologie
+2276	■ Les musiciens
+2277	⟦0⟧ (⟦1⟧) : ⟦2⟧ apparitions, héros ×⟦3⟧⟦4⟧⟦5⟧⟦6⟧
+2278	 · progression ⟦0⟧⟦1⟧
+2279	 · duo parfait : ⟦0⟧ (cohésion Lv⟦1⟧)
+2280	 · mort en fonction
+2281	 · parti
+2282	■ Les grandes soirées
+2283	<p>Aucune trace</p>
+2284	<div class="sc report">\n   <div class="rp-cover"><div class="en">Historia Orchestrae</div><h1>Histoire de ⟦0⟧</h1><div class="rp-sub">⟦1⟧<br>⟦2⟧</div>\n    <div style="margin:10px auto;width:fit-content">⟦3⟧</div>\n    <div class="rp-res ⟦4⟧">⟦5⟧</div><div class="rp-sub">Score ⟦6⟧   Difficulté ⟦7⟧   Renommée finale Lv⟦8⟧</div></div>\n   <div class="rp-sec">Par la suite</div><p class="rp-p">⟦9⟧</p>⟦10⟧\n   <div class="rp-sec">Les musiciens</div>\n   ⟦11⟧\n   <div class="rp-sec">Les grandes soirées</div>\n   ⟦12⟧\n   <div class="rp-p">Concerts : ⟦13⟧ / billetterie totale ⟦14⟧ fr / fonds finaux ⟦15⟧ fr⟦16⟧</div>\n   <div class="rp-sec">Chronologie</div>⟦17⟧\n   <div class="rp-p rp-note">⟦18⟧</div>\n   <button class="btn gold" id="rpCopy" style="width:100%;margin:6px 0">Copier le texte</button>\n   <textarea id="rpTxt" class="hidden" readonly></textarea>\n   ⟦19⟧\n   <button class="btn" id="rpBack" style="width:100%">⟦20⟧</button></div>
+2285	<p class="rp-p rp-note">[Histoire] ⟦0⟧</p>
+2286	<div class="rp-m">⟦0⟧<div><b>⟦1⟧</b> <span class="pmeta">⟦2⟧⟦3⟧</span><br><span class="pmeta">⟦4⟧ apparitions · héros ×⟦5⟧⟦6⟧⟦7⟧⟦8⟧</span></div></div>
+2287	 · ★⟦0⟧
+2288	 · parti en cours de route
+2289	<p class="rp-p">L'orchestre n'avait aucun musicien.</p>
+2290	<p class="rp-p">Aucun concert n'a laissé de trace.</p>
+2291	<br>Villes tenues : ⟦0⟧
+2292	Cette histoire est entrée au Panthéon le ⟦0⟧.
+2293	Cette histoire a été enregistrée dans le Panthéon de cet appareil. Vous pouvez la relire à tout moment depuis l'écran-titre.
+2294	<button class="btn" id="rpDel" style="width:100%;margin-bottom:6px">Retirer cette histoire du Panthéon</button>
+2295	Retour au Panthéon
+2296	Retour au titre
+2297	Histoire copiée
+2298	Supprimer l'histoire
+2299	« Histoire de ⟦0⟧ » (⟦1⟧) sera retirée du Panthéon. Cette action est irréversible.
+2300	Supprimer
+2301	Appuyez longuement dans le cadre ci-dessous pour copier
+2302	<div class="sc"><h3>Panthéon des orchestres</h3><div class="subt">Hall of Fame</div>\n   ⟦0⟧\n   <button class="btn" id="hofBack" style="width:100%;margin-top:6px">Retour au titre</button></div>
+2303	<button class="btn hof" data-r="⟦0⟧"><div><b>Histoire de ⟦1⟧</b><br><span class="pmeta">⟦2⟧ · ⟦3⟧</span><br><span style="color:⟦4⟧">⟦5⟧</span>   <span class="pmeta">score ⟦6⟧ · ⟦7⟧ · ⟦8⟧</span></div></button>
+2304	<div class="card" style="color:var(--mute)">Aucune histoire pour l'instant. Jouez une partie jusqu'au bout et son histoire sera conservée ici.</div>
+2305	Capacité
+2306	Morceau choisi
+2307	Instrument
+2308	Second ⟦0⟧
+2309	Sans instrument
+2310	Point fort
+2311	Écart de rang
+2312	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧⟦2⟧</div>\n    <div class="score"><div>⟦3⟧<span>⟦4⟧</span></div><div style="color:var(--mute)">:</div><div>⟦5⟧<span>⟦6⟧</span></div></div>\n    <div class="tell">⟦7⟧ : ⟦8⟧<br><span class="pmeta">L'indice est vrai 7 fois sur 10. S'il désigne « ⟦9⟧ », « ⟦10⟧ » a l'avantage.</span></div>\n    <div class="card" style="font-size:12.5px;padding:8px 10px">Force de l'adversaire (ce mouvement) : ⟦11⟧<br><span class="pmeta">Carte favorite : « ⟦12⟧ » (jouée une fois sur deux)</span></div>\n    <div class="cards3">⟦13⟧</div>\n    <div class="pmeta" style="margin-top:6px">Règles : la carte avantagée l'emporte, sauf si la force adverse est supérieure de 5 ou plus, ce qui renverse le résultat. Deux cartes identiques se départagent à la force. Chacun ajoute de 0 à 3 pour « la forme du soir ».</div>\n    <div class="mvlog">⟦14⟧</div></div>
+2313	<button class="pc" data-k="⟦0⟧"><span class="ic">⟦1⟧</span>⟦2⟧<small>⟦3⟧<br>Vous <b>⟦4⟧</b></small></button>
+2314	Cartes : ⟦0⟧ l'emporte sur ⟦1⟧ (à votre avantage)
+2315	gagné à l'avantage des cartes
+2316	l'avantage était pour vous, mais la force adverse, supérieure de ⟦0⟧, l'a renversé (écart de 5 ou plus)
+2317	Cartes : ⟦0⟧ l'emporte sur ⟦1⟧ (contre vous)
+2318	l'avantage était contre vous, mais votre force, supérieure de ⟦0⟧, l'a renversé !
+2319	perdu au désavantage des cartes (il faut 5 de force en plus pour renverser)
+2320	Cartes : ⟦0⟧ contre ⟦0⟧ (départagé à la force)
+2321	plus fort de ⟦0⟧
+2322	plus faible de ⟦0⟧
+2323	⟦0⟧<b>⟦1⟧</b>   Vous : ⟦2⟧ / ⟦3⟧ : ⟦4⟧   → ⟦5⟧\n   <br><span class="pmeta">⟦6⟧⟦7⟧</span>\n   <br>Vous ⟦8⟧ + forme ⟦9⟧ = <b>⟦10⟧</b>\n   <br>⟦11⟧ ⟦12⟧ + forme ⟦13⟧ = <b>⟦14⟧</b>\n   <br>Verdict : ⟦15⟧<br><span class="pmeta">⟦16⟧ : ⟦17⟧</span>
+2324	 (l'indice était faux)
+2325	Vous aviez l'avantage des cartes dans ⟦0⟧ mouvement(s).
+2326	Dans ⟦0⟧ mouvement(s), votre force a renversé un désavantage.
+2327	L'atout de votre second (⟦0⟧) a porté.
+2328	Force moyenne : vous ⟦0⟧ / adversaire ⟦1⟧.
+2329	<div class="anl"><b>Pourquoi vous avez gagné</b><br>⟦0⟧</div>
+2330	 · <b>Désavantage des cartes ⟦0⟧ fois</b>. ⟦1⟧⟦2⟧
+2331	Vous êtes allé contre un indice vrai ⟦0⟧ fois.
+2332	Malchance d'un indice faux ⟦0⟧ fois.
+2333	 · <b>Avantage des cartes renversé par la force ⟦0⟧ fois</b>. L'adversaire avait 5 de force en plus, ou davantage.
+2334	 · <b>⟦0⟧ duel(s) de force perdu(s) à cartes égales</b>.
+2335	 · Force moyenne : vous ⟦0⟧ / ⟦1⟧ ⟦2⟧⟦3⟧.
+2336	. Vous êtes tout simplement surclassé
+2337	⟦0⟧ préfère « ⟦1⟧ » et la joue une fois sur deux. Dans le doute, « ⟦2⟧ » est le choix sûr.
+2338	Élever votre niveau de renommée par les concerts ajoute +1 à la Technique, à l'Expression ou à l'Improvisation à chaque niveau.
+2339	Vous n'aviez pas de second. Avec un second, sa meilleure carte est renforcée.
+2340	L'atout de votre second ne vaut que pour « ⟦0⟧ ». Choisissez-le en fonction de l'adversaire.
+2341	Le morceau choisi donne +2 à sa carte. Le deuxième mouvement ajoute +2 à l'Expression, le troisième +2 à la Technique.
+2342	<div class="anl"><b>Pourquoi vous avez perdu</b><br>⟦0⟧<br><b>Conseil pour la prochaine fois</b><br>⟦1⟧</div>
+2343	⟦0⟧ : « …Vous m'avez battu. ⟦1⟧ »<br>Entre comme <b>⟦2⟧</b>. Renommée +⟦3⟧<hr>⟦4⟧
+2344	⟦0⟧ : « Revenez quand vous serez prêt. »<br>Endurance -20 / l'affinité tombe à -50.<hr>⟦1⟧
+2345	<div class="anl"><b>Retour sur la partie</b><br>Votre coup moyen +⟦0⟧ / leur réplique moyenne -⟦1⟧<br>⟦2⟧\n   ⟦3⟧\n   <br>Répéter la même approche l'affaiblit de 30 %. Quand l'inspiration est pleine, une cadence donne une forte poussée. ⟦4⟧</div>
+2346	Votre force de poussée a cédé devant les répliques.
+2347	Il vous a manqué des coups pour emporter la décision.
+2348	<br>Approches efficaces : ⟦0⟧⟦1⟧
+2349	 / inefficaces : ⟦0⟧
+2350	<br>Le repérage indique quelles approches portent.
+2351	<br>L'autre vous surclasse (son Lv⟦0⟧, le vôtre ⟦1⟧) : ses répliques sont fortes.
+2352	Comment accroître la renommée
+2353	<b>Renommée Lv⟦0⟧</b>   ⟦1⟧\n   <div class="fillbar" style="background:#d8c9a8"><i style="width:⟦2⟧%"></i></div>\n   <div class="sec-p">Ce qui accroît la renommée</div>\n   <table class="ftab"><tr><td>Concert (⟦3⟧ · ★1 / ★3 / ★5)</td><td>Salon ⟦4⟧<br>Salle moyenne ⟦5⟧<br>Grand théâtre ⟦6⟧</td></tr>\n   <tr><td>Persuader un musicien</td><td>15 + son niveau×5</td></tr><tr><td>Gagner un duel musical</td><td>30 + son niveau×8</td></tr>\n   <tr><td>Prendre une ville par une guerre des concerts</td><td>40 + niveau du chef×5</td></tr><tr><td>Défendre lors d'une guerre des concerts</td><td>25</td></tr>\n   <tr><td>Fréquenter un salon</td><td>6</td></tr><tr><td>Événements historiques, concerts à la cour</td><td>30 à 80</td></tr>\n   <tr><td>Perdre un duel musical</td><td>5</td></tr></table>\n   <div class="pmeta" style="margin-top:4px">Les grandes villes, les grandes salles et les bons accueils rapportent davantage. Avec un musicien dont le talent est du type « Neue Zeitschrift » (Schumann, par exemple), ×1,3.</div>\n   <div class="sec-p">Ce que change le niveau de renommée</div>\n    · Chaque niveau ajoute +1 à la Technique, à l'Expression ou à l'Improvisation (et +1 en Théorie tous les 3 niveaux). Le maximum est Lv30<br>\n    · Qui vous pouvez persuader : les musiciens jusqu'au Lv⟦7⟧, les théâtres et les cours jusqu'au Lv⟦8⟧ (au-delà, porte close)<br>\n    · Les grands théâtres s'ouvrent au Lv4 (ou à tout moment dans une ville que vous contrôlez)<br>\n    · L'affluence aux concerts augmente (environ +7 % par niveau)
+2354	<b>Encore ⟦0⟧</b> avant le niveau suivant (⟦1⟧ / ⟦2⟧)
+2355	niveau maximum
+2356	Endurance
+2357	Endurance actuelle <b>⟦0⟧</b> / 100\n   <div class="sec-p">Elle baisse</div>Jouer en concert -25 (diriger seulement : -10) / duel musical -20 / repérage -5 / concert à la cour -20\n   <div class="sec-p">Elle monte</div>Chaque mois +8 / repos +50 (60 fr) / pas de cure thermale (réservée aux musiciens)\n   <div class="sec-p">Effet</div>Votre forme en scène : ◎ au-dessus de 70, ○ de 41 à 70, △ à 40 ou moins. La persuasion demande 10 d'endurance ou plus ; un duel en demande 20.
+2358	Fondation
+2359	Vous avez accueilli votre premier musicien
+2360	Salle comble
+2361	Les 9 pupitres occupés
+2362	Maître du monde musical
+2363	5 villes tenues en même temps
+2364	Maître de chapelle du continent
+2365	9 villes tenues en même temps
+2366	L'Europe unie
+2367	Toutes les villes du scénario tenues en même temps
+2368	Renommée Lv10
+2369	Renommée Lv10 atteinte

@@ -1,0 +1,156 @@
+5410	Votre critique attitré : ⟦0⟧
+5411	⟦0⟧⟦1⟧<br><br>Aime : ⟦2⟧⟦3⟧<div class="cbar"><i style="width:⟦4⟧%"></i><span>opinion actuelle ⟦5⟧/100</span></div><span class="pmeta">Elle monte et descend selon vos concerts et vos choix de programme. Portez-la à 100 et une critique enthousiaste paraîtra enfin. À 0, c'est une tempête de mauvaises critiques. ⟦6⟧</span>
+5412	 / n'aime pas : ⟦0⟧
+5413	<br><b>Vous lui avez déjà arraché un murmure d'admiration.</b>
+5414	le Caprice n° 24 des 24 Caprices
+5415	La campanella
+5416	Nocturne
+5417	Symphonie n° 5
+5418	Ouverture de Guillaume Tell
+5419	Le Lac des cygnes
+5420	La Chevauchée des Walkyries
+5421	l'Adagietto de la Symphonie n° 5
+5422	Danse macabre
+5423	Gymnopédies
+5424	Fugue
+5425	« Alléluia »
+5426	Le Trille du Diable
+5427	« Le Printemps », des Quatre Saisons
+5428	Wiegenlied (Berceuse)
+5429	Une célèbre mélodie d'opéra
+5430	Eine kleine Nachtmusik
+5431	Finlandia
+5432	Vltava (La Moldau)
+5433	la Promenade des Tableaux d'une exposition
+5434	Le Vol du bourdon
+5435	le cancan d'Orphée aux enfers
+5436	Habanera
+5437	Concerto pour violon en mi mineur
+5438	« Dies irae »
+5439	Un air de bel canto
+5440	le thème du cor des Alpes de la Symphonie n° 1
+5441	Le quiz du mois est terminé. Revenez le mois prochain
+5442	Pas assez de questions
+5443	Quiz d'écoute (question ⟦0⟧ sur 3 ce mois-ci)
+5444	🎵 De qui est cette phrase musicale ?<br><br><button class="btn" style="width:100%;margin:6px 0" onclick="window._qzPlay&&window._qzPlay()">▶ Réécouter</button><span class="pmeta">La récompense grandit avec les bonnes réponses consécutives (⟦0⟧ de suite à présent).</span>
+5445	Bonne réponse !
+5446	Dommage…
+5447	⟦0⟧La réponse est <b>⟦1⟧</b>. ⟦2⟧⟦3⟧
+5448	<br>L'œuvre : ⟦0⟧.
+5449	<br><br>+⟦0⟧ fr (⟦1⟧ de suite)
+5450	Question suivante
+5451	⟦0⟧
+5452	Soirées ★5
+5453	Œuvre la plus jouée
+5454	⟦0⟧ (×⟦1⟧)
+5455	Le plus souvent en scène
+5456	Gains des concerts
+5457	Nouveaux compagnons accueillis
+5458	⟦0⟧
+5459	Rendez-vous de rêve
+5460	⟦0⟧
+5461	<div class="wrapped"><div class="wy">⟦0⟧</div><div class="wt">L'année de l'orchestre ⟦1⟧</div>⟦2⟧</div>
+5462	Concerto Storm — l'orchestre ⟦0⟧ en ⟦1⟧ :
+5463	Bilan de ⟦0⟧
+5464	Envoyer
+5465	Pas encore assez de matière pour un bilan
+5466	Arbre des maîtres et des élèves
+5467	<div class="pmeta">Pas encore d'arbre. Quand un apprenti reçoit la maîtrise accomplie, ou qu'un conservatoire forme un diplômé, des branches y poussent. Les maîtres et élèves historiques parmi vos musiciens y figurent aussi.</div>
+5468	<div class="pmeta">cadre doré = dans votre orchestre   marque rouge = élève formé dans votre orchestre</div><ul class="lintree">⟦0⟧</ul><div class="pmeta">Duos maître-élève nés dans votre orchestre : ⟦1⟧</div>
+5469	dans ⟦0⟧ mois
+5470	prêt
+5471	<div class="hub">\n    <button class="btn" data-hub="bond">👥 Carte des relations</button>\n    <button class="btn" data-hub="comp">✒️ Écrire une œuvre<small>⟦0⟧</small></button>\n    <button class="btn" data-hub="bet">🎲 Grand pari⟦1⟧</button>\n    <button class="btn" data-hub="quiz">🎵 Quiz d'écoute<small>reste ⟦2⟧</small></button>\n    <button class="btn" data-hub="lin">🌳 Maîtres et élèves</button>\n    <button class="btn" data-hub="yr">📊 Bilan de l'année</button>\n  </div>⟦3⟧
+5472	<small>en jeu</small>
+5473	<button class="btn critbtn" data-hub="crit">⟦0⟧Critique attitré : ⟦1⟧<div class="cbar"><i style="width:⟦2⟧%"></i><span>opinion ⟦3⟧/100⟦4⟧</span></div></button>
+5474	 · conquis une fois
+5475	La place
+5476	Le plus de passants. Tout y est bien reçu, mais c'est bruyant.
+5477	Le marché
+5478	Il faut assez d'éclat pour couvrir les cris des marchands. Les pièces jetées sont surtout de la menue monnaie.
+5479	Au pied du pont
+5480	À la tombée du jour, amoureux et promeneurs s'arrêtent.
+5481	Devant l'église
+5482	Des fidèles qui rentrent de la messe. On y préfère un jeu de bon ton.
+5483	Devant le café
+5484	Des messieurs qui lisent le journal, et des étudiants. L'oreille est exercée ; l'improvisation porte.
+5485	Vous avez déjà joué deux fois dans la rue ce mois-ci. Revenez le mois prochain
+5486	Maître de chapelle de la cour, vous ne pouvez vous tenir dans les rues de cette ville
+5487	Jouer dans la rue (⟦0⟧)
+5488	Qui jouera ?<br><span class="pmeta">Popularité auprès du peuple : ⟦0⟧/100. Plus vous êtes populaire dans une ville, plus ses habitants se pressent à vos concerts. Avec un jeune musicien, le bruit d'« un prodige » peut courir.</span>
+5489	<small>jeune talent</small>
+5490	Où jouerez-vous ?
+5491	<div class="stbox"><div class="stbk s-⟦0⟧"></div><div class="stp">⟦1⟧</div><div class="stcrowd"></div><div class="stcount">0</div><div class="stname">⟦2⟧ · ⟦4⟧, ⟦3⟧</div></div>
+5492	 auditeurs
+5493	Un prodige paraît : ⟦0⟧
+5494	<div class="stx">★ <b>Un prodige paraît !</b> « Qui est donc ce jeune musicien (⟦0⟧) ? » : toute la ville en parle. ⟦1⟧ : toutes capacités +1 ; popularité dans cette ville +15</div>
+5495	<div class="stx">♪ La mélodie d'aujourd'hui commence à être fredonnée par les gens de la ville sous le nom de « ⟦0⟧ ».</div>
+5496	<div class="headline">⟦0⟧ personnes se sont arrêtées</div>Pièces jetées <b>+⟦1⟧ fr</b> · popularité auprès du peuple à ⟦2⟧ : <b>⟦3⟧</b>/100⟦4⟧⟦5⟧⟦6⟧
+5497	⟦0⟧ a joué à ⟦1⟧ (⟦2⟧), et ⟦3⟧ personnes se sont arrêtées (pièces +⟦4⟧ fr).
+5498	Une ovation dans la rue
+5499	Des applaudissements dans la rue
+5500	Un concert de rue
+5501	L'électeur, incognito
+5502	L'empereur Joseph II, incognito
+5503	Le roi, incognito
+5504	Le prince héritier, incognito
+5505	Le grand-duc, incognito
+5506	Derrière le cercle des auditeurs, un monsieur en manteau modeste écoutait avec attention. Quelqu'un de sa suite chuchote : « …C'est ⟦0⟧. »<br>⟦1⟧
+5507	<span class="pmeta">Joseph II est réellement connu pour s'être promené incognito dans les rues de Vienne.</span>
+5508	Continuer de jouer comme si de rien n'était<small>soutien de la cour +12, renommée +10</small>
+5509	⟦0⟧ semble avoir pris goût au concert de rue de ⟦1⟧.
+5510	Cesser de jouer et saluer<small>soutien de la cour +6 ; la foule se refroidit</small>
+5511	⟦0⟧La musique finie, quelqu'un de tout jeune est accouru : <b>⟦1⟧</b>. « J'ai entendu votre son et ma décision est prise. Prenez-moi dans votre orchestre ! »
+5512	Accueillir<small>un petit salaire suffira, dit-on</small>
+5513	⟦0⟧, touché par le concert de rue, a rejoint l'orchestre.
+5514	Une autre fois
+5515	Un agent de police s'est approché. « Votre autorisation de jouer ici ? »
+5516	Payer l'amende<small>-80 fr</small>
+5517	Empoigner l'instrument et filer<small>popularité dans cette ville -5 ; l'histoire fait rire : soutien du peuple +3</small>
+5518	Un musicien des rues qui jouait au coin d'en face vous a défié : « Voyons qui attire le plus de monde. »
+5519	Relever le défi<small>selon l'habileté, pièces doublées ou réduites de moitié</small>
+5520	Gagné ! La foule est passée de votre côté (+⟦0⟧ fr)
+5521	Perdu… il vous a enlevé toute la foule
+5522	Un homme d'une maison d'édition musicale vous a tendu sa carte. « Cette mélodie, à l'instant : voudriez-vous la vendre en partition ? »
+5523	Vendre<small>+150 fr ; elle devient un air à la mode</small>
+5524	Chanson du coin de la rue
+5525	Valse de la place
+5526	Sérénade sur le pont
+5527	Marche du marché
+5528	Romance du crépuscule
+5529	Un caprice fantasque
+5530	L'air à la mode « ⟦0⟧ » est né à ⟦1⟧
+5531	Un air à la mode est né
+5532	On commence à fredonner « ⟦0⟧ » dans les rues. Un air à la mode gagne les villes voisines le long des routes. Là où il se répand, votre popularité monte, et la partition se vend : un revenu mensuel.<br><br><span class="pmeta">Verdi aurait caché « La donna è mobile », de Rigoletto, à tout le monde sauf au chanteur jusqu'à la veille de la création. S'il avait transpiré, les gondoliers de Venise l'auraient sifflé, et il se serait répandu avant la première.</span>
+5533	L'air à la mode « ⟦0⟧ » se chante désormais dans quatre villes.
+5534	<div class="stx">👥 Grâce à votre popularité auprès du peuple (⟦0⟧), la salle était comble jusqu'aux places debout (+⟦1⟧ fr)</div>
+5535	Mélodie de ⟦0⟧
+5536	Une offre : maître de chapelle de la cour
+5537	Un messager est venu de la cour : « Nous souhaitons vous recevoir comme maître de chapelle de la cour (⟦0⟧). »<br>Un traitement de <b>⟦1⟧ fr</b> chaque mois. Mais un maître de chapelle de la cour ne saurait jouer dans les rues de cette ville.<br><span class="pmeta">Soutien actuel : cour ⟦2⟧, peuple ⟦3⟧</span>
+5538	Accepter<small>un traitement mensuel ; plus de concerts de rue dans cette ville</small>
+5539	Nommé maître de chapelle de la cour (⟦0⟧)
+5540	Rester libre<small>soutien du peuple +8</small>
+5541	Salué comme un héros du peuple
+5542	L'orchestre du peuple
+5543	Dans chaque ville, on entend des voix fredonner les mélodies de votre orchestre. Les journaux commencent à vous appeler « l'orchestre du peuple ».<br>Renommée +30 ; popularité dans toutes les villes +5<br><span class="pmeta">En 1848, l'année des révolutions, les musiciens aussi descendirent dans la rue. Wagner prit part au soulèvement de Dresde l'année suivante et dut s'exiler.</span>
+5544	La cour, ou le peuple ?
+5545	Une lettre est arrivée d'un noble : « Qu'un orchestre reçu à la cour ramasse des pièces sur la voie publique, voilà qui est malséant. Ne pourriez-vous y renoncer ? »
+5546	Déférer au noble<small>cour +10, peuple -8</small>
+5547	La musique n'appartient à personne<small>peuple +10, cour -8</small>
+5548	<button class="btn streetbtn" id="aStreet" ⟦0⟧>🎻 Jouer dans la rue<small>gagnez le cœur du peuple en jouant dans la rue (encore ⟦1⟧ ce mois-ci)</small></button>\n    <div class="popbar"><span>Popularité</span><div class="cbar"><i style="width:⟦2⟧%"></i><span>⟦3⟧/100</span></div></div>⟦4⟧
+5549	<div class="trivia">♪ Dans cette ville, on fredonne « ⟦0⟧ »</div>
+5550	<div class="sidebar"><span>👑 Cour <b>⟦0⟧</b></span><div class="sbar"><i class="c" style="width:⟦1⟧%"></i><i class="f" style="width:⟦2⟧%"></i></div><span><b>⟦3⟧</b> Peuple 🧑‍🤝‍🧑</span></div>
+5551	L'air à la mode « ⟦0⟧ » s'est chanté de ville en ville.
+5552	D'un coin de rue est né le prodige ⟦0⟧.
+5553	📜 ⟦0⟧ (noté dans le journal)
+5554	<details class="shelf"⟦0⟧><summary>🎪 Divertissements (⟦1⟧)<small>carte des relations, œuvres nouvelles, grand pari, quiz, etc.</small></summary>⟦2⟧</details>
+5556	Plutôt qu'un italien difficile, je veux les faire rire avec des chansons que tout le monde connaît.
+5557	Avec des chansons de taverne, je battrai l'opéra.
+5558	En 1728, il fit un triomphe avec The Beggar's Opera, cousu de chansons qu'on chantait dans les rues. Il entama un temps la vogue de l'opéra italien ; on disait qu'il avait « rendu Gay riche et Rich gai ».
+5560	Chanson : Sally in Our Alley
+5561	La chanson de la fille de la ruelle est celle qui se vend le mieux, savez-vous.
+5562	Des chansons de la ville ? J'en écrirai autant que vous voudrez.
+5563	Auteur de chansons, devenu populaire avec « Sally in Our Alley ». Son fils affirma que « God Save the King » était l'œuvre de son père (on ignore ce qu'il en est).
+5565	The Beggar's Opera : ouverture
+5566	Jouer dans la rue ? Je suis un savant, monsieur.
+5567	Jouons correctement les chefs-d'œuvre anciens.
+5568	Musicien érudit, né en Allemagne et actif à Londres. Il prit part à la fondation de l'Academy of Ancient Music, qui jouait les chefs-d'œuvre anciens. Pour The Beggar's Opera, il fournit l'ouverture et les accompagnements.

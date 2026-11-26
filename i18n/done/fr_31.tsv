@@ -1,0 +1,39 @@
+5971	Nous nous entendrons, je crois.
+5972	« J'ai entendu parler de votre réputation. Pour ma part, voyez-vous, je tiens pour ⟦0⟧. »
+5973	Votre credo ⟦0⟧⟦1⟧
+5974	<div class="pmeta crline">Votre credo : ⟦0⟧</div>
+5975	« Dites-moi une chose. ⟦0⟧ »
+5976	⟦0⟧ demande : ⟦1⟧
+5977	<div class="crh">🗣 Débat : <b>⟦0⟧</b>⟦1⟧</div>\n    <button class="btn" data-cr="⟦2⟧"><b>⟦3⟧</b>   ⟦4⟧<small>⟦5⟧</small></button>\n    <button class="btn" data-cr="⟦6⟧"><b>⟦7⟧</b>   ⟦8⟧<small>⟦9⟧</small></button>\n    <button class="btn" data-cr="mid"><b>Les deux</b>   ⟦10⟧<small>Ne pas prendre parti. Avec une Théorie ou une Expression élevée, vous esquivez avec adresse</small></button>\n    <div class="pmeta">Prenez le même parti que l'autre et l'affinité monte fortement. Même dans le parti opposé, vous gagnez le respect si votre Théorie est supérieure (vous ⟦11⟧ / l'autre ⟦12⟧). Changer de parti entame votre crédit.</div>
+5978	<span>Vous, jusqu'ici : ⟦0⟧ (×⟦1⟧)</span>
+5979	Débats sur la nature de la musique
+5980	Les musiciens de renom vous interrogeront, au milieu d'une persuasion, sur <b>votre conception de la musique</b>.<br><br> · Votre réponse devient connue du monde comme <b>votre credo</b>.<br> · Tenez toujours le même parti et les esprits proches seront plus faciles à aborder dès la première rencontre.<br> · Dites à chacun autre chose et vous passerez pour une <b>girouette</b>.<br><br><span class="pmeta">Dans l'Allemagne de la seconde moitié du XIXe siècle, le parti de Brahms et celui de Wagner se disputèrent âprement sur « ce que dit la musique ».</span>
+5981	Les deux
+5982	Débat
+5983	Joliment dit. …Soit, passons.
+5984	Ni chair ni poisson. N'avez-vous donc pas d'avis à vous ?
+5985	Débat :
+5986	On me dit que vous le soutenez depuis longtemps. Voilà une conviction.
+5987	Rencontrer quelqu'un du même avis ! Cela fait gagner du temps.
+5988	…J'ai ouï dire que vous souteniez l'inverse l'autre jour. N'approuvez-vous pas simplement celui que vous avez en face de vous ?
+5989	…Hum. Nous pensons différemment, mais votre raisonnement se tient.
+5990	Il n'y a rien à discuter. Étudiez encore un peu et revenez.
+5991	L'autre jour vous souteniez l'inverse, me dit-on. On ne peut se fier à la parole d'une girouette.
+5992	Réaction de vos musiciens : ⟦0⟧ ont approuvé, ⟦1⟧ ont froncé le sourcil
+5993	Appelé le porte-drapeau de « ⟦0⟧ »
+5994	On vous appelle désormais le porte-drapeau de « ⟦0⟧ » (renommée +15)
+5995	⟦0⟧   Affinité ⟦1⟧⟦2⟧
+5996	Porte-drapeau : ⟦0⟧
+5997	On murmurait aussi que vous étiez une « girouette », qui disait à chacun autre chose.
+5998	Votre credo
+5999	Les partis que vous avez pris dans les débats, lors des persuasions, sont connus du monde comme votre credo.<div class="saga">⟦0⟧</div>\n    <div class="pmeta">Un parti tenu deux fois ou plus est connu même de ceux que vous rencontrez pour la première fois (esprits proches +6 / parti opposé −5). À quatre fois, on vous appelle « porte-drapeau ».</div>
+6000	non déclaré
+6001	$1<button class="btn" id="creedBtn">🗣 Credo</button>
+6002	<b>Jouer dans la rue</b> s'ajoute à l'écran de la ville. Jouez dans la rue, gagnez le cœur du peuple, et il se pressera à vos concerts dans cette ville. La bande <b>Cour / Peuple</b>, au-dessus de la carte, montre lequel des deux vous soutient.
+6003	Missions du mois et Divertissements
+6004	Les <b>Missions du mois</b> et les <b>Divertissements</b> s'ajoutent à la carte. Il y a trois missions par mois, avec une récompense à la clé. Les Divertissements réunissent des chemins de traverse : carte des relations, composition, quiz. Ouvrez-les quand l'envie vous en prend.
+6005	Choisir un scénario
+6006	<summary>Autres façons de jouer<small>le concert du jour, scénarios de défi, votre histoire de la musique, Panthéon</small></summary>
+6007	<span class="fb1">▶ Première visite ? Commencez ici</span><span class="fb2">Vienne, 1781. Devenez Mozart et donnez votre premier concert</span><span class="fb3">environ 3 minutes · avec du son</span>
+6008	— Choisir soi-même son époque —
+6009	<div class="firstguide">⟦0⟧<div><b>⟦1⟧</b><br>Bienvenue à Vienne. Avant tout, jouez un morceau. Vous êtes déjà à votre place. Il suffit d'appuyer sur <b>Rideau !</b> ci-dessous.<br>Une fois la musique lancée, <b>le tempo</b> et <b>la fin</b> sont à vous de décider.</div></div>

@@ -1,0 +1,126 @@
+2370	Renommée Lv20
+2371	Renommée Lv20 atteinte
+2372	Immortel de la musique
+2373	Renommée Lv30 (le maximum) atteinte
+2374	Premier ★5
+2375	Un concert ★5 donné
+2376	Une montagne de grandes soirées
+2377	Dix concerts ★5 donnés
+2378	Duo de légende
+2379	Un duo de cohésion Lv5 formé
+2380	Millionnaire
+2381	100 000 francs économisés
+2382	Dernier adversaire vaincu
+2383	Duel final remporté
+2384	La porte étroite franchie
+2385	Partie gagnée en « Difficile » ou plus
+2386	Talent prodigieux
+2387	Partie gagnée en « Très difficile » ou plus
+2388	Maître de chapelle de l'Enfer
+2389	Partie gagnée en « Enfer »
+2390	Voyageur de l'histoire de la musique
+2391	Les cinq scénarios gagnés
+2392	Neuf maîtres
+2393	Partie gagnée avec les neuf protagonistes
+2394	🏅 Succès débloqué : ⟦0⟧ !
+2395	🏅 Succès débloqué : ⟦0⟧
+2396	Succès ⟦0⟧/⟦1⟧
+2397	<p style="font-size:12px">Scénarios gagnés : ⟦0⟧<br>Protagonistes victorieux : ⟦1⟧</p>
+2398	Continuer (⟦1|mon⟧ ⟦0⟧ · ⟦2⟧)
+2399	<div class="title"><div class="en">Tempesta di Concerti</div><h1 class="logo">Concerto Storm</h1><div style="color:var(--gold2);letter-spacing:.2em">ÉDITION INTÉGRALE</div><div class="staff"></div>\n   ⟦0⟧\n   <div style="display:flex;gap:8px;margin-bottom:10px"><button class="btn" id="hofBtn" style="flex:1">📜 Panthéon (⟦1⟧)</button><button class="btn" id="achBtn" style="flex:1">🏅 Succès ⟦2⟧/⟦3⟧</button></div>\n   <div class="sec-t" style="text-align:left">— Choisir un scénario —</div>\n   ⟦4⟧\n   ⟦5⟧\n   <div class="credit">Échantillons d'instruments : <a href="https://github.com/nbrosowsky/tonejs-instruments">tonejs-instruments</a> (CC BY 3.0), compressés</div></div>
+2400	<button class="btn scen" data-s="⟦0⟧"><span class="y">⟦1⟧</span> <b>⟦2⟧</b><br><span style="font-size:13px;color:var(--gold2)">⟦3⟧</span><p>⟦4⟧</p><p>Protagonistes : ⟦5⟧</p></button>
+2401	<div class="title"><div class="en">⟦0⟧</div><h1 class="logo" style="font-size:32px">⟦1⟧</h1><div style="color:var(--gold2)">⟦2⟧</div><div class="staff"></div>\n   <div class="sec-t" style="text-align:left">— Choisissez votre protagoniste —</div>\n   ⟦3⟧\n   <div class="card" style="text-align:left;font-size:13px"><b>Camps rivaux</b><br>⟦4⟧</div>\n   <button class="btn" id="back" style="width:100%">Retour</button></div>
+2402	<button class="btn hero" data-h="⟦0⟧">⟦1⟧<div><div class="pname">⟦2⟧<span class="lat">⟦3⟧</span></div><p style="color:var(--gold2)">Difficulté du personnage ⟦4⟧</p><p>⟦5⟧</p><p>Possession : ⟦6⟧</p></div></button>
+2403	<span style="color:var(--mute)">* si vous choisissez ⟦0⟧</span>
+2404	Choisir la difficulté
+2405	Vous commencerez avec ⟦0⟧ (difficulté du personnage ⟦1⟧).
+2406	<details class="card howto" style="margin-top:12px"><summary style="color:var(--gold2)">Comment jouer</summary><ol>\n  <li>Touchez une ville sur la carte pour voyager. <b>Persuadez</b> les musiciens de chaque ville de rejoindre votre orchestre.</li>\n  <li>Une persuasion dure 8 mesures. Usez tour à tour du Cachet, du Scandale, de la Théorie, de la Renommée et de la Passion ; poussez l'aiguille d'affinité tout à droite et la personne est conquise. Chacun est sensible à des approches différentes (et répéter la même l'affaiblit).</li>\n  <li>Quand l'inspiration est pleine, une <b>cadence</b> donne une forte poussée. Fréquentez d'abord un salon et vous commencerez avec une réserve d'inspiration.</li>\n  <li>Si les pourparlers échouent, vous pouvez convaincre par un <b>duel musical</b> : Technique, Expression et Improvisation, comme à pierre-feuille-ciseaux.</li>\n  <li>Persuadez le maître d'une ville (un théâtre ou une cour) et la ville est à vous, avec un revenu chaque mois.</li>\n  <li>Chaque mois, les <b>camps rivaux</b> débauchent des musiciens, s'emparent de villes et lancent des <b>guerres des concerts</b> contre les vôtres. Reprenez leurs villes par la guerre des concerts et leurs partisans par le débauchage.</li>\n  <li>Ceux qui vous dépassent de trop (niveau supérieur à votre niveau de renommée +2) vous ferment leur porte. Donnez des concerts pour accroître votre renommée.</li>\n  <li>Choisissez une salle : <b>salon, salle moyenne ou grand théâtre</b>. Plus elle est grande, plus elle rapporte, mais plus elle se vide facilement. Les réactions du public (bravos, bouquets, pâmoisons, huées, somnolence, départs) dépendent de l'accueil.</li>\n  <li>Chaque musicien a un <b>★talent</b> (affluence +20 %, cordes +3, revenus de leçons…) et un <b>travers</b> (santé fragile, avare, difficile, cœur volage…). Quand la satisfaction baisse, il peut partir, ou passer chez un rival. Un ami déjà dans votre orchestre glissera un mot en votre faveur pendant la persuasion.</li>\n  <li><b>Recrutement</b> : d'abord le 🔍repérage (150 fr), pour connaître les approches efficaces, le type de progression (précoce / normal / tardif), le potentiel, les conditions du contrat et l'entente. Sans repérage, impossible de savoir quelle approche a porté. Une fois la personne conquise, négociez la prime de signature et le salaire (marchander est un pari).</li>\n  <li><b>Cohésion et entente</b> : plus deux musiciens jouent ensemble, plus leur niveau de cohésion monte et meilleur est l'accueil. Les duos d'entente ◎○ progressent vite ; les duos ✕ se tirent vers le bas et perdent en satisfaction.</li>\n  <li><b>Types de progression</b> : les précoces progressent vite au début mais déclinent dès la cinquième année ; les tardifs progressent fortement après deux ans et demi.</li>\n  <li>Remplissez les conditions de victoire et vous affrontez le <b>duel final</b> (en trois manches). Gagnez-le : le grand concert suit.</li>\n  <li>Au <b>concert</b>, vous choisissez le programme et placez vos musiciens à chaque partie, comme une formation de football. Les capacités que demande l'œuvre, la forme (qui change chaque mois), les duos historiques (entente), la présence du compositeur et le goût de la ville décident de l'accueil (★).</li>\n  <li>En duel musical, prendre un musicien pour <b>second</b> renforce sa meilleure carte.</li>\n  <li>Il y a cinq niveaux de difficulté : Débutant, Normal, Difficile, Très difficile, Enfer. Les conditions de victoire (villes tenues et pupitres occupés) et la limite de temps en dépendent. Plus vous tenez de villes, plus les théâtres et les cours restants se méfient, et leur rang s'élève.</li>\n  <li>La renommée plafonne au Lv30. Après la victoire, vous pouvez continuer sans limite de temps en mode sans fin et collectionner les 🏅succès.</li></ol></details>
+2407	Vienne, 1781
+2408	En juin, le comte Arco, chambellan de l'archevêque de Salzbourg, vous a mis dehors, littéralement d'un coup de pied au derrière.<br><br>Vous renoncez au poste de musicien de cour pour vivre à Vienne en indépendant.<div class="trivia">Histoire : par ce « coup de pied », Mozart rompit avec la cour de Salzbourg.</div>
+2409	Varsovie
+2410	Théâtre national de Varsovie
+2411	Le directeur du théâtre
+2412	Les dames des salons de Varsovie
+2413	Moscou
+2414	Théâtre Bolchoï
+2415	Le directeur des Théâtres impériaux
+2416	Les grands marchands de Moscou
+2418	Toccata en ut majeur
+2419	L'orgue de Saint-Jacques est ma place.
+2420	Le contrepoint de Bohême, pour votre orchestre.
+2421	Organiste et religieux de Prague, surnommé « le Bach de Bohême ». Il aurait aussi enseigné à Tartini et à Gluck.
+2423	Concerto choral
+2424	Le chant appris en Italie, pour les hymnes de la Russie.
+2425	La chapelle de la cour et moi sommes à votre service.
+2426	Né en Ukraine. Après ses études en Italie, il revint à Saint-Pétersbourg en 1779 et dirigea le chœur de la chapelle de la cour.
+2428	Variations sur des chants populaires russes
+2429	Pour jouer les chants populaires, je ne le cède à personne.
+2430	Je rêve de jouer librement, loin de la cour.
+2431	L'un des premiers virtuoses russes du violon, connu pour ses variations sur des chants populaires russes.
+2433	Symphonie en sol mineur
+2434	Je suis né dans une ferme de Bohême.
+2435	Mes symphonies, avec votre orchestre.
+2436	Né en Bohême. Il écrivit de nombreuses symphonies à Vienne et aurait joué des quatuors à cordes avec Haydn et Mozart.
+2438	Concerto pour piano en fa majeur
+2439	Enseigner aux demoiselles de Vienne est mon meilleur revenu.
+2440	Le son à la mode, pour votre orchestre.
+2441	Pianiste et compositeur né en Bohême. Installé à Vienne en 1778, il enseigna aussi le piano à la famille impériale.
+2443	Concerto pour piano en ré majeur
+2444	Prague est une ville qui aime la musique.
+2445	Ma femme Josepha et moi sommes à votre service.
+2446	Pianiste de Prague. Il accueillit plus tard Mozart à la villa Bertramka, hors de la ville, et veilla sur l'achèvement de Don Giovanni.
+2448	Opéra en polonais
+2449	Ce garçon a renversé tout ce que je lui avais appris.
+2450	Le cœur de la Pologne, pour votre orchestre.
+2451	Directeur du Conservatoire de Varsovie et maître de Chopin. Sur le bulletin de Chopin, il écrivit : « génie musical ».
+2453	Opéra : Krakowiacy i Górale
+2454	Les lumières du Théâtre national ne doivent pas s'éteindre.
+2455	Une baguette formée au théâtre, pour votre orchestre.
+2456	Chef du Théâtre national de Varsovie. Du pupitre, il soutint les concerts varsoviens du jeune Chopin.
+2458	Concerto pour violon « à la militaire »
+2459	Je me suis tenu sur la même scène que Paganini.
+2460	L'archet polonais, dans votre orchestre.
+2461	Virtuose polonais du violon. Il joua un double concerto avec Paganini, qui l'aurait jugé « le deuxième meilleur ».
+2463	Nocturne n° 5
+2464	Je me suis fait même à l'hiver de Moscou.
+2465	Des nocturnes, pour votre orchestre.
+2466	Pianiste né en Irlande, qui vécut à Moscou. Il créa la forme du « nocturne » et influença Chopin.
+2468	Opéra : Le Tombeau d'Askold (1835)
+2469	C'est moi qui fais tourner les théâtres de Moscou.
+2470	L'opéra en russe, avec votre orchestre.
+2471	Compositeur qui régissait les théâtres de Moscou. Son opéra Le Tombeau d'Askold fit un triomphe.
+2473	Hymne impérial russe « Dieu protège le tsar » (1833)
+2474	Mes devoirs à la cour m'occupent fort.
+2475	Le son de la cour de Russie, pour votre orchestre.
+2476	Virtuose du violon et officier. En 1833, il composa l'hymne de l'Empire russe.
+2478	Églogues
+2479	J'enseigne à Prague depuis des dizaines d'années.
+2480	Le lyrisme de Bohême, pour votre orchestre.
+2481	Grand pédagogue de Prague. Ses « églogues » pour piano passent parfois pour les précurseurs des impromptus de Schubert.
+2483	Grand Caprice sur « Le Roi des aulnes »
+2484	Je suis arrivé jusqu'ici en suivant les traces de Paganini.
+2485	La technique transcendante, dans votre orchestre.
+2486	Né à Brno, en Moravie. Il suivit Paganini partout, lui déroba ses secrets et fut appelé son successeur.
+2488	Tchaïkovski : Concerto pour piano n° 1
+2489	Bienvenue au Conservatoire de Moscou.
+2490	Mon piano et ma baguette, pour votre orchestre.
+2491	Fondateur du Conservatoire de Moscou. Il commença par démolir le Premier Concerto pour piano de Tchaïkovski ; plus tard, il le joua lui-même.
+2493	Je n'ai pas encore fini mes devoirs de contrepoint.
+2494	Le concerto de mon maître, avec votre orchestre.
+2495	Le jeune pianiste qui joua à Moscou, en 1875, le Premier Concerto pour piano de son maître Tchaïkovski.
+2497	Mélodie en fa
+2498	Le piano est là pour qu'on le fasse chanter.
+2499	Le lion russe rejoindra votre orchestre.
+2500	Fondateur du Conservatoire de Saint-Pétersbourg. Grand pianiste, qui ressemblait, disait-on, à Beethoven par les traits comme par le jeu.
+2502	Suite symphonique : Shéhérazade
+2503	Dans la marine, je lisais les cartes plutôt que les partitions.
+2504	La couleur orchestrale, pour votre orchestre.
+2505	Ancien officier de marine. Il enseigna au Conservatoire de Saint-Pétersbourg à partir de 1871 et aurait réappris l'harmonie tout en l'enseignant.
+2507	Suite : Tableaux d'une exposition (1874)
+2508	…J'aimerais quitter mon poste dans l'administration.
+2509	La vérité de la Russie, pour votre orchestre.
+2510	L'un du « Groupe des Cinq ». Il écrivit Boris Godounov et les Tableaux d'une exposition tout en étant fonctionnaire.
+2512	Poème symphonique : Dans les steppes de l'Asie centrale
+2513	J'écris un peu à la fois, entre deux expériences.
+2514	Une tête pour la chimie et une pour la musique : les deux pour votre orchestre.
+2515	Chimiste et professeur à l'école de médecine de son métier. Il composait, selon son propre mot, en « musicien du dimanche ».

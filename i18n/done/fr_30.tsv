@@ -1,0 +1,160 @@
+5811	<div class="sec-t">Ce qui passe à l'époque suivante</div>⟦0⟧
+5812	<span class="pmeta">Commencez l'époque suivante, « ⟦0⟧ » (à partir de ⟦1⟧), et vous jouerez dans un monde où cet héritage est vivant.</span>
+5813	<span class="pmeta">Consultez la chronologie sous « Votre histoire de la musique », à l'écran-titre.</span>
+5814	Votre œuvre ⟦0⟧ entre dans les programmes [Héritage]
+5815	« ⟦1⟧ », de ⟦0⟧, entre dans les [Classiques imaginaires]
+5816	« ⟦0⟧ » voit le jour
+5817	L'air à la mode « ⟦0⟧ » survit comme chant populaire
+5818	Le nom de la grande maison ⟦0⟧ (fonds et renommée)
+5819	[Héritage] ⟦0⟧⟦1⟧ (⟦2⟧)
+5820	[Classique imaginaire] ⟦0⟧
+5821	<b>⟦0⟧–⟦1⟧</b>   ⟦2⟧
+5822	Le chef-d'œuvre ⟦0⟧
+5823	⟦0⟧, vainqueur du destin
+5824	« ⟦0⟧ », devenu chant populaire (popularité à ⟦1⟧ +8)
+5825	« ⟦0⟧ », devenu chant populaire
+5826	La renommée de « l'orchestre du peuple »
+5827	Une lignée de maîtres de chapelle de la cour
+5828	<div class="trivia">[Monde imaginaire] ⟦0⟧ : ⟦1⟧</div>
+5829	Vous avez hérité du legs de vos devanciers
+5830	Une histoire de la musique transmise
+5831	Ce monde prolonge l'histoire de la musique que vous avez changée. ⟦0⟧⟦1⟧\n    <div class="stx">Le nom d'une grande maison : fonds +⟦2⟧ fr, renommée +⟦3⟧<br>Les œuvres [Héritage] et [Classique imaginaire] entrent dans les programmes (les jouer améliore l'accueil)</div>
+5832	un chef-d'œuvre transmis
+5833	l'œuvre maîtresse d'un devancier
+5834	un chef-d'œuvre né d'une histoire changée
+5835	Bach travailla à l'église Saint-Thomas de Leipzig ; Haendel monta des opéras à Londres. Ils ne se rencontrèrent jamais.
+5836	Mozart s'établit à son compte à Vienne et mourut en 1791, à 35 ans. Le Requiem resta inachevé.
+5837	Paganini et Liszt enflammèrent l'Europe, et Chopin jouait dans les salons de Paris. Paganini mourut en 1840.
+5838	Wagner ouvrit son propre théâtre à Bayreuth, et Brahms fit paraître sa Première Symphonie. Wagner mourut en 1883.
+5839	Mahler dirigea l'Opéra de la cour de Vienne et mourut en 1911, laissant sa Dixième Symphonie inachevée.
+5840	La fin de l'histoire
+5841	✦ ⟦0⟧ a vaincu le destin⟦1⟧
+5842	♪ Un nouveau chef-d'œuvre : ⟦0⟧
+5843	♪ L'air à la mode « ⟦0⟧ » s'est chanté dans ⟦1⟧ villes
+5844	★ Un prodige né dans la rue : ⟦0⟧
+5845	★ Appelé « l'orchestre du peuple »
+5846	★ Nommé maître de chapelle de la cour
+5847	🎓 A laissé ⟦0⟧ lignée(s) de maître à élève
+5848	[Concerto Storm] Mon histoire imaginaire de la musique
+5849	■ À partir de ⟦0⟧   ⟦1⟧
+5850	 (comme dans l'histoire)
+5851	<div class="sgera⟦0⟧"><div class="sgy">⟦1⟧</div><div class="sgb"><b>⟦2⟧</b>\n      <div class="sgr"><span>Histoire</span>⟦3⟧</div>\n      ⟦4⟧</div></div>
+5852	<div class="sgm"><span>Votre histoire</span>⟦0⟧</div>
+5853	<div class="sgn">Pas encore jouée (comme dans l'histoire)</div>
+5854	Votre histoire de la musique
+5855	<div class="pmeta">Jouez les époques dans l'ordre, de la plus ancienne à la plus récente : l'héritage de chacune passe à la suivante. (⟦0⟧/⟦1⟧ époques)</div><div class="saga">⟦2⟧</div>\n    ⟦3⟧
+5856	<div class="sgact"><button class="btn" id="sgShare">Partager en texte</button><button class="btn" id="sgImg">Enregistrer en image</button></div>
+5857	Chronologie copiée
+5858	Histoire : ⟦0⟧
+5859	Mon histoire imaginaire de la musique
+5860	Concerto Storm
+5861	ConcertoStorm_mon_histoire_de_la_musique.png
+5862	Image de la chronologie enregistrée
+5863	L'image n'a pas pu être créée
+5864	<button class="btn sagabtn" id="sagaBtn">📜 Votre histoire de la musique<small>⟦0⟧</small></button>
+5865	⟦0⟧/⟦1⟧ époques inscrites. L'héritage des époques anciennes passe à la suivante
+5866	Atteignez un dénouement : l'époque s'inscrit dans votre histoire de la musique et se transmet à la suivante
+5867	<p class="sgtag">📜 Inscrit dans l'histoire de la musique</p>
+5868	<p class="sgtag new">✦ Commence avec l'héritage de ⟦0⟧ époque(s)</p>
+5869	Un public exigeant sur la technique
+5870	La Technique compte double
+5871	Un public à la larme facile
+5872	L'Expression compte double
+5873	Journée des jeunes
+5874	+1,5 pour chaque interprète de Lv6 ou moins
+5875	Une soirée par-delà le temps
+5876	+4 si tous les interprètes sont d'époques différentes
+5877	Une soirée de contemporains
+5878	+3 avec trois interprètes ou plus de la même époque
+5879	Une soirée de musiciennes
+5880	+1,5 pour chaque interprète féminine
+5881	⟦1⟧ au goût du public, « ⟦0⟧ » (+⟦2⟧)
+5882	⟦0⟧<div class="dyc"><b>⟦1⟧</b><span>⟦2⟧ · ⟦3⟧ · Lv⟦4⟧</span><span>T⟦5⟧ E⟦6⟧ I⟦7⟧</span></div>
+5883	<div class="dyrow"><span class="dym">⟦0⟧</span><span>Essai ⟦1⟧   accueil <b>⟦2⟧</b> (⟦3⟧ % du meilleur)</span></div>
+5884	<div class="dyres"><div class="headline">⟦0⟧</div>\n      <div class="pmeta">⟦1⟧Meilleure formation : accueil ⟦2⟧</div>\n      <div class="sec-t">La meilleure formation du jour</div>⟦3⟧\n      <div class="pmeta">⟦4⟧</div>\n      <div class="stx">🔥 Série : <b>⟦5⟧</b> jour(s)   /   ⟦6⟧ jour(s) joué(s), ⟦7⟧ résolu(s)<br>Une nouvelle énigme arrive à minuit (heure du Japon).</div>\n      <button class="btn gold" id="dyShare" style="width:100%;margin-top:8px">Partager le résultat</button></div>
+5885	La meilleure formation au ⟦0⟧e essai !
+5886	C'est tout pour aujourd'hui
+5887	Votre meilleur : accueil ⟦0⟧ /
+5888	<div class="sec-t">Formation (encore ⟦0⟧ essais)</div>⟦1⟧\n      <div class="dynow">Accueil actuel <b>⟦2⟧</b>⟦3⟧</div>\n      <button class="btn gold" id="dyGo" style="width:100%" ⟦4⟧>Rideau avec cette formation (essai ⟦5⟧ sur ⟦6⟧)</button>\n      <div class="sec-t">La main du jour (9 musiciens)</div><div class="dyhand">⟦7⟧</div>
+5889	<div class="empty-pt">?</div><div class="dyc"><span>Touchez pour choisir</span></div>
+5890	Perc
+5891	<div class="sc daily"><h3>Le concert du jour</h3><div class="subt">⟦0⟧   tout le monde affronte la même énigme</div>\n    <div class="card"><b style="font-size:16px">⟦1⟧</b><br><span class="pmeta">Un programme de l'époque ouverte en ⟦2⟧ · cette œuvre : Technique ⟦3⟧ %, Expression ⟦4⟧ %, Improvisation ⟦5⟧ %</span>\n      <div class="dyinfo">Goût du public : <b>⟦6⟧</b> (+0,8 chacun)<br>Règle du jour : <b>⟦7⟧</b> — ⟦8⟧⟦9⟧</div></div>\n    ⟦10⟧\n    ⟦11⟧\n    <button class="btn" id="dyClose" style="width:100%;margin-top:8px">Retour au titre</button></div>
+5892	<br>Le compositeur est dans votre main (+6 s'il joue)
+5893	<div class="dyhist">⟦0⟧<div class="pmeta">🟩 juste à ce pupitre   🟨 juste à un autre pupitre   ⬜ absent de la meilleure formation</div></div>
+5894	⟦0⟧<small>⟦1⟧ · ⟦2⟧ · Lv⟦3⟧   T⟦4⟧ E⟦5⟧ I⟦6⟧⟦7⟧</small>
+5895	   (à présent : ⟦0⟧)
+5896	Vider
+5897	Accueil ⟦0⟧ (⟦1⟧ % du meilleur). Servez-vous des marques comme indices : encore ⟦2⟧ essais
+5898	Concerto Storm : le concert du jour ⟦0⟧
+5899	Meilleure formation en ⟦0⟧/⟦1⟧ essais !
+5900	⟦0⟧ % du meilleur atteint
+5901	🔥⟦0⟧ jours d'affilée
+5902	<button class="btn dailybtn" id="dailyBtn">📅 Le concert du jour<small>⟦0⟧</small></button>
+5903	Résolu aujourd'hui en ⟦0⟧ essais !
+5904	Déjà joué aujourd'hui
+5905	   🔥⟦0⟧ jours d'affilée
+5906	En cours (encore ⟦0⟧ essais)
+5907	Une énigme par jour, trois minutes. Tout le monde a la même main et cherche la meilleure formation
+5908	Que dit la musique ?
+5909	Musique pure
+5910	Musique à programme
+5911	La musique se suffit dans le son seul. S'en servir pour expliquer des histoires et des tableaux, c'est l'abaisser, ne trouvez-vous pas ?
+5912	C'est unie à la poésie et au récit que la musique ouvre des mondes nouveaux. Une musique qui n'est que forme a fait son temps, ne trouvez-vous pas ?
+5913	Le contenu de la musique, ce sont des formes sonores en mouvement, rien d'autre
+5914	la pensée de ceux qui chérissaient la forme classique (théorisée plus tard par le critique Hanslick)
+5915	la pensée exposée par le critique Hanslick dans Du beau dans la musique (1854)
+5916	Unie à la poésie, la musique peint ce que les mots n'atteignent pas
+5917	la pensée que Berlioz montra dans la Symphonie fantastique (1830)
+5918	la pensée que Liszt montra dans le poème symphonique et Wagner dans le drame musical
+5919	La forme et la poésie sont l'une et l'autre les ailes de la musique
+5920	Que penser de la virtuosité ?
+5921	Le service de l'œuvre
+5922	L'interprète est le serviteur du compositeur. Faire étalage de son adresse pour rafler les applaudissements, ce n'est pas de l'art, je crois ?
+5923	La technique transcendante, qui coupe le souffle à la salle, est la vie de l'interprète. Jouer simplement ce qui est écrit, chacun le peut, ne trouvez-vous pas ?
+5924	L'interprète est celui qui sert l'œuvre
+5925	la pensée des compositeurs qui honoraient les notes écrites
+5926	l'attitude que Gluck exigea dans sa réforme de l'opéra (le drame et la musique avant l'adresse du chanteur)
+5927	l'attitude que Clara Schumann et Joachim gardèrent toujours
+5928	Une adresse que nul ne peut imiter mène la musique en des lieux nouveaux
+5929	le chant brillamment orné des castrats tels que Farinelli
+5930	la voie où rivalisèrent Clementi et les autres virtuoses du clavier
+5931	la voie ouverte par Paganini et Liszt
+5932	L'adresse existe pour faire resplendir l'œuvre
+5933	Pour qui la musique existe-t-elle ?
+5934	Pour l'art
+5935	Pour le public
+5936	Comprenne qui pourra. Écrire selon le goût du public, c'est déchoir, ne trouvez-vous pas ?
+5937	Si le public n'y prend aucun plaisir, à quoi sert la musique ? Une pièce seulement difficile n'est que complaisance de l'auteur, n'est-ce pas ?
+5938	La musique vise les sommets sans courtiser l'auditeur
+5939	Bach écrivait à la fin de ses partitions : « À Dieu seul la gloire »
+5940	l'attitude de devanciers comme J. S. Bach, qui visaient les sommets du métier plutôt que la mode
+5941	l'idée de « l'art pour l'art », répandue au XIXe siècle
+5942	La musique existe pour ceux qui l'écoutent
+5943	l'attitude que Telemann et Haendel montrèrent par les concerts publics et l'entreprise
+5944	Contenter le connaisseur comme le profane, voilà le vrai
+5945	Tradition ou innovation ?
+5946	Tradition
+5947	Innovation
+5948	Les règles de nos devanciers ont leurs raisons. Se réclamer du « nouveau » sans avoir étudié ni le contrepoint ni la forme, c'est pure ignorance, n'est-ce pas ?
+5949	Les règles sont faites pour être brisées. Quel artiste écrit la même musique que la veille ?
+5950	Ce n'est qu'en connaissant les règles à fond que la musique est libre
+5951	l'enseignement transmis depuis le traité de contrepoint de Fux, Gradus ad Parnassum (1725)
+5952	Si cela plaît à l'oreille, voilà la règle nouvelle
+5953	la pensée que Monteverdi montra dans la « seconde pratique »
+5954	la pensée de C. P. E. Bach et des autres tenants du « style sensible »
+5955	la pensée de Berlioz et de Liszt
+5956	la « musique de l'avenir » que proclama Wagner
+5957	une pensée attribuée à Debussy (« le plaisir est la règle »)
+5958	Sur les fondations de la tradition, on bâtit une maison neuve
+5959	La musique d'une nation, ou une langue universelle ?
+5960	Une langue universelle
+5961	La musique d'une nation
+5962	La musique est une langue qui passe les frontières. S'accrocher au chant populaire et au caractère national, c'est avoir la vue courte, ne trouvez-vous pas ?
+5963	La musique née de nos chants populaires et de notre langue, voilà la vraie. Que gagne-t-on à imiter les autres pays ?
+5964	La musique est une langue que comprennent les gens de tous les pays
+5965	l'universalité que visait le classicisme viennois
+5966	Des chants du terroir naît une musique qui n'appartient qu'à ce pays
+5967	la pensée des écoles nationales : Smetana, Dvořák et d'autres
+5968	Seul ce qui s'enracine dans son sol atteint le monde
+5969	« On me dit que vous tenez pour ⟦0⟧. ⟦1⟧ »
+5970	…Bien que certains points ne me plaisent guère.

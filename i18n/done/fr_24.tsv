@@ -1,0 +1,259 @@
+4624	Roland
+4625	Johann
+4626	Friedrich
+4627	Karl
+4628	Wilhelm
+4629	Heinrich
+4630	Anna
+4631	Clara
+4632	Sophie
+4633	Luise
+4634	Maria
+4635	Schmidt
+4636	Weber
+4637	Becker
+4638	Hoffmann
+4639	Klein
+4640	Wolf
+4641	Neumann
+4642	Keller
+4643	Giovanni
+4644	Luigi
+4645	Antonio
+4646	Pietro
+4647	Giuseppe
+4648	Teresa
+4649	Giulia
+4650	Rossi
+4651	Bianchi
+4652	Colombo
+4653	Ricci
+4654	Marini
+4655	Gallo
+4656	Conti
+4657	Romano
+4658	John
+4659	William
+4660	George
+4661	Thomas
+4662	Henry
+4663	Mary
+4664	Elizabeth
+4665	Ann
+4666	Jane
+4667	Emily
+4668	Smith
+4669	Brown
+4670	Taylor
+4671	Wilson
+4672	Evans
+4673	Green
+4674	Hall
+4675	Wood
+4676	Ivan
+4677	Sergei
+4678	Nikolai
+4679	Alexei
+4680	Mikhail
+4681	Natalya
+4682	Olga
+4683	Elena
+4684	Sofya
+4685	Ivanov
+4686	Petrov
+4687	Sokolov
+4688	Popov
+4689	Lebedev
+4690	Volkov
+4691	Morozov
+4692	Pavlov
+4693	Jan
+4694	Josef
+4695	Antonín
+4696	Václav
+4697	Karel
+4698	Marie
+4699	Ludmila
+4700	Jana
+4701	Zdenka
+4702	Novák
+4703	Svoboda
+4704	Dvořák
+4705	Černý
+4706	Procházka
+4707	Kučera
+4708	László
+4709	István
+4710	János
+4711	Gyula
+4712	Erzsébet
+4713	Mária
+4714	Ilona
+4715	Katalin
+4716	Nagy
+4717	Kovács
+4718	Tóth
+4719	Szabó
+4720	Horváth
+4721	Varga
+4722	Józef
+4723	Stanisław
+4724	Andrzej
+4725	Zofia
+4726	Jadwiga
+4727	Kowalski
+4728	Nowak
+4729	Wiśniewski
+4730	Kamiński
+4731	Lewandowski
+4732	Le concerto du concert de fin d'études
+4733	Tout ce que mon maître m'a appris, je le donnerai sur scène.
+4734	La fierté du conservatoire, pour votre orchestre.
+4735	Jeune diplômé de l'établissement « ⟦0⟧ », de la classe du directeur ⟦1⟧.
+4736	⟦0⟧ ⟦1⟧
+4737	Diplômé de : ⟦0⟧
+4738	De la classe de <b>⟦1⟧</b>, à la tête de l'établissement « ⟦0⟧ », est sorti <b>⟦2⟧</b> (⟦3⟧). ⟦4⟧
+4739	<br><span class="pmeta">Un jeune talent prometteur, formé par l'un des grands pédagogues de l'histoire.</span>
+4740	Accueillir dans l'orchestre<small>petit salaire, grand potentiel</small>
+4741	⟦1⟧ (diplômé de : ⟦0⟧) a rejoint l'orchestre.
+4742	⟦1⟧ (diplômé de : ⟦0⟧) entre dans l'orchestre
+4743	Envoyer dans un autre orchestre<small>renommée +12</small>
+4744	⟦1⟧ (diplômé de : ⟦0⟧) se fait un nom dans un autre orchestre.
+4745	Nommer ⟦0⟧ à la direction<small>Lv⟦1⟧⟦2⟧</small>
+4746	 · <b>un grand pédagogue de l'histoire</b> (un diplômé tous les 4 mois)
+4747	⟦0⟧ a pris la direction de l'établissement « ⟦1⟧ ».
+4748	Révoquer la direction
+4749	<div class="pmeta">⟦0⟧ · ⟦1⟧</div>⟦2⟧<br><br>
+4750	de longue date
+4751	 (année de fondation)
+4752	Direction : <b>⟦0⟧</b>⟦1⟧<br>Diplômés à ce jour : ⟦2⟧<br><span class="pmeta">Un conservatoire sous votre contrôle rapporte chaque mois des frais de scolarité (⟦3⟧ fr). La direction est confiée à l'un de vos musiciens, qui peut toujours partir en tournée mais ne peut pas enseigner pendant un engagement.</span>⟦4⟧
+4753	non pourvue
+4754	 (prochain diplômé dans ⟦0⟧ mois)
+4755	<br><span class="pmeta">Grands pédagogues de l'histoire à cette époque : ⟦0⟧</span>
+4756	<span class="pmeta">Pour l'instant, c'est le conservatoire d'une ville tenue par : ⟦0⟧. Prenez le contrôle de la ville et vous pourrez y nommer une direction et former de jeunes musiciens.</span>
+4757	une autre force
+4758	aucune force ne la tient
+4759	<div class="card consc"><b>🎓 ⟦0⟧</b>   <span class="pmeta">⟦1⟧</span><button class="btn" id="consBtn" style="width:100%;margin-top:6px">Visiter le conservatoire</button></div>
+4760	Direction : ⟦0⟧
+4761	Direction non pourvue
+4762	Ville d'une autre force
+4763	Conservatoires
+4764	Vous pouvez désormais envoyer un musicien diriger un <b>conservatoire</b> dans une ville que vous contrôlez. Tous les quelques mois en sort un diplômé que vous pouvez accueillir dans l'orchestre. Nommez l'un des grands pédagogues de l'histoire et de meilleurs jeunes viendront plus vite.
+4765	Église anglicane
+4766	Catholique
+4767	Catholique (États pontificaux)
+4768	Luthérien (la cour est catholique)
+4769	Luthérien
+4770	Orthodoxe
+4771	Confessions multiples
+4772	[Cc]atholique
+4773	Luthérien
+4774	anglicane
+4775	Orthodoxe
+4776	L'Église catholique
+4777	L'Église luthérienne
+4778	Les églises de la ville
+4779	Vivaldi : Gloria
+4780	Pergolèse : Stabat Mater (1736)
+4781	Contralto
+4782	Cordes
+4783	Haendel : Le Messie (1742)
+4784	Bach : Messe en si mineur
+4785	Mozart : Messe « du Couronnement » (1779)
+4786	Mozart : Requiem (1791)
+4787	Cor de basset
+4788	Haydn : La Création (1798)
+4789	Berlioz : Requiem (1837)
+4790	Ténor
+4791	Quatre groupes de cuivres
+4792	Timbales (16)
+4793	Rossini : Stabat Mater (1842)
+4794	Mendelssohn : Elias (1846)
+4795	Baryton
+4796	Fauré : Requiem (1888)
+4797	Bruckner : Te Deum (1884)
+4798	Elgar : The Dream of Gerontius (1900)
+4799	Rachmaninov : Vêpres (1915)
+4800	Chœur
+4801	Bach devient cantor de Saint-Thomas
+4802	Le conseil municipal aurait dit : « Puisqu'on ne peut avoir les meilleurs, il faut se contenter des médiocres. » Les cantates de chaque dimanche commencent.
+4803	Création de La Création de Haydn
+4804	À l'instant de « Que la lumière soit », un grand accord d'ut majeur retentit, et la salle se leva.
+4805	Création du Requiem de Berlioz
+4806	La chapelle des Invalides. Des cuivres placés aux quatre coins et 16 timbales annoncent le Jour de colère.
+4807	Création du Requiem de Fauré
+4808	La Madeleine. Un Requiem paisible, qui omet presque tout le Dies irae.
+4809	Création des Vêpres de Rachmaninov
+4810	Moscou en temps de guerre. Les vigiles nocturnes de l'Église orthodoxe, chantées par le seul chœur a cappella.
+4811	Carême : temps de retenue pour les théâtres. Opéras et ballets attirent peu (-3)
+4812	Carême : la saison où l'on réclame musique sacrée et oratorios (+2)
+4813	votre lien avec ⟦0⟧ (+⟦1⟧)
+4814	dans une ville luthérienne, la cantate du dimanche fait partie de la vie (+1)
+4815	⟦0⟧ vous a commandé une nouvelle œuvre sacrée (+⟦1⟧ fr).
+4816	Une commande de l'Église
+4817	La confiance de ⟦0⟧ s'est affermie.<br>Une demande en bonne et due forme est arrivée : une pièce nouvelle pour l'office.<br><br><span class="pmeta">+⟦1⟧ fr, renommée +⟦2⟧. La musique sacrée jouée dans les villes de cette confession reçoit un bonus d'accueil.</span>
+4818	<div class="card relc">⛪ <b>⟦0⟧</b>   <span class="pmeta">lien avec ⟦1⟧ : ⟦2⟧</span>⟦3⟧</div>
+4819	aucun encore
+4820	<br><span class="lent">C'est le carême. Les théâtres se retiennent ; c'est la saison de la musique sacrée et des oratorios.</span>
+4821	Le carême a commencé. Dans les villes catholiques et orthodoxes, les théâtres se retiennent, et la saison de la musique sacrée s'ouvre.
+4823	Paganini : 24 Caprices
+4824	Haru, te voilà donc. Allons, reprenons la leçon.
+4825	La tradition parisienne des cordes, pour votre orchestre.
+4826	Violoniste français (né en 1945). Issu de la famille de musiciens Pasquier, il sortit du Conservatoire de Paris à 12 ans avec les premiers prix de violon et de musique de chambre, et débuta à New York deux ans plus tard. Il a été violon solo de l'Orchestre national de France et professeur au Conservatoire national supérieur de musique de Paris. Avec son frère Bruno et le violoncelliste Pidoux, il a formé le Nouveau Trio Pasquier.
+4828	L'alto d'un trio à cordes
+4829	Au violon de mon frère, il faut mon alto.
+4830	L'alto de la famille Pasquier, pour votre orchestre.
+4831	Altiste français (né en 1943). Son père Pierre était altiste lui aussi. Longtemps alto solo de l'orchestre de l'Opéra de Paris, il a formé le Nouveau Trio Pasquier avec son frère Régis. Son instrument est un alto de Maggini du début du XVIIe siècle.
+4833	Le violoncelle d'un trio à cordes
+4834	Quand nous sommes trois, c'est le Trio Pasquier.
+4835	Le violoncelle français, pour votre orchestre.
+4836	Violoncelliste français. Violoncelle solo de l'Orchestre national de France et professeur au Conservatoire national supérieur de musique de Paris, il a formé le Nouveau Trio Pasquier avec les frères Pasquier.
+4838	J'ai appris que mes fils avaient fait leur chemin et, sans y penser, j'ai franchi la porte.
+4839	Le son de 1927, pour votre orchestre.
+4840	Altiste (1902-1986). En 1927, avec ses frères Jean et Étienne, il fonda le Trio Pasquier et fit connaître dans le monde entier la formation du trio à cordes. Père de Régis et de Bruno.
+4842	Le violon d'un trio à cordes
+4843	Nous trois, les frères, avons voyagé partout.
+4844	Le violon du Trio Pasquier, pour votre orchestre.
+4845	Violoniste (né en 1903). Il fonda le Trio Pasquier avec ses frères Pierre et Étienne.
+4847	Messiaen : Quatuor pour la fin du Temps
+4848	Le son que nous avons fait dans ce camp, cet hiver-là, je ne l'oublierai de ma vie.
+4849	Le violoncelle du Trio Pasquier, pour votre orchestre.
+4850	Violoncelliste (1905-1997). Membre du Trio Pasquier. Connu pour avoir pris part, en 1941, à la création du Quatuor pour la fin du Temps de Messiaen dans un camp de prisonniers de guerre.
+4851	Les cordes de Paris
+4852	L'archet est fait pour chanter. Allons, encore une fois.
+4853	Quatuor pour la fin du Temps
+4854	Par n'importe quel hiver, la musique résonne.
+4855	Le maître de Haru
+4856	La porte de la salle de répétition s'est de nouveau ouverte toute seule. Un violoniste aux cheveux d'argent appelle Haru par son nom.
+4857	L'alto du frère aîné
+4858	« Si Régis est là, il faut que j'y sois aussi » : de l'autre côté de la porte est apparu le frère aîné, son alto dans les bras.
+4859	Le troisième : un violoncelle
+4860	« Vous comptez jouer entre frères seulement ? » : le violoncelliste Pidoux a franchi la porte en riant.
+4861	Le père arrive
+4862	De l'autre côté de la porte est apparu leur père Pierre, tout jeune, en costume de 1927.
+4863	Le violon de l'oncle
+4864	« Pierre, n'y va pas seul » : son frère Jean l'a suivi.
+4865	Le violoncelle du plus jeune frère
+4866	Le dernier à franchir la porte fut le plus jeune frère, Étienne, un violoncelle sur le dos.
+4867	Par la Porte du Temps : ⟦0⟧
+4868	Accueillir dans l'orchestre
+4869	⟦0⟧ a rejoint l'orchestre par la Porte du Temps.
+4870	⟦0⟧ entre par la Porte du Temps
+4871	Par la Porte du Temps
+4872	⟦0⟧ a dit « Je reviendrai » et s'en est retourné par la porte.
+4873	Maître et élève, par-delà le temps
+4874	Le jeune homme venu par la Porte du Temps a un maître qui l'attend de l'autre côté.
+4875	La Porte du Temps n'a pas pu séparer le maître et l'élève.
+4876	Haru, quelle que soit l'époque, tu ne négliges pas ton travail, n'est-ce pas ?
+4877	Non. J'ai rencontré Bach, et Paganini aussi.
+4878	Très bien. Alors aujourd'hui, fais-moi entendre tous ces sons.
+4879	Nouveau Trio Pasquier
+4880	Le violon du cadet, l'alto de l'aîné, et le violoncelle d'un compagnon. Quand les trois sont réunis…
+4881	Au début des années 1970, les frères Pasquier, Régis et Bruno, formèrent avec le violoncelliste Roland Pidoux le Nouveau Trio Pasquier, reprenant le nom du trio de leur père.
+4882	Le nom du trio de Père : reprenons-le.
+4883	À trois, nous pouvons aller partout.
+4884	Alors la première œuvre sera un trio à cordes de Beethoven.
+4885	Nouveau Trio Pasquier : Beethoven, Trios à cordes op. 9
+4886	Trio Pasquier, 1927
+4887	Trois frères firent connaître dans le monde entier la formation du trio à cordes.
+4888	En 1927, les frères Pasquier, Jean, Pierre et Étienne, fondèrent le Trio Pasquier. Trio à cordes constitué, ils parcoururent le monde.

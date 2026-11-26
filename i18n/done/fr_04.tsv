@@ -1,0 +1,156 @@
+786	Victoire !
+787	⟦0⟧ convaincu par le son
+788	Défaite
+789	Duel musical remporté contre ⟦0⟧ (⟦1⟧-⟦2⟧). ⟦3⟧ a rejoint l'orchestre.
+790	⟦0⟧<hr>⟦1⟧ : « …Vous m'avez battu. ⟦2⟧ »<br><br>Entre comme <b>⟦3⟧</b>. Renommée +⟦4⟧
+791	Duel musical perdu contre ⟦0⟧ (⟦1⟧-⟦2⟧).
+792	⟦0⟧<hr>⟦1⟧ : « Revenez quand vous serez prêt. »<br><br>Endurance -20 / l'affinité tombe à -50. Augmentez votre renommée et réessayez.
+793	Le grand concert légendaire
+794	Le grand concert légendaire a eu lieu.
+795	 (solo)
+796	Prélude de l'acte I de Die Meistersinger von Nürnberg
+797	Symphonie n° 1 en ut mineur op. 68 : finale
+798	 · tout l'orchestre
+799	<div class="sc" style="text-align:center"><div class="title" style="padding-top:10px"><div class="en">Gran Concerto</div><h1 class="logo" style="font-size:30px">Le grand concert légendaire</h1><div class="staff"></div></div>\n   <div class="card" style="text-align:left"><div class="inst">⟦1|mon⟧ ⟦0⟧   ⟦2⟧</div>\n   <div class="sec-t">Programme</div><div class="prog">⟦3⟧</div>\n   <div class="sec-t">Orchestre</div><div style="font-size:13px">⟦4⟧</div></div>\n   <button class="btn gold" id="playAll" style="width:100%;margin:6px 0">♪ Écouter le programme</button><button class="btn" id="endless" style="width:100%;margin:0 0 6px">Continuer (mode sans fin)<small>Sans limite de temps. Visez toutes les villes et la renommée Lv30</small></button>\n   <div class="card">Score <b style="font-size:22px">⟦5⟧</b><br><span style="font-size:12.5px;color:var(--mute)">Villes ⟦6⟧ · pupitres occupés ⟦7⟧ · renommée Lv⟦8⟧ · fonds restants ⟦9⟧ fr</span></div>\n   <button class="btn gold" id="rep" style="width:100%;margin-bottom:8px">📜 Lire l'histoire de l'orchestre</button><button class="btn" id="again" style="width:100%">Retour au titre</button></div>
+800	Mode sans fin
+801	La limite de temps a disparu. Visez toutes les villes, la renommée Lv30 et la totalité des succès.<br>Pour marquer une étape, « Retraite », dans l'onglet Forces, permet d'écrire l'histoire de l'orchestre.
+802	Fin de l'histoire : ⟦0⟧
+803	<div class="sc" style="text-align:center"><div class="title"><h1 class="logo" style="font-size:30px">⟦0⟧</h1><div class="staff"></div></div>\n   <div class="card">⟦1⟧<br><br>Score <b style="font-size:22px">⟦2⟧</b></div><button class="btn gold" id="rep" style="width:100%;margin-bottom:8px">📜 Lire l'histoire de l'orchestre</button><button class="btn" id="again" style="width:100%">Retour au titre</button></div>
+804	Débutant
+805	Rivaux placides, fonds ×1,5, limite de 10 ans. Victoire avec 4 villes et 6 pupitres. Les grands noms vous écoutent plus volontiers.
+806	Normal
+807	Standard. Victoire avec 5 villes et 7 pupitres en 8 ans. Plus vous tenez de villes, plus les autres résistent.
+808	Difficile
+809	Les rivaux progressent 1,5 fois plus vite et leurs chefs sont d'un rang plus haut. Fonds à 70 %. Victoire avec 6 villes et 7 pupitres.
+810	Très difficile
+811	Rivaux 2 fois plus rapides, chefs deux rangs plus haut. Fonds réduits de moitié, limite de 7 ans. Victoire avec 7 villes et 8 pupitres.
+812	Enfer
+813	Rivaux 2,5 fois plus rapides, chefs trois rangs plus haut, fonds à 35 %, limite de 6 ans. Victoire avec 8 villes et tous les 9 pupitres. Le dernier adversaire est lui aussi au sommet.
+814	Violon
+815	Piano
+816	Chant
+817	Violoncelle
+818	Contrebasse
+819	Flûte
+820	Clarinette
+821	Amis inséparables
+822	Les créateurs de Norma
+823	Une amitié de 20 000 francs
+824	Alliés romantiques
+825	Rivaux de Paris
+826	Les liens du mariage
+827	Alliés du K. 581
+828	Le lien des quatuors « Haydn »
+829	Amis de la Bertramka
+830	La première Susanna
+831	Collègues d'Esterházy
+832	Amis de Mannheim
+833	Amis de F-A-E
+834	Amis de toute une vie
+835	Inspiration tardive
+836	Maître et élève
+837	Vieux amis
+838	Compagnons du Ring
+839	Beau-père et gendre
+840	Adoration
+841	Les premières Walkyries
+842	Empereur du violoncelle
+843	Le lien du Rondo capriccioso
+844	Collègues d'Aida
+845	L'éventail dédicacé
+846	Collègues du Conservatoire
+847	Aîné et cadet d'Italie
+848	L'affaire Cosima
+849	Chien et chat
+850	Brouille
+851	La querelle Gluck-Piccinni
+852	Rivaux par destin
+853	Concerto pour piano n° 20 en ré mineur K. 466
+854	Concerto
+855	Piano soliste
+856	Musique de chambre
+857	Premier violon
+858	Le nozze di Figaro : extraits
+859	Opéra
+860	Susanna
+861	Basse continue
+862	Air « Per questa bella mano » K. 612
+863	Contrebasse soliste
+864	Symphonie
+865	« Danse des esprits bienheureux », d'Orfeo ed Euridice
+866	Flûte soliste
+867	Orfeo
+868	Sinfonia à la manière de Mannheim
+869	Paisiello : Il barbiere di Siviglia
+870	Rosina
+871	Violoncelle soliste
+872	Création d'une nouvelle sinfonia
+873	Création
+874	Paganini : Concerto pour violon n° 1
+875	Violon soliste
+876	Symphonie fantastique
+877	Petite clarinette en mi bémol (ronde du sabbat)
+878	Flûte (idée fixe)
+879	Chopin : Concerto pour piano n° 2
+880	Beethoven : Symphonie n° 5
+881	Beethoven : Triple concerto
+882	Norma
+883	Flûte (introduction)
+884	Musique d'orchestre
+885	Violoncelle soliste (le quintette initial)
+886	Lucia : la scène de la folie
+887	Lucia
+888	Flûte obligée
+889	Une soirée de valses
+890	Bal
+891	Direction (du clavier)
+892	Clarinette soliste
+893	Création d'une nouvelle symphonie
+894	Brahms : Symphonie n° 1
+895	Flûte (thème du cor des Alpes)
+896	Brahms : Concerto pour violon
+897	Die Walküre, acte I
+898	Drame musical
+899	Sieglinde
+900	Orchestre de chambre
+901	Tchaïkovski : Concerto pour piano n° 1
+902	Dvořák : Danses slaves
+903	Bruckner : Symphonie n° 4 « Romantique »
+904	Saint-Saëns : Introduction et Rondo capriccioso
+905	Schumann : Concerto pour piano
+906	Bottesini : Gran Duo
+907	« Dies irae », du Requiem de Verdi
+908	Musique sacrée
+909	Soprano
+910	Récital en solo : ⟦0⟧ et autres
+911	Soliste
+912	Soliste (vous)
+913	⟦0⟧ vacant (-6)
+914	le compositeur joue lui-même (+6)
+915	le compositeur est présent (+3)
+916	au goût de ⟦0⟧ (×1,15)
+917	pas au goût de ⟦0⟧ (×0,85)
+918	<div class="sc"><h3>Choisir le programme</h3><div class="subt">Programma — ⟦0⟧</div>\n   <div class="tell">Le goût de cette ville : <b style="color:⟦1⟧">⟦2⟧</b>   Une œuvre à son goût vaut ×1,15 ; une œuvre de l'école opposée ×0,85.<br>Si le compositeur est dans votre orchestre, sa présence ou sa participation améliore encore l'accueil.</div>\n   ⟦3⟧\n   <button class="btn" id="prCancel" style="width:100%;margin-top:6px">Annuler</button></div>
+919	 ·
+920	   Compositeur : ⟦0⟧
+921	   <span style="color:#e77">Requiert ⟦0⟧ dans l'orchestre</span>
+922	<div class="sc"><h3>Fixer la formation</h3><div class="subt">⟦0⟧</div>\n   <div class="card" style="text-align:center"><b style="font-size:16px">⟦1⟧</b><br><button class="btn" id="lis" style="padding:3px 12px;font-size:12px;margin-top:6px">♪ Extrait</button></div>\n   ⟦2⟧\n   <div class="card"><div style="font-size:22px;color:var(--gold2);text-align:center;letter-spacing:.1em">⟦3⟧</div>\n     <div style="font-size:12.5px;color:#d8c9a8">⟦4⟧</div></div>\n   <div class="actions"><button class="btn gold" id="go">Rideau !<small>⟦5⟧</small></button><button class="btn" id="chg">Changer de programme</button></div>\n   <button class="btn" id="prCancel" style="width:100%;margin-top:8px">Annuler</button></div>
+923	<div class="pmeta">forme ⟦0⟧ · Lv⟦1⟧ · force dans cette œuvre <b style="color:var(--gold2)">⟦2⟧</b></div>
+924	<div class="pmeta">Candidats : ⟦0⟧</div>
+925	 · rien à signaler
+926	Vous jouez aussi (endurance -25)
+927	Vous dirigez en impresario (endurance -10)
+928	⟦0⟧   forme ⟦1⟧   force ⟦2⟧⟦3⟧
+929	<small>(vient de : ⟦0⟧)</small>
+930	Laisser vacant
+931	Retour
+932	Choisir : ⟦0⟧
+933	Choisissez parmi vos musiciens. Prendre quelqu'un d'un autre pupitre échange les deux.
+934	Personne dans votre orchestre ne peut tenir ce pupitre (⟦0⟧). Persuadez quelqu'un de vous rejoindre.
+935	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧</div>\n   <div class="stage"><svg viewBox="0 0 360 210" class="stbg"><rect width="360" height="210" fill="#1a0e0a"/>\n    <path d="M40,150 L320,150 L352,210 L8,210Z" fill="#5a3a22"/><path d="M40,150 L320,150" stroke="#8a6a3a" stroke-width="2"/>\n    ⟦2⟧\n    <path d="M14,210 L14,34 Q180,-12 346,34 L346,210" fill="none" stroke="#cfa84f" stroke-width="7"/>\n    <path d="M18,24 Q60,70 46,210 L18,210Z" fill="#8a1a22"/><path d="M342,24 Q300,70 314,210 L342,210Z" fill="#8a1a22"/>\n    <path d="M18,26 Q100,64 180,42 Q260,64 342,26 L342,14 L18,14Z" fill="#a01e28"/></svg>\n    <div class="spot"></div>⟦3⟧\n    ⟦4⟧\n   </div>\n   <div class="aud">⟦5⟧</div>\n   <div class="mlab" style="margin-top:8px"><span>Applaudissements</span><span id="stx"></span></div><div class="applause"><i id="apl"></i></div></div>
+936	On crie « Remboursez ! »
+937	Une soirée décevante
+938	Une exécution solide
+939	Le public s'est enflammé
+940	Une soirée pour l'histoire
+941	Les quolibets ont fusé du parterre, et plus d'un spectateur est parti avant la fin.

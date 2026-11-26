@@ -5,7 +5,7 @@ src/base/index.html（土台）に、src/css/*.css と src/mods/*.js を番号�
 リポジトリ直下の index.html（公開版）を作る。
 
   python3 tools/build.py            日本語版を作る
-  python3 tools/build.py --lang en  i18n/en.json の訳で英語版を en/index.html に作る
+  英語版・フランス語版は bash tools/i18n/all.sh（docs/I18N.md）
   python3 tools/build.py --check    作るだけで書き出さず、いまの index.html と同じか確かめる
 """
 import re, sys, json, pathlib, subprocess
@@ -50,12 +50,7 @@ def build(lang='ja'):
 
 
 def translate(src, lang):
-    """i18n/<lang>.json の {日本語: 訳} を、長いものから順に置き換える。訳が空のものは日本語のまま。"""
-    tbl = json.loads((ROOT / 'i18n' / f'{lang}.json').read_text(encoding='utf-8'))
-    pairs = sorted(((k, v) for k, v in tbl.items() if v), key=lambda kv: -len(kv[0]))
-    for k, v in pairs:
-        src = src.replace(k, v)
-    return src.replace('<html lang="ja">', f'<html lang="{lang}">')
+    raise SystemExit('英語版・フランス語版は bash tools/i18n/all.sh で作ります（docs/I18N.md）')
 
 
 def syntax_check(html):

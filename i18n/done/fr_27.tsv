@@ -1,0 +1,197 @@
+5212	Baisser le rideau et s'interposer<small>-300 fr ; les rapports s'améliorent un peu</small>
+5213	Les laisser continuer<small>toute la ville en parle : renommée +15 ; les rapports sont au plus bas</small>
+5214	Une querelle au foyer
+5215	⟦0⟧⟦1⟧⟦2⟧ et ⟦3⟧ se disputent violemment au foyer : le tempo, l'ordre d'entrée, de vieilles rancunes…<br><span class="pmeta">Rapports actuels : ⟦4⟧</span>
+5216	Les emmener dîner et s'interposer<small>-200 fr ; rapports +20</small>
+5217	Pas assez d'argent
+5218	⟦0⟧ et ⟦1⟧ ont partagé une bouteille de vin et se sont un peu déridés.
+5219	Les laisser faire<small>tous deux perdent le moral</small>
+5220	⟦0⟧ et ⟦1⟧ jouaient à quatre mains en riant, tard dans la nuit.
+5221	⟦0⟧ a écrit une petite pièce pour l'anniversaire de ⟦1⟧.
+5222	Dans la diligence, ⟦0⟧ et ⟦1⟧ ont échangé des idées pour le prochain concert.
+5223	Le courant passe
+5224	Entre ⟦0⟧ et ⟦1⟧, le courant passe. Ce sera peut-être un nouveau duo parfait.
+5225	Un petit malentendu
+5226	Un mot lancé en passant par ⟦0⟧ a piqué ⟦1⟧ au vif.
+5227	Mari et femme|[Aa]mour|[Aa]mant|mariage
+5228	<div class="btag"><i style="background:⟦0⟧"></i><b>⟦1⟧</b> et <b>⟦2⟧</b> : ⟦3⟧⟦4⟧</div>
+5229	Carte des relations
+5230	<div class="bmap"><svg viewBox="0 0 ⟦0⟧ ⟦1⟧">⟦2⟧</svg>⟦3⟧</div><div class="pmeta" style="margin:4px 0">or = lien solide   vert = amitié   rose = amour, mariage   pointillé rouge = mauvais termes</div>⟦4⟧
+5231	<div class="pmeta">Aucune relation marquante encore. Les liens se nouent à mesure que les musiciens jouent ensemble.</div>
+5232	Bois
+5233	Quatuor à cordes
+5234	Prima
+5235	Messe
+5236	Ut majeur
+5237	clair et majestueux
+5238	Ré majeur
+5239	brillant
+5240	Sol mineur
+5241	poignant
+5242	Mi bémol majeur
+5243	héroïque
+5244	Ré mineur
+5245	dramatique
+5246	Ré bémol majeur
+5247	rêveur
+5248	Un thème qui gravit l'escalier en courant
+5249	Un thème de fanfare
+5250	Un chant à la manière d'un nocturne
+5251	Un thème de valse
+5252	Un sujet de fugue
+5253	Un Largo en prière
+5254	[Œuvre personnelle] ⟦0⟧ « ⟦1⟧ »
+5255	Vous pourrez écrire votre prochaine œuvre dans ⟦0⟧ mois
+5256	Écrire une œuvre nouvelle (1/4) : la forme
+5257	Quel genre de pièce écrirez-vous ?<br><span class="pmeta">Une forme qui convient à votre meilleure capacité a plus de chances de réussir.</span>
+5258	⟦0⟧<small>s'appuie sur : ⟦1⟧</small>
+5259	Théorie
+5260	Écrire une œuvre nouvelle (2/4) : la tonalité
+5261	Dans quelle tonalité ?
+5262	 · convient à cette forme
+5263	Écrire une œuvre nouvelle (3/4) : le thème
+5264	Choisissez le thème qui sera le visage de la pièce. Appuyez pour l'entendre.
+5265	Écrire une œuvre nouvelle (4/4) : la dédicace
+5266	À qui la dédierez-vous ?<br><span class="pmeta">Le dédicataire en sera ravi.</span>
+5267	À ⟦0⟧
+5268	Au public de ⟦0⟧
+5269	Donnez-lui un titre (ou laissez tel quel)
+5270	Printemps
+5271	Aube
+5272	Orage
+5273	Rêve
+5274	Voyage
+5275	Prière
+5276	Fête
+5277	Nostalgie
+5278	Étoile
+5279	Promesse
+5280	Œuvre nouvelle achevée : « ⟦0⟧ » (⟦1⟧, ⟦2⟧)⟦3⟧.
+5281	, dédiée à ⟦0⟧
+5282	L'œuvre nouvelle « ⟦0⟧ » est achevée
+5283	Une œuvre nouvelle est achevée
+5284	<div class="headline">« ⟦0⟧ »</div>⟦1⟧ · ⟦2⟧ · ⟦3⟧⟦4⟧<br><br>Qualité : <b>⟦5⟧</b><br><span class="pmeta">Ajoutée à vos programmes de concert. Jouez-la trois fois avec ★4 ou mieux et elle devient une « œuvre maîtresse », à l'accueil meilleur encore.</span>
+5285	<br>Dédiée à : ⟦0⟧
+5286	votre propre « ⟦0⟧ »⟦1⟧ (+⟦2⟧)
+5287	 (œuvre maîtresse)
+5288	Votre « ⟦0⟧ » est devenue une œuvre maîtresse
+5289	C'est devenu une œuvre maîtresse !
+5290	Le grand pari de ⟦0⟧ n'est pas encore tranché
+5291	Le grand pari de l'impresario
+5292	⟦0⟧Vous empruntez pour retenir le plus grand théâtre, un seul soir.<br>Selon le résultat du <b>prochain concert que vous donnerez dans cette ville</b> :<br> · ★4 ou mieux : vous touchez <b>2,5 fois</b> la mise, et la renommée monte fortement<br> · ★3 : vous rentrez dans vos frais<br> · ★2 ou moins : vous <b>perdez toute la mise</b><br>⟦1⟧<br><span class="pmeta">Si l'argent manque, cela devient une dette.</span>
+5293	<br><b>Aki</b> : « Misons tout, sans rien dire à mon frère. »<br><span class="pmeta">Si Aki joue, même ★3 compte comme une victoire.</span>
+5294	Miser ⟦0⟧ fr
+5295	Concert à grand pari à ⟦0⟧, avec ⟦1⟧ fr en jeu.
+5296	Mieux vaut s'abstenir
+5297	Grand pari gagné (+⟦0⟧ fr)
+5298	Vous avez gagné le grand pari !
+5299	Le grand pari s'est soldé à égalité.
+5300	Grand pari perdu (-⟦0⟧ fr)
+5301	Vous avez perdu le grand pari
+5302	Salle clairsemée, critiques froides. ⟦0⟧ fr envolés.<br><span class="pmeta">La prochaine fois…</span>
+5304	Une improvisation décidée sur-le-champ
+5305	En une seule pièce, je renverserai tout.
+5306	L'outsider de l'avenir, pour votre orchestre.
+5307	Le frère cadet de Haru, venu d'au-delà de la Porte du Temps. De l'étoffe d'une vedette à revendre, mais joueur et lunatique. Dans un bon soir, personne ne l'arrête.
+5308	Joueur
+5309	Le tout pour le tout
+5310	C'est maintenant que le vrai spectacle commence !
+5311	Le coup de théâtre d'Aki ! Un soir au bord du gouffre, toute la salle s'est levée (+4,5)
+5312	Aki a visé l'exploit et s'est emballé (-0,5)
+5313	L'étoffe de vedette d'Aki a fait monter d'un cran la fièvre de la salle (+1,5)
+5314	Le coup de théâtre d'Aki
+5315	<b>Aki</b> : « C'est maintenant que le vrai spectacle commence ! »
+5316	Par la Porte du Temps : le frère cadet de Haru
+5317	⟦0⟧La porte s'est rouverte. Un jeune homme fait irruption en faisant tournoyer son étui à violon.<br><br><b>Aki</b> : « Te voilà, grand frère, j'en étais sûr ! Prenez-moi aussi. Vous n'y perdrez pas, promis. »<br><br><span class="pmeta">⟦1⟧</span>
+5318	Aki, le frère cadet de Haru, a rejoint l'orchestre.
+5319	Aki entre par la Porte du Temps
+5320	Aki a fait « Tss » et s'en est retourné par la porte.
+5321	Le pari d'Aki
+5322	⟦0⟧<b>Aki</b> : « Il y a une belle partie de cartes en ville. Prêtez-moi ⟦1⟧ fr. Je vous rends le double ! »
+5323	Le suivre<small>le double s'il gagne ; perdu s'il perd</small>
+5324	Aki a gagné son pari (+⟦0⟧ fr). « Vous voyez ? »
+5325	Aki a gagné ! +⟦0⟧ fr
+5326	Un pari perdu
+5327	Aki a perdu son pari (-⟦0⟧ fr). « …Je gagnerai la prochaine fois. »
+5328	Aki a perdu… -⟦0⟧ fr
+5329	L'en empêcher<small>Aki boude un peu</small>
+5330	Haru a tapé sur l'épaule d'Aki : « Laisse tomber. »
+5331	Deux frères, par-delà le temps
+5332	Si les frères venus par la Porte du Temps montaient ensemble sur scène…
+5333	Un aîné posé et un cadet qui joue son va-tout. Ensemble, ils font sourire le public de toutes les époques.
+5334	Grand frère, ce soir, faisons tout avec mes improvisations.
+5335	Joue ce qui est écrit. …Mais la dernière cadence, elle seule, je te la laisse.
+5336	Oui !
+5337	Une certaine duchesse
+5338	Un grand marchand de Venise
+5339	Un grand seigneur de Londres
+5340	Une comtesse de Vienne
+5341	Un grand propriétaire de Bohême
+5342	La veuve d'un banquier
+5343	Un banquier de Paris
+5344	Une dame liée aux Rothschild
+5345	Un prince russe
+5346	La veuve d'un magnat de Moscou
+5347	Un baron enrichi dans les chemins de fer
+5348	Une comtesse de Budapest
+5349	Un roi américain des chemins de fer
+5350	L'épouse d'un millionnaire de New York
+5351	Le roi du parfum de Paris
+5352	⟦0⟧ a retiré son soutien en apprenant la nouvelle (⟦1⟧).
+5353	Un mécène s'en va
+5354	⟦0⟧Une courte lettre est arrivée de la part de <b>⟦1⟧</b>.<br>« J'ai appris la nouvelle au sujet d'Aki (⟦2⟧). Mon soutien prendra fin ce mois-ci. »<br><br><b>Aki</b> : « …Bah, il s'en trouvera un autre. »
+5355	coup de théâtre d'Aki
+5356	s'est emballé
+5357	Un faux pas sur une scène importante
+5358	Le soutien de ⟦0⟧ est arrivé au terme promis. « Faites-moi réentendre un jour le son de ce garçon. »
+5359	Un mécène inattendu
+5360	⟦0⟧Un matin est arrivée une enveloppe aux armes magnifiques. L'expéditeur : <b>⟦1⟧</b>.<br>« Au concert de l'autre jour, j'ai vu ce jeune violoniste en scène. Un talent capable d'enflammer ainsi une salle est chose rare. Permettez-moi de le soutenir. »<br><br>Une somme de <b>⟦2⟧ fr</b>, puis <b>⟦3⟧ fr</b> par mois pendant six mois.<br><span class="pmeta">Les mécènes épris d'un talent sont fréquents dans l'histoire de la musique. Tchaïkovski fut soutenu treize ans par Mme von Meck sans jamais la rencontrer. Mais les mécènes sont changeants : si Aki perd au jeu ou s'emballe en scène, le soutien peut être coupé.</span>
+5361	Accepter avec gratitude
+5362	⟦0⟧ devient mécène d'Aki (+⟦1⟧ fr)
+5363	Un mécène paraît !
+5364	⟦1⟧ fr de la part de : ⟦0⟧
+5365	Décliner poliment<small>Aki boude</small>
+5366	Aki : « Quoi ? Quel gâchis ! »
+5367	La chance d'Aki auprès des mécènes
+5368	⟦0⟧<div class="cbar"><i style="width:⟦1⟧%"></i><span>chance auprès des mécènes ⟦2⟧/100</span></div>⟦3⟧<br><span class="pmeta">La chance s'accumule quand Aki obtient ★4 ou mieux en concert ou réussit un coup de théâtre. Au-delà de 60, une offre peut arriver soudain, un jour, d'un mécène très fortuné.</span>
+5369	Mécène actuel : <b>⟦0⟧</b> (⟦1⟧ fr par mois, encore ⟦2⟧ mois)
+5370	Aucun mécène pour l'instant.
+5371	<button class="btn patbtn" data-pat="1">⭐ La chance d'Aki auprès des mécènes⟦0⟧<div class="cbar"><i style="width:⟦1⟧%"></i><span>⟦2⟧/100</span></div></button>
+5372	<small>Mécène : ⟦0⟧ (encore ⟦1⟧ mois)</small>
+5373	Critica musica (Hambourg)
+5374	Compositeur de Hambourg et l'un des premiers critiques musicaux d'Allemagne. Dans sa jeunesse, il se battit en duel avec Haendel.
+5375	Pour la musique de Haendel, je ne sais pourquoi, je note toujours sévèrement.
+5376	Reichardt
+5377	Berlinische musikalische Zeitung
+5378	Compositeur berlinois, connu aussi pour la sévérité de sa critique.
+5379	Fétis
+5380	Revue musicale
+5381	Musicologue et critique parisien. Il ne cessa d'attaquer sans merci la musique de Berlioz.
+5382	Hanslick
+5383	Neue Freie Presse
+5384	Le grand critique de Vienne. Il défendit Brahms et attaqua Wagner. Wagner aurait donné ses traits à Beckmesser, le greffier pointilleux des Meistersinger.
+5385	Pierre Lalo
+5386	Le Temps
+5387	Critique du journal parisien Le Temps. Fils du compositeur Édouard Lalo, il critiqua avec âpreté la musique de Ravel.
+5388	Je suis bien obligé de l'admettre. L'exécution de ce soir restera dans l'histoire.
+5389	…Je suis vaincu. Ce soir, pour une fois, ma plume tremble.
+5390	Pas mal. Mais je ne suis pas encore satisfait.
+5391	Il y eut des éclairs. Espérons mieux la prochaine fois.
+5392	Médiocre. J'ai eu peine à rester éveillé.
+5393	Ni bon ni mauvais. En un mot : ennuyeux.
+5394	D'un ennui extrême. La moitié de la salle regardait sa montre.
+5395	L'orchestre devrait commencer par apprendre à lire la partition.
+5396	J'aimerais être remboursé.
+5397	Ce n'est pas de la musique. C'est du bruit.
+5398	Je reconnaîtrai du moins un programme qui respecte la forme.
+5399	Au reste, une chose comme ⟦0⟧ ne mérite pas le nom de musique.
+5400	La plume du compositeur, il faut le dire, est sûre.
+5401	Pour la musique de ce compositeur, je ne sais pourquoi, je note toujours sévèrement.
+5402	Vous avez arraché un murmure d'admiration à votre critique attitré, ⟦0⟧
+5403	Superbe…
+5404	Le critique attitré s'extasie enfin
+5405	⟦0⟧ s'extasie enfin
+5406	⟦0⟧Ce ⟦1⟧ lui-même a porté votre orchestre aux nues, à la une (⟦2⟧). Toute la ville ne parle que de cela.<br><br>Renommée +40
+5407	Une tempête de mauvaises critiques
+5408	⟦0⟧⟦1⟧ a démoli votre orchestre dans trois numéros de suite. L'affluence risque d'en souffrir.<br><span class="pmeta">Renommée -10</span>
+5409	<div class="critic">⟦0⟧<div><b>Votre critique attitré, ⟦1⟧, écrit</b> (⟦2⟧)<br>« ⟦3⟧⟦4⟧ »<div class="cbar"><i style="width:⟦5⟧%"></i><span>opinion de ⟦6⟧ : ⟦7⟧/100 (⟦8⟧⟦9⟧)</span></div></div></div>

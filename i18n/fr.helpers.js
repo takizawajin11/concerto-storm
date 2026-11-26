@@ -1,1 +1,1 @@
-const __i18n={mon:n=>['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'][((+n-1)%12+12)%12]||n};
+const __i18n={mon:n=>['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'][((+n-1)%12+12)%12]||n};

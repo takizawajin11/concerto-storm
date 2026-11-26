@@ -1,0 +1,217 @@
+942	L'ambition était louable, mais la finition laissait à désirer.
+943	Rien de tapageur, mais la qualité de l'orchestre est indéniable.
+944	Les applaudissements ne voulaient pas cesser, et l'on réclama trois bis.
+945	Après le concert, le public s'est répandu dans les rues comme pris de fièvre. On parlera longtemps de cette soirée.
+946	Bravo !
+947	Héros de la soirée : ⟦0⟧
+948	⟦1⟧ donné à ⟦0⟧. Accueil ⟦2⟧, recette ⟦3⟧ francs.
+949	<div class="headline">⟦0⟧</div><div class="dateline">⟦2|mon⟧ ⟦1⟧   ⟦3⟧</div>\n    <p>L'orchestre ⟦4⟧ a donné ⟦5⟧. ⟦6⟧⟦7⟧</p>\n    ⟦8⟧\n    <div class="stars">⟦9⟧</div>\n    ⟦10⟧\n    <p>Recette <b>+⟦11⟧ francs</b> / Renommée +⟦12⟧⟦13⟧</p>
+950	Surtout, <b>⟦0⟧</b> (⟦1⟧) fut magnifique.
+951	<div style="display:flex;align-items:center;gap:8px;justify-content:center">⟦0⟧<span>Héros de la soirée<br><b>⟦1⟧</b></span></div>
+952	<br>Progrès par l'expérience : <b>⟦0⟧</b> (capacités +1)
+953	Papa Haydn
+954	Satisfaction de tout l'orchestre +3 chaque mois
+955	Réforme de l'opéra
+956	Accueil des opéras +3 quand il joue
+957	Mélodie italienne
+958	Clarinette de basset
+959	Force personnelle +4
+960	Colorature suraiguë
+961	Affluence +10 % en scène
+962	Soutien des basses
+963	Accueil +2 en scène
+964	Une armée de généraux
+965	Violons et vents +2 quand il joue
+966	Les vents de Mannheim
+967	Force personnelle +3
+968	Prince de l'épée et du violon
+969	Affluence +12 % en scène
+970	Impresario avisé
+971	Recettes des concerts +15 % par sa seule présence dans l'orchestre
+972	Père de l'école moderne du violon
+973	Les autres violons +2 quand il joue
+974	Relations pragoises
+975	Accueil à Prague +4
+976	Formé chez les Esterházy
+977	Accueil des symphonies +2 en scène
+978	École de chant
+979	Revenus de leçons chaque mois
+980	Traitement de maître de chapelle de la cour
+981	+200 fr chaque mois
+982	La faveur de l'impératrice
+983	Roi des bis
+984	Renommée +50 % s'il joue et que l'accueil atteint ★4
+985	Tempête d'improvisation
+986	Accueil +3 en scène / +4 comme second
+987	Poète du salon
+988	Accueil +5 quand il joue dans un salon
+989	Lisztomanie
+990	Affluence +20 % quand il joue. Les dames s'évanouissent
+991	Effectifs gigantesques
+992	Accueil des symphonies +4 en scène
+993	Diplomatie gastronomique
+994	L'approche « Cachet » est 1,4 fois plus efficace tant qu'il est dans l'orchestre
+995	Démon de la répétition
+996	Les musiciens sont plus souvent en forme
+997	Professeur au Conservatoire
+998	Accompagnateur hors pair
+999	Pianistes +3 en scène
+1000	Mezzo de légende
+1001	Affluence +15 % en scène
+1002	Figure influente de Londres
+1003	Accueil à Londres +4
+1004	Géant de la basse
+1005	Cordes +2 en scène
+1006	Trois mains
+1007	Père de la valse
+1008	Accueil des bals +5 en scène
+1009	Fondateur de l'école viennoise
+1010	Démon de l'étude
+1011	Un musicien gagne de l'expérience chaque mois
+1012	Avocate du compositeur
+1013	Bonus du compositeur doublé en scène
+1014	Neue Zeitschrift für Musik
+1015	Renommée gagnée +30 % tant qu'il est dans l'orchestre
+1016	Longues mélodies
+1017	Accueil des opéras +4 en scène
+1018	Créatrice de Norma
+1019	Plume rapide
+1020	Accueil des créations +5 en scène
+1021	Flûte Boehm
+1022	Allié de Weber
+1023	Maître improvisateur
+1024	+4 comme second
+1025	Musique de l'avenir
+1026	Accueil des opéras et drames musicaux +5 en scène
+1027	Le son russe
+1028	Accueil à Saint-Pétersbourg +5
+1029	Virtuosité diabolique
+1030	Affluence +20 % en scène
+1031	L'abbé Liszt
+1032	Affluence +10 % en scène / satisfaction de l'orchestre +2
+1033	Cathédrale de l'orgue
+1034	Chef du Ring
+1035	Accueil des drames musicaux et symphonies +3 en scène
+1036	Roi de la valse
+1037	Accueil des bals +6 en scène
+1038	Quatuor Joachim
+1039	Cordes +3 en scène
+1040	Voix de Walkyrie
+1041	Accueil des drames musicaux +4 en scène
+1042	Répétitions impitoyables
+1043	La forme des musiciens s'améliore, mais la satisfaction baisse
+1044	Mélodie de Bohême
+1045	Accueil de la musique d'orchestre +3 en scène
+1046	La pension de Mme von Meck
+1047	+300 fr chaque mois
+1048	Feu de l'Espagne
+1049	Improvisation à l'orgue
+1050	École française des vents
+1051	Flûte et clarinette +3 en scène
+1052	Rossignol de la clarinette
+1053	Pilier du conservatoire
+1054	La diva la mieux payée de l'histoire
+1055	Prix des billets ×1,5 quand elle chante
+1056	Paganini de la contrebasse
+1057	Voix d'Aida
+1058	Accueil de la musique sacrée et des opéras +3 en scène
+1059	Santé fragile
+1060	Avare
+1061	Difficile
+1062	Idole du public
+1063	Fidèle
+1064	Paresseux
+1065	Cœur volage
+1066	Reine de la scène
+1067	Emprunteur
+1068	Mal à l'aise sur les grandes scènes
+1069	Réviseur compulsif
+1070	Tombe malade de temps à autre
+1071	Mécontent quand les fonds sont bas
+1072	Se heurte aux autres musiciens
+1073	Attire la foule
+1074	La satisfaction baisse lentement ; impossible à débaucher
+1075	Perd facilement la forme
+1076	Disparaît dans des escapades amoureuses
+1077	Boude sans temps de scène
+1078	Vous demande des prêts
+1079	Force -4 dans les grands théâtres
+1080	S'absente pour réviser
+1081	Excelle dans les œuvres nouvelles
+1082	Gluck est mort à Vienne. Le monde musical pleure le porte-drapeau de la réforme de l'opéra.
+1083	Bellini est mort subitement près de Paris, à 33 ans. Chopin en fut profondément affligé.
+1084	La Malibran est morte à Manchester des suites d'une chute de cheval. Elle avait 28 ans.
+1085	Hummel est mort à Weimar.
+1086	Wagner est mort au palais Vendramin, à Venise.
+1087	Entente : ⟦0⟧ (⟦1⟧⟦2⟧)
+1088	le compositeur joue lui-même (+⟦0⟧)
+1089	le compositeur est présent (+⟦0⟧)
+1090	Noblesse
+1091	un public noble préfère les œuvres expressives (+1,5)
+1092	Bourgeoisie
+1093	un public bourgeois préfère l'éclat de la technique (+1,5)
+1094	Ballet
+1095	une grande œuvre qui sied à un grand théâtre (+2)
+1096	Cohésion ⟦0⟧×⟦1⟧ ⟦2⟧ Lv⟦3⟧ (⟦4⟧⟦5⟧)
+1097	⟦0⟧ autre(s) duo(s) soudé(s) (total ⟦1⟧⟦2⟧)
+1098	Salon de La Pouplinière
+1099	Grande salle des Tuileries
+1100	Salon de la princesse Belgiojoso
+1101	Salle Pleyel
+1102	Salon de Pauline Viardot
+1103	Salon de la comtesse Thun
+1104	Mehlgrube (salle de réunion)
+1105	Burgtheater
+1106	Salon aristocratique
+1107	Ancienne salle du Musikverein
+1108	Kärntnertortheater
+1109	Musikverein, petite salle
+1110	Musikverein, grande salle (la Salle dorée)
+1111	Hôtel d'un noble
+1112	King's Theatre
+1113	Argyll Rooms
+1114	St James's Hall
+1115	Royal Albert Hall
+1116	Maison d'un marchand
+1117	Théâtre municipal de Leipzig
+1118	Teatro della Canobbiana
+1119	Villa Wahnfried
+1120	Opéra des Margraves
+1121	Villa Bertramka
+1122	Maison municipale de Prague
+1123	Théâtre Nostitz (Théâtre des États)
+1124	Salon aristocratique de ⟦0⟧
+1125	Salle publique de ⟦0⟧
+1126	Toutes les classes
+1127	<div class="sc"><h3>Choisir la salle</h3><div class="subt">Sala — ⟦0⟧</div>\n   <div class="tell">Une salle plus grande rapporte plus d'argent et de renommée, mais les places vides y sont plus probables. L'affluence croît avec le niveau de renommée, les villes tenues et les idoles du public à l'affiche.</div>\n   ⟦1⟧\n   <button class="btn" id="prCancel" style="width:100%;margin-top:6px">Annuler</button></div>
+1128	<button class="btn hallc" data-h="⟦0⟧" ⟦1⟧>⟦2⟧<div style="flex:1"><b>⟦3⟧</b>\n      <small>⟦4⟧ · ⟦5⟧ places · public : ⟦6⟧ · location ⟦7⟧ fr</small>\n      <small>Affluence prévue <b style="color:var(--gold2)">⟦8⟧ %</b>⟦9⟧</small>\n      <div class="fillbar"><i style="width:⟦10⟧%"></i></div></div></button>
+1129	Petite
+1130	Moyenne
+1131	Grande
+1132	   <span style="color:#e77">Requiert la renommée Lv4 ou le contrôle de la ville</span>
+1133	<div class="sc"><h3>⟦0⟧</h3><div class="subt">⟦1⟧</div>\n   ⟦2⟧\n   <div class="tell">Le goût de cette ville : <b style="color:⟦3⟧">⟦4⟧</b> / public : <b>⟦5⟧</b><br>L'accueil s'améliore quand le compositeur ou des musiciens dotés d'un talent particulier jouent.</div>\n   ⟦6⟧\n   ⟦7⟧\n   <button class="btn" id="prCancel" style="width:100%;margin-top:6px">⟦8⟧</button></div>
+1134	Duel final : manche ⟦0⟧
+1135	Choisir le programme
+1136	<div class="card" style="display:flex;gap:10px;align-items:center">⟦0⟧<div><b>⟦1⟧</b><br><span class="pmeta">Programme : ⟦2⟧</span><br><span class="pmeta">Force attendue : environ <b style="color:#f88">⟦3⟧</b></span></div></div>
+1137	   <span style="color:#e77">Déjà joué dans ce duel</span>
+1138	<button class="btn" id="prBack" style="width:100%;margin-top:6px">Choisir une autre salle</button>
+1139	Reporter le duel (nouvel essai dans 3 mois)
+1140	Le duel final a été reporté.
+1141	la popularité de ⟦0⟧ en personne (+10 %)
+1142	<div class="sc"><h3>Fixer la formation</h3><div class="subt">⟦0⟧ · ⟦1⟧</div>\n   <div class="card" style="text-align:center"><b style="font-size:16px">⟦2⟧</b><br><button class="btn" id="lis" style="padding:3px 12px;font-size:12px;margin-top:6px">♪ Extrait</button></div>\n   ⟦3⟧\n   <div class="card"><div style="font-size:22px;color:var(--gold2);text-align:center;letter-spacing:.1em">⟦4⟧</div>\n     <div style="font-size:12.5px;color:#d8c9a8">⟦5⟧</div>\n     ⟦6⟧</div>\n   <div class="actions"><button class="btn gold" id="go">Rideau !<small>⟦7⟧</small></button><button class="btn" id="chg">Changer de programme</button></div>\n   <button class="btn" id="prCancel" style="width:100%;margin-top:8px">Annuler</button></div>
+1143	<div class="pmeta">forme ⟦0⟧⟦1⟧ · force dans cette œuvre <b style="color:var(--gold2)">⟦2⟧</b></div>⟦3⟧
+1144	 · satisfaction ⟦0⟧
+1145	<div style="font-size:12.5px;color:#d8c9a8;margin-top:6px">Affluence prévue <b style="color:var(--gold2)">⟦0⟧ %</b>⟦1⟧</div>
+1146	⟦0⟧   forme ⟦1⟧   force ⟦2⟧⟦3⟧⟦4⟧
+1147	Personne dans votre orchestre ne peut tenir ce pupitre (⟦0⟧).
+1148	<br><span style="font-size:12px">Absents : ⟦0⟧</span>
+1149	Hou !
+1150	Remboursez !
+1151	Dehors !
+1152	Pas mal
+1153	Clap clap
+1154	Correct
+1155	Bravo
+1156	Bis !
+1157	Encore !
+1158	Brava !

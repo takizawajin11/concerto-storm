@@ -5342,7 +5342,7 @@
 "乗ってやる<small>勝てば2倍、負ければ失う</small>": "Go along with it<small>double if he wins; lost if he loses</small>",
 "アキが賭けに勝った（+⟦0⟧fr）。「ほらね！」": "Aki won his wager (+⟦0⟧ fr). 'See?'",
 "アキが勝った！ +⟦0⟧fr": "Aki won! +⟦0⟧ fr",
-"賭けに負けた": "The wager was lost",
+"賭けに負けた": "A lost wager",
 "アキが賭けに負けた（-⟦0⟧fr）。「……次は勝つから」": "Aki lost his wager (-⟦0⟧ fr). '…I'll win next time.'",
 "アキが負けた…… -⟦0⟧fr": "Aki lost… -⟦0⟧ fr",
 "やめさせる<small>アキは少しすねる</small>": "Stop him<small>Aki sulks a little</small>",
@@ -5368,12 +5368,12 @@
 "アメリカの鉄道王": "An American railway king",
 "ニューヨークの大富豪の夫人": "The wife of a New York millionaire",
 "パリの香水王": "The perfume king of Paris",
-"⟦0⟧が「⟦1⟧と聞いて、がっかりしました」と援助を打ち切った。": "⟦0⟧ withdrew support: 'I was disappointed to hear that he ⟦1⟧.'",
+"⟦0⟧が「⟦1⟧と聞いて、がっかりしました」と援助を打ち切った。": "⟦0⟧ withdrew support on hearing the news (⟦1⟧).",
 "後援者が去った": "A patron has gone",
-"⟦0⟧<b>⟦1⟧</b>から短い手紙が届いた。<br>「アキさんが⟦2⟧と聞きました。わたくしの援助は、今月かぎりといたします」<br><br><b>アキ</b>「……まあ、また次が見つかるって」": "⟦0⟧A short letter came from <b>⟦1⟧</b>.<br>'I hear that Aki ⟦2⟧. My support will end with this month.'<br><br><b>Aki</b>: '…Oh well, there'll be another.'",
+"⟦0⟧<b>⟦1⟧</b>から短い手紙が届いた。<br>「アキさんが⟦2⟧と聞きました。わたくしの援助は、今月かぎりといたします」<br><br><b>アキ</b>「……まあ、また次が見つかるって」": "⟦0⟧A short letter came from <b>⟦1⟧</b>.<br>'I have heard the news about Aki (⟦2⟧). My support will end with this month.'<br><br><b>Aki</b>: '…Oh well, there'll be another.'",
 "re:アキの一発逆転": "Aki's comeback",
 "re:空回り": "overreached",
-"大事な舞台で空回りした": "overreached on an important stage",
+"大事な舞台で空回りした": "A misfire on an important stage",
 "⟦0⟧の援助は、約束の期間を終えた。「またいつか、あの子の音を聴かせてくださいな」": "The support of ⟦0⟧ has run its promised term. 'Do let me hear that boy's sound again some day.'",
 "突然の後援者": "A sudden patron",
 "⟦0⟧ある朝、立派な紋章入りの封筒が届いた。差出人は<b>⟦1⟧</b>。<br>「先日の演奏会で、あの若いヴァイオリン弾きの舞台を拝見しました。あれほど客席を熱くする才能は、めったにございません。ぜひ援助させてくださいませ」<br><br>一時金 <b>⟦2⟧fr</b>、さらに半年のあいだ毎月 <b>⟦3⟧fr</b>。<br><span class=\"pmeta\">才能に惚れこんだ後援者は、音楽史によく登場する。チャイコフスキーはフォン・メック夫人から、一度も会わないまま13年間援助を受けた。ただし後援者は気まぐれ。アキが博打で負けたり舞台で空回りしたりすると、打ち切られることもある。</span>": "⟦0⟧One morning an envelope with a splendid crest arrived. The sender: <b>⟦1⟧</b>.<br>'At the concert the other day I saw that young violinist on stage. A talent that can so warm an audience is rare indeed. Pray allow me to support him.'<br><br>A lump sum of <b>⟦2⟧ fr</b>, and <b>⟦3⟧ fr</b> a month for half a year.<br><span class=\"pmeta\">Patrons who fall in love with a talent appear often in music history. Tchaikovsky was supported by Madame von Meck for 13 years without ever meeting her. But patrons are fickle: if Aki loses at gambling or overreaches on stage, support may be cut off.</span>",
@@ -6008,5 +6008,6 @@
 "<summary>ほかの遊び<small>今日の演奏会・挑戦シナリオ・あなたの音楽史・殿堂</small></summary>": "<summary>More ways to play<small>Today's Concert, challenge scenarios, your history of music, Hall of Fame</small></summary>",
 "<span class=\"fb1\">▶ はじめての方はここから</span><span class=\"fb2\">1781年のウィーン。モーツァルトになって、最初の演奏会を開く</span><span class=\"fb3\">約3分・音が出ます</span>": "<span class=\"fb1\">▶ New here? Start with this</span><span class=\"fb2\">Vienna, 1781. Become Mozart and give your first concert</span><span class=\"fb3\">about 3 minutes · with sound</span>",
 "— 自分で時代を選ぶ —": "— Choose your own era —",
-"<div class=\"firstguide\">⟦0⟧<div><b>⟦1⟧</b><br>ウィーンへようこそ。まずは一曲、弾いてみなさい。席にはもう君が座っている。下の<b>開演</b>を押すだけだ。<br>演奏が始まったら、<b>テンポ</b>と<b>終わり方</b>を君が決める。</div></div>": "<div class=\"firstguide\">⟦0⟧<div><b>⟦1⟧</b><br>Welcome to Vienna. First of all, play a piece. You are already in your seat. Just press <b>Curtain up</b> below.<br>Once the music begins, <b>the tempo</b> and <b>the ending</b> are yours to decide.</div></div>"
+"<div class=\"firstguide\">⟦0⟧<div><b>⟦1⟧</b><br>ウィーンへようこそ。まずは一曲、弾いてみなさい。席にはもう君が座っている。下の<b>開演</b>を押すだけだ。<br>演奏が始まったら、<b>テンポ</b>と<b>終わり方</b>を君が決める。</div></div>": "<div class=\"firstguide\">⟦0⟧<div><b>⟦1⟧</b><br>Welcome to Vienna. First of all, play a piece. You are already in your seat. Just press <b>Curtain up</b> below.<br>Once the music begins, <b>the tempo</b> and <b>the ending</b> are yours to decide.</div></div>",
+"日本語": "日本語"
 }

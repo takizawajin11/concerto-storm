@@ -111,7 +111,7 @@
 5323	Go along with it<small>double if he wins; lost if he loses</small>
 5324	Aki won his wager (+⟦0⟧ fr). 'See?'
 5325	Aki won! +⟦0⟧ fr
-5326	The wager was lost
+5326	A lost wager
 5327	Aki lost his wager (-⟦0⟧ fr). '…I'll win next time.'
 5328	Aki lost… -⟦0⟧ fr
 5329	Stop him<small>Aki sulks a little</small>
@@ -137,12 +137,12 @@
 5349	An American railway king
 5350	The wife of a New York millionaire
 5351	The perfume king of Paris
-5352	⟦0⟧ withdrew support: 'I was disappointed to hear that he ⟦1⟧.'
+5352	⟦0⟧ withdrew support on hearing the news (⟦1⟧).
 5353	A patron has gone
-5354	⟦0⟧A short letter came from <b>⟦1⟧</b>.<br>'I hear that Aki ⟦2⟧. My support will end with this month.'<br><br><b>Aki</b>: '…Oh well, there'll be another.'
+5354	⟦0⟧A short letter came from <b>⟦1⟧</b>.<br>'I have heard the news about Aki (⟦2⟧). My support will end with this month.'<br><br><b>Aki</b>: '…Oh well, there'll be another.'
 5355	Aki's comeback
 5356	overreached
-5357	overreached on an important stage
+5357	A misfire on an important stage
 5358	The support of ⟦0⟧ has run its promised term. 'Do let me hear that boy's sound again some day.'
 5359	A sudden patron
 5360	⟦0⟧One morning an envelope with a splendid crest arrived. The sender: <b>⟦1⟧</b>.<br>'At the concert the other day I saw that young violinist on stage. A talent that can so warm an audience is rare indeed. Pray allow me to support him.'<br><br>A lump sum of <b>⟦2⟧ fr</b>, and <b>⟦3⟧ fr</b> a month for half a year.<br><span class="pmeta">Patrons who fall in love with a talent appear often in music history. Tchaikovsky was supported by Madame von Meck for 13 years without ever meeting her. But patrons are fickle: if Aki loses at gambling or overreaches on stage, support may be cut off.</span>

@@ -1,0 +1,131 @@
+2945	 <b class="hs3">fatigue</b>
+2946	 <b class="busy">en engagement</b>
+2947	 <b class="busy">absent</b>
+2948	<div class="ftabs"><button data-ufs="0" class="⟦0⟧">Groupe de tournée</button><button data-ufs="1" class="⟦1⟧">Groupe d'engagement</button></div>\n   <div class="card" style="font-size:12.5px">⟦2⟧</div>\n   ⟦3⟧\n   <div class="sec-t">Cures et atelier</div>\n   <div class="actions"><button class="btn" id="uSpa" ⟦4⟧>Prendre les eaux à Baden-Baden<small>⟦5⟧</small></button>\n    <button class="btn" id="uDev" ⟦6⟧>Commander à l'atelier de lutherie<small>300 fr · un instrument de cette époque</small></button>\n    <button class="btn ⟦7⟧" id="uInv" ⟦8⟧>Invitation par-delà le temps<small>⟦9⟧</small></button>\n    <button class="btn" id="uStore">Réserve d'instruments<small>⟦10⟧ objet(s)</small></button></div>\n   <div class="sec-t">Tous les musiciens (touchez pour le détail, les objets, l'éveil, un entretien)</div>⟦11⟧
+2949	Le groupe que vous emmenez en tournée. Le premier est le violon solo (qui ne quitte jamais l'orchestre, même après un effondrement). Vous pouvez en faire partie. ⟦0⟧⟦1⟧
+2950	<br><b style="color:var(--gold2)">Liens historiques : ⟦0⟧</b>⟦1⟧
+2951	<br>Entente : ⟦0⟧
+2952	Le groupe que vous envoyez en engagement. Les musiciens partis en engagement ne peuvent pas non plus paraître en concert. ⟦0⟧
+2953	<br><b class="busy">En engagement : ⟦0⟧ (retour dans ⟦1⟧ mois)</b>
+2954	<div class="mcx">⟦0⟧<button class="mini" data-urm="⟦1⟧">Retirer</button></div>
+2955	<span class="flag">Chef</span>
+2956	<div class="mc empty" data-uslot="⟦0⟧">＋ Placer</div>
+2957	Rendre à tous leur plein moral (⟦0⟧ fr)
+2958	Tout le monde va bien
+2959	⟦0⟧ en main. Inviter un musicien d'une autre époque
+2960	S'obtient en franchissant une Porte du Temps
+2961	Non modifiable pendant un engagement
+2962	Cure à Baden-Baden (⟦0⟧ fr).
+2963	Le moral de tous est rétabli
+2964	De l'atelier
+2965	Ce qui est arrivé… n'était qu'un pupitre.
+2966	⟦0⟧ est arrivé de l'atelier de lutherie.
+2967	Arrivé de l'atelier !
+2968	Réserve d'instruments
+2969	 · utilisé par ⟦0⟧
+2970	Défense
+2971	Tous
+2972	<div class="sc"><h3>Groupe ⟦0⟧, place ⟦1⟧</h3><div class="subt">Choisir un musicien</div>\n   ⟦2⟧\n   <button class="btn" id="upx" style="width:100%;margin-top:8px">Retour</button></div>
+2973	2
+2974	1
+2975	<div class="mcx"><span class="pmeta">Groupe ⟦0⟧</span></div>
+2976	Les musiciens en engagement ne peuvent pas être déplacés
+2977	Absent pour l'instant
+2978	<div style="display:flex;gap:10px;align-items:center">⟦0⟧<div><b>⟦1⟧⟦2⟧</b><br><span class="pmeta">⟦3⟧ · Lv⟦4⟧⟦5⟧⟦6⟧⟦7⟧</span><br>\n   <span class="pmeta">Technique ⟦8⟧ Expression ⟦9⟧ Improvisation ⟦10⟧ Théorie ⟦11⟧ · Défense ⟦12⟧</span><br><span class="pmeta">moral ⟦13⟧/⟦14⟧</span></div></div>\n   ⟦15⟧\n   ⟦16⟧⟦17⟧\n   <div class="pmeta" style="margin-top:6px">Le niveau monte par les concerts et les tournées ; tous les 10 niveaux, +1 à toutes les capacités. Au Lv20, un musicien peut connaître l'« éveil » (toutes capacités +2, moral +12, effet du talent ×1,5).</div>
+2979	 (éveillé)
+2980	 (niveau de renommée ×3)
+2981	 (encore ⟦0⟧)
+2982	 · invité venu de : ⟦0⟧⟦1⟧
+2983	 (dans sa pleine maturité)
+2984	<br>Rang historique <span style="color:⟦0⟧">⟦1⟧</span> (encore jeune à cette époque)
+2985	 (un faux)
+2986	Éveiller<small>⟦0⟧</small>
+2987	Débloqué au Lv20
+2988	⟦0⟧ s'est éveillé à une nouvelle maîtrise de son art.
+2989	⟦0⟧ : l'éveil
+2990	Éveil !
+2991	⟦0⟧ atteint un nouveau palier
+2992	S'entretenir<small>écouter ; satisfaction +2 (une fois par mois)</small>
+2993	Mon point fort : ⟦0⟧. Un jour, je veux jouer au mieux de moi-même dans votre orchestre.
+2994	Ces temps-ci, j'ai l'impression que le son résonne tout seul, hors de mes mains.
+2995	Depuis mon éveil, je perçois jusqu'à la respiration du public.
+2996	Que diraient mes amis de mon temps (⟦0⟧) s'ils entendaient la musique de cette époque ?
+2997	…Je suis un peu las. Pourriez-vous aussi songer à mon salaire ?
+2998	Cet orchestre est le meilleur qui soit. Je le suivrai partout.
+2999	Entretien avec ⟦0⟧
+3000	♪ Écouter une phrase
+3001	Baguette
+3002	Plume et papier
+3003	Costume de scène
+3004	Instrument
+3005	Archet
+3006	Accessoire
+3007	Seuls les objets convenant à cet emplacement sont affichés.
+3008	Rien ne convient. Procurez-vous quelque chose chez un marchand d'instruments ou à l'atelier.
+3009	Retirer
+3010	Invitation par-delà le temps
+3011	Choisissez qui inviter (8 candidats ce mois-ci).<br>Un musicien invité paraît à son <b>rang historique (les ★ et la force de sa maturité)</b>. Il entre sans prime de signature, mais touche un salaire mensuel.
+3012	<span style="display:inline-block;vertical-align:middle">⟦0⟧</span> ⟦1⟧<small><span style="color:⟦2⟧">⟦3⟧</span> ⟦4⟧ · ⟦5⟧⟦6⟧</small>
+3013	 · paraît dans sa pleine maturité
+3014	Répondant à une Invitation par-delà le temps, ⟦1⟧ est venu en invité (époque : ⟦0⟧) !
+3015	⟦1⟧ traverse le temps en invité (époque : ⟦0⟧)
+3016	Me voici, par-delà le temps !
+3017	L'orchestre qui vous défie
+3018	⟦0⟧ (chef du camp ⟦1⟧)
+3019	<div class="ftabs"><button data-ust="city" class="⟦0⟧">Tournée</button><button data-ust="exp" class="⟦1⟧">Engagements</button><button data-ust="door" class="⟦2⟧" ⟦3⟧>Porte du Temps</button></div>
+3020	<div class="card pmeta">Envoyez le groupe d'engagement gagner des fonds (il revient au fil des mois). Si les conditions ne sont pas remplies, l'engagement échoue.</div>\n    ⟦0⟧\n    ⟦1⟧
+3021	<div class="card"><b class="busy">En engagement : ⟦0⟧</b>   encore ⟦1⟧ mois</div>
+3022	<div class="card"><b>⟦0⟧</b>   <span class="pmeta">⟦1⟧ mois</span><br><span class="pmeta">Conditions : ⟦2⟧ musiciens ou plus⟦3⟧⟦4⟧</span><br><span class="pmeta">Récompense : ⟦5⟧ fr⟦6⟧⟦7⟧</span>\n      <button class="btn" data-uex="⟦8⟧" style="width:100%;margin-top:4px" ⟦9⟧>Envoyer le groupe d'engagement⟦10⟧</button></div>
+3023	 · avec ⟦0⟧
+3024	 ou
+3025	 · niveau total de ⟦0⟧ ou plus
+3026	 · un instrument
+3027	 (conditions remplies)
+3028	<div class="card pmeta">Une joute contre des musiciens d'au-delà de votre époque. La victoire vous vaut une « Invitation par-delà le temps », qui permet d'inviter dans votre orchestre un musicien d'une autre époque (frais de voyage doublés, 1 mois).</div>
+3029	S'ouvre une fois les trois autres portes franchies
+3030	Vous attendent : ⟦0⟧
+3031	 · franchie (rejouable)
+3032	<div class="card"><div style="display:flex;gap:10px;align-items:center">⟦0⟧<div style="flex:1"><b>Tournée de concerts : ⟦1⟧</b><br><span class="pmeta">Grand maître : ⟦2⟧</span>\n    ⟦3⟧</div></div>\n    <div class="pmeta" style="margin-top:6px">Itinéraire : ⟦4⟧</div>\n    <div class="pmeta">Rang de la ville Lv⟦5⟧ · force du groupe de tournée ⟦6⟧</div>\n    ⟦7⟧\n    <button class="btn gold" id="uGo" style="width:100%;margin-top:6px" ⟦8⟧>Partir en tournée<small>voyage ⟦9⟧ fr · 1 mois</small></button></div>\n   <div class="sec-t">Bastions par ville</div><div class="card" style="font-size:12.5px">⟦10⟧<span class="pmeta">Une tournée vise la ville où vous êtes. Déplacez-vous d'abord sur la carte, puis partez.</span></div>
+3033	<div class="gauge"><i style="width:⟦0⟧%"></i></div><span class="pmeta">Bastion ⟦1⟧/⟦2⟧ (il s'effrite à chaque ovation sur la scène du grand maître ; à 0, la ville est à vous)</span>
+3034	<br><span class="pmeta">Une ville que vous contrôlez. Une tournée ici apporte expérience et revenus.</span>
+3035	<div class="pmeta" style="color:#f88">Musiciens à bout : ⟦0⟧</div>
+3036	<div>⟦0⟧ : <b style="color:var(--gold2)">à vous</b></div>
+3037	<div>⟦0⟧ : bastion ⟦1⟧/⟦2⟧⟦3⟧</div>
+3038	 (camp ⟦0⟧)
+3039	il faut ⟦0⟧ musiciens ou plus
+3040	il faut ⟦0⟧
+3041	il faut un niveau total de ⟦0⟧ ou plus
+3042	Tournée à ⟦0⟧
+3043	Vous partez avec le groupe de tournée (⟦0⟧ musiciens). Coût : ⟦1⟧ fr. Un mois aura passé à votre retour. ⟦2⟧
+3044	<br><b style="color:#c22">À bout : ⟦0⟧. Un assaut subi en chemin peut entraîner un départ de l'orchestre.</b>
+3045	Partir
+3046	Choisissez d'abord les membres du groupe d'engagement
+3047	Envoyer en engagement
+3048	Groupe d'engagement (⟦0⟧) vers « ⟦1⟧ ». Retour dans ⟦2⟧ mois. ⟦3⟧
+3049	<br><b style="color:#c22">Conditions non remplies : ⟦0⟧ (en l'état, ce sera un échec)</b>
+3050	Les envoyer
+3051	En engagement
+3052	Le groupe d'engagement est parti pour « ⟦0⟧ ».
+3053	Une joute contre des musiciens d'une autre époque (⟦0⟧). Coût : ⟦1⟧ fr, 1 mois.
+3054	Ouvrir la porte
+3055	Répétitions
+3056	Tournées
+3057	Tournée : ⟦0⟧ est à vous. <button class="mini" id="uGoTab">Partir en tournée</button>
+3058	Bastion de cette ville ⟦0⟧/⟦1⟧   <button class="mini" id="uGoTab">Préparer une tournée</button><br><span class="pmeta">Outre la persuasion et la guerre des concerts, une tournée avec votre orchestre permet aussi de gagner une ville.</span>
+3059	Le départ
+3060	Première tournée
+3061	Un orchestre voyageur
+3062	Une ville conquise en tournée
+3063	Un orchestre en campagne
+3064	3 villes conquises en tournée
+3065	Éveil
+3066	Un musicien a connu l'éveil
+3067	Maturité
+3068	Un musicien a atteint le Lv50
+3069	Un musicien d'une autre époque invité
+3070	Un pacte avec le Diable
+3071	[EX] Le rêve de Tartini franchi
+3072	L'histoire rejouée
+3073	Un lien historique formé
+3074	Comment jouer à l'Édition intégrale
+3075	Voyage, persuasion, duels et concerts restent comme avant. S'y ajoutent des <b>tournées où vous formez et menez votre orchestre</b>.\n <div class="sec-p">Répétitions</div>Choisissez jusqu'à six musiciens pour le groupe de tournée (vous pouvez en être). Le premier est le violon solo. Les musiciens progressent du Lv1 au Lv99 et, au Lv20, peuvent connaître l'<b>éveil</b> (capacités et talent grandissent). Confiez à chacun jusqu'à deux <b>objets</b>, instruments ou outils (seulement ceux qui existent à cette époque). Réunissez des compagnons de l'histoire et un <b>lien historique</b> se forme.\n <div class="sec-p">Tournées</div>Vous jouez dans les salles de la ville où vous êtes, un soir après l'autre. Chaque soir, vous observez le public et choisissez un style de jeu ; le concert se déroule ainsi : ouverture → premier mouvement → deuxième mouvement → rappel. Sur la route, entre deux salles, il se passe des choses. Chaque ovation sur la scène du grand maître effrite le <b>bastion</b> ; à 0, <b>la ville est à vous</b>. Des musiciens rencontrés peuvent demander à vous rejoindre. <b>Forcez un musicien à bout à monter en scène et il quittera l'orchestre.</b>\n <div class="sec-p">Engagements</div>Envoyez le groupe d'engagement faire un travail de quelques mois pour gagner des fonds.\n <div class="sec-p">Porte du Temps</div>S'ouvre quand vous tenez 3 villes. Franchissez-la pour obtenir une « Invitation par-delà le temps », qui permet d'inviter un musicien d'une autre époque (Bach, Mahler et d'autres).

@@ -67,6 +67,7 @@ function apply(lang){
     out+=escT(t.slice(last))+'`';if(used.size<n.ex.length)warn.push('使っていない差し込みがある: '+n.key.slice(0,50)+' → '+t.slice(0,50));return out;}
   let out=render(0,js.length);
   const H=fs.existsSync(path.join(ROOT,`i18n/${lang}.helpers.js`))?fs.readFileSync(path.join(ROOT,`i18n/${lang}.helpers.js`),'utf8'):'const __i18n={};';
+  out=out.split('`snd/${').join('`../snd/${');
   out=H+'\n'+out.replace(/concertoStorm(?=[A-Z0-9_'"`])/g,'concertoStorm'+lang.toUpperCase()+'_');
   const hrep=part=>part.replace(HTXT,(m0,t)=>{const k=t.trim();return has(k)?'>'+t.replace(k,tr[k])+'<':m0;});
   let page=hrep(html.slice(0,js0))+out+hrep(html.slice(js1));page=page.replace('<html lang="ja">',`<html lang="${lang}">`);

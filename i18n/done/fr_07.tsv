@@ -1,0 +1,247 @@
+1296	📋Fiche
+1297	🔍Repérage
+1298	<div class="trivia hidden" id="tv_⟦0⟧">⟦1⟧<br><span style="color:var(--mute)">Morceau fétiche : ⟦2⟧</span>⟦3⟧⟦4⟧</div>
+1299	<br><b>★Talent [⟦0⟧]</b> : ⟦1⟧
+1300	<br>Travers [⟦0⟧] : ⟦1⟧
+1301	<div class="seat"><span class="r">⟦0⟧</span>⟦1⟧<span class="n">⟦2⟧⟦3⟧<br><span class="pmeta">forme ⟦4⟧ · satisfaction ⟦5⟧ · ⟦6⟧ apparitions<br>⟦7⟧ · potentiel ⟦8⟧ · progression ⟦9⟧⟦10⟧ · ⟦11⟧ fr/mois</span><div class="qrow">⟦12⟧</div></span><span class="chip" style="--c:⟦13⟧">Lv⟦14⟧</span></div>
+1302	<div class="card"><div class="city-h"><h2>Orchestre ⟦0⟧<small>Orchestra</small></h2></div>\n    <div class="inst">Soliste : ⟦1⟧ (⟦2⟧)</div>\n    ⟦3⟧\n    ⟦4⟧\n    ⟦5⟧<div style="font-size:12px;color:var(--mute);margin-top:8px">★ signale un talent (actif en scène ou par la seule présence). Quand la satisfaction ♥ baisse, la force diminue et le musicien parle de partir. Elle baisse avec les salaires impayés, les récriminations d'un avare et les disputes ; elle monte avec les beaux concerts et les titres de héros de la soirée.</div></div>\n    <div class="card" style="font-size:14px">\n      <div>Revenu mensuel (villes, etc.) : <b>+⟦6⟧ fr</b></div>\n      ⟦7⟧\n      <div>Salaires mensuels des musiciens : <b>-⟦8⟧ fr</b></div>\n      <div style="margin-top:6px">Capacités : Technique ⟦9⟧ · Expression ⟦10⟧ · Improvisation ⟦11⟧ · Théorie ⟦12⟧</div></div>
+1303	<div class="seat"><span class="r">⟦0⟧</span><span class="n empty">— vacant —</span></div>
+1304	<div>Revenus des talents des musiciens : <b>+⟦0⟧ fr</b>   <span class="pmeta">⟦1⟧</span></div>
+1305	Précoce
+1306	Tardif
+1307	⟦0⟧ (toutes capacités +1)
+1308	[Précoce] ⟦0⟧ commence à décliner (toutes capacités -1).
+1309	Duo parfait
+1310	Bonne entente
+1311	Mauvaise entente
+1312	Neutre
+1313	⟦0⟧×⟦1⟧ cohésion Lv⟦2⟧
+1314	<div class="scout"><b>Rapport de repérage</b><br>\n   Approches efficaces : ⟦0⟧<br>\n   Type de progression : <b>⟦1⟧</b>   Potentiel : ⟦2⟧<br>\n   Prime de signature : <b>⟦3⟧ fr</b>   Salaire demandé : ⟦4⟧ fr/mois<br>\n   Entente avec vos musiciens : ⟦5⟧</div>
+1315	Rien de particulier
+1316	Rapport de repérage : ⟦0⟧
+1317	Repérer ⟦0⟧
+1318	⟦0⟧Vous assistez à un concert et vous renseignez sur son caractère, ses goûts, son potentiel et ses conditions.<br>Coût : 150 fr, endurance -5 (le mois n'avance pas)
+1319	Repérer
+1320	⟦1⟧ débauché au camp ⟦0⟧ !
+1321	Contrat signé avec ⟦0⟧, qui a rejoint l'orchestre (⟦1⟧ · ⟦2⟧ fr/mois).
+1322	Contrat signé !
+1323	⟦0⟧ entre comme ⟦1⟧
+1324	⟦0⟧ entre dans l'orchestre
+1325	« ⟦0⟧ »<br><br>Entre dans l'orchestre comme <b>⟦1⟧</b>.<br>Prime de signature ⟦2⟧ fr / salaire ⟦3⟧ fr par mois⟦4⟧
+1326	Négociation du contrat avec ⟦0⟧
+1327	⟦0⟧⟦1⟧ s'est laissé convaincre. Reste la question des conditions.<br><br>Prime de signature : <b>⟦2⟧ fr</b><br>Salaire : <b>⟦3⟧ fr par mois</b>⟦4⟧<br><span class="pmeta">Vos fonds : ⟦5⟧ fr</span>
+1328	 (avare : c'est un peu cher)
+1329	Accepter les conditions
+1330	Marchander<small>Une chance sur deux. Succès : prime -30 %, salaire -20 %. Échec : rupture des pourparlers</small>
+1331	Le marchandage avec ⟦0⟧ a tourné à la rupture.
+1332	Pourparlers rompus
+1333	⟦0⟧ : « Je vous prierais de ne pas me tenir à si bas prix. »
+1334	Pas maintenant<small>reprise la prochaine fois à l'affinité 60</small>
+1335	<div class="sec-t">Entente et cohésion</div>⟦0⟧
+1336	 · <b style="color:var(--gold2)">cohésion Lv⟦0⟧</b>
+1337	Hambourg
+1338	Opéra du Gänsemarkt
+1339	Le directeur du théâtre
+1340	Les marchands de la Hanse
+1341	Rome
+1342	Palais du cardinal Ottoboni
+1343	Le cardinal Ottoboni
+1344	Les cardinaux
+1345	Ibérie
+1346	Les cours ibériques (Lisbonne / Madrid)
+1347	La maison royale
+1348	La princesse Maria Barbara
+1349	New York
+1350	Metropolitan Opera
+1351	Les millionnaires de New York
+1352	De l'autre côté de l'Atlantique. Trois mois de bateau.
+1353	Collègues depuis Köthen
+1354	Parrain de C. P. E.
+1355	Le tandem vedette (jamais à court de querelles)
+1356	Une empoignade sur scène
+1357	Un duel à l'épée
+1358	« Je vous jette par la fenêtre »
+1359	Collègues de Dresde
+1360	La joute au clavier de Rome
+1361	Tweedledum et Tweedledee
+1362	Les deux piliers de l'orchestre de la cour
+1363	L'école française du clavier
+1364	Le trio Casals
+1365	La rancune du concours de 1905
+1366	L'affaire du prix de Rome
+1367	Alliés de la Scala
+1368	Rodolfo dans La Bohème
+1369	Condisciples du Conservatoire de Moscou
+1370	Défenseur
+1371	Éditeur et compositeur
+1372	Un duo célèbre
+1373	Alliés de Berlin
+1374	Une distance gênée
+1375	Querelle au Met
+1376	Respect et jalousie
+1377	Le Petit Livre
+1378	Satisfaction de tout l'orchestre +2 chaque mois
+1379	Viole de gambe
+1380	Publication par souscription
+1381	La plume du critique
+1382	Formé par Vivaldi en personne
+1383	Le soutien du violone
+1384	Le traverso français
+1385	La nouvelle diva
+1386	Voix d'ange
+1387	Castrat vedette
+1388	Douce mélodie
+1389	Formé par Corelli en personne
+1390	Le premier hautbois de son temps
+1391	Le Trille du Diable
+1392	La protégée du Prêtre roux
+1393	Le plus grand castrat de l'histoire
+1394	Affluence +25 % en scène
+1395	Grand maître de chant
+1396	Fondateur de l'école napolitaine
+1397	Traité de l'harmonie
+1398	Accueil +3 en scène
+1399	Couperin le Grand
+1400	La flûte du gaucher
+1401	Gradus ad Parnassum
+1402	Guide de la basse continue
+1403	Accueil de la musique sacrée +3 en scène
+1404	555 sonates
+1405	Maître de flûte de Frédéric le Grand
+1406	Disciple préféré de Mahler
+1407	Accueil des symphonies +3 en scène
+1408	Destructeur de la tonalité
+1409	Force personnelle +2 ; accueil +2 en scène
+1410	Miniatures viennoises
+1411	Magicien de l'orchestre
+1412	Accueil de la musique d'orchestre et des ballets +4 en scène
+1413	Directeur du Conservatoire
+1414	Découvreur des suites pour violoncelle seul
+1415	La poésie au piano
+1416	Sonorité suave
+1417	Prince de la flûte
+1418	Dédicataire de la Rhapsodie
+1419	Droits sur les disques
+1420	+400 fr chaque mois
+1421	Pêche Melba
+1422	Prix des billets ×1,4 quand elle chante
+1423	Le son de l'Empire britannique
+1424	Accueil de la musique d'orchestre +4 en scène / +2 à Londres
+1425	Grande vedette du piano
+1426	Une direction ensorcelante
+1427	Un toucher d'acier
+1428	Grand pédagogue
+1429	Comme c'est écrit !
+1430	Des mélodies qui font pleurer
+1431	Accueil des opéras +5 en scène
+1432	Des mains qui couvrent une treizième
+1433	Clavier à lumières
+1434	Fortune et maison d'édition
+1435	Rythme primitif
+1436	Accueil des ballets +6 en scène
+1437	Symphonies du Nord
+1438	Collecte de chants populaires
+1439	Accueil à Pest +5
+1440	Renaissance du clavecin
+1441	Accueil +4 quand elle joue dans un salon
+1442	L'école belge
+1443	Les autres violons +3 en scène
+1444	Alessandro Scarlatti est mort à Naples. Il était le fondateur de l'école napolitaine.
+1445	Mahler est mort à Vienne, à 50 ans.
+1446	Drillhaus
+1447	Le salon du cardinal
+1448	Teatro Capranica
+1449	Le salon de musique de la princesse
+1450	Grande salle du palais royal
+1451	Théâtre du Buen Retiro
+1452	Hôtel d'un millionnaire
+1453	Carnegie Hall
+1454	Chapelle de l'Ospedale della Pietà
+1455	Teatro Sant'Angelo
+1456	Basilique Saint-Marc
+1457	Le café Zimmermann
+1458	Église Saint-Nicolas
+1459	Église Saint-Thomas
+1460	Hickford's Room
+1461	King's Theatre (Haymarket)
+1462	Salon de la cour
+1463	Concert Spirituel (Tuileries)
+1464	Opéra de Paris (Académie royale de musique)
+1465	Salon de la princesse de Polignac
+1466	Salle Gaveau
+1467	Grande salle de la cour
+1468	Théâtre de la cour
+1469	Salon d'Alma Mahler
+1470	Musikverein, salle Brahms
+1471	Opéra de la cour de Vienne
+1472	Bechstein Hall
+1473	Maître de chapelle (Kapellmeister)
+1474	Clavecin soliste
+1475	Voix (diva ou castrat)
+1476	Violoncelle / gambe solo
+1477	Violone (basse continue)
+1478	Traverso solo
+1479	Hautbois solo
+1480	Premier rôle chanté
+1481	Clavecin
+1482	Hautbois
+1483	Traverso
+1484	Violone
+1485	Maître de chapelle
+1486	Violoncelle / gambe
+1487	Le crépuscule du baroque
+1488	Le cantor de Saint-Thomas et le roi de l'opéra
+1489	L'année où Bach devint cantor de Saint-Thomas à Leipzig. À Londres, Haendel mise tout sur l'opéra italien à la Royal Academy of Music, et à Venise règne le « Prêtre roux », Vivaldi.
+1490	Contrapuntistes
+1491	Style français
+1492	Style italien
+1493	Église Saint-Thomas (conseil municipal)
+1494	Le conseil municipal
+1495	Le conseil municipal de Leipzig
+1496	Éconduit par son premier choix, Telemann, puis par le second, Graupner, le conseil nomma le troisième : Bach.
+1497	Royal Academy of Music (compagnie d'opéra)
+1498	L'assemblée des actionnaires
+1499	Le roi George Ier
+1500	Une compagnie d'opéra italien fondée en 1719 avec les capitaux de la noblesse.
+1501	Les courtisans de Versailles
+1502	Ospedale della Pietà
+1503	Célèbre pour son ensemble d'orphelines. Vivaldi y enseigna de longues années.
+1504	Teatro San Bartolomeo
+1505	Orchestre de la cour de l'électeur de Saxe
+1506	L'électeur Auguste le Fort
+1507	Auguste le Fort
+1508	Un orchestre de cour vanté comme le meilleur d'Europe. La ville où fut arrangée, en 1717, la joute au clavier entre Bach et Marchand.
+1509	Orchestre de la cour de Vienne
+1510	Le maître de chapelle Fux
+1511	L'empereur Charles VI
+1512	Château de Prague
+1513	Le gouverneur du château
+1514	La noblesse de Bohême
+1515	En 1723, un opéra de Fux fut donné en plein air pour le couronnement de Charles VI.
+1516	La cour de Prusse
+1517	Le Roi-Sergent
+1518	Frédéric-Guillaume Ier, le Roi-Sergent
+1519	À peine monté sur le trône, le Roi-Sergent a dissous l'orchestre de la cour. Le prince mélomane (le futur Frédéric le Grand) apprend la flûte en cachette.
+1520	Teatro Regio Ducale
+1522	Géant du contrepoint et maître de l'improvisation. Mais le traitement est maigre, les enfants nombreux et coûteux, et il est sans cesse en conflit avec le conseil municipal. La théorie pour arme, faites mentir le verdict de « second rang ».
+1523	Un orgue Silbermann (Improvisation +1 en duel)
+1524	Toccata et fugue en ré mineur
+1525	Fugue improvisée à six voix
+1526	Le Clavier bien tempéré
+1527	À Dresde, Marchand a pris la fuite devant une joute avec moi.
+1528	Asseyez-moi à un orgue : de n'importe quel sujet, je vous ferai une fugue.
+1530	Roi de l'opéra italien à Londres. Il a les fonds et la renommée, mais des chanteurs capricieux, des cachets qui s'envolent et la folie du Beggar's Opera de 1728 l'attendent.
+1531	La pension du roi (+300 chaque mois)
+1532	Concerto pour orgue (avec improvisation)
+1533	« Lascia ch'io pianga », de Rinaldo
+1534	Water Music : Hornpipe
+1535	Sur une barge de la Tamise, Sa Majesté l'a redemandée trois fois.
+1536	À Rome, je me suis mesuré à Scarlatti au clavier ; à l'orgue, c'est moi qui l'ai emporté.
+1537	Vivaldi
+1538	« Le Printemps », des Quatre Saisons
+1539	Virtuose du violon surnommé le « Prêtre roux ». Il invoquait son asthme pour ne pas dire la messe. En 1725, il publia un recueil de concertos comprenant Les Quatre Saisons.
+1540	Water Music
+1541	Né en 1685, la même année que Bach et à 130 km à peine ; pourtant les deux hommes ne se rencontrèrent jamais.
+1543	Opéra : Griselda
+1544	Il partagea la faveur de Londres avec Haendel, et l'on railla leur rivalité : « Tweedledum et Tweedledee ».
+1546	Petit Livre d'Anna Magdalena Bach

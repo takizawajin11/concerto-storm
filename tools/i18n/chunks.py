@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""訳す単位を小分けにして /tmp/tr/c_NN.txt に書き出す（名前は自動で埋める）。 python3 tools/i18n/chunks.py"""
+"""訳す単位を小分けにして /tmp/tr/c_NN.txt に書き出す（名前は自動で埋める）。
+  python3 tools/i18n/chunks.py          全部
+  python3 tools/i18n/chunks.py en       en.tr.json にまだ訳のないものだけ（文言を足したあとはこちら）"""
 import json,re,pathlib
 ROOT=pathlib.Path(__file__).resolve().parents[2]
-U=json.load(open(ROOT/'i18n/units.json'));N=json.load(open('/tmp/tr/names.json')) if pathlib.Path('/tmp/tr/names.json').exists() else {}
+U=json.load(open(ROOT/'i18n/units.json'));N=json.load(open(ROOT/'i18n/names.json')) if (ROOT/'i18n/names.json').exists() else {}
 SP={'シュトラウス1世':'Strauss I','シュトラウス2世':'Strauss II','サン＝ジョルジュ':'Saint-Georges','ファウスティーナ':'Faustina','アンナ・マクダレーナ':'Anna Magdalena','ビューロー':'Bülow','ド・ベリオ':'de Bériot','ベランジェ':'Béranger','ル・モール':'Le Maure','フランチェスキエッロ':'Francischello','パラディス':'Paradis','ヴェチェイ':'Vecsey','R.シュトラウス':'R. Strauss','ダンディ':"d'Indy",'サン＝テュベルティ夫人':'Mme Saint-Huberty','ピエタのアンナ・マリーア':'Anna Maria della Pietà',
  'リスト（神父）':('Abbé Liszt',"l'abbé Liszt"),'忘れ物のフリッツ':('Forgetful Fritz',"Fritz l'étourdi"),'ドンナー親方':('Meister Donner','Maître Donner'),'ジョルジュ・ジレ（教授）':('G. Gillet (professor)','G. Gillet (professeur)'),'マダム・エギュ':'Madame Aigu'}
 def nm(jp,lat):
@@ -22,7 +24,10 @@ if __name__=='__main__':
     def flush():
         global cur,size,ci
         if cur:(out/f'c_{ci:02d}.txt').write_text('\n'.join(cur));ci+=1;cur=[];size=0
+    import sys
+    have=json.load(open(ROOT/f'i18n/{sys.argv[1]}.tr.json')) if len(sys.argv)>1 else {}
     for u in U:
+        if u['k'] in have:continue
         if u['k'] in names:continue
         left+=1;fl=('T' if u['kind']=='tpl' else 'R' if u['kind']=='re' else 'I' if u['kind']=='ident' else '')+(('C:'+','.join(u['cmp'])) if u['cmp'] and u['kind'] not in('re','ident') else '')
         cur.append(f"{u['id']}|{fl}|"+u['k'].replace('\\','\\\\').replace('\n','\\n'));size+=len(u['k'])+8

@@ -12,7 +12,7 @@
 | `snd/` | 楽器の音源 |
 | `tools/build.py` | 組み立て。`index.html` を書き出す |
 | `tools/audit_keys.py` | 保存データ（G）の名前のぶつかりを点検。結果は `docs/SAVE_KEYS.md` |
-| `tools/i18n_extract.py` | 翻訳の下ごしらえ。日本語の文言を `i18n/` に拾い出す |
+| `tools/i18n/` | 翻訳の道具（`all.sh` で英語版・フランス語版を作る。詳しくは `docs/I18N.md`） |
 | `tests/` | 自動の通し確認 |
 
 ## いつもの手順
@@ -58,10 +58,7 @@ git add -A && git commit && git push
 
 ## 翻訳（英語版・フランス語版）
 
-1. `python3 tools/i18n_extract.py` で `i18n/en.json` `i18n/fr.json` に未訳の文言が空欄で並ぶ（約6,000種類・約10万字）。
-2. 空欄に訳を入れる。長い文言から順に置き換えるので、短い語だけを訳すと文の途中が混ざることがある。文単位で訳す。
-3. `python3 tools/build.py --lang en` で `en/index.html` ができる。
-4. `catalog.json` で `code: true` の15語（「古典」「交響」「オペラ」など）は、プログラムの中で名前として使っているので訳さない。表示で訳す仕組みは、翻訳に取りかかるときに作る。
+`bash tools/i18n/all.sh` で日本語版・英語版（en/）・フランス語版（fr/）をまとめて作る。訳は `i18n/en.tr.json` `i18n/fr.tr.json`（日本語がキー）。文言を足したときの訳し方は `docs/I18N.md`。
 
 ## 180_street（街角・流行り歌・宮廷か民衆か）
 - `G.pop[街]` 民衆の人気 0〜100（毎月-1）。演奏会で人気×規模×2.2fr の上乗せ
